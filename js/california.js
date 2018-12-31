@@ -3,7 +3,7 @@ window.JSMaps.maps.california = {
 		"mapWidth": 611.700,
 		"mapHeight": 700.400,
 		"textAreaWidth": 600,
-		"textAreaHeight": 600,
+		"textAreaHeight": 800,
 		"displayAbbreviations": false,
 		"defaultText": "",
 		"textPosition": "left",

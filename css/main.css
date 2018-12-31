@@ -80,7 +80,7 @@ body {
 
 section {
   margin:40px auto;
-  width:760px;
+  width:1024px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -149,34 +149,42 @@ nav a.selected {
 }
 
 /* Hero Sections */
-section.hero {
+section.top {
+  margin-top: 0;
+}
+
+section.top.explore {
+  margin-top: 40px;
+  width: 760px;
+}
+
+div.hero {
   height: 506px;
   background-size:cover;
   background-position: 95px center;
   background-repeat: no-repeat;
   box-shadow: inset 200px 0 200px 50px white;
-  margin:0 auto;
-  width:760px;
+  margin-left: 132px;
 }
 
-section.hero.intro {
+div.hero.intro {
   background-image: url(../images/farmers-market-color.png);
 }
 
-section.hero.intro h1 {
+div.hero.intro h1 {
   padding-top:40px;
   width: 410px;
 }
 
-section.hero.instability {
+div.hero.instability {
   background-image: url(../images/student-color.png);
 }
 
-section.hero.shocks {
+div.hero.shocks {
   background-image: url(../images/seniors-color.png);
 }
 
-section.hero.calfresh {
+div.hero.calfresh {
   background-image: url(../images/potrero-color.png);
 }
 
@@ -194,6 +202,10 @@ div.page-title.explore {
 }
 
 /* Content Sections */
+section.content {
+  width: 760px;
+}
+
 section.content.heading {
   margin-top: 60px;
 }
@@ -362,14 +374,9 @@ div.quote-selector-tab.selected a {
 }
 
 /* Map */
-section.map {
-  margin: 0 0 0 auto;
-  width: 78%;
+div#california-map {
+  margin-left: 132px;
 }
-
-/* div#map {
-  float: right;
-} */
 
 section.map h3 {
   margin-top: 0;
