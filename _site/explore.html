@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Explore Counties</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="css/jsmaps.css"/>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <!-- jsmaps-panzoom.js is optional if you are using enablePanZoom -->
+    <script src="js/jsmaps-libs.js" type="text/javascript"></script>
+    <script src="js/jsmaps-panzoom.js"></script>
+    <script src="js/jsmaps.min.js" type="text/javascript"></script>
+    <script src="js/california.js" type="text/javascript"></script>
+  </head>
+  <body>
+
+    <header>
+      <nav class="intro">
+        <a href="index.html"><div id="logo"></div></a>
+        <a  href="instability.html">Instability</a>
+        <a  href="shocks.html">Common Shocks</a>
+        <a  href="calfresh.html">How CalFresh Helps</a>
+        <a class="selected" href="explore.html">Explore Counties</a>
+      </nav>
+    </header>
+
+        <div id="main" role="main" class="explore">
+      <section class="top explore">
+        <div class="page-title explore">Explore Counties</div>
+        <p>
+          Click on the map to view county statistics and read stories from
+          real CalFresh recipients across California
+        </p>
+      </section>
+
+      <section class="map">
+        <div class="jsmaps-wrapper" id="california-map"></div>
+      </section>
+    </div>
+
+
+    <footer>
+      2019 Code for America
+    </footer>
+
+    <script type="text/javascript">
+      $(function() {
+        $('#california-map').JSMaps({
+          map: 'california'
+        });
+      });
+    </script>
+
+  </body>
+</html>
