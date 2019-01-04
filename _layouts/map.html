@@ -17,7 +17,7 @@
   <body>
 
     <header>
-      <nav class="intro">
+      <nav class="{{page.id}}">
         <a href="index.html"><div id="logo"></div></a>
         <a {% if page.id == 'instability' %}class="selected"{% endif %} href="instability.html">Instability</a>
         <a {% if page.id == 'shocks' %}class="selected"{% endif %} href="shocks.html">Common Shocks</a>
@@ -26,7 +26,9 @@
       </nav>
     </header>
 
-    {{ content }}
+    <div id="main" role="main" class="{{page.id}}">
+      {{ content }}
+    </div>
 
     <footer>
       2019 Code for America

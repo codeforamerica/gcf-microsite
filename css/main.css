@@ -1,57 +1,92 @@
 /* Fonts */
 @font-face {
   font-family: "IBMPlexSans";
-  src: url("../fonts/IBMPlexSans-Regular.otf");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "IBMPlexSans";
-  src: url("../fonts/IBMPlexSans-Bold.otf");
+  src: url("../fonts/IBMPlexSans-Bold.ttf");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: "IBMPlexSans";
-  src: url("../fonts/IBMPlexSans-Medium.otf");
+  src: url("../fonts/IBMPlexSans-Medium.ttf");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "SanFranciscoText";
-  src: url("../fonts/SanFranciscoText-Regular.otf");
+  font-family: "IBMPlexSans";
+  src: url("../fonts/IBMPlexSans-Regular.ttf");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "SanFranciscoText";
-  src: url("../fonts/SanFranciscoText-Bold.otf");
+  font-family: "IBMPlexSans";
+  src: url("../fonts/IBMPlexSans-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lora";
+  src: url("../fonts/Lora-Bold.ttf");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "SanFranciscoText";
-  src: url("../fonts/SanFranciscoText-RegularItalic.otf");
+  font-family: "Lora";
+  src: url("../fonts/Lora-Regular.ttf");
   font-weight: normal;
-  font-style: italic;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "SanFranciscoText";
-  src: url("../fonts/SanFranciscoText-BoldItalic.otf");
+  font-family: "Rubik";
+  src: url("../fonts/Rubik-Bold.ttf");
   font-weight: bold;
-  font-style: italic;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "SanFranciscoText";
-  src: url("../fonts/SanFranciscoText-Medium.otf");
+  font-family: "Rubik";
+  src: url("../fonts/Rubik-Medium.ttf");
   font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/Rubik-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("../fonts/SourceSansPro-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("../fonts/SourceSansPro-Italic.ttf");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("../fonts/SourceSansPro-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("../fonts/SourceSansPro-SemiBold.ttf");
+  font-weight: 600;
   font-style: normal;
 }
 
@@ -65,17 +100,22 @@ body {
 body {
   display:flex;
   flex-direction:column;
-  font-family: SanFranciscoText;
+  font-family: SourceSansPro;
   font-size: 19px;
 }
 
 #main {
   flex-grow:1;
   padding-bottom: 40px;
+  margin-top: 80px;
+}
+
+#main.intro {
+  background: url(../images/intro-gradient.png) -80px 0 repeat-x;
 }
 
 #main.explore {
-  background-color: #E5E5E5;
+  background-color: #F7F7F7;
 }
 
 section {
@@ -85,30 +125,36 @@ section {
 
 h1, h2, h3, h4, h5, h6 {
   color: #333333;
-  font-family: IBMPlexSans;
   font-weight: bold;
 }
 
 h1 {
-  font-size: 65px;
+  font-family: Lora;
+  font-size: 81px;
 }
 
 h2 {
+  font-family: Lora;
   font-size: 36px;
 }
 
 h3 {
+  font-family: IBMPlexSans;
   font-size: 32px;
 }
 
 h4 {
+  font-family: IBMPlexSans;
   font-size: 24px;
+  font-weight: 600;
 }
 
 /* Header & Navigation */
 header {
-  font-family: IBMPlexSans;
+  font-family: Rubik;
   height:80px;
+  position: fixed;
+  width: 100%;
 }
 
 #logo {
@@ -122,30 +168,32 @@ header {
 
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   height: 100%;
   background-color: #f7f7f7;
 }
 
-nav.intro, nav.explore {
+nav.intro {
+  background-color: #FDF7F0;
+}
+
+nav.explore {
   background-color: white;
 }
 
 nav a {
   color: #32322F;
-  font-size: 20px;
+  font-size: 18px;
+  padding: 5px 0;
   opacity: 0.63;
-  display: inline-block;
-  margin-left: 10px;
   text-decoration: none;
-  padding: 5px 10px;
 }
 
-nav a.selected {
-  opacity: 1;
-  font-weight: bold;
+nav a:hover, nav a.selected {
   border-bottom: 6px solid #EFA44C;
+  font-weight: 500;
+  opacity: 1;
 }
 
 /* Hero Sections */
@@ -161,19 +209,52 @@ section.top.explore {
 div.hero {
   height: 506px;
   background-size:cover;
-  background-position: 95px center;
+  background-position: 95px 0;
   background-repeat: no-repeat;
-  box-shadow: inset 200px 0 200px 50px white;
+  box-shadow: inset 250px -50px 250px 50px white;
   margin-left: 132px;
 }
 
 div.hero.intro {
   background-image: url(../images/farmers-market-color.png);
+  box-shadow: inset 250px -50px 250px 50px #FDF7F0;
+}
+
+div.hero.instability h1, div.hero.shocks h1, div.hero.calfresh h1, section.top.explore h1 {
+  margin-top: 0;
+  padding-top: 360px;
+  text-transform: uppercase;
+  font-family: Rubik;
+  font-size: 24px;
+  font-weight: bold;
+  color: #EFA44C;
+  width: 515px;
+}
+
+section.top.explore h1 {
+  padding-top: 40px;
 }
 
 div.hero.intro h1 {
+  margin-top: 0;
   padding-top:40px;
-  width: 410px;
+  width: 515px;
+}
+
+div.hero.intro h2 {
+  font-family: IBMPlexSans;
+  font-size: 24px;
+  font-weight: 600;
+  padding-top:40px;
+  width: 515px;
+}
+
+div.scroll-tip {
+  margin-bottom: 60px;
+  margin-left: 214px;
+  width: 64px;
+  height: 64px;
+  background: url(../images/scroll-tip.png) center no-repeat;
 }
 
 div.hero.instability {
@@ -186,19 +267,6 @@ div.hero.shocks {
 
 div.hero.calfresh {
   background-image: url(../images/potrero-color.png);
-}
-
-div.page-title {
-  padding-top: 360px;
-  text-transform: uppercase;
-  font-family: IBMPlexSans;
-  font-size: 24px;
-  font-weight: bold;
-  color: #EFA44C;
-}
-
-div.page-title.explore {
-  padding-top: 0;
 }
 
 /* Content Sections */
@@ -221,10 +289,10 @@ section.stats-boxes {
 }
 
 section.stats-boxes h3 {
-  font-family: SanFranciscoText;
+  font-family: IBMPlexSans;
   font-size: 17px;
   font-weight: bold;
-  font-style: italic;
+  font-style: normal;
 }
 
 div.stats-box {
@@ -254,27 +322,29 @@ section.stats-boxes.calfresh div.stats-box {
 
 div.stats-box span.title {
   color: white;
-  font-family: IBMPlexSans;
+  display: block;
+  font-family: Lora;
   font-size: 37px;
   font-weight: bold;
-  display: block;
-  width: 100%;
+  line-height: 47px;
   text-align: center;
+  width: 100%;
 }
 
 div.stats-box span.body {
   color: white;
+  display: block;
   font-family: IBMPlexSans;
   font-size: 13px;
   font-weight: 500;
-  display: block;
-  width: 100%;
+  line-height: 17px;
+  margin-top: 6px;
   text-align: center;
-  margin-top: 10px;
+  width: 100%;
 }
 
 span.stats-source {
-  font-family: SanFranciscoText;
+  font-family: SourceSansPro;
   font-size: 13px;
 }
 
@@ -288,19 +358,24 @@ section.quotes {
 
 section.quotes.instability {
   background-color: #E1E3EA;
+  border-top: 1px solid #E1E3EA;
+  border-bottom: 1px solid #E1E3EA;
 }
 
 section.quotes.shocks {
   background-color: #FBE6E1;
+  border-top: 1px solid #FBE6E1;
+  border-bottom: 1px solid #FBE6E1;
 }
 
 section.quotes.calfresh {
   background-color: #D4EEEB;
+  border-top: 1px solid #D4EEEB;
+  border-bottom: 1px solid #D4EEEB;
 }
 
 div.quote-image {
-  margin:-50px auto 0 50px;
-  padding:50px 0 0 -50px;
+  margin:-40px auto 0 40px;
   width:98px;
   height:79px;
 }
@@ -321,8 +396,9 @@ div.quote-image.calfresh {
 }
 
 div.quote-content {
-  font-style: italic;
-  line-height: 26px;
+  font-family: Lora;
+  font-size: 18px;
+  line-height: 28px;
   margin:40px auto;
   min-height: 200px;
   width:730px;
@@ -336,7 +412,7 @@ div.quote-selector-timeline {
 div.quote-selector {
   height: 60px;
   width: 710px;
-  margin: -13px auto 25px auto;
+  margin: -11px auto 25px auto;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -347,17 +423,18 @@ div.quote-selector-tab {
   height: 100%;
   width: 180px;
   vertical-align: middle;
+  cursor: pointer;
 }
 
-div.quote-selector-tab.instability.selected {
+div.quote-selector-tab.instability:hover, div.quote-selector-tab.instability.selected {
   background-color: #515C88;
 }
 
-div.quote-selector-tab.shocks.selected {
-  background-color: #F5B6A5;
+div.quote-selector-tab.shocks:hover,div.quote-selector-tab.shocks.selected {
+  background-color: #EF6D4C;
 }
 
-div.quote-selector-tab.calfresh.selected {
+div.quote-selector-tab.calfresh:hover,div.quote-selector-tab.calfresh.selected {
   background-color: #019C86;
 }
 
@@ -369,7 +446,7 @@ div.quote-selector-tab a {
   display: block;
 }
 
-div.quote-selector-tab.selected a {
+div.quote-selector-tab:hover a, div.quote-selector-tab.selected a {
   color: white;
 }
 

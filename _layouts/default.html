@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css"/>
     <link rel="stylesheet" href="css/main.css"/>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
@@ -10,7 +11,7 @@
   <body>
 
     <header>
-      <nav class="intro">
+      <nav class="{{page.id}}">
         <a href="index.html"><div id="logo"></div></a>
         <a {% if page.id == 'instability' %}class="selected"{% endif %} href="instability.html">Instability</a>
         <a {% if page.id == 'shocks' %}class="selected"{% endif %} href="shocks.html">Common Shocks</a>
@@ -19,7 +20,9 @@
       </nav>
     </header>
 
-    {{ content }}
+    <div id="main" role="main" class="{{page.id}}">
+      {{ content }}
+    </div>
 
     <footer>
       2019 Code for America
