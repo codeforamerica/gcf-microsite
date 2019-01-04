@@ -28,5 +28,15 @@
       2019 Code for America
     </footer>
 
+    <script type="text/javascript">
+      var quotes = {{site.data.quotes | jsonify}};
+
+      var selectQuote = function(contentId, tabId) {
+        $('#quote-content-'+contentId).html(quotes[contentId][tabId].quote);
+        $('.quote-selector-tab.'+contentId).removeClass('selected');
+        $('#quote-selector-tab-'+contentId+'-'+tabId).addClass('selected');
+      };
+    </script>
+
   </body>
 </html>

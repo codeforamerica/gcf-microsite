@@ -1,0 +1,16 @@
+{% assign quoteData = site.data.quotes[include.contentId] %}
+
+<section class="quotes {{include.pageId}}">
+  <div class="quote-image {{include.pageId}}"></div>
+  <div id="quote-content-{{include.contentId}}" class="quote-content">
+    {{ quoteData[0].quote }}
+  </div>
+  <div class="quote-selector-timeline"></div>
+  <div class="quote-selector">
+    {% assign quote_index = 0 %}
+    {% for item in quoteData %}
+      <a id="quote-selector-tab-{{include.contentId}}-{{quote_index}}" class="quote-selector-tab {{include.contentId}} {{include.pageId}}{% if quote_index == 0 %} selected{% endif %}" href="javascript:selectQuote('{{include.contentId}}', {{quote_index}});">{{item.byline}}</a>
+      {% assign quote_index = quote_index | plus:1 %}
+    {% endfor %}
+  </div>
+</section>

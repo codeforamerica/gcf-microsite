@@ -155,6 +155,7 @@ header {
   height:80px;
   position: fixed;
   width: 100%;
+  z-index: 10;
 }
 
 #logo {
@@ -356,6 +357,12 @@ section.quotes {
   border-bottom: 1px solid #979797;
 }
 
+section.quotes.intro {
+  background-color: #FBE9D4;
+  border-top: 1px solid #FBE9D4;
+  border-bottom: 1px solid #FBE9D4;
+}
+
 section.quotes.instability {
   background-color: #E1E3EA;
   border-top: 1px solid #E1E3EA;
@@ -378,6 +385,11 @@ div.quote-image {
   margin:-40px auto 0 40px;
   width:98px;
   height:79px;
+}
+
+div.quote-image.intro {
+  background:url(../images/quotes-red.png) no-repeat;
+  background-size: contain;
 }
 
 div.quote-image.instability {
@@ -414,39 +426,38 @@ div.quote-selector {
   width: 710px;
   margin: -11px auto 25px auto;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 }
 
-div.quote-selector-tab {
-  text-align: center;
-  height: 100%;
-  width: 180px;
-  vertical-align: middle;
-  cursor: pointer;
+a.quote-selector-tab.intro:hover, a.quote-selector-tab.intro.selected {
+  background-color: #EFA44C;
 }
 
-div.quote-selector-tab.instability:hover, div.quote-selector-tab.instability.selected {
+a.quote-selector-tab.instability:hover, a.quote-selector-tab.instability.selected {
   background-color: #515C88;
 }
 
-div.quote-selector-tab.shocks:hover,div.quote-selector-tab.shocks.selected {
+a.quote-selector-tab.shocks:hover, a.quote-selector-tab.shocks.selected {
   background-color: #EF6D4C;
 }
 
-div.quote-selector-tab.calfresh:hover,div.quote-selector-tab.calfresh.selected {
+a.quote-selector-tab.calfresh:hover, a.quote-selector-tab.calfresh.selected {
   background-color: #019C86;
 }
 
-div.quote-selector-tab a {
+a.quote-selector-tab {
   color: #333333;
-  text-decoration: none;
-  font-size: 15px;
-  margin-top: 20px;
   display: block;
+  flex-basis: 50%;
+  font-size: 15px;
+  height: 40px;
+  padding-top:20px;
+  text-align: center;
+  text-decoration: none;
 }
 
-div.quote-selector-tab:hover a, div.quote-selector-tab.selected a {
+a.quote-selector-tab:hover, a.quote-selector-tab.selected {
   color: white;
 }
 
