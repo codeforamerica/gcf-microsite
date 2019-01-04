@@ -182,7 +182,7 @@ nav.explore {
   background-color: white;
 }
 
-nav a {
+a.nav-item {
   color: #32322F;
   font-size: 18px;
   padding: 5px 0;
@@ -190,7 +190,7 @@ nav a {
   text-decoration: none;
 }
 
-nav a:hover, nav a.selected {
+a.nav-item:hover, a.nav-item.selected {
   border-bottom: 6px solid #EFA44C;
   font-weight: 500;
   opacity: 1;
