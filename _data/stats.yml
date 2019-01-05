@@ -1,0 +1,70 @@
+intro:
+  title: "Nationwide:"
+  stats:
+    - tagline: ""
+      title: "7 in 10"
+      body: "SNAP beneficiaries are part of a household with children."
+
+    - tagline: ""
+      title: "1 in 3"
+      body: "are part of households with seniors or people with disabilities."
+
+    - tagline: ""
+      title: "$134"
+      body: "is the average benefit per person, per month."
+
+    - tagline: "More than"
+      title: "1 in 2"
+      body: "working age, non-disabled SNAP recipients has a job."
+
+  citations:
+    - citation: "https://www.cbpp.org/research/policy-basics-the-supplemental-nutrition-assistance-program-snap"
+
+instability:
+  title: "In California:"
+  stats:
+    - tagline: "More than"
+      title: "1 in 5"
+      body: "children live in poverty."
+
+    - tagline: "Nearly"
+      title: "1 in 5"
+      body: "people age 65 or older live in poverty."
+
+    - tagline: ""
+      title: "4 in 5"
+      body: "people in poverty live with at least one working adult."
+
+    - tagline: "Nearly"
+      title: "12%"
+      body: "struggle to put healthy food on the table."
+
+    # - tagline: ""
+    #   title: "1 in 10"
+    #   body: "Californians receive CalFresh."
+
+  citations:
+    - citation: "http://www.ppic.org/publication/poverty-in-california/"
+    - citation: "https://www.cbpp.org/sites/default/files/atoms/files/snap_factsheet_california.pdf"
+
+shocks:
+  title:
+  stats:
+    - tagline: ""
+      title: "27.3%"
+      body: "lost a job in the last 30 days."
+
+    - tagline: "Of the rest"
+      title: "65%"
+      body: "have a job."
+
+    - tagline: ""
+      title: "80.9%"
+      body: "who have a job work at least 20 hours a week."
+
+    - tagline: "Only"
+      title: "17.2%"
+      body: "have a job that gives them 40+ hours a week."
+
+  citations:
+    - citation: "Figures based on GetCalFresh application data from August 1 through October 31 of 2018. The data exclude students, people with disabilities, and people experiencing homelessness."

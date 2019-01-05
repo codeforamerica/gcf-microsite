@@ -41,28 +41,7 @@ id: intro
         </p>
       </div>
 
-      <div class="stats-boxes intro">
-        <h3>Nationwide...</h3>
-        <div class="stats-box">
-          <span class="title">7 in 10</span>
-          <span class="body">SNAP beneficiaries are part of a household with children</span>
-        </div>
-        <div class="stats-box">
-          <span class="title">1 in 3</span>
-          <span class="body">are part of households with seniors or people with disabilities</span>
-        </div>
-        <div class="stats-box">
-          <span class="title">$134</span>
-          <span class="body">The average SNAP benefit amount per month</span>
-        </div>
-        <div class="stats-box">
-          <!-- <span class="super-title">More than</span> -->
-          <span class="title">1/2</span>
-          <span class="body">of all working age, non disabled recipients have a job.</span>
-        </div>
-        <div style="clear:both;"></div>
-        <span class="stats-source">Source: <a href="https://www.cbpp.org/research/policy-basics-the-supplemental-nutrition-assistance-program-snap">CBPP<a/></span>
-      </div>
+      {% include stats.html sectionId="intro" %}
 
       <div class="content">
         <p>
@@ -81,7 +60,7 @@ id: intro
         </p>
       </div>
 
-      {% include quotes.html pageId="intro" contentId="self_sufficiency" %}
+      {% include quotes.html sectionId="intro" contentId="self_sufficiency" %}
     </section>
 
     <section class="instability">
@@ -106,27 +85,7 @@ id: intro
         </p>
       </div>
 
-      <div class="stats-boxes instability">
-        <h3>In California...</h3>
-        <div class="stats-box">
-          <span class="title">1 in 10</span>
-          <span class="body">Californians receive CalFresh</span>
-        </div>
-        <div class="stats-box">
-          <span class="title">1 in 5</span>
-          <span class="body">seniors age 65+ live in poverty</span>
-        </div>
-        <div class="stats-box">
-          <span class="title">12%</span>
-          <span class="body">struggle to put food on the table</span>
-        </div>
-        <div class="stats-box">
-          <span class="title">1 in 5</span>
-          <span class="body">children live in poverty</span>
-        </div>
-        <div style="clear:both;"></div>
-        <span class="stats-source">Source: <a href="https://www.cbpp.org/research/policy-basics-the-supplemental-nutrition-assistance-program-snap">CBPP</a></span>
-      </div>
+      {% include stats.html sectionId="instability" %}
 
       <div class="content">
         <p>
@@ -155,7 +114,7 @@ id: intro
         </p>
       </div>
 
-      {% include quotes.html pageId="instability" contentId="parents" %}
+      {% include quotes.html sectionId="instability" contentId="parents" %}
 
       <div class="content">
         <p>
@@ -187,7 +146,7 @@ id: intro
         </p>
       </div>
 
-      {% include quotes.html pageId="instability" contentId="students" %}
+      {% include quotes.html sectionId="instability" contentId="students" %}
 
       <div class="content">
         <p>
@@ -225,7 +184,7 @@ id: intro
         </p>
       </div>
 
-      {% include quotes.html pageId="instability" contentId="seniors" %}
+      {% include quotes.html sectionId="instability" contentId="seniors" %}
 
       <div class="content">
         <p>
@@ -275,27 +234,7 @@ id: intro
         </p>
       </div>
 
-      <div class="stats-boxes shocks">
-        <h3>For adults under age 60 who live alone...</h3>
-        <div class="stats-box">
-          <span class="title">27.3%</span>
-          <span class="body">lost a job in the last 30 days</span>
-        </div>
-        <div class="stats-box">
-          <span class="title">65%</span>
-          <span class="body">of the rest are employed</span>
-        </div>
-        <div class="stats-box">
-          <span class="title">80.9%</span>
-          <span class="body">who have a job work at least 20 hours a week</span>
-        </div>
-        <div class="stats-box">
-          <span class="title">17.2%</span>
-          <span class="body">have a job that gives them 40+ hours per week</span>
-        </div>
-        <div style="clear:both;"></div>
-        <span class="stats-source">Source: <a href="https://www.cbpp.org/research/policy-basics-the-supplemental-nutrition-assistance-program-snap">CBPP<a/></span>
-      </div>
+      {% include stats.html sectionId="shocks" %}
 
       <div class="content">
         <h3>Job loss is the most common reason for applying</h3>
@@ -306,7 +245,7 @@ id: intro
         </p>
       </div>
 
-      {% include quotes.html pageId="shocks" contentId="job_loss" %}
+      {% include quotes.html sectionId="shocks" contentId="job_loss" %}
 
       <div class="content">
         <p>
@@ -337,7 +276,7 @@ id: intro
         </p>
       </div>
 
-      {% include quotes.html pageId="shocks" contentId="medical" %}
+      {% include quotes.html sectionId="shocks" contentId="medical" %}
 
       <div class="content">
         <p>
@@ -360,7 +299,7 @@ id: intro
         </p>
       </div>
 
-      {% include quotes.html pageId="shocks" contentId="caretaking" %}
+      {% include quotes.html sectionId="shocks" contentId="caretaking" %}
 
       <div class="content">
         <p>
@@ -390,7 +329,7 @@ id: intro
         </p>
       </div>
 
-      {% include quotes.html pageId="shocks" contentId="disasters" %}
+      {% include quotes.html sectionId="shocks" contentId="disasters" %}
     </section>
 
     <section class="calfresh">
@@ -411,7 +350,7 @@ id: intro
         </p>
       </div>
 
-      {% include quotes.html pageId="calfresh" contentId="how_it_helps" %}
+      {% include quotes.html sectionId="calfresh" contentId="how_it_helps" %}
     </section>
 
     <section class="explore">

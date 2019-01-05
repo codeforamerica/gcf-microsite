@@ -270,62 +270,77 @@ p {
 }
 
 /* Stats Box divs */
-div.stats-boxes {
+div.stats {
   width: 720px;
-  margin: 0 auto;
+  margin: 40px auto;
 }
 
-div.stats-boxes h3 {
+div.stats h3 {
   font-family: IBMPlexSans;
   font-size: 17px;
   font-weight: bold;
   font-style: normal;
 }
 
-div.stats-box {
-  padding: 25px 15px;
-  width: 139px;
-  height: 93px;
-  float:left;
-  margin: 0 10px 10px 0;
-  border-radius: 3px;
-}
-
-div.stats-boxes.intro div.stats-box {
+div.stats.intro div.stats-box {
   background-color: #EFA44C;
 }
 
-div.stats-boxes.instability div.stats-box {
+div.stats.instability div.stats-box {
   background-color: #515C88;
 }
 
-div.stats-boxes.shocks div.stats-box {
+div.stats.shocks div.stats-box {
   background-color: #EF6D4C;
 }
 
-div.stats-boxes.calfresh div.stats-box {
+div.stats.calfresh div.stats-box {
   background-color: #019C86;
 }
 
-div.stats-box span.title {
+div.stats-boxes {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+div.stats-box {
+  border-radius: 3px;
+  height: 150px;
+  padding: 10px;
+  width: 150px;
+}
+
+div.stats-box div.tagline {
+    color: white;
+    font-family: IBMPlexSans;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    min-height: 18px;
+    text-align: center;
+}
+
+div.stats-box div.title {
   color: white;
-  display: block;
   font-family: Lora;
   font-size: 37px;
   font-weight: bold;
   line-height: 47px;
+  margin-top: 6px;
   text-align: center;
   width: 100%;
 }
 
-div.stats-box span.body {
+div.stats-box div.body {
   color: white;
-  display: block;
   font-family: IBMPlexSans;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
-  line-height: 17px;
-  margin-top: 6px;
+  line-height: 18px;
+  margin-top: 8px;
   text-align: center;
   width: 100%;
 }
