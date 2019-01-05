@@ -3,24 +3,32 @@
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css"/>
-    <link rel="stylesheet" href="css/main.css"/>
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="css/jsmaps.css"/>
+
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="js/jquery.smint.js" type="text/javascript"></script>
+    <!-- jsmaps-panzoom.js is optional if you are using enablePanZoom -->
+    <script src="js/jsmaps-libs.js" type="text/javascript"></script>
+    <script src="js/jsmaps-panzoom.js"></script>
+    <script src="js/jsmaps.min.js" type="text/javascript"></script>
+    <script src="js/california.js" type="text/javascript"></script>
   </head>
   <body>
 
-    <header>
-      <nav class="{{page.id}}">
-        <a href="index.html"><div id="logo"></div></a>
-        <a class="nav-item{% if page.id == 'instability' %} selected{% endif %}" href="instability.html">Instability</a>
-        <a class="nav-item{% if page.id == 'shocks' %} selected{% endif %}" href="shocks.html">Common Shocks</a>
-        <a class="nav-item{% if page.id == 'calfresh' %} selected{% endif %}" href="calfresh.html">How CalFresh Helps</a>
-        <a class="nav-item{% if page.id == 'explore' %} selected{% endif %}" href="explore.html">Explore Counties</a>
+    <header class="stickynav">
+      <nav>
+        <a href="#intro"><div id="logo"></div></a>
+        <a class="nav-item" href="#instability">Instability</a>
+        <a class="nav-item" href="#shocks">Common Shocks</a>
+        <a class="nav-item" href="#calfresh">How CalFresh Helps</a>
+        <a class="nav-item" href="#explore">Explore Counties</a>
       </nav>
     </header>
 
-    <div id="main" role="main" class="{{page.id}}">
+    <div id="main" role="main">
       {{ content }}
     </div>
 
@@ -29,8 +37,38 @@
     </footer>
 
     <script type="text/javascript">
-      var quotes = {{site.data.quotes | jsonify}};
+      $(document).ready( function() {
+        // SMINT sticky nav
+	      $('.stickynav').smint({
+          'mySelector': 'section',
+          'scrollSpeed' : 1500
+        });
 
+        // Map
+        $('#california-map').JSMaps({
+           map: 'california'
+        });
+
+        // Scroll-top in top section
+        $('.scroll-tip').click(function() {
+          var navOffset = $('.smint').height();
+          var goTo =  $('section.instability').position().top-navOffset;
+  				$("html, body").stop().animate({ scrollTop: goTo }, 1500);
+        });
+      });
+
+      // Change nav bar color on scroll
+      $(window).on("scroll", function() {
+        if($(document).scrollTop() > $('section.instability').offset().top-140) {
+          $("nav").addClass("scrolled");
+        } else {
+          //remove the background property so it comes transparent again (defined in your css)
+          $("nav").removeClass("scrolled");
+        }
+      });
+
+      // Quote Explorers
+      var quotes = {{site.data.quotes | jsonify}};
       var selectQuote = function(contentId, tabId) {
         $('#quote-content-'+contentId).html(quotes[contentId][tabId].quote);
         $('.quote-selector-tab.'+contentId).removeClass('selected');

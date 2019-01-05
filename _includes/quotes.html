@@ -1,6 +1,6 @@
 {% assign quoteData = site.data.quotes[include.contentId] %}
 
-<section class="quotes {{include.pageId}}">
+<div class="quotes {{include.pageId}}">
   <div class="quote-image {{include.pageId}}"></div>
   <div id="quote-content-{{include.contentId}}" class="quote-content">
     {{ quoteData[0].quote }}
@@ -13,4 +13,4 @@
       {% assign quote_index = quote_index | plus:1 %}
     {% endfor %}
   </div>
-</section>
+</div>
