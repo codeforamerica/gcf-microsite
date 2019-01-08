@@ -166,7 +166,7 @@ nav.scrolled {
 }
 
 a.nav-item {
-  color: #32322F;
+  color: #333333;
   font-size: 18px;
   padding: 5px 0;
   opacity: 0.63;
@@ -179,6 +179,12 @@ a.nav-item:hover, a.nav-item.selected {
   opacity: 1;
 }
 
+/* Sections */
+section.explore {
+  background-color: #F7F7F7;
+  padding: 60px 0;
+}
+
 /* Hero divs */
 div.top {
   margin: 0 auto;
@@ -186,7 +192,6 @@ div.top {
 }
 
 div.top.explore {
-  margin-top: 40px;
   width: 760px;
 }
 
@@ -380,6 +385,7 @@ div.quotes.calfresh {
   background-color: #D4EEEB;
   border-top: 1px solid #D4EEEB;
   border-bottom: 1px solid #D4EEEB;
+  margin-bottom: 0;
 }
 
 div.quote-image {
@@ -498,10 +504,9 @@ p.map-quote-text {
 
 /* Footer */
 footer {
-  color: #32322F;
+  color: #ffffff;
   font-size: 20px;
-  opacity: 0.63;
   min-height:80px;
-  background-color: #f7f7f7;
+  background-color: #333333;
   padding: 25px 100px;
 }
