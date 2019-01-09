@@ -40,11 +40,11 @@ window.JSMaps.maps.onStateClick = function(data) {
 			"</div>" +
 			"<div class='county-details-stat'>" +
 			"<div class='county-details-stat-name'>Median income</div>" +
-			"<div class='county-details-stat-number'>" + countyData["median-income"] + "</div>" +
+			"<div class='county-details-stat-number'>" + countyData["median-income"].toLocaleString("en", {style: "currency", currency: "USD", maximumFractionDigits: 0, minimumFractionDigits: 0}) + "</div>" +
 			"</div>" +
 			"<div class='county-details-stat'>" +
 			"<div class='county-details-stat-name'>Min cost of living</div>" +
-			"<div class='county-details-stat-number'>" + countyData["minimum-cost-living-family"] + "</div>" +
+			"<div class='county-details-stat-number'>" + countyData["minimum-cost-living-family"].toLocaleString("en", {style: "currency", currency: "USD", maximumFractionDigits: 0, minimumFractionDigits: 0}) + "</div>" +
 			"</div>" +
 			"<div style='clear:both'></div>" +
 			"</div>"
