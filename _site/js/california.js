@@ -119,6 +119,8 @@ window.JSMaps.maps.california = {
 		"initialMapY": 125,
 		"displayAbbreviations": false,
 		"stateClickAction": null,
+		"textAreaWidth": 0,
+		"textAreaHeight": 0,
 		"onStateClick": window.JSMaps.maps.onStateClick,
 		"onReady": function() {
 				$('#california-map').trigger('stateClick', 'San Francisco');

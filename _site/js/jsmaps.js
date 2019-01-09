@@ -328,7 +328,7 @@
             });
           }
           hitAreaProperties = $.extend(hitAreaProperties, {
-            'cursor': paths[i].enable ? (config.displayMousePosition ? 'crosshair' : 'pointer') : 'default'
+            'cursor': paths[i].enable ? (config.displayMousePosition ? 'crosshair' : 'pointer') : 'move'
           });
 
           // Create path

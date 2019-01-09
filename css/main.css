@@ -498,7 +498,7 @@ div.map-container h3 {
 
 div.map-info {
   float: left;
-  width: 63%;
+  width: 55%;
   height: 100%;
 }
 
@@ -596,8 +596,12 @@ div.county-details-gcf-stat-number {
 
 div.map {
   float: right;
-  width: 35%;
+  width: 43%;
   height: 100%;
+}
+
+div#california-map {
+  cursor: move;
 }
 
 div.map-quote {
