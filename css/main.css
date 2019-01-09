@@ -537,10 +537,12 @@ div.county-details-stats {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-top: 20px;
 }
 
 div.county-details-stat {
     flex-basis: 50%;
+    align-self: center;
     font-size: 14px;
     line-height: 18px;
 }
@@ -563,13 +565,14 @@ div.county-details-gcf-stats {
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: stretch;
-  height: 200px;
+  height: 300px;
   border-top: 3px solid #D8D8D8;
-  padding-top: 40px;
+  padding-top: 20px;
 }
 
 div.county-details-gcf-stat {
     flex-basis: 33%;
+    align-self: center;
 }
 
 div.county-details-gcf-stat-name {
