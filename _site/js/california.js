@@ -4,12 +4,8 @@ window.JSMaps.maps.onStateClick = function(data) {
 	if (!data.enable) {
 		return;
 	}
-	console.log(window.JSMaps);
 	var countyName = data.name;
 	var countyData = window.JSMaps.maps.countyData[data.name];
-
-	// $('div.map-info').empty();
-	// $('div.map-info').append("<h3>" + countyName + "</h3>");
 
 	$('div.map-info').html(
 		"<h3>" + countyName + "</h3>" +
@@ -122,6 +118,9 @@ window.JSMaps.maps.california = {
 		"displayAbbreviations": false,
 		"stateClickAction": null,
 		"onStateClick": window.JSMaps.maps.onStateClick,
+		"onReady": function() {
+				$('#california-map').trigger('stateClick', 'San Francisco');
+		},
 	},
 	"paths": [
 		
