@@ -224,7 +224,7 @@
 
       // Pan/zoom
       if (config.enablePanZoom) {
-        var mapConsole = $('<div class=jsmaps-console><ul><li class=jsmaps-zoom-in><button type=button><div class="jsmaps-icon jsmaps-icon-plus"></div></button><li class=jsmaps-zoom-out><button type=button><div class="jsmaps-icon jsmaps-icon-minus"></div></button><li class=jsmaps-move-up><button type=button><div class="jsmaps-icon jsmaps-icon-chevron jsmaps-icon-chevron-up"></div></button><li class=jsmaps-move-down><button type=button><div class="jsmaps-icon jsmaps-icon-chevron jsmaps-icon-chevron-down"></div></button><li class=jsmaps-move-left><button type=button><div class="jsmaps-icon jsmaps-icon-chevron jsmaps-icon-chevron-left"></div></button><li class=jsmaps-move-right><button type=button><div class="jsmaps-icon jsmaps-icon-chevron jsmaps-icon-chevron-right"></div></button><li class=jsmaps-zoom-reset><button type=button><div class="jsmaps-icon jsmaps-icon-reset"></div></button></ul></div>').appendTo(mapWrapper);
+        // var mapConsole = $('<div class=jsmaps-console><ul><li class=jsmaps-zoom-in><button type=button><div class="jsmaps-icon jsmaps-icon-plus"></div></button><li class=jsmaps-zoom-out><button type=button><div class="jsmaps-icon jsmaps-icon-minus"></div></button><li class=jsmaps-move-up><button type=button><div class="jsmaps-icon jsmaps-icon-chevron jsmaps-icon-chevron-up"></div></button><li class=jsmaps-move-down><button type=button><div class="jsmaps-icon jsmaps-icon-chevron jsmaps-icon-chevron-down"></div></button><li class=jsmaps-move-left><button type=button><div class="jsmaps-icon jsmaps-icon-chevron jsmaps-icon-chevron-left"></div></button><li class=jsmaps-move-right><button type=button><div class="jsmaps-icon jsmaps-icon-chevron jsmaps-icon-chevron-right"></div></button><li class=jsmaps-zoom-reset><button type=button><div class="jsmaps-icon jsmaps-icon-reset"></div></button></ul></div>').appendTo(mapWrapper);
       }
 
 
@@ -782,34 +782,34 @@
         });
         panZoom.enable();
 
-        mapConsole.on('click', function(e) {
-          switch($(e.target).parents('li').prop('class')) {
-            case 'jsmaps-zoom-in':
-              panZoom.zoomIn(1);
-              break;
-            case 'jsmaps-zoom-out':
-              panZoom.zoomOut(1);
-              break;
-            case 'jsmaps-zoom-reset':
-              panZoom.zoomReset();
-              break;
-            case 'jsmaps-move-up':
-              panZoom.pan(0, 20);
-              break;
-            case 'jsmaps-move-down':
-              panZoom.pan(0, -20);
-              break;
-            case 'jsmaps-move-left':
-              panZoom.pan(20, 0);
-              break;
-            case 'jsmaps-move-right':
-              panZoom.pan(-20, 0);
-              break;
-          }
-        })
-
-        // Display console
-        mapConsole.fadeIn();
+        // mapConsole.on('click', function(e) {
+        //   switch($(e.target).parents('li').prop('class')) {
+        //     case 'jsmaps-zoom-in':
+        //       panZoom.zoomIn(1);
+        //       break;
+        //     case 'jsmaps-zoom-out':
+        //       panZoom.zoomOut(1);
+        //       break;
+        //     case 'jsmaps-zoom-reset':
+        //       panZoom.zoomReset();
+        //       break;
+        //     case 'jsmaps-move-up':
+        //       panZoom.pan(0, 20);
+        //       break;
+        //     case 'jsmaps-move-down':
+        //       panZoom.pan(0, -20);
+        //       break;
+        //     case 'jsmaps-move-left':
+        //       panZoom.pan(20, 0);
+        //       break;
+        //     case 'jsmaps-move-right':
+        //       panZoom.pan(-20, 0);
+        //       break;
+        //   }
+        // })
+        //
+        // // Display console
+        // mapConsole.fadeIn();
 
       }
 

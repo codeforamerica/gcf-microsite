@@ -54,7 +54,6 @@ If you like Smint, or have suggestions on how it could be improved, send me a tw
 		return smintA.each( function(index) {
 
 			var id = $(this).attr('href').split('#')[1];
-			console.log("smint id = " + id);
 
 			if (!$(this).hasClass("extLink")) {
 				$(this).attr('id', id);

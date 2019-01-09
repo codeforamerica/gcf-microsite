@@ -28,6 +28,20 @@
 }
 
 @font-face {
+  font-family: "IBMPlexSansCond";
+  src: url("../fonts/IBMPlexSansCondensed-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IBMPlexSansCond";
+  src: url("../fonts/IBMPlexSansCondensed-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "Lora";
   src: url("../fonts/Lora-Bold.ttf");
   font-weight: bold;
@@ -433,7 +447,7 @@ div.quote-selector {
   width: 710px;
   margin: -11px auto 25px auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -456,7 +470,7 @@ a.quote-selector-tab.calfresh:hover, a.quote-selector-tab.calfresh.selected {
 a.quote-selector-tab {
   color: #333333;
   display: block;
-  flex-basis: 50%;
+  flex-basis: 20%;
   font-size: 15px;
   height: 40px;
   padding-top:20px;
@@ -469,17 +483,118 @@ a.quote-selector-tab:hover, a.quote-selector-tab.selected {
 }
 
 /* Map */
-div.map {
+div.map-container {
   margin: 0 auto;
   width: 1024px;
 }
 
-div#california-map {
+div.map-inner {
   margin-left: 132px;
 }
 
-div.map h3 {
+div.map-container h3 {
   margin-top: 0;
+}
+
+div.map-info {
+  float: left;
+  width: 63%;
+  height: 100%;
+}
+
+div.county-details {
+  background-color: #FFFFFF;
+  box-shadow: 0 0 4px 0 #DEDEDE;
+}
+
+div.county-details-tabs {
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+}
+
+div.county-details-tab {
+  cursor: pointer;
+  padding: 10px;
+  height: 100%;
+  background-color: #ADADAC;
+  text-align: center;
+  flex-basis: 50%;
+  font-family: IBMPlexSans;
+  font-size: 14px;
+}
+
+div.county-details-tab.selected {
+  background-color: #FFFFFF;
+}
+
+div.county-details-content {
+  padding: 20px;
+  font-family: IBMPlexSansCond;
+}
+
+div.county-details-stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+div.county-details-stat {
+    flex-basis: 50%;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+div.county-details-stat-name {
+  height: 60px;
+  width: 60%;
+  float: left;
+}
+
+div.county-details-stat-number {
+  height: 60px;
+  width: 40%;
+  float: left;
+  font-weight: bold;
+}
+
+div.county-details-gcf-stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: stretch;
+  height: 200px;
+  border-top: 3px solid #D8D8D8;
+  padding-top: 40px;
+}
+
+div.county-details-gcf-stat {
+    flex-basis: 33%;
+}
+
+div.county-details-gcf-stat-name {
+  width: 80%;
+  margin: 12px auto;
+  text-align: center;
+  font-family: IBMPlexSans;
+  font-size: 15px;
+  line-height: 19px;
+  margin-top: 12px;
+  text-align: center;
+}
+
+div.county-details-gcf-stat-number {
+  width: 100%;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 32px;
+  text-align: center;
+}
+
+div.map {
+  float: right;
+  width: 35%;
+  height: 100%;
 }
 
 div.map-quote {
@@ -496,10 +611,11 @@ div.map-quote-image {
 }
 
 p.map-quote-text {
-  width: 500px;
-  font-family: IBMPlexSans;
-  font-style: italic;
+  width: 460px;
+  margin: 0 20px;
+  font-family: Lora;
   font-size: 16px;
+  line-height: 22px;
 }
 
 /* Footer */

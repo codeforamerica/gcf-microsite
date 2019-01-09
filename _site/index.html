@@ -13,7 +13,7 @@
     <!-- jsmaps-panzoom.js is optional if you are using enablePanZoom -->
     <script src="js/jsmaps-libs.js" type="text/javascript"></script>
     <script src="js/jsmaps-panzoom.js"></script>
-    <script src="js/jsmaps.min.js" type="text/javascript"></script>
+    <script src="js/jsmaps.js" type="text/javascript"></script>
     <script src="js/california.js" type="text/javascript"></script>
   </head>
   <body>
@@ -845,8 +845,15 @@ better place to look at.
         </p>
       </div>
 
-      <div class="map">
-        <div class="jsmaps-wrapper" id="california-map"></div>
+      <div class="map-container">
+        <div class="map-inner">
+          <div class="map-info">
+          </div>
+          <div class="map">
+            <div class="jsmaps-wrapper" id="california-map"></div>
+          </div>
+          <div style="clear: both;"></div>
+        </div>
       </div>
     </section>
 
