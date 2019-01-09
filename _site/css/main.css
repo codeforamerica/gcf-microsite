@@ -601,6 +601,12 @@ div.map-quote {
   display: flex;
   justify-content:space-evenly;
   align-items:baseline;
+  border-top: 3px solid #D8D8D8;
+  padding: 40px 0;
+}
+
+div.map-quote.first {
+  border: none;
 }
 
 div.map-quote-image {

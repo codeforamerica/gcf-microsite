@@ -92,8 +92,12 @@ window.JSMaps.maps.onStateClick = function(data) {
 		);
 		for (i = 0; i < countyData['quotes'].length; i++) {
 			var quote = countyData['quotes'][i];
+			var outerDivHtml = "<div class='map-quote'>";
+			if (i == 0) {
+				outerDivHtml = "<div class='map-quote first'>"
+			}
 			$('div.county-details-stories-content').append(
-				"<div class='map-quote'>" +
+				outerDivHtml +
 				"<div class='map-quote-image'></div>" +
 				"<p class='map-quote-text'>" + quote + "</p></div>"
 			);
