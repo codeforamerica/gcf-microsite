@@ -637,6 +637,12 @@ div#california-map {
   cursor: move;
 }
 
+div.county-details-stories {
+  max-height: 700px;
+  overflow: scroll;
+  margin: 20px 0;
+}
+
 div.map-quote {
   display: flex;
   justify-content:space-evenly;
@@ -647,6 +653,7 @@ div.map-quote {
 
 div.map-quote.first {
   border: none;
+  padding-top: 0;
 }
 
 div.map-quote-image {

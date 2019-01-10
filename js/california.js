@@ -83,7 +83,7 @@ window.JSMaps.maps.onStateClick = function(data) {
 		$('#stories-tab').addClass('selected');
 
 		$('div.county-details-content').html(
-			"<div class='county-details-stories-content'>" +
+			"<div class='county-details-stories'>" +
 			"</div>"
 		);
 		for (i = 0; i < countyData['quotes'].length; i++) {
@@ -92,7 +92,7 @@ window.JSMaps.maps.onStateClick = function(data) {
 			if (i == 0) {
 				outerDivHtml = "<div class='map-quote first'>"
 			}
-			$('div.county-details-stories-content').append(
+			$('div.county-details-stories').append(
 				outerDivHtml +
 				"<div class='map-quote-image'></div>" +
 				"<p class='map-quote-text'>" + quote + "</p></div>"
