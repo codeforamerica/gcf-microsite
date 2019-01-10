@@ -453,18 +453,22 @@ div.quote-selector-line {
   width: 714px;
 }
 
-div.quote-selector-arrow-left {
-  background: url(../images/quote-arrow-left.png) no-repeat;
+div.quote-selector-arrow {
   height: 100%;
   width: 68px;
   cursor: pointer;
 }
 
-div.quote-selector-arrow-right {
+div.quote-selector-arrow:hover {
+  opacity: 0.6;
+}
+
+div.quote-selector-arrow.left {
+  background: url(../images/quote-arrow-left.png) no-repeat;
+}
+
+div.quote-selector-arrow.right {
   background: url(../images/quote-arrow-right.png) no-repeat;
-  height: 100%;
-  width: 68px;
-  cursor: pointer;
 }
 
 div.quote-selector {

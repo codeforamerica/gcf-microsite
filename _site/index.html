@@ -136,9 +136,9 @@ solution until I get on my feet, start a business, and rebuild my life.
 
   </div>
   <div class="quote-selector-line-container">
-    <div id="quote-selector-arrow-left-self_sufficiency" class="quote-selector-arrow-left"></div>
+    <div id="quote-selector-arrow-left-self_sufficiency" class="quote-selector-arrow left"></div>
     <div class="quote-selector-line"></div>
-    <div id="quote-selector-arrow-right-self_sufficiency"  class="quote-selector-arrow-right"></div>
+    <div id="quote-selector-arrow-right-self_sufficiency"  class="quote-selector-arrow right"></div>
   </div>
   <div class="quote-selector">
     
@@ -269,9 +269,9 @@ goes a LONG way.
 
   </div>
   <div class="quote-selector-line-container">
-    <div id="quote-selector-arrow-left-parents" class="quote-selector-arrow-left"></div>
+    <div id="quote-selector-arrow-left-parents" class="quote-selector-arrow left"></div>
     <div class="quote-selector-line"></div>
-    <div id="quote-selector-arrow-right-parents"  class="quote-selector-arrow-right"></div>
+    <div id="quote-selector-arrow-right-parents"  class="quote-selector-arrow right"></div>
   </div>
   <div class="quote-selector">
     
@@ -339,9 +339,9 @@ groceries that are healthier and more nourishing.
 
   </div>
   <div class="quote-selector-line-container">
-    <div id="quote-selector-arrow-left-students" class="quote-selector-arrow-left"></div>
+    <div id="quote-selector-arrow-left-students" class="quote-selector-arrow left"></div>
     <div class="quote-selector-line"></div>
-    <div id="quote-selector-arrow-right-students"  class="quote-selector-arrow-right"></div>
+    <div id="quote-selector-arrow-right-students"  class="quote-selector-arrow right"></div>
   </div>
   <div class="quote-selector">
     
@@ -417,9 +417,9 @@ California.
 
   </div>
   <div class="quote-selector-line-container">
-    <div id="quote-selector-arrow-left-seniors" class="quote-selector-arrow-left"></div>
+    <div id="quote-selector-arrow-left-seniors" class="quote-selector-arrow left"></div>
     <div class="quote-selector-line"></div>
-    <div id="quote-selector-arrow-right-seniors"  class="quote-selector-arrow-right"></div>
+    <div id="quote-selector-arrow-right-seniors"  class="quote-selector-arrow right"></div>
   </div>
   <div class="quote-selector">
     
@@ -547,9 +547,9 @@ need a little help while I look for another EMT job.
 
   </div>
   <div class="quote-selector-line-container">
-    <div id="quote-selector-arrow-left-job_loss" class="quote-selector-arrow-left"></div>
+    <div id="quote-selector-arrow-left-job_loss" class="quote-selector-arrow left"></div>
     <div class="quote-selector-line"></div>
-    <div id="quote-selector-arrow-right-job_loss"  class="quote-selector-arrow-right"></div>
+    <div id="quote-selector-arrow-right-job_loss"  class="quote-selector-arrow right"></div>
   </div>
   <div class="quote-selector">
     
@@ -611,9 +611,9 @@ we’re going to do.
 
   </div>
   <div class="quote-selector-line-container">
-    <div id="quote-selector-arrow-left-medical" class="quote-selector-arrow-left"></div>
+    <div id="quote-selector-arrow-left-medical" class="quote-selector-arrow left"></div>
     <div class="quote-selector-line"></div>
-    <div id="quote-selector-arrow-right-medical"  class="quote-selector-arrow-right"></div>
+    <div id="quote-selector-arrow-right-medical"  class="quote-selector-arrow right"></div>
   </div>
   <div class="quote-selector">
     
@@ -681,9 +681,9 @@ him food to eat when I can. I don’t know what else to do.
 
   </div>
   <div class="quote-selector-line-container">
-    <div id="quote-selector-arrow-left-caretaking" class="quote-selector-arrow-left"></div>
+    <div id="quote-selector-arrow-left-caretaking" class="quote-selector-arrow left"></div>
     <div class="quote-selector-line"></div>
-    <div id="quote-selector-arrow-right-caretaking"  class="quote-selector-arrow-right"></div>
+    <div id="quote-selector-arrow-right-caretaking"  class="quote-selector-arrow right"></div>
   </div>
   <div class="quote-selector">
     
@@ -759,9 +759,9 @@ us who didn't own three homes before the Tubbs Fire are struggling with.
 
   </div>
   <div class="quote-selector-line-container">
-    <div id="quote-selector-arrow-left-disasters" class="quote-selector-arrow-left"></div>
+    <div id="quote-selector-arrow-left-disasters" class="quote-selector-arrow left"></div>
     <div class="quote-selector-line"></div>
-    <div id="quote-selector-arrow-right-disasters"  class="quote-selector-arrow-right"></div>
+    <div id="quote-selector-arrow-right-disasters"  class="quote-selector-arrow right"></div>
   </div>
   <div class="quote-selector">
     
@@ -833,9 +833,9 @@ better place to look at.
 
   </div>
   <div class="quote-selector-line-container">
-    <div id="quote-selector-arrow-left-how_it_helps" class="quote-selector-arrow-left"></div>
+    <div id="quote-selector-arrow-left-how_it_helps" class="quote-selector-arrow left"></div>
     <div class="quote-selector-line"></div>
-    <div id="quote-selector-arrow-right-how_it_helps"  class="quote-selector-arrow-right"></div>
+    <div id="quote-selector-arrow-right-how_it_helps"  class="quote-selector-arrow right"></div>
   </div>
   <div class="quote-selector">
     
@@ -937,7 +937,7 @@ better place to look at.
         $('.quote-selector-tab.'+contentId).removeClass('selected');
         $('#quote-selector-tab-'+contentId+'-'+tabId).addClass('selected');
       };
-      $('div.quote-selector-arrow-left').click(function() {
+      $('div.quote-selector-arrow.left').click(function() {
         var contentId = this.id.split('-')[4];
         var activeTab = $('.quote-selector-tab.'+contentId+'.selected');
         var activeTabId = parseInt(activeTab.attr('id').split('-')[4]);
@@ -947,7 +947,7 @@ better place to look at.
         }
         selectQuote(contentId, newTabId);
       });
-      $('div.quote-selector-arrow-right').click(function() {
+      $('div.quote-selector-arrow.right').click(function() {
         var contentId = this.id.split('-')[4];
         var activeTab = $('.quote-selector-tab.'+contentId+'.selected');
         var activeTabId = parseInt(activeTab.attr('id').split('-')[4]);
