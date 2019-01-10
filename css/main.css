@@ -437,15 +437,40 @@ div.quote-content {
   width:730px;
 }
 
-div.quote-selector-timeline {
-  background: url(../images/quote-arrow.png) top no-repeat;
+div.quote-selector-line-container {
+  margin: 0 auto;
+  width: 892px;
   height: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+div.quote-selector-line {
+  background: url(../images/quote-line.png) no-repeat;
+  height: 8px;
+  width: 714px;
+}
+
+div.quote-selector-arrow-left {
+  background: url(../images/quote-arrow-left.png) no-repeat;
+  height: 100%;
+  width: 68px;
+  cursor: pointer;
+}
+
+div.quote-selector-arrow-right {
+  background: url(../images/quote-arrow-right.png) no-repeat;
+  height: 100%;
+  width: 68px;
+  cursor: pointer;
 }
 
 div.quote-selector {
   height: 60px;
   width: 710px;
-  margin: -11px auto 25px auto;
+  margin: -22px auto 25px auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -470,12 +495,13 @@ a.quote-selector-tab.calfresh:hover, a.quote-selector-tab.calfresh.selected {
 a.quote-selector-tab {
   color: #333333;
   display: block;
-  flex-basis: 20%;
   font-size: 15px;
   height: 40px;
-  padding-top:20px;
   text-align: center;
   text-decoration: none;
+  flex-grow: 1;
+  padding-top:12px;
+  margin-top:12px;
 }
 
 a.quote-selector-tab:hover, a.quote-selector-tab.selected {

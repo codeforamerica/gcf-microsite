@@ -135,7 +135,11 @@ humbling, but serious. If approved, I hope this will only be a temporary
 solution until I get on my feet, start a business, and rebuild my life.
 
   </div>
-  <div class="quote-selector-timeline"></div>
+  <div class="quote-selector-line-container">
+    <div id="quote-selector-arrow-left-self_sufficiency" class="quote-selector-arrow-left"></div>
+    <div class="quote-selector-line"></div>
+    <div id="quote-selector-arrow-right-self_sufficiency"  class="quote-selector-arrow-right"></div>
+  </div>
   <div class="quote-selector">
     
     
@@ -264,7 +268,11 @@ I’m hoping we can get any kind of help there is available, even a little
 goes a LONG way.
 
   </div>
-  <div class="quote-selector-timeline"></div>
+  <div class="quote-selector-line-container">
+    <div id="quote-selector-arrow-left-parents" class="quote-selector-arrow-left"></div>
+    <div class="quote-selector-line"></div>
+    <div id="quote-selector-arrow-right-parents"  class="quote-selector-arrow-right"></div>
+  </div>
   <div class="quote-selector">
     
     
@@ -330,7 +338,11 @@ often due to my poor health. My goal is to be able to purchase more
 groceries that are healthier and more nourishing.
 
   </div>
-  <div class="quote-selector-timeline"></div>
+  <div class="quote-selector-line-container">
+    <div id="quote-selector-arrow-left-students" class="quote-selector-arrow-left"></div>
+    <div class="quote-selector-line"></div>
+    <div id="quote-selector-arrow-right-students"  class="quote-selector-arrow-right"></div>
+  </div>
   <div class="quote-selector">
     
     
@@ -404,7 +416,11 @@ applied for this food aid program due to the high cost of living in
 California.
 
   </div>
-  <div class="quote-selector-timeline"></div>
+  <div class="quote-selector-line-container">
+    <div id="quote-selector-arrow-left-seniors" class="quote-selector-arrow-left"></div>
+    <div class="quote-selector-line"></div>
+    <div id="quote-selector-arrow-right-seniors"  class="quote-selector-arrow-right"></div>
+  </div>
   <div class="quote-selector">
     
     
@@ -530,7 +546,11 @@ medics who were good at their jobs. We all got taken advantage of. I just
 need a little help while I look for another EMT job.
 
   </div>
-  <div class="quote-selector-timeline"></div>
+  <div class="quote-selector-line-container">
+    <div id="quote-selector-arrow-left-job_loss" class="quote-selector-arrow-left"></div>
+    <div class="quote-selector-line"></div>
+    <div id="quote-selector-arrow-right-job_loss"  class="quote-selector-arrow-right"></div>
+  </div>
   <div class="quote-selector">
     
     
@@ -590,7 +610,11 @@ who gets sick all the time living in the house, and I don't know what
 we’re going to do.
 
   </div>
-  <div class="quote-selector-timeline"></div>
+  <div class="quote-selector-line-container">
+    <div id="quote-selector-arrow-left-medical" class="quote-selector-arrow-left"></div>
+    <div class="quote-selector-line"></div>
+    <div id="quote-selector-arrow-right-medical"  class="quote-selector-arrow-right"></div>
+  </div>
   <div class="quote-selector">
     
     
@@ -656,7 +680,11 @@ family or friends, but doesn’t have a stable place to live. I try to take
 him food to eat when I can. I don’t know what else to do.
 
   </div>
-  <div class="quote-selector-timeline"></div>
+  <div class="quote-selector-line-container">
+    <div id="quote-selector-arrow-left-caretaking" class="quote-selector-arrow-left"></div>
+    <div class="quote-selector-line"></div>
+    <div id="quote-selector-arrow-right-caretaking"  class="quote-selector-arrow-right"></div>
+  </div>
   <div class="quote-selector">
     
     
@@ -730,7 +758,11 @@ whoever's in charge of my case will at least understanding what those of
 us who didn't own three homes before the Tubbs Fire are struggling with.
 
   </div>
-  <div class="quote-selector-timeline"></div>
+  <div class="quote-selector-line-container">
+    <div id="quote-selector-arrow-left-disasters" class="quote-selector-arrow-left"></div>
+    <div class="quote-selector-line"></div>
+    <div id="quote-selector-arrow-right-disasters"  class="quote-selector-arrow-right"></div>
+  </div>
   <div class="quote-selector">
     
     
@@ -800,7 +832,11 @@ Thank you for the help. A full stomach or warm coffee made the world a
 better place to look at.
 
   </div>
-  <div class="quote-selector-timeline"></div>
+  <div class="quote-selector-line-container">
+    <div id="quote-selector-arrow-left-how_it_helps" class="quote-selector-arrow-left"></div>
+    <div class="quote-selector-line"></div>
+    <div id="quote-selector-arrow-right-how_it_helps"  class="quote-selector-arrow-right"></div>
+  </div>
   <div class="quote-selector">
     
     
@@ -901,6 +937,26 @@ better place to look at.
         $('.quote-selector-tab.'+contentId).removeClass('selected');
         $('#quote-selector-tab-'+contentId+'-'+tabId).addClass('selected');
       };
+      $('div.quote-selector-arrow-left').click(function() {
+        var contentId = this.id.split('-')[4];
+        var activeTab = $('.quote-selector-tab.'+contentId+'.selected');
+        var activeTabId = parseInt(activeTab.attr('id').split('-')[4]);
+        var newTabId = quotes[contentId].length - 1;
+        if (activeTabId > 0) {
+          newTabId = activeTabId - 1;
+        }
+        selectQuote(contentId, newTabId);
+      });
+      $('div.quote-selector-arrow-right').click(function() {
+        var contentId = this.id.split('-')[4];
+        var activeTab = $('.quote-selector-tab.'+contentId+'.selected');
+        var activeTabId = parseInt(activeTab.attr('id').split('-')[4]);
+        var newTabId = 0;
+        if (activeTabId < quotes[contentId].length - 1) {
+          newTabId = activeTabId + 1;
+        }
+        selectQuote(contentId, newTabId);
+      });
     </script>
 
   </body>
