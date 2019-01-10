@@ -37,6 +37,14 @@
     </footer>
 
     <script type="text/javascript">
+      var quotes = {{site.data.quotes | jsonify}};
+
+      var selectQuote = function(contentId, tabId) {
+        $('#quote-content-'+contentId).html(quotes[contentId][tabId].quote);
+        $('.quote-selector-tab.'+contentId).removeClass('selected');
+        $('#quote-selector-tab-'+contentId+'-'+tabId).addClass('selected');
+      };
+
       $(document).ready( function() {
         // SMINT sticky nav
 	      $('.stickynav').smint({
@@ -55,44 +63,38 @@
           var goTo =  $('section.instability').position().top-navOffset;
   				$("html, body").stop().animate({ scrollTop: goTo }, 1500);
         });
-      });
 
-      // Change nav bar color on scroll
-      $(window).on("scroll", function() {
-        if($(document).scrollTop() > $('section.instability').offset().top-140) {
-          $("nav").addClass("scrolled");
-        } else {
-          //remove the background property so it comes transparent again (defined in your css)
-          $("nav").removeClass("scrolled");
-        }
-      });
+        // Quote Explorers
+        $('div.quote-selector-arrow.left').click(function() {
+          var contentId = this.id.split('-')[4];
+          var activeTab = $('.quote-selector-tab.'+contentId+'.selected');
+          var activeTabId = parseInt(activeTab.attr('id').split('-')[4]);
+          var newTabId = quotes[contentId].length - 1;
+          if (activeTabId > 0) {
+            newTabId = activeTabId - 1;
+          }
+          selectQuote(contentId, newTabId);
+        });
+        $('div.quote-selector-arrow.right').click(function() {
+          var contentId = this.id.split('-')[4];
+          var activeTab = $('.quote-selector-tab.'+contentId+'.selected');
+          var activeTabId = parseInt(activeTab.attr('id').split('-')[4]);
+          var newTabId = 0;
+          if (activeTabId < quotes[contentId].length - 1) {
+            newTabId = activeTabId + 1;
+          }
+          selectQuote(contentId, newTabId);
+        });
 
-      // Quote Explorers
-      var quotes = {{site.data.quotes | jsonify}};
-      var selectQuote = function(contentId, tabId) {
-        $('#quote-content-'+contentId).html(quotes[contentId][tabId].quote);
-        $('.quote-selector-tab.'+contentId).removeClass('selected');
-        $('#quote-selector-tab-'+contentId+'-'+tabId).addClass('selected');
-      };
-      $('div.quote-selector-arrow.left').click(function() {
-        var contentId = this.id.split('-')[4];
-        var activeTab = $('.quote-selector-tab.'+contentId+'.selected');
-        var activeTabId = parseInt(activeTab.attr('id').split('-')[4]);
-        var newTabId = quotes[contentId].length - 1;
-        if (activeTabId > 0) {
-          newTabId = activeTabId - 1;
-        }
-        selectQuote(contentId, newTabId);
-      });
-      $('div.quote-selector-arrow.right').click(function() {
-        var contentId = this.id.split('-')[4];
-        var activeTab = $('.quote-selector-tab.'+contentId+'.selected');
-        var activeTabId = parseInt(activeTab.attr('id').split('-')[4]);
-        var newTabId = 0;
-        if (activeTabId < quotes[contentId].length - 1) {
-          newTabId = activeTabId + 1;
-        }
-        selectQuote(contentId, newTabId);
+        // Change nav bar color on scroll
+        $(window).on("scroll", function() {
+          if($(document).scrollTop() > $('section.instability').offset().top-140) {
+            $("nav").addClass("scrolled");
+          } else {
+            //remove the background property so it comes transparent again (defined in your css)
+            $("nav").removeClass("scrolled");
+          }
+        });
       });
     </script>
 

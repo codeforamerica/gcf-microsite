@@ -291,6 +291,12 @@ p {
   line-height: 26px;
 }
 
+span.callout {
+  background-color: #F5D0A5;
+  border-bottom: 3px solid #EFA44C;
+  padding: 0px 4px;
+}
+
 /* Stats Box divs */
 div.stats {
   width: 720px;
