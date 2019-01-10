@@ -517,7 +517,7 @@ a.quote-selector-tab:hover, a.quote-selector-tab.selected {
 
 /* Map */
 div.map-container {
-  margin: 0 auto;
+  margin: 60px auto 0;
   width: 1024px;
 }
 
