@@ -210,17 +210,16 @@ div.top.explore {
 }
 
 div.hero {
-  height: 506px;
   background-size:cover;
   background-position: 95px 0;
   background-repeat: no-repeat;
-  box-shadow: inset 250px -50px 250px 50px white;
+  box-shadow: inset 300px -70px 300px 70px white;
   margin-left: 132px;
 }
 
 div.hero.intro {
   background-image: url(../images/farmers-market-color.png);
-  box-shadow: inset 250px -50px 250px 50px #FDF7F0;
+  box-shadow: inset 300px -70px 300px 70px #FDF7F0;
 }
 
 div.hero.instability h1, div.hero.shocks h1, div.hero.calfresh h1, div.top.explore h1 {
@@ -247,15 +246,19 @@ div.hero.intro h1 {
 div.hero.intro h2 {
   font-family: IBMPlexSans;
   font-size: 24px;
-  font-weight: 600;
-  padding-top:40px;
+  margin:40px 0;
   width: 515px;
+}
+
+div.hero.intro p {
+  font-family: Lora;
+  font-size: 18px;
+  width: 600px;
 }
 
 div.scroll-tip {
   cursor: pointer;
-  margin-bottom: 60px;
-  margin-left: 214px;
+  margin: 60px 0 60px 214px;
   width: 64px;
   height: 64px;
   background: url(../images/scroll-tip.png) center no-repeat;
@@ -528,7 +531,7 @@ div.map-container h3 {
 
 div.map-info {
   float: left;
-  width: 55%;
+  width: 53%;
   height: 100%;
 }
 
@@ -626,7 +629,7 @@ div.county-details-gcf-stat-number {
 
 div.map {
   float: right;
-  width: 43%;
+  width: 45%;
   height: 100%;
 }
 
