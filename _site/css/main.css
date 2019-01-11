@@ -183,7 +183,7 @@ a.nav-item {
   color: #333333;
   font-size: 18px;
   padding: 5px 0;
-  opacity: 0.63;
+  opacity: 0.6;
   text-decoration: none;
 }
 
@@ -521,6 +521,10 @@ a.quote-selector-tab:hover, a.quote-selector-tab.selected {
   color: white;
 }
 
+a.quote-selector-tab:hover {
+  opacity: 0.6;
+}
+
 /* Map */
 div.map-container {
   margin: 60px auto 0;
@@ -561,6 +565,10 @@ div.county-details-tab {
   flex-basis: 50%;
   font-family: IBMPlexSans;
   font-size: 14px;
+}
+
+div.county-details-tab:hover {
+  opacity: 0.6;
 }
 
 div.county-details-tab.selected {
