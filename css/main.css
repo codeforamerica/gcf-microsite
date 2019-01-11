@@ -183,13 +183,20 @@ a.nav-item {
   color: #333333;
   font-size: 18px;
   padding: 5px 0;
-  opacity: 0.6;
+  opacity: 1;
   text-decoration: none;
 }
 
 a.nav-item:hover, a.nav-item.selected {
   border-bottom: 6px solid #EFA44C;
   font-weight: 500;
+}
+
+a.nav-item:hover {
+  opacity: 0.6;
+}
+
+a.nav-item.selected:hover {
   opacity: 1;
 }
 
@@ -525,6 +532,11 @@ a.quote-selector-tab:hover {
   opacity: 0.6;
 }
 
+a.quote-selector-tab.selected:hover {
+  opacity: 1;
+}
+
+
 /* Map */
 div.map-container {
   margin: 60px auto 0;
@@ -573,6 +585,11 @@ div.county-details-tab:hover {
 
 div.county-details-tab.selected {
   background-color: #FFFFFF;
+}
+
+div.county-details-tab.selected:hover {
+  background-color: #FFFFFF;
+  opacity: 1;
 }
 
 div.county-details-content {
