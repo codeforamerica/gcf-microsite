@@ -48,7 +48,7 @@
         <div class="scroll-tip"></div>
       </div>
 
-      <div class="content">
+      <div id="intro-content" class="content">
         <p>
           At Code for America, we run GetCalFresh.org, which helps more than
           20,000 households apply for <span id="food-assistance-callout" class="callout">food assistance</span>
@@ -932,7 +932,7 @@ better place to look at.
         // Scroll-top in top section
         $('.scroll-tip').click(function() {
           var navOffset = $('.smint').height();
-          var goTo =  $('section.instability').position().top-navOffset;
+          var goTo =  $('div#intro-content').position().top-navOffset;
   				$("html, body").stop().animate({ scrollTop: goTo }, 1500);
         });
 

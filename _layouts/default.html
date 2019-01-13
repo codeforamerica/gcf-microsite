@@ -60,7 +60,7 @@
         // Scroll-top in top section
         $('.scroll-tip').click(function() {
           var navOffset = $('.smint').height();
-          var goTo =  $('section.instability').position().top-navOffset;
+          var goTo =  $('div#intro-content').position().top-navOffset;
   				$("html, body").stop().animate({ scrollTop: goTo }, 1500);
         });
 
