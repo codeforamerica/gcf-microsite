@@ -153,7 +153,7 @@ h4 {
 header {
   font-family: Rubik;
   height:80px;
-  /* position: fixed; */
+  position: fixed;
   width: 100%;
   z-index: 10;
 }
@@ -183,17 +183,14 @@ a.nav-item {
   color: #333333;
   font-size: 18px;
   padding: 5px 0;
-  opacity: 1;
+  opacity: 0.6;
   text-decoration: none;
 }
 
 a.nav-item:hover, a.nav-item.selected {
   border-bottom: 6px solid #EFA44C;
   font-weight: 500;
-}
-
-a.nav-item:hover {
-  opacity: 0.6;
+  opacity: 1;
 }
 
 a.nav-item.selected:hover {
