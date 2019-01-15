@@ -59,13 +59,16 @@
         $('#quote-selector-tab-'+contentId+'-'+tabId).addClass('selected');
       };
 
-      $(document).ready( function() {
-        // SMINT sticky nav
-	      $('.stickynav').smint({
-          'mySelector': 'section',
-          'scrollSpeed' : 1500
-        });
+      var colorNav = function() {
+        if($(document).scrollTop() > $('section#instability').offset().top-140) {
+          $("nav").addClass("scrolled");
+        } else {
+          //remove the background property so it comes transparent again (defined in your css)
+          $("nav").removeClass("scrolled");
+        }
+      };
 
+      $(document).ready( function() {
         // Map
         $('#california-map').JSMaps({
            map: 'california'
@@ -102,14 +105,18 @@
 
         // Change nav bar color on scroll
         $(window).on("scroll", function() {
-          if($(document).scrollTop() > $('section.instability').offset().top-140) {
-            $("nav").addClass("scrolled");
-          } else {
-            //remove the background property so it comes transparent again (defined in your css)
-            $("nav").removeClass("scrolled");
-          }
+          colorNav();
         });
+
+        // Sticky nav
+        $('.stickynav').smint({
+          'mySelector': 'section',
+          'scrollSpeed' : 1500
+        });
+
+        colorNav();
       });
+
     </script>
 
   </body>

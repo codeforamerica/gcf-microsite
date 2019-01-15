@@ -56,14 +56,14 @@ If you like Smint, or have suggestions on how it could be improved, send me a tw
 			var id = $(this).attr('href').split('#')[1];
 
 			if (!$(this).hasClass("extLink")) {
-				$(this).attr('id', id);
+				$(this).attr('id', id+'-nav');
 			}
 
 
 			//Fill the menu
 			optionLocs.push(Array(
-				$(mySelector+"."+id).position().top-menuHeight,
-				$(mySelector+"."+id).height()+$(mySelector+"."+id).position().top, id)
+				$(mySelector+"#"+id).position().top-menuHeight,
+				$(mySelector+"#"+id).height()+$(mySelector+"#"+id).position().top, id)
 			);
 
 			///////////////////////////////////
@@ -93,19 +93,18 @@ If you like Smint, or have suggestions on how it could be improved, send me a tw
 				// Check if the position is inside then change the menu
 				// Courtesy of Ryan Clarke (@clarkieryan)
 				if(optionLocs[index][0] <= scrollTop && scrollTop <= optionLocs[index][1]){
-					if(direction == "up"){
-						$("#"+id).addClass("selected");
-						$("#"+optionLocs[index+1][2]).removeClass("selected");
+					if(direction == "up" && index < optionLocs.length - 1){
+						$("#"+id+"-nav").addClass("selected");
+						$("#"+optionLocs[index+1][2]+"-nav").removeClass("selected");
 					} else if(index > 0) {
-						$("#"+id).addClass("selected");
-						$("#"+optionLocs[index-1][2]).removeClass("selected");
+						$("#"+id+"-nav").addClass("selected");
+						$("#"+optionLocs[index-1][2]+"-nav").removeClass("selected");
 					} else if(direction == undefined){
-						$("#"+id).addClass("selected");
+						$("#"+id+"-nav").addClass("selected");
 					}
 					$.each(optionLocs, function(i){
 						if(id != optionLocs[i][2]){
-
-							$("#"+optionLocs[i][2]).removeClass("selected");
+							$("#"+optionLocs[i][2]+"-nav").removeClass("selected");
 						}
 					});
 				}
@@ -132,9 +131,8 @@ If you like Smint, or have suggestions on how it could be improved, send me a tw
 				if($(window).scrollTop() + $(window).height() == $(document).height()) {
 	       			smintA.removeClass('selected')
 	       			$(".smint a:not('.extLink'):last").addClass('selected')
-
-   				} else {
-   					smintA.last().removeClass('selected')
+   				// } else {
+   				// 	smintA.last().removeClass('selected')
    				}
 			});
 
@@ -152,7 +150,7 @@ If you like Smint, or have suggestions on how it could be improved, send me a tw
 
 
 
-				var goTo =  $(mySelector+'.'+ hash).offset().top-myOffset;
+				var goTo =  $(mySelector+'#'+ hash).offset().top-myOffset;
 
 				// Scroll the page to the desired position!
 				$("html, body").stop().animate({ scrollTop: goTo }, scrollSpeed);
@@ -177,9 +175,9 @@ If you like Smint, or have suggestions on how it could be improved, send me a tw
 				var hash = $(this).attr('href').split('#')[1];
 
 				if (smint.hasClass('fxd')) {
-					var goTo =  $(mySelector+'.'+ hash).position().top-myOffset;
+					var goTo =  $(mySelector+'#'+ hash).position().top-myOffset;
 				} else {
-					var goTo =  $(mySelector+'.'+ hash).position().top-myOffset*2;
+					var goTo =  $(mySelector+'#'+ hash).position().top-myOffset*2;
 				}
 
 				$("html, body").stop().animate({ scrollTop: goTo }, scrollSpeed);

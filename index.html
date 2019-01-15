@@ -1,14 +1,14 @@
 ---
 layout: default
-title: Who actually receives food stamps?
+title: Who actually receives food assistance?
 id: intro
 ---
 
-    <section class="intro">
-      <div class="top intro">
-        <div class="hero intro">
-          <div class="hero-text">
-            <h1>Who actually receives food stamps?</h1>
+    <section id="intro">
+      <div class="intro-header">
+        <div class="intro-header-outer">
+          <div class="intro-header-inner">
+            <h1>Who actually receives food assistance?</h1>
             <h2>A fresh look at the facts</h2>
             <p>
               Californians who receive food assistance come from all
@@ -18,9 +18,9 @@ id: intro
               through challenging times in their lives. This site shares their
               stories.
             </p>
+            <div class="scroll-tip"></div>
           </div>
         </div>
-        <div class="scroll-tip"></div>
       </div>
 
       <div id="intro-content" class="content">
@@ -72,13 +72,8 @@ id: intro
       {% include quotes.html sectionId="intro" contentId="self_sufficiency" %}
     </section>
 
-    <section class="instability">
-      <div class="top instability">
-        <div class="hero instability">
-          <h1>Instability</h1>
-          <h2>Many Californians struggle to make ends meet</h2>
-        </div>
-      </div>
+    <section id="instability">
+      {% include hero_header.html sectionId="instability" title="Instability" subtitle="Many Californians struggle to make ends meet" %}
 
       <div class="content">
         <p>
@@ -210,13 +205,8 @@ id: intro
       </div>
     </section>
 
-    <section class="shocks">
-      <div class="top shocks">
-        <div class="hero shocks">
-          <h1>Common Shocks</h1>
-          <h2>Common shocks that create a need for CalFresh</h2>
-        </div>
-      </div>
+    <section id="shocks">
+      {% include hero_header.html sectionId="shocks" title="Common Shocks" subtitle="Common shocks that create a need for CalFresh" %}
 
       <div class="content">
         <p>
@@ -341,13 +331,8 @@ id: intro
       {% include quotes.html sectionId="shocks" contentId="disasters" %}
     </section>
 
-    <section class="calfresh">
-      <div class="top calfresh">
-        <div class="hero calfresh">
-          <h1>How CalFresh Helps</h1>
-          <h2>CalFresh helps people get back on their feet</h2>
-        </div>
-      </div>
+    <section id="calfresh">
+      {% include hero_header.html sectionId="calfresh" title="How CalFresh Helps" subtitle="CalFresh helps people get back on their feet" %}
 
       <div class="content">
         <p>
@@ -362,8 +347,8 @@ id: intro
       {% include quotes.html sectionId="calfresh" contentId="how_it_helps" %}
     </section>
 
-    <section class="explore">
-      <div class="top explore">
+    <section id="explore">
+      <div class="section-header">
         <h1>Explore Counties</h1>
         <p>
           Click on the map to view county statistics and read stories from
