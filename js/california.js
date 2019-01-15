@@ -9,7 +9,11 @@ window.JSMaps.maps.onStateClick = function(data) {
 	}
 	var countyName = data.name;
 	var countyData = window.JSMaps.maps.countyData[data.name];
+	var hasGetCalFreshData = countyData.hasOwnProperty("number-apps");
+	var hasQuotes = countyData['quotes'].length > 0;
 
+	// Setup the tab and content containers with the details tab that will
+	// always be present.
 	$('div.map-info').html(
 		"<h3>" + countyName + "</h3>" +
 		"<div class='county-details'>" +
@@ -17,16 +21,24 @@ window.JSMaps.maps.onStateClick = function(data) {
 		"<div class='county-details-tab' id='stats-tab'>" +
 		"County Statistics" +
 		"</div>" +
-		"<div class='county-details-tab' id='stories-tab'>" +
-		"Stories of CalFresh" +
-		"</div>" +
 		"</div>" +
 		"<div class='county-details-content'>" +
 		"</div>" +
-		"</div>");
+		"</div>"
+	);
 
-	if(window.JSMaps.maps.activeTab == 'stats') {
+	// Insert tab for quotes if there is at least one to display
+	if (hasQuotes) {
+		$('div.county-details-tabs').append(
+			"<div class='county-details-tab' id='stories-tab'>Stories of CalFresh</div>"
+		);
+	}
+
+	// Build the stats content and add it if that tab is active or the only tab
+	if(!hasQuotes || window.JSMaps.maps.activeTab == 'stats') {
 		$('#stats-tab').addClass('selected');
+
+		// Every county always has these basic stats
 		$('div.county-details-content').html(
 			"<div class='county-details-stats'>" +
 			"<div class='county-details-stat'>" +
@@ -49,7 +61,8 @@ window.JSMaps.maps.onStateClick = function(data) {
 			"</div>"
 		);
 
-		if (countyData.hasOwnProperty("number-apps")) {
+		// GetCalFresh counties also have these additional stats
+		if (hasGetCalFreshData) {
 			$('div.county-details-content').append(
 				"<div class='county-details-gcf-stats'>" +
 				"<div class='county-details-gcf-stat'>" +
@@ -80,12 +93,17 @@ window.JSMaps.maps.onStateClick = function(data) {
 			);
 		}
 	} else {
+		console.log("STORIES!!");
+		// Build the quotes content and add it if that tab is active
 		$('#stories-tab').addClass('selected');
 
+		// Append the wrapper first
 		$('div.county-details-content').html(
 			"<div class='county-details-stories'>" +
 			"</div>"
 		);
+
+		// Append each quote
 		for (i = 0; i < countyData['quotes'].length; i++) {
 			var quote = countyData['quotes'][i];
 			var outerDivHtml = "<div class='map-quote'>";
@@ -138,7 +156,7 @@ window.JSMaps.maps.california = {
 			{% assign countyName = county[0] %}
 			{% assign countyData = county[1] %}
 		{
-			"enable": {%if countyData.quotes.size > 0 %}true{% else %}false{%endif%},
+			"enable": {%if countyData['number-apps'] %}true{% else %}false{%endif%},
 			"name": "{{countyName}}",
 			"abbreviation": "",
 			"textX": 0,

@@ -643,6 +643,7 @@ div.county-details-tab {
   border-bottom: 3px solid #EFA44C;
   text-align: center;
   flex-basis: 50%;
+  flex-grow: 1;
   font-family: IBMPlexSans;
   font-size: 14px;
 }
