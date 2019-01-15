@@ -140,7 +140,7 @@ window.JSMaps.maps.california = {
 			"textX": 0,
 			"textY": 0,
 			"color": "#E1E3EA",
-			"hoverColor": "#A8ADC2",
+			"hoverColor": "#838AA9",
 			"selectedColor": "#515C88",
 			"text": "",
 			"path": "{{countyData.path}}"
