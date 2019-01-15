@@ -620,7 +620,7 @@ div.map-container h3 {
 
 div.map-info {
   float: left;
-  width: 53%;
+  width: 48%;
   height: 100%;
 }
 
@@ -731,7 +731,7 @@ div.county-details-gcf-stat-number {
 
 div.map {
   float: right;
-  width: 45%;
+  width: 50%;
   height: 100%;
 }
 
@@ -766,8 +766,8 @@ div.map-quote-image {
 }
 
 p.map-quote-text {
-  width: 460px;
-  margin: 0 20px;
+  width: 320px;
+  margin-right: 20px;
   font-family: Lora;
   font-size: 16px;
   line-height: 22px;

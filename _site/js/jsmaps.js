@@ -283,7 +283,7 @@
           'stroke-width': config.strokeWidth || 1
         };
         var textProperties = {
-          'font-family': 'Arial, sans-serif',
+          'font-family': 'SourceSansPro, sans-serif',
           'font-weight': 'bold',
           'font-size': config.abbreviationFontSize,
           'fill': config.abbreviationColor,
