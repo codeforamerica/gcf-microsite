@@ -790,6 +790,10 @@ div#footer-go a {
   font-size: 19px;
 }
 
+div#footer-go a:hover {
+  opacity: 0.6;
+}
+
 div#footer-license {
   height: 305px;
   width: 100%;
@@ -813,4 +817,8 @@ div#footer-license-body p {
   font-family: SourceSansPro;
   font-size: 14px;
   line-height: 18px;
+}
+
+div#footer-license a:hover {
+  opacity: 0.6;
 }
