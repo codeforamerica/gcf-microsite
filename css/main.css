@@ -205,11 +205,11 @@ section#explore {
 }
 
 div.section-header {
-  position: relative;
   width: 100%;
 }
 
 div.section-header-outer {
+  position: relative;
   margin: 0 auto;
   width: 1024px;
 }
@@ -233,7 +233,6 @@ div.section-header-inner h1 {
 div.intro-header {
   background: linear-gradient(to bottom, #FDF7F0 90%, white 100%);
   height: 698px;
-  position: relative;
   width: 100%;
 }
 
@@ -247,6 +246,7 @@ div.intro-header-outer {
   background-size:contain;
   height: 660px;
   margin: 0 auto;
+  position: relative;
   width: 1024px;
 }
 
@@ -299,12 +299,12 @@ div#intro-content {
 /* Hero Image Section Headers */
 div.hero-header {
   width: 100%;
-  position: relative;
 }
 
 div.hero-header-outer {
   height: 570px;
   margin: 0 auto;
+  position: relative;
   width: 1024px;
 }
 
@@ -934,10 +934,10 @@ div.share-menu {
   height: 62px;
   width: 66px;
   position: absolute;
-  right: 0;
+  right: 50px;
   bottom: 74px;
   overflow: hidden;
-  border-radius: 3px 0 0 3px;
+  border-radius: 3px;
 }
 
 div.hero-header div.share-menu {
