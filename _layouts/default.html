@@ -21,7 +21,14 @@
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
     <link rel="stylesheet" type="text/css" href="css/jsmaps.css"/>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+      integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+      crossorigin="anonymous"></script>
     <script src="js/jquery.smint.js" type="text/javascript"></script>
     <script src="js/jsmaps-libs.js" type="text/javascript"></script>
     <script src="js/jsmaps-panzoom.js"></script>
@@ -83,6 +90,22 @@
         // Map
         $('#california-map').JSMaps({
            map: 'california'
+        });
+
+        // Food assistance tooltip/callout
+        $('.callout').tooltip({
+          position: { my: "left top-20%", at: "right center", collision: "none" },
+          content: "<strong>Food Assistance in California (CalFresh/SNAP)</strong>\
+          <div style='margin-top: 10px;'>SNAP is the Supplemental Nutrition Assistance Program, which\
+          is funded by the federal government and administered by the states.\
+          In California, it’s known as CalFresh. To qualify, individuals must\
+          make less than 130% (200% in CA) of the Federal Poverty Level pre-tax\
+          AND less than 100% of the poverty level after taxes and deductions.\
+          For a household of two, that’s a monthly income of $1,784 before\
+          taxes and $1,372 after taxes. footnote The program provides a maximum\
+          of $353 per month for a household of two. Funds are distributed via\
+          Electronic Benefit Transfer (EBT) cards that look and function like a\
+          debit card.</div>",
         });
 
         // Scroll-top in top section
