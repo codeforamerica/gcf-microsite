@@ -770,6 +770,7 @@
 
         panZoom = r.panzoom({
           displayViewBox: config.displayViewBox,
+          zoomStep: 0.085,
           initialZoom: config.initialZoom,
           initialPosition: {
             x: config.initialMapX,

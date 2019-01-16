@@ -211,11 +211,11 @@ div.section-header {
 div.section-header-outer {
   position: relative;
   margin: 0 auto;
-  width: 1024px;
+  max-width: 1024px;
 }
 div.section-header-inner {
   margin: 0 auto;
-  width: 760px;
+  max-width: 760px;
 }
 
 div.section-header-inner h1 {
@@ -226,13 +226,13 @@ div.section-header-inner h1 {
   margin-top: 0;
   padding-top: 40px;
   text-transform: uppercase;
-  width: 515px;
+  max-width: 515px;
 }
 
 /* Intro Section */
 div.intro-header {
   background: linear-gradient(to bottom, #FDF7F0 90%, white 100%);
-  height: 698px;
+  min-height: 698px;
   width: 100%;
 }
 
@@ -244,22 +244,22 @@ div.intro-header-outer {
   background-position: 125px -35px;
   background-repeat: no-repeat;
   background-size:contain;
-  height: 660px;
+  min-height: 660px;
   margin: 0 auto;
   position: relative;
-  width: 1024px;
+  max-width: 1024px;
 }
 
 div.intro-header-inner {
   margin: 0 auto;
-  width:760px;
+  max-width:760px;
 }
 
 div.intro-header-inner h1 {
   margin-top: 0;
   margin-bottom: 0;
   padding-top:65px;
-  width: 515px;
+  max-width: 515px;
 }
 
 div.intro-header-inner h2 {
@@ -269,7 +269,7 @@ div.intro-header-inner h2 {
   line-height: 32px;
   margin-top: 44px;
   margin-bottom: 0;
-  width: 515px;
+  max-width: 515px;
 }
 
 div.intro-header-inner p {
@@ -278,7 +278,7 @@ div.intro-header-inner p {
   line-height: 23px;
   margin-top: 50px;
   margin-bottom: 0;
-  width: 622px;
+  max-width: 622px;
 }
 
 div.scroll-tip {
@@ -302,15 +302,15 @@ div.hero-header {
 }
 
 div.hero-header-outer {
-  height: 570px;
+  min-height: 570px;
   margin: 0 auto;
   position: relative;
-  width: 1024px;
+  max-width: 1024px;
 }
 
 div.hero-header-inner {
   margin: 0 auto;
-  width: 760px;
+  max-width: 760px;
 }
 
 div.hero-header-inner h1 {
@@ -323,7 +323,7 @@ div.hero-header-inner h1 {
   font-weight: bold;
   line-height: 28px;
   color: #EFA44C;
-  width: 515px;
+  max-width: 515px;
 }
 
 div.hero-header-inner h2 {
@@ -360,12 +360,12 @@ div.hero-header-outer.calfresh {
 
 /* Content Divs */
 div.content-outer {
-  width: 1024px;
+  max-width: 1024px;
   margin: 0 auto;
 }
 
 div.content-inner {
-  width: 760px;
+  max-width: 760px;
   margin: 0 auto;
 }
 
@@ -393,11 +393,11 @@ div.stats {
 
 div.stats-outer {
   margin: 0 auto;
-  width: 1024px;
+  max-width: 1024px;
 }
 
 div.stats-inner {
-  width: 720px;
+  max-width: 720px;
   margin: 40px auto;
 }
 
@@ -536,7 +536,7 @@ div.quote-image.calfresh {
 }
 
 div.quotes-outer {
-    width: 1024px;
+    max-width: 1024px;
     margin: 0 auto;
 }
 
@@ -546,12 +546,12 @@ div.quotes-inner {
   line-height: 28px;
   margin:40px auto;
   min-height: 200px;
-  width:730px;
+  max-width:730px;
 }
 
 div.quote-selector-line-container {
   margin: 0 auto;
-  width: 892px;
+  max-width: 892px;
   height: 24px;
   display: flex;
   justify-content: space-between;
@@ -585,7 +585,7 @@ div.quote-selector-arrow.right {
 
 div.quote-selector {
   height: 60px;
-  width: 710px;
+  max-width: 710px;
   margin: -22px auto 25px auto;
   display: flex;
   justify-content: space-between;
@@ -636,7 +636,7 @@ a.quote-selector-tab.selected:hover {
 /* Map */
 div.map-container {
   margin: 60px auto 0;
-  width: 1024px;
+  max-width: 1024px;
 }
 
 div.map-inner {
@@ -645,7 +645,7 @@ div.map-inner {
 
 div.map-container h3 {
   margin-top: 0;
-  margin-bottom: 45px;
+  margin-bottom: 0;
 }
 
 div.map-info {
@@ -654,9 +654,16 @@ div.map-info {
   height: 100%;
 }
 
+div.county-details-note {
+  font-family: SourceSansPro;
+  font-size: 13px;
+  margin-top: 20px;
+}
+
 div.county-details {
   background-color: #FDF4E9;
   box-shadow: 0 0 4px 0 #DEDEDE;
+  margin-top: 15px;
 }
 
 div.county-details-tabs {
@@ -675,7 +682,8 @@ div.county-details-tab {
   flex-basis: 50%;
   flex-grow: 1;
   font-family: IBMPlexSans;
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 div.county-details-tab:hover {
@@ -684,6 +692,8 @@ div.county-details-tab:hover {
 
 div.county-details-tab.selected {
   background-color: #EFA44C;
+  color: white;
+  font-weight: bold;
 }
 
 div.county-details-tab.selected:hover {
@@ -698,20 +708,22 @@ div.county-details-stats {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 20px;
+  align-content: stretch;
+  padding: 20px 10px;
 }
 
 div.county-details-stat {
+  display: flex;
+  justify-content: space-between;
+  align-items:stretch;
   flex-basis: 50%;
-  align-self: center;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 15px;
+  line-height: 19px;
 }
 
 div.county-details-stat-name {
-  height: 60px;
-  width: 50%;
-  float: left;
+  min-height: 70px;
+  flex-basis: 50%;
 }
 
 div.county-details-stat-desc {
@@ -720,10 +732,18 @@ div.county-details-stat-desc {
 }
 
 div.county-details-stat-number {
-  height: 60px;
-  width: 40%;
-  float: right;
+  min-height: 70px;
+  flex-basis: 40%;
   font-weight: bold;
+}
+
+div.county-details-gcf-stats-heading {
+  border-top: 1px solid #EFA44C;
+  font-family: IBMPlexSans;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 19px;
+  padding: 15px 10px;
 }
 
 div.county-details-gcf-stats {
@@ -731,14 +751,12 @@ div.county-details-gcf-stats {
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: stretch;
-  height: 300px;
-  border-top: 3px solid #EFA44C;
-  padding-top: 20px;
+  min-height: 280px;
+  margin-top: 20px;
 }
 
 div.county-details-gcf-stat {
   flex-basis: 33%;
-  align-self: center;
 }
 
 div.county-details-gcf-stat-name {
@@ -797,7 +815,7 @@ div.map-quote-image {
 }
 
 p.map-quote-text {
-  width: 320px;
+  max-width: 320px;
   margin-right: 20px;
   font-family: Lora;
   font-size: 16px;
@@ -817,14 +835,14 @@ div#footer-share {
 div#footer-share-content {
   margin: 0 auto;
   padding: 72px 0 72px 0;
-  width: 680px;
+  max-width: 680px;
 }
 
 div#footer-share-heading {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 450px;
+  max-width: 450px;
   margin: 0 auto;
 }
 
@@ -862,7 +880,7 @@ div#footer-share-icons img:hover {
 }
 
 div#footer-go {
-  height: 335px;
+  min-height: 335px;
   width: 100%;
   background-color: #019C86;
 }
@@ -872,7 +890,7 @@ div#footer-go-content {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 243px;
+  min-height: 243px;
   width: 270px;
   margin: 0 auto;
   padding-top: 40px;
@@ -900,13 +918,13 @@ div#footer-go a:hover {
 }
 
 div#footer-license {
-  height: 305px;
+  min-height: 305px;
   width: 100%;
   background-color: #30302F;
 }
 
 div#footer-license-content {
-  width: 760px;
+  max-width: 760px;
   padding-top: 60px;
   margin: 0 auto;
   display: flex;
@@ -915,7 +933,7 @@ div#footer-license-content {
 }
 
 div#footer-license-body {
-  width: 594px;
+  max-width: 594px;
 }
 
 div#footer-license-body p {

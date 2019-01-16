@@ -13,6 +13,7 @@ window.JSMaps.maps.onStateClick = function(data) {
 	// always be present.
 	$('div.map-info').html(
 		"<h3>" + countyName + "</h3>" +
+		"<div class='county-details-note'>Data from 2017</div>" +
 		"<div class='county-details'>" +
 		"<div class='county-details-tabs'>" +
 		"<div class='county-details-tab' id='stats-tab'>" +
@@ -61,6 +62,7 @@ window.JSMaps.maps.onStateClick = function(data) {
 		// GetCalFresh counties also have these additional stats
 		if (hasGetCalFreshData) {
 			$('div.county-details-content').append(
+				"<div class='county-details-gcf-stats-heading'>GetCalFresh Data</div>" +
 				"<div class='county-details-gcf-stats'>" +
 				"<div class='county-details-gcf-stat'>" +
 				"<div class='county-details-gcf-stat-number'>"+ countyData["number-apps"].toLocaleString("en", {style: "decimal"}) + "</div>" +
@@ -132,7 +134,7 @@ window.JSMaps.maps.california = {
 		"mapWidth": 612,
 		"mapHeight": 1300,
 		"enablePanZoom": true,
-		"initialZoom": 6,
+		"initialZoom": 7,
 		"initialMapX": 25,
 		"initialMapY": 125,
 		"displayAbbreviations": false,
