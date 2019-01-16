@@ -1,9 +1,9 @@
 {% assign quoteData = site.data.quotes[include.contentId] %}
 
 <div class="quotes {{include.sectionId}}">
-  <div class="quotes-inner">
+  <div class="quotes-outer">
     <div class="quote-image {{include.sectionId}}"></div>
-    <div id="quote-content-{{include.contentId}}" class="quote-content">
+    <div id="quote-content-{{include.contentId}}" class="quotes-inner">
       {{ quoteData[0].quote }}
     </div>
     <div class="quote-selector-line-container">

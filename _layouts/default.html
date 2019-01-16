@@ -67,6 +67,18 @@
         }
       };
 
+      var shareEmail = function() {
+        window.open("mailto:?subject={{page.title}}&body=A fresh look at the facts from Code for America: https://gcf-microsite.herokuapp.com/");
+      };
+
+      var shareFacebook = function() {
+        window.open("https://www.facebook.com/sharer/sharer.php?u=https://gcf-microsite.herokuapp.com/");
+      }
+
+      var shareTwitter = function() {
+        window.open("https://twitter.com/intent/tweet?text={{page.title}} A fresh look at the facts from @codeforamerica&url=https://gcf-microsite.herokuapp.com/&hashtags=feedthepeople,civictech");
+      }
+
       $(document).ready( function() {
         // Map
         $('#california-map').JSMaps({
@@ -101,6 +113,38 @@
           }
           selectQuote(contentId, newTabId);
         });
+
+        // Sharing Widget
+        $('div.share-menu').click(function() {
+          if ($('div.share-menu').hasClass('open')) {
+            $('div.share-menu').removeClass('open');
+            $('div.share-menu').addClass('closed');
+          } else {
+            $('div.share-menu').removeClass('closed');
+            $('div.share-menu').addClass('open');
+          }
+        })
+
+        $('div.share-menu-icon.facebook').click(function() {
+          shareFacebook();
+        })
+        $('div.share-menu-icon.twitter').click(function() {
+          shareTwitter();
+        })
+        $('div.share-menu-icon.email').click(function() {
+          shareEmail();
+        })
+
+        // Sharing in Footer
+        $('img#footer-share-facebook').click(function() {
+          shareFacebook();
+        })
+        $('div.footer-share-twitter').click(function() {
+          shareTwitter();
+        })
+        $('div.footer-share-email').click(function() {
+          shareEmail();
+        })
 
         // Change nav bar color on scroll
         $(window).on("scroll", function() {
