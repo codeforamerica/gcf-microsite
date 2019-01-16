@@ -379,52 +379,6 @@ p {
   line-height: 26px;
 }
 
-span.callout {
-  color: #EFA44C;
-  border-bottom: 2px dashed #EFA44C;
-  padding: 0px 4px;
-  cursor:help;
-}
-
-.ui-tooltip {
-  background-color: white;
-  border: 2px solid #EFA44C;
-  max-width:560px;
-  box-shadow: 10px 10px 0 0 #EFA44C;
-  position: absolute;
-}
-
-.ui-tooltip:after, .ui-tooltip:before {
-	right: 100%;
-	top: 20%;
-	border: solid transparent;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-}
-
-.ui-tooltip:after {
-	border-color: rgba(255, 255, 255, 0);
-	border-right-color: #ffffff;
-	border-width: 30px;
-	margin-top: -30px;
-}
-.ui-tooltip:before {
-	border-color: rgba(239, 164, 76, 0);
-	border-right-color: #EFA44C;
-	border-width: 33px;
-	margin-top: -33px;
-}
-
-.ui-tooltip-content {
-  padding: 20px;
-  font-family: SourceSansPro;
-  font-size: 19px;
-  line-height: 24px;
-}
-
 /* Stats Box divs */
 div.stats {
   position: relative;
@@ -1056,4 +1010,62 @@ div.share-menu-icon.twitter {
 div.share-menu-icon.email {
   background: #EFA44C url(../images/share-email.png) center no-repeat;
   background-size: 38px 38px;
+}
+
+/* Callout/Tooltip */
+span.callout {
+  color: #EFA44C;
+  border-bottom: 2px dashed #EFA44C;
+  padding: 0px 4px;
+  cursor:help;
+}
+
+.ui-tooltip {
+  background-color: white;
+  border: 2px solid #EFA44C;
+  max-width:560px;
+  box-shadow: 10px 10px 0 0 #EFA44C;
+  position: absolute;
+}
+
+.ui-tooltip:after, .ui-tooltip:before {
+	right: 100%;
+	top: 20%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.ui-tooltip:after {
+	border-color: rgba(255, 255, 255, 0);
+	border-right-color: #ffffff;
+	border-width: 30px;
+	margin-top: -30px;
+}
+.ui-tooltip:before {
+	border-color: rgba(239, 164, 76, 0);
+	border-right-color: #EFA44C;
+	border-width: 33px;
+	margin-top: -33px;
+}
+
+.ui-tooltip-content {
+  padding: 20px;
+  font-family: SourceSansPro;
+  font-size: 19px;
+  line-height: 24px;
+}
+
+.ui-helper-hidden-accessible {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
