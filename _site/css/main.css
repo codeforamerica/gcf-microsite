@@ -670,14 +670,14 @@ div.county-details-tab {
   cursor: pointer;
   padding: 10px;
   height: 100%;
-  background-color: #FDF4E9;
-  border-bottom: 3px solid #EFA44C;
+  background-color: #F5D0A5;
   text-align: center;
   flex-basis: 50%;
   flex-grow: 1;
   font-family: IBMPlexSans;
   font-size: 16px;
   line-height: 20px;
+  box-shadow: inset 0 0 2px 0 rgba(0, 0, 0, 0.12);
 }
 
 div.county-details-tab:hover {
@@ -685,9 +685,10 @@ div.county-details-tab:hover {
 }
 
 div.county-details-tab.selected {
-  background-color: #EFA44C;
-  color: white;
+  background-color: #FDF4E9;
+  color: black;
   font-weight: bold;
+  box-shadow: none;
 }
 
 div.county-details-tab.selected:hover {
