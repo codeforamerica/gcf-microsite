@@ -55,34 +55,39 @@
     clear: both;
     display: none;
     position: absolute;
-    top: 5px;
-    left: 5px;
+    bottom: 90px;
+    right: 60px;
     z-index: 2; }
     .jsmaps-wrapper .jsmaps-console ul {
       padding: 0;
       margin: 0; }
       .jsmaps-wrapper .jsmaps-console ul li {
         list-style-type: none;
-        float: left;
+        /* float: left; */
         cursor: pointer; }
         .jsmaps-wrapper .jsmaps-console ul li button {
           background: none;
           border: 0;
           position: relative;
-          width: 30px;
-          height: 30px;
-          background: rgba(0, 0, 0, 0.5);
-          border-radius: 4px;
-          margin-right: 1px;
+          width: 50px;
+          height: 50px;
+          background: #EFA44C;
+          border-radius: 3px;
+          margin-bottom: 3px;
           cursor: pointer;
-          opacity: 0.9;
+          opacity: 1;
           -webkit-transition: opacity 0.3s ease-in-out;
           -moz-transition: opacity 0.3s ease-in-out;
           -ms-transition: opacity 0.3s ease-in-out;
           -o-transition: opacity 0.3s ease-in-out;
           transition: opacity 0.3s ease-in-out; }
+          .jsmaps-wrapper .jsmaps-console ul li button:focus {
+            outline: none;
+            box-shadow: none;
+          }
           .jsmaps-wrapper .jsmaps-console ul li button:hover {
-            opacity: 1; }
+            opacity: 0.8; }
+
 
 .jsmaps-select {
   position: relative;
@@ -130,12 +135,12 @@
 
 [class*="jsmaps-icon"] {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); }
+  -webkit-transform: translate(-50%, -60%);
+  -moz-transform: translate(-50%, -60%);
+  -ms-transform: translate(-50%, -60%);
+  transform: translate(-50%, -60%); }
   [class*="jsmaps-icon"]:before, [class*="jsmaps-icon"]:after {
     content: '';
     display: inline-block; }
@@ -166,47 +171,43 @@
   [class*="jsmaps-icon"].jsmaps-icon-chevron.jsmaps-theme-light:before {
     border-color: #999999; }
   [class*="jsmaps-icon"].jsmaps-icon-plus {
-    height: 12px;
+    height: 24px;
     @-moz-document url-prefix() {
       margin-top: -1px; }
  }
     [class*="jsmaps-icon"].jsmaps-icon-plus:before, [class*="jsmaps-icon"].jsmaps-icon-plus:after {
       background: white; }
     [class*="jsmaps-icon"].jsmaps-icon-plus:before {
-      width: 12px;
-      height: 2px;
-      -webkit-transform: translate(0, -5px);
-      -moz-transform: translate(0, -5px);
-      -ms-transform: translate(0, -5px);
-      transform: translate(0, -5px); }
+      width: 24px;
+      height: 4px;
+      -webkit-transform: translate(0, 4px);
+      -moz-transform: translate(0, 4px);
+      -ms-transform: translate(0, 4px);
+      transform: translate(0, 4px); }
     [class*="jsmaps-icon"].jsmaps-icon-plus:after {
-      width: 2px;
-      height: 12px;
-      -webkit-transform: translate(-7px, 0);
-      -moz-transform: translate(-7px, 0);
-      -ms-transform: translate(-7px, 0);
-      transform: translate(-7px, 0); }
+      width: 4px;
+      height: 24px;
+      -webkit-transform: translate(0, -13px);
+      -moz-transform: translate(0, -13px);
+      -ms-transform: translate(0, -13px);
+      transform: translate(0, -13px); }
   [class*="jsmaps-icon"].jsmaps-icon-minus {
-    height: 12px;
+    height: 24px;
     @-moz-document url-prefix() {
       margin-top: -1px; }
  }
     [class*="jsmaps-icon"].jsmaps-icon-minus:before, [class*="jsmaps-icon"].jsmaps-icon-minus:after {
       background: white; }
     [class*="jsmaps-icon"].jsmaps-icon-minus:before {
-      width: 12px;
-      height: 2px;
-      -webkit-transform: translate(0, -5px);
-      -moz-transform: translate(0, -5px);
-      -ms-transform: translate(0, -5px);
-      transform: translate(0, -5px); }
+      width: 24px;
+      height: 4px;
+      -webkit-transform: translate(0, 4px);
+      -moz-transform: translate(0, 4px);
+      -ms-transform: translate(0, 4px);
+      transform: translate(0, 4px); }
     [class*="jsmaps-icon"].jsmaps-icon-minus:after {
-      width: 2px;
-      height: 12px;
-      -webkit-transform: translate(-7px, 0);
-      -moz-transform: translate(-7px, 0);
-      -ms-transform: translate(-7px, 0);
-      transform: translate(-7px, 0); }
+      width: 4px;
+      height: 24px; }
     [class*="jsmaps-icon"].jsmaps-icon-minus:after {
       background: transparent; }
   [class*="jsmaps-icon"].jsmaps-icon-reset {

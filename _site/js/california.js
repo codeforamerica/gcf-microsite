@@ -132,11 +132,11 @@ window.JSMaps.maps.countyData = {"Riverside":{"population":"2,189,641","path":"M
 window.JSMaps.maps.california = {
 	"config": {
 		"mapWidth": 612,
-		"mapHeight": 1300,
+		"mapHeight": 1024,
 		"enablePanZoom": true,
-		"initialZoom": 7,
-		"initialMapX": 25,
-		"initialMapY": 125,
+		"initialZoom": 4,
+		"initialMapX": 0,
+		"initialMapY": 0,
 		"displayAbbreviations": false,
 		"offColor": "#EBEBEB",
 		"offStrokeColor": "#ABABAB",
