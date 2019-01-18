@@ -806,7 +806,8 @@ Marin:
   center:
   - -122.745974
   - 38.05181
-  quotes: My husband walked out on me and my two kids a couple months ago and filed
+  quotes: 
+    - My husband walked out on me and my two kids a couple months ago and filed
     for divorce a month ago. He is still paying the mortgage and utilities but barely
     any for food and has otherwise cut me off financially. I started college two years
     ago to become a nurse and am still in school. I have used up what little money
@@ -963,7 +964,8 @@ Santa Barbara:
   center:
   - -120.038485
   - 34.53737
-  quotes: 'I am an incoming sophomore student going into UCSB from Florida. My family''s
+  quotes: 
+    - 'I am an incoming sophomore student going into UCSB from Florida. My family''s
     household earnings are dominated by my mother, who lives barely above the poverty
     line. We live in this house which is owned (mortgaged from bank) by my brother,
     who is in the military and has helped my mom pay for the expenses of me, herself,
