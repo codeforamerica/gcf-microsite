@@ -22,9 +22,9 @@ bundle install
 
 The only other step is to run Jekyll, which is a simple static site generator.
 Doing this will both start a local server on port 4000 and start watching for
-changes so any changes you make to source files will be automatically processed
-by Jekyll into the final static files found in the _site directory, and picked
-up by your local server. For more on Jekyll see [here](https://jekyllrb.com/docs/)
+changes to source files. Any changes will result in updates to the generated
+static files found in the _site directory, and picked up by your local server.
+For more on Jekyll see [here](https://jekyllrb.com/docs/)
 
 ```console
 bundle exec jekyll serve
