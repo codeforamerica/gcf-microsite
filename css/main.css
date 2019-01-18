@@ -238,8 +238,8 @@ div.intro-header {
 
 div.intro-header-outer {
   background:
-    linear-gradient(to bottom, transparent 36%, #FDF7F0 95%),
-    linear-gradient(to left, transparent 48%, #FDF7F0 92%),
+    linear-gradient(to bottom, rgba(253, 247, 240, 0) 36%, #FDF7F0 95%),
+    linear-gradient(to left, rgba(253, 247, 240, 0) 48%, #FDF7F0 92%),
     url(../images/farmers-market-color.png);
   background-position: 125px -35px;
   background-repeat: no-repeat;
@@ -332,7 +332,7 @@ div.hero-header-inner h2 {
 
 div.hero-header-outer.instability {
   background:
-    linear-gradient(to bottom, transparent 40%, white 92%),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0) 40%, white 92%),
     url(../images/student-color.png);
   background-size: contain;
   background-position: 112px 0;
@@ -342,7 +342,7 @@ div.hero-header-outer.instability {
 div.hero-header-outer.shocks {
   margin-top: 60px;
   background:
-    linear-gradient(to bottom, transparent 40%, white 92%),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0) 40%, white 92%),
     url(../images/seniors-color.png);
   background-size: cover;
   background-position: 0 -30px;
@@ -351,7 +351,7 @@ div.hero-header-outer.shocks {
 
 div.hero-header-outer.calfresh {
   background:
-    linear-gradient(to bottom, transparent 40%, white 92%),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0) 40%, white 92%),
     url(../images/potrero-color.png);
   background-size: cover;
   background-position: 100px 0;
