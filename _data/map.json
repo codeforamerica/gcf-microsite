@@ -700,7 +700,8 @@ Placer:
   center:
   - -120.722718
   - 39.06203
-  quotes: I just finished a masters degree program for counseling and I am in-between
+  quotes:
+  - I just finished a masters degree program for counseling and I am in-between
     jobs. I took a position with a counseling agency (non-profit), but I do not have
     an income yet. I am working on scheduling clients and will be paid based on a
     sliding scale. I am going on two weeks of no income and I am really worried. I
@@ -732,15 +733,16 @@ San Luis Obispo:
   center:
   - -120.44754
   - 35.38522
-  quotes: 'I suffer from a movement disorder akin to Parkinson''s, and it''s thought
-    to be myoclonus, or myoclonus dystonia. I can''t work as of now, and I am going
-    through further tests to get a precise diagnosis, but it''s a lengthy process
+  quotes:
+  - I suffer from a movement disorder akin to Parkinson's, and it's thought
+    to be myoclonus, or myoclonus dystonia. I can't work as of now, and I am going
+    through further tests to get a precise diagnosis, but it's a lengthy process
     thus far. I am paying rent with my state disability, as social security has rejected
     my application for disability. This leaves me with about $20 for the month. This
     means gas for school and food for myself. I cannot make $20 stretch that far,
-    as much as I would like to. I''m currently appealing the denial, but this process
-    takes time, and I don''t have resources to survive, much less the physical capability
-    a lot of the time. '
+    as much as I would like to. I'm currently appealing the denial, but this process
+    takes time, and I don't have resources to survive, much less the physical capability
+    a lot of the time.
   population: '269,637'
   median-income: 59454
   poverty-rate-increase: '0.7'
@@ -806,7 +808,8 @@ Marin:
   center:
   - -122.745974
   - 38.05181
-  quotes: My husband walked out on me and my two kids a couple months ago and filed
+  quotes:
+  - My husband walked out on me and my two kids a couple months ago and filed
     for divorce a month ago. He is still paying the mortgage and utilities but barely
     any for food and has otherwise cut me off financially. I started college two years
     ago to become a nurse and am still in school. I have used up what little money
@@ -837,7 +840,8 @@ San Mateo:
   center:
   - -122.371542
   - 37.41466
-  quotes: 'My husband, baby, and I live with his parents. We do not recieve help such
+  quotes:
+  - 'My husband, baby, and I live with his parents. We do not recieve help such
     as extra money or taken to get groceries and we do pay his parents for rent and
     utilities. My husband pays for his own car, insurance, and our phone bills, so
     it doesn''t leave us with very much extra money for groceries when only one person
@@ -963,7 +967,8 @@ Santa Barbara:
   center:
   - -120.038485
   - 34.53737
-  quotes: 'I am an incoming sophomore student going into UCSB from Florida. My family''s
+  quotes:
+  - 'I am an incoming sophomore student going into UCSB from Florida. My family''s
     household earnings are dominated by my mother, who lives barely above the poverty
     line. We live in this house which is owned (mortgaged from bank) by my brother,
     who is in the military and has helped my mom pay for the expenses of me, herself,
@@ -1086,7 +1091,8 @@ Ventura:
   center:
   - -119.133143
   - 34.35874
-  quotes: 'I will be 65 next year. I am unemployed, just filed for unemployment which
+  quotes:
+  - 'I will be 65 next year. I am unemployed, just filed for unemployment which
     EDD approved and am currently searching for work as I have a mortgage and bills
     to pay. I am drawing on my retirement savings to pay for my mortgage, health insurance,
     car insurance and living expenses while I am out of work. The EDD monthly payment
@@ -1688,7 +1694,8 @@ Tulare:
   center:
   - -118.780542
   - 36.23045
-  quotes: My mother has been diagnosed with Transverse Myelitis which has left her
+  quotes:
+  - My mother has been diagnosed with Transverse Myelitis which has left her
     paralyzed from 80% of her body, leaving her unable to work. My father is 69 years
     old and permanently disabled due to osteoporosis. I am currently a full-time student
     at the Cal State here and also work a part-time job. There is not enough income

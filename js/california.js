@@ -95,7 +95,6 @@ window.JSMaps.maps.onStateClick = function(data) {
 			);
 		}
 	} else {
-		console.log("STORIES!!");
 		// Build the quotes content and add it if that tab is active
 		$('#stories-tab').addClass('selected');
 
