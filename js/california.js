@@ -2,6 +2,7 @@
 ---
 
 window.JSMaps.maps.activeTab = "stats";
+window.JSMaps.maps.activeQuoteIndex = 0;
 
 window.JSMaps.maps.onStateClick = function(data) {
 	if (!data.enable) {
@@ -97,27 +98,68 @@ window.JSMaps.maps.onStateClick = function(data) {
 	} else {
 		// Build the quotes content and add it if that tab is active
 		$('#stories-tab').addClass('selected');
+		window.JSMaps.maps.activeQuoteIndex = 0;
 
-		// Append the wrapper first
+		// Append the wrapper and first quote
+		var quote = countyData['quotes'][0];
 		$('div.county-details-content').html(
 			"<div class='county-details-stories'>" +
+			"<div class='map-quote'>" +
+			"<div class='map-quote-image'></div>" +
+			"<p class='map-quote-text'>" + quote + "</p>" +
+			"</div>" +
+			"<div class='map-quote-selector'>" +
+			"<div class='map-quote-selector-arrow left'></div>" +
+			"<div class='map-quote-selector-dots'></div>" +
+			"<div class='map-quote-selector-arrow right'></div>" +
+			"</div>" +
 			"</div>"
 		);
 
-		// Append each quote
+		// Append quote selector
 		for (i = 0; i < countyData['quotes'].length; i++) {
 			var quote = countyData['quotes'][i];
-			var outerDivHtml = "<div class='map-quote'>";
+			var quoteDotHtml = "<div id='map-dot-" + i + "' class='map-quote-selector-dot'></div>";
 			if (i == 0) {
-				outerDivHtml = "<div class='map-quote first'>"
+				quoteDotHtml = "<div id='map-dot-" + i + "' class='map-quote-selector-dot selected'></div>"
 			}
-			$('div.county-details-stories').append(
-				outerDivHtml +
-				"<div class='map-quote-image'></div>" +
-				"<p class='map-quote-text'>" + quote + "</p></div>"
-			);
+			$('div.map-quote-selector-dots').append(quoteDotHtml);
 		}
 	}
+
+		$('div.map-quote-selector-dot').click(function() {
+			var dotIndex = this.id.split('-')[2];
+			window.JSMaps.maps.activeQuoteIndex = dotIndex;
+
+			$('p.map-quote-text').html(countyData['quotes'][dotIndex]);
+
+			$('div.map-quote-selector-dot').removeClass('selected');
+			$('#'+this.id).addClass('selected');
+		});
+
+	$('div.map-quote-selector-arrow.left').click(function() {
+		if(window.JSMaps.maps.activeQuoteIndex == 0) {
+			window.JSMaps.maps.activeQuoteIndex = countyData['quotes'].length - 1;
+		} else {
+			window.JSMaps.maps.activeQuoteIndex -= 1;
+		}
+		$('p.map-quote-text').html(countyData['quotes'][window.JSMaps.maps.activeQuoteIndex]);
+
+		$('div.map-quote-selector-dot').removeClass('selected');
+		$('div#map-dot-' + window.JSMaps.maps.activeQuoteIndex).addClass('selected');
+	});
+
+	$('div.map-quote-selector-arrow.right').click(function() {
+		if(window.JSMaps.maps.activeQuoteIndex == countyData['quotes'].length - 1) {
+			window.JSMaps.maps.activeQuoteIndex = 0;
+		} else {
+			window.JSMaps.maps.activeQuoteIndex += 1;
+		}
+		$('p.map-quote-text').html(countyData['quotes'][window.JSMaps.maps.activeQuoteIndex]);
+
+		$('div.map-quote-selector-dot').removeClass('selected');
+		$('div#map-dot-' + window.JSMaps.maps.activeQuoteIndex).addClass('selected');
+	});
 
 	$('#stats-tab').click(function() {
 		window.JSMaps.maps.activeTab = "stats";

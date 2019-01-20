@@ -784,22 +784,17 @@ div#california-map {
 }
 
 div.county-details-stories {
-  max-height: 700px;
-  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin: 20px 0;
+  min-height: 536px;
 }
 
 div.map-quote {
   display: flex;
   justify-content:space-evenly;
   align-items:baseline;
-  border-top: 3px solid #EFA44C;
-  padding: 40px 0;
-}
-
-div.map-quote.first {
-  border: none;
-  padding-top: 0;
 }
 
 div.map-quote-image {
@@ -815,6 +810,53 @@ p.map-quote-text {
   font-family: Lora;
   font-size: 16px;
   line-height: 22px;
+}
+
+div.map-quote-selector {
+    height: 60px;
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.map-quote-selector-arrow {
+  height: 100%;
+  width: 68px;
+  cursor: pointer;
+}
+
+div.map-quote-selector-arrow:hover {
+  opacity: 0.6;
+}
+
+div.map-quote-selector-arrow.left {
+  background: url(../images/quote-arrow-left.png) center center no-repeat;
+}
+
+div.map-quote-selector-arrow.right {
+  background: url(../images/quote-arrow-right.png) center center no-repeat;
+}
+
+div.map-quote-selector-dots {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+}
+
+div.map-quote-selector-dot {
+  width: 15px;
+  height: 15px;
+  margin: 0 5px;
+  border-radius: 15px;
+  border: 3px solid black;
+  cursor: pointer;
+}
+
+div.map-quote-selector-dot.selected {
+  background-color: #EFA44C;
 }
 
 /* Footer */
