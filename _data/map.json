@@ -19,13 +19,7 @@ Riverside:
   center:
   - -116.002239
   - 33.72982
-  quotes:
-  - |2-
-
-     -'NA'
-  - |2-
-
-     -''
+  quotes:[]
   median-income: 56592
   minimum-cost-living-family: 61812
   poverty-rate: 18.30%
@@ -85,13 +79,7 @@ San Bernardino:
   center:
   - -116.181197
   - 34.85722
-  quotes:
-  - |2-
-
-     -'NA'
-  - |2-
-
-     -''
+  quotes:[]
   median-income: 54100
   minimum-cost-living-family: 61812
   poverty-rate: 18.20%
@@ -132,33 +120,6 @@ Calaveras:
   minimum-cost-living-family: 57852
   poverty-rate: 13.40%
   poverty-rate-increase: '2.4'
-Los Angeles:
-  population: '9,818,605'
-  path: M345.9,679.0 L341.0,670.4 L339.6,665.5 L346.8,673.8 L355.2,681.2 L350.4,682.5
-    Z M345.8,637.2 L340.4,635.7 L338.4,632.8 L342.7,632.7 L353.1,637.6 L357.0,642.8
-    L356.0,645.6 L352.9,644.2 L347.4,644.0 L346.1,642.3 Z M368.1,612.4 L364.6,611.0
-    L360.8,613.7 L358.9,612.5 L357.4,615.7 L349.9,613.0 L348.9,610.6 L351.0,606.0
-    L347.6,597.7 L345.1,594.0 L341.3,591.2 L328.7,591.9 L325.2,594.4 L322.3,591.9
-    L316.6,591.2 L316.8,589.0 L326.0,581.9 L333.5,581.8 L333.4,576.4 L335.5,576.4
-    L335.2,572.5 L319.6,536.0 L321.2,534.0 L343.4,533.5 L374.0,532.4 L393.5,531.9
-    L394.1,551.4 L396.0,571.3 L394.3,580.7 L391.1,591.4 L389.1,591.1 L387.1,594.7
-    L388.3,596.8 L376.4,597.2 L376.5,600.4 L371.5,604.7 Z
-  center:
-  - -118.261862
-  - 34.19639
-  quotes: |2-
-
-     -'I’m separated, going through divorce, not yet finalized. The ex-husband lost his job and I am looking for part-time work. I have two sons, both with ADHD, one with autism, and I spend a good amount of time parenting. Currently I just want to be able to feed them without building up debt on a credit card or depleting my savings account. My situation is embarrassing and humbling, but serious. If approved, I hope this will only be a temporary solution until I get on my feet, start a business, and rebuild my life.'
-  median-income: 55870
-  minimum-cost-living-family: 65988
-  poverty-rate: 24.30%
-  poverty-rate-increase: '2.3'
-  percent-student: 0.1961802
-  percent-unstable-housing: 0.3494921
-  number-apps: 20420
-  percent-with-children: 0.3078355
-  percent-earned-income: 0.6318557
-  percent-with-seniors: 0.0976127
 Mariposa:
   population: '18,251'
   path: M227.5,326.9 L227.5,326.8 L227.5,326.8 L227.2,323.2 L231.1,325.7 L232.2,324.5
@@ -238,13 +199,7 @@ Plumas:
   center:
   - -120.829516
   - 39.99517
-  quotes:
-  - |2-
-
-     -'NA'
-  - |2-
-
-     -''
+  quotes:[]
   median-income: 48032
   minimum-cost-living-family: 57420
   poverty-rate: 15.50%
@@ -265,13 +220,7 @@ Colusa:
   center:
   - -122.237563
   - 39.17773
-  quotes:
-  - |2-
-
-     -'NA'
-  - |2-
-
-     -''
+  quotes:[]
   median-income: 50503
   minimum-cost-living-family: 57312
   poverty-rate: 17.20%
@@ -303,13 +252,7 @@ Modoc:
   center:
   - -120.71837
   - 41.59291
-  quotes:
-  - |2-
-
-     -'NA'
-  - |2-
-
-     -''
+  quotes:[]
   median-income: 38560
   minimum-cost-living-family: 55620
   poverty-rate: 15.50%
@@ -334,13 +277,7 @@ Trinity:
   center:
   - -123.114404
   - 40.64772
-  quotes:
-  - |2-
-
-     -'NA'
-  - |2-
-
-     -''
+  quotes:[]
   median-income: 36862
   minimum-cost-living-family: 57204
   poverty-rate: 17.20%
@@ -377,13 +314,7 @@ San Benito:
   center:
   - -121.085296
   - 36.6107
-  quotes:
-  - |2-
-
-     -'NA'
-  - |2-
-
-     -''
+  quotes:[]
   median-income: 67874
   minimum-cost-living-family: 65328
   poverty-rate: 19.30%
@@ -490,13 +421,7 @@ Yuba:
   center:
   - -121.34428
   - 39.27002
-  quotes:
-  - |2-
-
-     -'NA'
-  - |2-
-
-     -''
+  quotes:[]
   median-income: 45470
   minimum-cost-living-family: 58080
   poverty-rate: 16.40%
@@ -586,13 +511,7 @@ Lassen:
   center:
   - -120.629931
   - 40.72108
-  quotes:
-  - |2-
-
-     -'NA'
-  - |2-
-
-     -''
+  quotes:[]
   median-income: 53351
   minimum-cost-living-family: 58452
   poverty-rate: 15.50%
@@ -691,31 +610,6 @@ San Bernardino:
 # user demographics
 ############
 
-Los Angeles:
-  population: '9,818,605'
-  path: M345.9,679.0 L341.0,670.4 L339.6,665.5 L346.8,673.8 L355.2,681.2 L350.4,682.5
-    Z M345.8,637.2 L340.4,635.7 L338.4,632.8 L342.7,632.7 L353.1,637.6 L357.0,642.8
-    L356.0,645.6 L352.9,644.2 L347.4,644.0 L346.1,642.3 Z M368.1,612.4 L364.6,611.0
-    L360.8,613.7 L358.9,612.5 L357.4,615.7 L349.9,613.0 L348.9,610.6 L351.0,606.0
-    L347.6,597.7 L345.1,594.0 L341.3,591.2 L328.7,591.9 L325.2,594.4 L322.3,591.9
-    L316.6,591.2 L316.8,589.0 L326.0,581.9 L333.5,581.8 L333.4,576.4 L335.5,576.4
-    L335.2,572.5 L319.6,536.0 L321.2,534.0 L343.4,533.5 L374.0,532.4 L393.5,531.9
-    L394.1,551.4 L396.0,571.3 L394.3,580.7 L391.1,591.4 L389.1,591.1 L387.1,594.7
-    L388.3,596.8 L376.4,597.2 L376.5,600.4 L371.5,604.7 Z
-  center:
-  - -118.261862
-  - 34.19639
-  quotes: []
-  median-income: 55870
-  minimum-cost-living-family: 65988
-  poverty-rate: 24.30%
-  poverty-rate-increase: '2.3'
-  percent-student: 0.1961802
-  percent-unstable-housing: 0.3494921
-  number-apps: 20420
-  percent-with-children: 0.3078355
-  percent-earned-income: 0.6318557
-  percent-with-seniors: 0.0976127
 Plumas:
   population: '20,007'
   path: M191.7,178.6 L189.4,180.5 L187.9,181.7 L184.5,179.4 L180.3,172.1 L172.4,164.7
@@ -1018,6 +912,32 @@ Del Norte:
 # Counties below are GetCalFresh counties with at least one quote.
 ############
 
+Los Angeles:
+  population: '9,818,605'
+  path: M345.9,679.0 L341.0,670.4 L339.6,665.5 L346.8,673.8 L355.2,681.2 L350.4,682.5
+    Z M345.8,637.2 L340.4,635.7 L338.4,632.8 L342.7,632.7 L353.1,637.6 L357.0,642.8
+    L356.0,645.6 L352.9,644.2 L347.4,644.0 L346.1,642.3 Z M368.1,612.4 L364.6,611.0
+    L360.8,613.7 L358.9,612.5 L357.4,615.7 L349.9,613.0 L348.9,610.6 L351.0,606.0
+    L347.6,597.7 L345.1,594.0 L341.3,591.2 L328.7,591.9 L325.2,594.4 L322.3,591.9
+    L316.6,591.2 L316.8,589.0 L326.0,581.9 L333.5,581.8 L333.4,576.4 L335.5,576.4
+    L335.2,572.5 L319.6,536.0 L321.2,534.0 L343.4,533.5 L374.0,532.4 L393.5,531.9
+    L394.1,551.4 L396.0,571.3 L394.3,580.7 L391.1,591.4 L389.1,591.1 L387.1,594.7
+    L388.3,596.8 L376.4,597.2 L376.5,600.4 L371.5,604.7 Z
+  center:
+  - -118.261862
+  - 34.19639
+  quotes:
+     -'I’m separated, going through divorce, not yet finalized. The ex-husband lost his job and I am looking for part-time work. I have two sons, both with ADHD, one with autism, and I spend a good amount of time parenting. Currently I just want to be able to feed them without building up debt on a credit card or depleting my savings account. My situation is embarrassing and humbling, but serious. If approved, I hope this will only be a temporary solution until I get on my feet, start a business, and rebuild my life.'
+  median-income: 55870
+  minimum-cost-living-family: 65988
+  poverty-rate: 24.30%
+  poverty-rate-increase: '2.3'
+  percent-student: 0.1961802
+  percent-unstable-housing: 0.3494921
+  number-apps: 20420
+  percent-with-children: 0.3078355
+  percent-earned-income: 0.6318557
+  percent-with-seniors: 0.0976127
 Nevada:
   poverty-rate: 17.20%
   percent-student: 0.1098901
@@ -1041,46 +961,6 @@ Nevada:
   population: '98,764'
   median-income: 56949
   poverty-rate-increase: '1.6'
-Glenn:
-  poverty-rate: 17.20%
-  percent-student: 0.1925466
-  minimum-cost-living-family: 56748
-  percent-unstable-housing: 0.2795031
-  number-apps: 161
-  percent-with-children: 0.378882
-  percent-earned-income: 0.5901639
-  percent-with-seniors: 0.1304348
-  path: M141.1,197.0 L134.3,196.8 L134.4,194.7 L127.1,194.5 L127.0,196.6 L92.5,196.1
-    L93.0,181.5 L84.4,181.3 L84.3,171.8 L81.7,168.8 L81.9,165.1 L87.2,165.1 L132.7,166.2
-    L138.0,172.4 L137.0,177.3 L135.6,178.7 L135.4,185.8 L143.2,185.7 L142.0,187.7
-    L142.3,192.1 Z
-  center:
-  - -122.4017
-  - 39.60254
-  quotes:[]
-  population: '28,122'
-  median-income: 40106
-  poverty-rate-increase: '2.7'
-Del Norte:
-  poverty-rate: 15.50%
-  percent-student: 0.0882353
-  minimum-cost-living-family: 58128
-  percent-unstable-housing: 0.4058824
-  number-apps: 170
-  percent-with-children: 0.3352941
-  percent-earned-income: 0.6122449
-  percent-with-seniors: 0.0764706
-  path: M22.1,39.8 L20.5,32.2 L20.6,29.5 L18.7,24.9 L17.8,19.5 L15.5,19.2 L12.2,16.3
-    L14.9,11.0 L16.1,2.8 L15.6,0.0 L46.4,1.4 L54.1,1.2 L51.2,8.4 L46.9,9.2 L45.2,13.2
-    L43.4,13.6 L45.5,22.2 L41.9,30.8 L44.0,31.0 L43.2,33.8 L45.7,35.5 L47.5,40.9 L44.6,46.8
-    L38.5,46.6 L38.7,40.5 Z
-  center:
-  - -123.980998
-  - 41.7499
-  quotes:[]
-  population: '28,610'
-  median-income: 39302
-  poverty-rate-increase: '3.3'
 Placer:
   poverty-rate: 12.90%
   percent-student: 0.1643033
@@ -1312,19 +1192,17 @@ Santa Barbara:
   - 34.53737
   quotes:
        -'I am an incoming sophomore student going into UCSB from Florida. My family's household earnings are dominated by my mother, who lives barely above the poverty line. We live in this house which is owned (mortgaged from bank) by my brother, who is in the military and has helped my mom pay for the expenses of me, herself, as well as our 70 year-old grandmother. Going into UCSB as an out of state student places a heavy burden of taking out around sixty-thousand dollars worth of loans in the first year (due to non-residency, and in-dorm housing rent). I support myself as an independent paying for a personal car insurance, as well as healthcare - in order to become a resident of California.'
-     -'My mom passed away about three years ago and I have $8,000 saved up from her insurance that she gave to me which is how I have been able to manage school and living expenses. All that money will be gone in a couple of months with the rent here being so high. My dad just recently got a new job about two weeks ago after being unemployed for a very long time - I was responsible for helping him out until he got back up on his feet.'
-      -'I'm a transfer student at the UC Santa Barbara. My family is unable to help pay for my college. I have been saving up money for three years in order to pay for most of the college expenses. Because of the time my dad spent in the hospital combined with the expenses of buying medication, I'm in a precarious position in affording the necessities of student life, like food every week. My Dad is dealing with depression along with a plethora of other health issues, which have affected his work. My Mom has also been having health issues of her own as she requires a cane due to her bad hip. I am part of the Educational Opportunity Program, which pointed me to CalFresh.'
+       -'My mom passed away about three years ago and I have $8,000 saved up from her insurance that she gave to me which is how I have been able to manage school and living expenses. All that money will be gone in a couple of months with the rent here being so high. My dad just recently got a new job about two weeks ago after being unemployed for a very long time - I was responsible for helping him out until he got back up on his feet.'
+       -'I'm a transfer student at the UC Santa Barbara. My family is unable to help pay for my college. I have been saving up money for three years in order to pay for most of the college expenses. Because of the time my dad spent in the hospital combined with the expenses of buying medication, I'm in a precarious position in affording the necessities of student life, like food every week. My Dad is dealing with depression along with a plethora of other health issues, which have affected his work. My Mom has also been having health issues of her own as she requires a cane due to her bad hip. I am part of the Educational Opportunity Program, which pointed me to CalFresh.'
        -'I am a first generation college student attending an expensive university in an expensive city. I am looking for additional work to pay for my own food although haven’t had much luck yet. I truly hope I can qualify no matter how small because anything and everything helps.'
-  
-
-     -'I am part of the EOPS program at Santa Barbara City College and am currently using my credit line for food and gas because I only have enough money to pay rent at the end of the month. I am looking for a job, but only moved here about one month ago.'
+       -'I am part of the EOPS program at Santa Barbara City College and am currently using my credit line for food and gas because I only have enough money to pay rent at the end of the month. I am looking for a job, but only moved here about one month ago.'
        -'I'm currently a first generation college student and my parents have a low income. I'm trying to get any help possible so that I can stay in school.'
        -'I am a full time student and work part time to pay my bills. I am taking on loans to pay for my food/utilities/book expenses.'
        -'I receive substantial financial aid, but finance all other expenses in my life. I work for no pay right now at a philanthropy which takes up most of my time so it's hard for me to work during the school year. During summer, I work 5-6 days a week at a restaurant.'
        -'I desperately need to eat healthier and be able to afford proper meals while I wait for a hearing with a disability judge. My boyfriend is sick with stress trying to help me for so long. I need security to know I can buy myself food.'
        -'I am away from my family and it is hard to buy & get healthy food while I am on a budget and I have to be paying a lot for my room and college materials.'
        -'I've been broke the last couple of months, I was getting maternity leave. I'm going back to work next month, but only part-time. I found a daycare that's perfect for my hours but it’s too expensive - a month of child care is more than my rent. With a new baby that is growing fast, I have to keep up with new clothes plus diapers. Since I'm breast feeding, I'm constantly hungry. I do have WIC.'
-      -'I am working fewer hours in order to finish up school. I work more hours during the summer.'
+       -'I am working fewer hours in order to finish up school. I work more hours during the summer.'
   population: '423,895'
   median-income: 63409
   poverty-rate-increase: '2.3'
@@ -1387,7 +1265,6 @@ San Francisco:
       -'I attend a computer science program that offers a tuition Income Share Agreement (ISA). That means I'll give them nearly 30% of my pay once I'm employed, and living assistance ISA to pay for tuition and living costs, so I applied for both this year. Finding part-time work would be difficult - classes are from 9:30AM to 5:20PM on weekdays and our weekends are for working on projects and building our portfolios.'
       -'I am a full-time PhD student at UCSF. The past few months, after a string of unexpected expenses have caused my credit debt to build, I have found it hard to make ends meet and I haven't been able to save any money to pay my taxes. This has left me very vulnerable and has caused a great deal of stress. Beyond this, I am not allowed to seek outside employment while I am enrolled at UCSF, and I am expected to spend 40-60 hours a week conducting research in a lab.'
       -'I’m just a student trying to survive in San Francisco. I want to have one less stress which includes food. I don't want to feel depressed that sometimes I barely have anything to eat or can't afford food on campus.'
-  
      -'I send my mother $175 every month. She uses it for food, bills, and other basic necessities for herself and my younger sister. This takes away the money that I could use for my own groceries.'
      -'Not working, currently looking for a job, not in school, zero savings left, zero income, credit cards maxed out, can't pay rent, bills, or student loans.'
      -'I lost my job few months ago and I did some side gigs through a phone app but the app shut down. I'm hungry. I only have 2 dollars left and I've already borrowed from everyone I could ask.'
@@ -1544,9 +1421,7 @@ San Diego:
   - 33.0236
   quotes:
     -'I won't receive income until I am approved for disability insurance so I have an account balance of zero dollars. My significant other (whom I live with and share the bills) suffered from a compound fracture in her ankle two days ago. She had to have surgery to reinforce her bones with metal plates and screws. She will be discharged today. The doctor is not allowing her to work for four to six weeks and she only has $600 in her bank account.'
-  
-
-     -'I am currently a graduate student and will soon be moving to San Diego. Since I am moving I was forced to quit my job. Unfortunately, my mother lost her job a few years back and is unable to support me financially. My father, who now lives in Texas, is also unable to support me. The financial aid I have received from school only covers money for tuition, books, rent, and utilities. I currently don't have the income to purchase food, toiletries, and other necessary items. Receiving an EBT card would lift a large weight off my shoulders, I could focus more on my education rather than how I'm going to make ends meet each month.'
+    -'I am currently a graduate student and will soon be moving to San Diego. Since I am moving I was forced to quit my job. Unfortunately, my mother lost her job a few years back and is unable to support me financially. My father, who now lives in Texas, is also unable to support me. The financial aid I have received from school only covers money for tuition, books, rent, and utilities. I currently don't have the income to purchase food, toiletries, and other necessary items. Receiving an EBT card would lift a large weight off my shoulders, I could focus more on my education rather than how I'm going to make ends meet each month.'
       -'I am on workers comp. The last 2 months have been hard food wise. My husband's mom sends cash from Russia to help with our rent and my brothers are loaning me money to cover my bills until I get my settlement and can pay them back but it leaves us with only about $150 for food every month for 2 people.'
       -'We relocated to be closer to family because of our health problems, but we have been unable to secure any permanent housing yet. We’re going broke paying for nightly budget motels which double their rates every weekend. We will most likely be living in our car starting tomorrow until my wife's next social security check comes in next week. We’ll go back to a motel until we can secure housing. I am disabled with COPD and require medical oxygen and a sleep apnea machine, my wife has renal failure and is confined to a wheelchair.'
       -'My school referred me to CalFresh. I am a senior in college and live on my own. As rewarding as that feels, at the end of the day, I do struggle a lot with paying bills and still having money left over to buy food. No one else supports me, so with the little money I have left over I am normally only able to afford unhealthy meals. If I were to have the opportunity to receive some type of financial assistance, I feel that I would be able to be a heathier person and feel better throughout the day while studying.'
@@ -1612,7 +1487,7 @@ Santa Cruz:
      -'I just got hired at a new job. I will start working Friday, September 28th. I am expecting to work 20-25 hours a week but I do not have any paystubs to show now.'
      -'I'm a low-income student and my family cannot pay for my tuition, send money for food, supplies, etc.'
      -'I have two work study internships on campus and will be living in a college apartment without a meal plan. The expense of groceries would be one less thing I would have to worry about with CalFresh.'
-       -'This year I decided to live off campus since it was really expensive on campus. My financial aid covers for my housing but there is not enough left over for me to buy groceries. I was hoping CalFresh could help me pay for my groceries and not stress about taking more hours at work to have enough money for everything.'
+      -'This year I decided to live off campus since it was really expensive on campus. My financial aid covers for my housing but there is not enough left over for me to buy groceries. I was hoping CalFresh could help me pay for my groceries and not stress about taking more hours at work to have enough money for everything.'
      -'My girlfriend and I are both college students and work to pay the bills. Neither of us gets help from family.'
      -'I just paid rent and apart from saving for next month's rent, I don't have other money. I need help buying food.'
      -'I'm a full time student. Before becoming a student, I had been supporting myself entirely since I was 19. I struggle with food security and am not hoping to use this resource forever, just enough to eat 3 meals a day while trying to get an education.'
@@ -1640,7 +1515,7 @@ Butte:
   - -121.601919
   - 39.66595
   quotes:
-       -'I have been unemployed this last month. I am in the process of getting hired at an on campus job in university housing, though I have multiple applications out for more job opportunities. Although some of my schooling is covered through CalVet college fee waiver program, I am struggling to cover extra school fees and books. I am trying to further my future by earning a degree to one day be financially stable and available to help others in need.'
+      -'I have been unemployed this last month. I am in the process of getting hired at an on campus job in university housing, though I have multiple applications out for more job opportunities. Although some of my schooling is covered through CalVet college fee waiver program, I am struggling to cover extra school fees and books. I am trying to further my future by earning a degree to one day be financially stable and available to help others in need.'
       -'This is my 2nd year at CSU Chico and during my first year I had no problems with money as my financial aid covered most of it, the rest was barely paid for by my parents. I found out last year after multiple visits to the financial aid office that for the rest of my education that I will not be getting almost any financial aid. It was for the reason that my parents just barely made the line of which to receive financial aid and so I ended up getting $750 (in grants) this year instead of the $12,000 (in grants) from last year. My dad works as a construction worker and it's only on certain weeks that he gets paid good which ends up making it like we have money but in reality, the pay is inconsistent. Anyways seeing this my parents and friends have told me to drop out but I really did not want to give up on college. I am looking for a job to help cover my expenses.'
       -'I lost my job because my car broke down and I could no longer get to it, as it was too far away. The place I had been living burned completely down last year in the Ponderosa fire, I lost everything I owned.'
       -'I am a full time college student with a 3.8 GPA. I currently have a job and have requested more hours because I'm struggling to pay rent. I have been getting sick due to living off cheap meals like ramen. I am not one to ask for things, but I am definitely in need.'
@@ -1680,7 +1555,7 @@ Alameda:
      -'I am currently applying for grad school, which is extremely expensive. We are still living in Berkeley even though we both graduated. The rent is extremely high here and we receive absolutely no financial assistance from our parents. Since we graduated from UC Berkeley this past summer, we are also no longer receiving financial aid, which has significantly impacted our ability to support ourselves. We both now work in San Francisco and transportation to and from the city every day is quite costly. We are struggling to find the extra funds to feed ourselves after paying for rent, utilities, public transit, loans, grad school applications, and everything in between.'
       -'I do not receive any financial support from my father, and my mother works tirelessly in two jobs to feed my younger brother and to help me with college. I help my mom pay the water, light and gas bills for our apartment back in southern California, and I also pay the water, gas, and light bills for my apartment here in Berkeley. Our financial situation is not the best, and a CalFresh card would be a huge blessing and support.'
       -'I work twice a week, which is the most that I can work with my school schedule. Last semester was very hard. I would either have class all day, or have class and get off and work, or on weekends I would work. I did not have a single day off for 4 months straight to skim by. I would have to choose between eating or school supplies. This is affecting my mental and physical health. I hope that I can make this year better, and be excited for school, not dread it...'
-    -'I'm in medical school and am taking out ~$33,000 in loans every four months. I'm spending more than half of my loan money on rent and utilities. Since I'm in medical school, I have to do volunteer work to gain more knowledge and skills in order to be the best doctor I can become. I have no time outside of this to work for money, or else I'd be jeopardizing my education. Because of the high cost of living in the Bay Area, I'm struggling to pay for groceries, basic living expenses, and car insurance so that I can get to and from the clinic I'm volunteering in at Martinez. I do not buy as much food as I need because of the expenses of living and the books/technology/transportation costs required for me to learn medicine.'
+      -'I'm in medical school and am taking out ~$33,000 in loans every four months. I'm spending more than half of my loan money on rent and utilities. Since I'm in medical school, I have to do volunteer work to gain more knowledge and skills in order to be the best doctor I can become. I have no time outside of this to work for money, or else I'd be jeopardizing my education. Because of the high cost of living in the Bay Area, I'm struggling to pay for groceries, basic living expenses, and car insurance so that I can get to and from the clinic I'm volunteering in at Martinez. I do not buy as much food as I need because of the expenses of living and the books/technology/transportation costs required for me to learn medicine.'
   population: '1,510,271'
   median-income: 73775
   poverty-rate-increase: '1.2'
@@ -1704,7 +1579,7 @@ Humboldt:
   - -123.925818
   - 40.70667
   quotes:
-      -'All of my credit cards are maxed out and I do not know how I am going to buy food, pay my utilities or put gas in my car, let alone pay the rest of my bills this month. I am job hunting, but I have a child with autism and he only goes to a educational program for three hours a day.'
+     -'All of my credit cards are maxed out and I do not know how I am going to buy food, pay my utilities or put gas in my car, let alone pay the rest of my bills this month. I am job hunting, but I have a child with autism and he only goes to a educational program for three hours a day.'
      -'I am living out of vehicles and sleeping on peoples couches. I have a severly debilititating handicap from my legs being snapped and twisted making it extremely difficult to stand or walk places. There is not enough income coming to pay rent let alone buy food. Looking for some stability.'
      -'I was a full time federal government employee until over a month ago. I am disabled with anxiety and bi-polar. I'm applying for disability. I expect us to have trouble with food expenses for the next few months.'
      -'I am currently employed, but will be out of work by the end of the week (9/14). I will be looking for new work, and will just need CalFresh to help with groceries until I am making enough to reasonably afford them again.'
@@ -1733,7 +1608,7 @@ Sonoma:
   - 38.53257
   quotes:
      -'I lost my home in the Tubbs Fire. All of my money that I did receive from FEMA went to hotel costs. After couch surfing for six months, I finally found a friend who had a room opening up. Unfortunately I had spent everything on hotel costs, rental applications, and simply trying to get my life back together. I have nothing left. I need help. I'm putting myself in debt because I thought now would be a good time to see a dentist after seven years... I figure no one is going to actually read this anyway, so it's mostly just venting. Maybe I'll get lucky, and whoever's in charge of my case will at least understanding what those of us who didn't own three homes before the Tubbs Fire are struggling with.'
-      -'My husband is a carpenter and his job is not steady. Last month was a good month and he grossed about $3.000.00, but not every month is not like that. Our bills are so behind. The fires really did us in - my husband was out of work for over 30 days. My oldest son has been diagnosed with autism, and has some heart problems. My boys are growing and feeding them has taken a huge toll on our finances.'  
+     -'My husband is a carpenter and his job is not steady. Last month was a good month and he grossed about $3.000.00, but not every month is not like that. Our bills are so behind. The fires really did us in - my husband was out of work for over 30 days. My oldest son has been diagnosed with autism, and has some heart problems. My boys are growing and feeding them has taken a huge toll on our finances.'  
      -'I've lived at this address since mid 2010. The rent has increased exponentially since new ownership of the apartment complex began earlier this year. I'm destitute and cannot afford both food and medication. I am an IHSS recipient and have been bedridden since January of 2018.'
      -'I have to sell things to make my mortgage payment and to eat. I am also applying for disability.'
      -'I need help to buy food for my 10 year old sister. I had to become her Legal Guardian.'
@@ -1766,7 +1641,7 @@ Tulare:
       -'My mother has been diagnosed with Transverse Myelitis which has left her paralyzed from 80% of her body, leaving her unable to work. My father is 69 years old and permanently disabled due to osteoporosis. I am currently a full-time student at the Cal State here and also work a part-time job. There is not enough income in my home for us to get the proper nutrition we all need. My father already receives food stamps but because I am anemic, I require a special diet and often times find myself needing to buy my food separately. My mother is also diabetic, so she too requires a special diet.'
       -'I live with my family and sometimes we don't have enough to feed us all. So I sometimes skip lunch or don't eat anything that day in order to save some money to buy things I need for my education.'
       -'I stay with my boyfriend and our situation in the place we stay is temporary. I am pregnant about 6 months. I set an appointment up so i can provide proof. I don’t have a steady income. I help some people I know do basic things that may be difficult for them and they offer money sometimes to help me out. I don’t receive a set amount yet it all goes towards living expenses.'
-       -'My husband recently lost his full time job. His other job is only per diem and averages $50-100 a month. We took money out of our savings to pay for at least 4 months’ rent. We only have $100 in our savings now and that's being used for gas. I am currently 5 months pregnant. My husband and I really need help with groceries, even if it's just until my husband gets a new job.'
+      -'My husband recently lost his full time job. His other job is only per diem and averages $50-100 a month. We took money out of our savings to pay for at least 4 months’ rent. We only have $100 in our savings now and that's being used for gas. I am currently 5 months pregnant. My husband and I really need help with groceries, even if it's just until my husband gets a new job.'
   population: '442,179'
   median-income: 42863
   poverty-rate-increase: '4.3'
@@ -1792,14 +1667,14 @@ Sacramento:
   - -121.340441
   - 38.45001
   quotes:
-      -'I am helping my adult son apply. He has a disability; he was diagnosed with mild intellectual disability when he was about 8. He had benefits, but when he became 18, they said he doesn’t qualify anymore. I disagree. I've been wanting to reapply for him but haven’t had the chance. Since we have moved to Sacramento, I haven't been able to work a steady job because of my disease. I can't afford to support my adult son because I also have two younger children that I support on my own. My son is crashing with family or friends, but doesn’t have a stable place to live. I try to take him food to eat when I can. I don’t know what else to do.'
+     -'I am helping my adult son apply. He has a disability; he was diagnosed with mild intellectual disability when he was about 8. He had benefits, but when he became 18, they said he doesn’t qualify anymore. I disagree. I've been wanting to reapply for him but haven’t had the chance. Since we have moved to Sacramento, I haven't been able to work a steady job because of my disease. I can't afford to support my adult son because I also have two younger children that I support on my own. My son is crashing with family or friends, but doesn’t have a stable place to live. I try to take him food to eat when I can. I don’t know what else to do.'
      -'I have been working as an appraiser for 16 years, but since moving to Sacramento, I haven't been able to find work. A couple weeks ago, my annual software fees were due as well as my business insurance, and I was unable to pay. This has shut down my business. I am looking for work. I am selling things in order to survive on a daily basis. I anticipate this request for food stamps to be temporary. I look forward to getting back on my feet soon but some assistance, especially food assistance, would help immensely.'
      -'I really don't want to do this, but I need help. I just have to get through this to graduate.'
      -'Financially not making it. My landlord is about to begin eviction proceedings on me as my rent has been late every month. I struggle to get enough food for my home. I feed my kids before I feed myself. I recently ended up in the hospital from dehydration and malnourishment.'
      -'I am legally deaf due to a recent illness. A friend loaned me a hearing aid. I can only use phone on speaker. I am terrified of not getting medical treatment or having a place to live because of my income and disability status. I have been disabled for 30 years. A recent illness caused my condition to worsen. I need help.'
      -'I pay for wifi also and I take care of my emotional support dog Charlotte who is about 35 lbs. So any extra funds I have left goes to feeding and keeping her groomed. I can't walk to food pantries and such as they are too far. I get help from friends or neighbors with a hot meal here and there. I am starving almost after the first week after payday and I am becoming more unhealthy. I do not know what else to do. I am hungry now as I am typing this.'
-      -'As I mentioned before, my father abandoned my family and I about 3 some-odd years ago. Not only was he a major financial help to the family, but he was a great emotional support as well. Since then, we have tried our best to cope with the losses, both emotionally and financially. My sister and I work retail jobs and are the main sources of income, but even our pooled finances do NOT cover bills, rent, and food. (My mother is disabled and cannot work.) Even with SSI, most of the money goes towards rent and bills. Often, we have to go without food for several days at a time or ask to borrow, lots of times without success. I know that you get a lot of sob stories on these types of platforms, but for whomever is reading, I ask that you go over my case and help my family and I as best as you can. It has not been easy, but we are doing our part.'
-      -'Originally I couch surfed and at one point lived in my car. I am a high school student working full time just to get by. I make about $900 a month, but $500 goes to rent, $120 goes to phone bills and the other is gas and groceries. Most the time I under pay the rent by up to $200. I was lucky enough to be taken in by my girlfriend and her parents but they expect me to still contribute to household.'
+     -'As I mentioned before, my father abandoned my family and I about 3 some-odd years ago. Not only was he a major financial help to the family, but he was a great emotional support as well. Since then, we have tried our best to cope with the losses, both emotionally and financially. My sister and I work retail jobs and are the main sources of income, but even our pooled finances do NOT cover bills, rent, and food. (My mother is disabled and cannot work.) Even with SSI, most of the money goes towards rent and bills. Often, we have to go without food for several days at a time or ask to borrow, lots of times without success. I know that you get a lot of sob stories on these types of platforms, but for whomever is reading, I ask that you go over my case and help my family and I as best as you can. It has not been easy, but we are doing our part.'
+     -'Originally I couch surfed and at one point lived in my car. I am a high school student working full time just to get by. I make about $900 a month, but $500 goes to rent, $120 goes to phone bills and the other is gas and groceries. Most the time I under pay the rent by up to $200. I was lucky enough to be taken in by my girlfriend and her parents but they expect me to still contribute to household.'
   population: '1,418,788'
   median-income: 55615
   poverty-rate-increase: '2.9'
