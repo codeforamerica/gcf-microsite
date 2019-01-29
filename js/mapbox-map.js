@@ -17,6 +17,9 @@ class MapboxMap {
     this.countyGcfData = {{site.data.county_info | jsonify}};
 
     this.map = this.drawMap();
+    this.map.addControl(new mapboxgl.NavigationControl({
+      showCompass: false
+    }));
     this.map.on("load", () => {
       this.drawCounties(this.map);
     });
