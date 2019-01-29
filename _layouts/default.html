@@ -18,9 +18,9 @@
     <meta property="og:image" content="https://gcf-microsite.herokuapp.com/images/seniors-color.png" />
     <meta property="og:url" content="http://gcf-microsite.herokuapp.com/">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
           integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-          crossorigin="anonymous"/>
+          crossorigin="anonymous"/> -->
     <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.48.0/mapbox-gl.css' rel='stylesheet' />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
@@ -35,7 +35,9 @@
       crossorigin="anonymous"></script>
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.js'></script>
     <script src="js/jquery.smint.js" type="text/javascript"></script>
-    <script src="js/mapbox-map.js" type="text/javascript"></script>
+    <script src="js/mapbox_map.js" type="text/javascript"></script>
+    <script src="js/quote_explorer.js" type="text/javascript"></script>
+    <script src="js/social.js" type="text/javascript"></script>
   </head>
   <body>
 
@@ -58,131 +60,6 @@
       {% include footer.html %}
     </footer>
 
-    <script type="text/javascript">
-      var quotes = {{site.data.quotes | jsonify}};
-
-      var selectQuote = function(contentId, tabId) {
-        $('#quote-content-'+contentId).html(quotes[contentId][tabId].quote);
-        $('.quote-selector-tab.'+contentId).removeClass('selected');
-        $('#quote-selector-tab-'+contentId+'-'+tabId).addClass('selected');
-      };
-
-      var colorNav = function() {
-        if($(document).scrollTop() > $('section#instability').offset().top-140) {
-          $("nav").addClass("scrolled");
-        } else {
-          //remove the background property so it comes transparent again (defined in your css)
-          $("nav").removeClass("scrolled");
-        }
-      };
-
-      var shareEmail = function() {
-        window.open("mailto:?subject={{page.title}}&body=A fresh look at the facts from Code for America: https://gcf-microsite.herokuapp.com/");
-      };
-
-      var shareFacebook = function() {
-        window.open("https://www.facebook.com/sharer/sharer.php?u=https://gcf-microsite.herokuapp.com/");
-      }
-
-      var shareTwitter = function() {
-        window.open("https://twitter.com/intent/tweet?text={{page.title}} A fresh look at the facts from @codeforamerica&url=https://gcf-microsite.herokuapp.com/&hashtags=feedthepeople,civictech");
-      }
-
-      $(document).ready( function() {
-        const countyMap = new MapboxMap();
-
-        // Food assistance tooltip/callout
-        $('.callout').tooltip({
-          position: { my: "left top-20%", at: "right center", collision: "flipfit" },
-          content: "<strong>Food Assistance in California (CalFresh/SNAP)</strong>\
-          <div style='margin-top: 10px;'>SNAP is the Supplemental Nutrition Assistance Program, which\
-          is funded by the federal government and administered by the states.\
-          In California, it’s known as CalFresh. To qualify, individuals must\
-          make less than 130% (200% in CA) of the Federal Poverty Level pre-tax\
-          AND less than 100% of the poverty level after taxes and deductions.\
-          For a household of two, that’s a monthly income of $1,784 before\
-          taxes and $1,372 after taxes. footnote The program provides a maximum\
-          of $353 per month for a household of two. Funds are distributed via\
-          Electronic Benefit Transfer (EBT) cards that look and function like a\
-          debit card.</div>",
-        });
-
-        // Scroll-top in top section
-        $('.scroll-tip').click(function() {
-          var navOffset = $('.smint').height();
-          var goTo =  $('div#intro-content').position().top-navOffset;
-  				$("html, body").stop().animate({ scrollTop: goTo }, 1500);
-        });
-
-        // Quote Explorers
-        $('div.quote-selector-arrow.left').click(function() {
-          var contentId = this.id.split('-')[4];
-          var activeTab = $('.quote-selector-tab.'+contentId+'.selected');
-          var activeTabId = parseInt(activeTab.attr('id').split('-')[4]);
-          var newTabId = quotes[contentId].length - 1;
-          if (activeTabId > 0) {
-            newTabId = activeTabId - 1;
-          }
-          selectQuote(contentId, newTabId);
-        });
-        $('div.quote-selector-arrow.right').click(function() {
-          var contentId = this.id.split('-')[4];
-          var activeTab = $('.quote-selector-tab.'+contentId+'.selected');
-          var activeTabId = parseInt(activeTab.attr('id').split('-')[4]);
-          var newTabId = 0;
-          if (activeTabId < quotes[contentId].length - 1) {
-            newTabId = activeTabId + 1;
-          }
-          selectQuote(contentId, newTabId);
-        });
-
-        // Sharing Widget
-        $('div.share-menu').click(function() {
-          if ($('div.share-menu').hasClass('open')) {
-            $('div.share-menu').removeClass('open');
-            $('div.share-menu').addClass('closed');
-          } else {
-            $('div.share-menu').removeClass('closed');
-            $('div.share-menu').addClass('open');
-          }
-        })
-
-        $('div.share-menu-icon.facebook').click(function() {
-          shareFacebook();
-        })
-        $('div.share-menu-icon.twitter').click(function() {
-          shareTwitter();
-        })
-        $('div.share-menu-icon.email').click(function() {
-          shareEmail();
-        })
-
-        // Sharing in Footer
-        $('img#footer-share-facebook').click(function() {
-          shareFacebook();
-        })
-        $('img#footer-share-twitter').click(function() {
-          shareTwitter();
-        })
-        $('img#footer-share-email').click(function() {
-          shareEmail();
-        })
-
-        // Change nav bar color on scroll
-        $(window).on("scroll", function() {
-          colorNav();
-        });
-
-        // Sticky nav
-        $('.stickynav').smint({
-          'mySelector': 'section',
-          'scrollSpeed' : 1500
-        });
-
-        colorNav();
-      });
-
-    </script>
-
+    {% include script.html %}
   </body>
 </html>

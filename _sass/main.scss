@@ -498,24 +498,25 @@ div.quote-selector {
   align-items: center;
 }
 
-a.quote-selector-tab.intro:hover, a.quote-selector-tab.intro.selected {
+div.quote-selector-tab.intro:hover, div.quote-selector-tab.intro.selected {
   background-color: #EFA44C;
 }
 
-a.quote-selector-tab.instability:hover, a.quote-selector-tab.instability.selected {
+div.quote-selector-tab.instability:hover, div.quote-selector-tab.instability.selected {
   background-color: #515C88;
 }
 
-a.quote-selector-tab.shocks:hover, a.quote-selector-tab.shocks.selected {
+div.quote-selector-tab.shocks:hover, div.quote-selector-tab.shocks.selected {
   background-color: #EF6D4C;
 }
 
-a.quote-selector-tab.calfresh:hover, a.quote-selector-tab.calfresh.selected {
+div.quote-selector-tab.calfresh:hover, div.quote-selector-tab.calfresh.selected {
   background-color: #019C86;
 }
 
-a.quote-selector-tab {
+div.quote-selector-tab {
   color: $text-color;
+  cursor: pointer;
   display: block;
   font-size: 15px;
   height: 40px;
@@ -526,15 +527,15 @@ a.quote-selector-tab {
   margin-top:18px;
 }
 
-a.quote-selector-tab:hover, a.quote-selector-tab.selected {
+div.quote-selector-tab:hover, div.quote-selector-tab.selected {
   color: white;
 }
 
-a.quote-selector-tab:hover {
+div.quote-selector-tab:hover {
   opacity: 0.6;
 }
 
-a.quote-selector-tab.selected:hover {
+div.quote-selector-tab.selected:hover {
   opacity: 1;
 }
 

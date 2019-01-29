@@ -70,7 +70,7 @@ nav a.menu-icon {
     margin-top: 30px;
   }
 
-  div.quote-selector-line, a.quote-selector-tab {
+  div.quote-selector-line, div.quote-selector-tab {
     display: none;
   }
 
@@ -88,7 +88,7 @@ nav a.menu-icon {
     padding: 0 25px;
   }
 
-  a.quote-selector-tab.selected {
+  div.quote-selector-tab.selected {
     display: block;
     flex-basis: 50%;
     flex-grow: 0;

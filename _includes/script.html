@@ -1,0 +1,54 @@
+<script type="text/javascript">
+
+  var colorNav = function() {
+    if($(document).scrollTop() > $('section#instability').offset().top-140) {
+      $("nav").addClass("scrolled");
+    } else {
+      //remove the background property so it comes transparent again (defined in your css)
+      $("nav").removeClass("scrolled");
+    }
+  };
+
+  $(document).ready( function() {
+    const countyMap = new MapboxMap();
+    const social = new Social();
+    const quoteExplorer = new QuoteExplorer();
+
+    // Food assistance tooltip/callout
+    $('.callout').tooltip({
+      position: { my: "left top-20%", at: "right center", collision: "flipfit" },
+      content: "<strong>Food Assistance in California (CalFresh/SNAP)</strong>\
+      <div style='margin-top: 10px;'>SNAP is the Supplemental Nutrition Assistance Program, which\
+      is funded by the federal government and administered by the states.\
+      In California, it’s known as CalFresh. To qualify, individuals must\
+      make less than 130% (200% in CA) of the Federal Poverty Level pre-tax\
+      AND less than 100% of the poverty level after taxes and deductions.\
+      For a household of two, that’s a monthly income of $1,784 before\
+      taxes and $1,372 after taxes. footnote The program provides a maximum\
+      of $353 per month for a household of two. Funds are distributed via\
+      Electronic Benefit Transfer (EBT) cards that look and function like a\
+      debit card.</div>",
+    });
+
+    // Scroll-top in top section
+    $('.scroll-tip').click(function() {
+      var navOffset = $('.smint').height();
+      var goTo =  $('div#intro-content').position().top-navOffset;
+      $("html, body").stop().animate({ scrollTop: goTo }, 1500);
+    });
+
+    // Change nav bar color on scroll
+    $(window).on("scroll", function() {
+      colorNav();
+    });
+
+    // Sticky nav
+    $('.stickynav').smint({
+      'mySelector': 'section',
+      'scrollSpeed' : 1500
+    });
+
+    colorNav();
+  });
+
+</script>
