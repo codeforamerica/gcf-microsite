@@ -1085,4 +1085,11 @@ nav a.menu-icon {
     flex-direction: column; }
 
   div#footer-share-heading h2 {
-    text-align: center; } }
+    text-align: center; }
+
+  /* Tooltip -- hidden since it won't fit */
+  span.callout {
+    color: #32322F;
+    border-bottom: none;
+    padding: 0;
+    cursor: text; } }
