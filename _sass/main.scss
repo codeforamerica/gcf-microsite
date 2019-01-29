@@ -1,109 +1,3 @@
-/* Fonts */
-@font-face {
-  font-family: "IBMPlexSans";
-  src: url("../fonts/IBMPlexSans-Bold.ttf");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "IBMPlexSans";
-  src: url("../fonts/IBMPlexSans-Medium.ttf");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "IBMPlexSans";
-  src: url("../fonts/IBMPlexSans-Regular.ttf");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "IBMPlexSans";
-  src: url("../fonts/IBMPlexSans-SemiBold.ttf");
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "IBMPlexSansCond";
-  src: url("../fonts/IBMPlexSansCondensed-Bold.ttf");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "IBMPlexSansCond";
-  src: url("../fonts/IBMPlexSansCondensed-Regular.ttf");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Lora";
-  src: url("../fonts/Lora-Bold.ttf");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Lora";
-  src: url("../fonts/Lora-Regular.ttf");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Rubik";
-  src: url("../fonts/Rubik-Bold.ttf");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Rubik";
-  src: url("../fonts/Rubik-Medium.ttf");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Rubik";
-  src: url("../fonts/Rubik-Regular.ttf");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SourceSansPro";
-  src: url("../fonts/SourceSansPro-Bold.ttf");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SourceSansPro";
-  src: url("../fonts/SourceSansPro-Italic.ttf");
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "SourceSansPro";
-  src: url("../fonts/SourceSansPro-Regular.ttf");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SourceSansPro";
-  src: url("../fonts/SourceSansPro-SemiBold.ttf");
-  font-weight: 600;
-  font-style: normal;
-}
-
 /* General */
 html, body {
   height:100%;
@@ -122,7 +16,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #333333;
+  color: $text-color;
   font-weight: bold;
 }
 
@@ -180,7 +74,7 @@ nav.scrolled {
 }
 
 a.nav-item {
-  color: #333333;
+  color: $text-color;
   font-size: 18px;
   line-height: 23px;
   opacity: 0.6;
@@ -201,7 +95,6 @@ a.nav-item.selected:hover {
 /* Sections and Standard Section Header */
 section#explore {
   background-color: #F7F7F7;
-  padding: 60px 0;
 }
 
 div.section-header {
@@ -211,11 +104,11 @@ div.section-header {
 div.section-header-outer {
   position: relative;
   margin: 0 auto;
-  max-width: 1024px;
+  max-width: $outer-content-width;
 }
 div.section-header-inner {
   margin: 0 auto;
-  max-width: 760px;
+  max-width: $inner-content-width;
 }
 
 div.section-header-inner h1 {
@@ -247,12 +140,12 @@ div.intro-header-outer {
   min-height: 660px;
   margin: 0 auto;
   position: relative;
-  max-width: 1024px;
+  max-width: $outer-content-width;
 }
 
 div.intro-header-inner {
   margin: 0 auto;
-  max-width:760px;
+  max-width:$inner-content-width;
 }
 
 div.intro-header-inner h1 {
@@ -292,8 +185,8 @@ div.scroll-tip {
 }
 
 div#intro-content {
-  margin-top: 40px;
-  padding-top: 20px;
+  margin-top: 0;
+  padding-top: 10px;
 }
 
 /* Hero Image Section Headers */
@@ -305,12 +198,12 @@ div.hero-header-outer {
   min-height: 570px;
   margin: 0 auto;
   position: relative;
-  max-width: 1024px;
+  max-width: $outer-content-width;
 }
 
 div.hero-header-inner {
   margin: 0 auto;
-  max-width: 760px;
+  max-width: $inner-content-width;
 }
 
 div.hero-header-inner h1 {
@@ -360,12 +253,12 @@ div.hero-header-outer.calfresh {
 
 /* Content Divs */
 div.content-outer {
-  max-width: 1024px;
+  max-width: $outer-content-width;
   margin: 0 auto;
 }
 
 div.content-inner {
-  max-width: 760px;
+  max-width: $inner-content-width;
   margin: 0 auto;
 }
 
@@ -387,12 +280,12 @@ div.stats {
 
 div.stats-outer {
   margin: 0 auto;
-  max-width: 1024px;
+  max-width: $outer-content-width;
 }
 
 div.stats-inner {
-  max-width: 720px;
   margin: 40px auto;
+  max-width: $inner-content-width;
 }
 
 div.stats-inner h3 {
@@ -400,6 +293,7 @@ div.stats-inner h3 {
   font-size: 17px;
   font-weight: bold;
   font-style: normal;
+  margin: 0 20px;
 }
 
 div.stats-inner.intro div.stats-box {
@@ -418,29 +312,36 @@ div.stats-inner.calfresh div.stats-box {
   background-color: #019C86;
 }
 
-div.stats-boxes {
+div.stats-boxes-outer {
+  margin: 0 15px;
+}
+
+div.stats-boxes-inner {
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
+  flex-flow: row wrap;
+  margin: 0 auto;
+  // justify-content: space-between;
+  // align-items:flex-start;
+  // align-content:stretch;
+
 }
 
 div.stats-box {
   border-radius: 3px;
   height: 150px;
   padding: 10px;
+  margin:5px;
   width: 150px;
 }
 
 div.stats-box div.tagline {
-    color: white;
-    font-family: IBMPlexSans;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 18px;
-    min-height: 18px;
-    text-align: center;
+  color: white;
+  font-family: IBMPlexSans;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  min-height: 18px;
+  text-align: center;
 }
 
 div.stats-box div.title {
@@ -465,9 +366,10 @@ div.stats-box div.body {
   width: 100%;
 }
 
-span.stats-source {
+div.stats-source {
   font-family: SourceSansPro;
   font-size: 13px;
+  margin: 0 20px;
 }
 
 /* Quotes divs */
@@ -530,17 +432,21 @@ div.quote-image.calfresh {
 }
 
 div.quotes-outer {
-    max-width: 1024px;
+    max-width: $outer-content-width;
     margin: 0 auto;
 }
 
 div.quotes-inner {
+  margin:40px auto;
+  max-width:$inner-content-width;
+}
+
+div.quote-content {
   font-family: Lora;
   font-size: 18px;
   line-height: 28px;
-  margin:40px auto;
   min-height: 200px;
-  max-width:730px;
+  padding: 0 25px;
 }
 
 div.quote-selector-line-container {
@@ -551,6 +457,10 @@ div.quote-selector-line-container {
   justify-content: space-between;
   align-items: center;
   align-content: center;
+}
+
+div.quote-selector-line-container.mobile {
+  display: none;
 }
 
 div.quote-selector-line {
@@ -603,15 +513,15 @@ a.quote-selector-tab.calfresh:hover, a.quote-selector-tab.calfresh.selected {
 }
 
 a.quote-selector-tab {
-  color: #333333;
+  color: $text-color;
   display: block;
   font-size: 15px;
   height: 40px;
   text-align: center;
   text-decoration: none;
   flex-grow: 1;
-  padding-top:12px;
-  margin-top:12px;
+  padding-top:18px;
+  margin-top:18px;
 }
 
 a.quote-selector-tab:hover, a.quote-selector-tab.selected {
@@ -630,7 +540,7 @@ a.quote-selector-tab.selected:hover {
 /* Map */
 div.map-container {
   margin: 60px auto 0;
-  max-width: 1024px;
+  max-width: $outer-content-width;
 }
 
 div.map-inner {
@@ -646,6 +556,7 @@ div.map-info {
   float: left;
   width: 48%;
   height: 100%;
+  margin-bottom: 40px;
 }
 
 div.county-details-note {
@@ -714,10 +625,10 @@ div.county-details-stat {
   flex-basis: 50%;
   font-size: 15px;
   line-height: 19px;
+  min-height: 40px;
 }
 
 div.county-details-stat-name {
-  min-height: 70px;
   flex-basis: 50%;
 }
 
@@ -727,7 +638,6 @@ div.county-details-stat-desc {
 }
 
 div.county-details-stat-number {
-  min-height: 70px;
   flex-basis: 40%;
   font-weight: bold;
 }
@@ -746,7 +656,7 @@ div.county-details-gcf-stats {
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: stretch;
-  min-height: 280px;
+  min-height: 240px;
   margin-top: 20px;
 }
 
@@ -781,14 +691,15 @@ div.map {
 
 div#california-map {
   cursor: move;
+  height: 600px;
 }
 
 div.county-details-stories {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 20px 0;
-  min-height: 536px;
+  margin-top: 20px;
+  min-height: 427px;
 }
 
 div.map-quote {
@@ -871,7 +782,7 @@ div#footer-share {
 
 div#footer-share-content {
   margin: 0 auto;
-  padding: 72px 0 72px 0;
+  padding: 64px 0 82px 0;
   max-width: 680px;
 }
 
@@ -930,7 +841,7 @@ div#footer-go-content {
   min-height: 243px;
   width: 270px;
   margin: 0 auto;
-  padding-top: 40px;
+  padding: 52px 0;
   text-align: center;
 }
 
@@ -961,7 +872,7 @@ div#footer-license {
 }
 
 div#footer-license-content {
-  max-width: 760px;
+  max-width: $inner-content-width;
   padding-top: 60px;
   margin: 0 auto;
   display: flex;
@@ -977,6 +888,7 @@ div#footer-license-body p {
   font-family: SourceSansPro;
   font-size: 14px;
   line-height: 18px;
+  color: #e5e5e5;
 }
 
 div#footer-license a:hover {
@@ -986,17 +898,21 @@ div#footer-license a:hover {
 /* Sharing Widget */
 div.share-menu {
   background-color: #EFA44C;
-  height: 62px;
-  width: 66px;
+  height: 50px;
+  width: 58px;
   position: absolute;
   right: 50px;
-  bottom: 74px;
+  bottom: 48px;
   overflow: hidden;
   border-radius: 3px;
 }
 
 div.hero-header div.share-menu {
-  bottom: 88px;
+  bottom: 102px;
+}
+
+section#explore div.share-menu {
+  bottom: 68px;
 }
 
 div.section-header div.share-menu {
@@ -1004,13 +920,13 @@ div.section-header div.share-menu {
 }
 
 div.share-menu.closed {
-  width: 66px;
+  width: 58px;
   transition-duration: 250ms;
   transition-timing-function: ease-in-out;
 }
 
 div.share-menu.open {
-  width: 241px;
+  width: 209px;
   transition-duration: 250ms;
   transition-timing-function: ease-in-out;
 }
@@ -1019,13 +935,13 @@ div.share-menu-divider {
   background-color: white;
   width: 1px;
   height: 38px;
-  margin: 12px 0;
+  margin: 6px 0;
   float: right;
 }
 
 div.share-menu-icon {
-  height: 62px;
-  width: 58px;
+  height: 50px;
+  width: 50px;
   float: right;
   cursor: pointer;
 }
@@ -1037,7 +953,7 @@ div.share-menu-icon:hover {
 div.share-menu-icon.toggle {
   background: #EFA44C url(../images/share-icon.png) center no-repeat;
   background-size: 38px 38px;
-  width: 66px;
+  width: 58px;
 }
 
 div.share-menu-icon.facebook {

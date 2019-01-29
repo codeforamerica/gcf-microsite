@@ -4,17 +4,19 @@
   <div class="stats-outer">
     <div class="stats-inner {{include.sectionId}}">
       <h3>{{statsData.title}}</h3>
-      <div class="stats-boxes">
-      {% for item in statsData.stats %}
-          <div class="stats-box">
-            <div class="tagline">{{item.tagline}}</div>
-            <div class="title">{{item.title}}</div>
-            <div class="body">{{item.body}}</div>
-          </div>
-      {% endfor %}
+      <div class="stats-boxes-outer">
+        <div class="stats-boxes-inner">
+        {% for item in statsData.stats %}
+            <div class="stats-box">
+              <div class="tagline">{{item.tagline}}</div>
+              <div class="title">{{item.title}}</div>
+              <div class="body">{{item.body}}</div>
+            </div>
+        {% endfor %}
+        </div>
       </div>
       {% for item in statsData.citations %}
-        <span class="stats-source">{{item.citation}}</span><br/>
+        <div class="stats-source">{{item.citation}}</div>
       {% endfor %}
     </div>
   </div>

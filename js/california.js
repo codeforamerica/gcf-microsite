@@ -175,7 +175,7 @@ window.JSMaps.maps.countyData = {{site.data.map | jsonify}};
 
 window.JSMaps.maps.california = {
 	"config": {
-		"mapWidth": 612,
+		"mapWidth": 512,
 		"mapHeight": 1024,
 		"enablePanZoom": true,
 		"initialZoom": 4,

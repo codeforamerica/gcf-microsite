@@ -3,8 +3,10 @@
 <div class="quotes {{include.sectionId}}">
   <div class="quotes-outer">
     <div class="quote-image {{include.sectionId}}"></div>
-    <div id="quote-content-{{include.contentId}}" class="quotes-inner">
-      {{ quoteData[0].quote }}
+    <div class="quotes-inner">
+      <div id="quote-content-{{include.contentId}}" class="quote-content">
+        {{ quoteData[0].quote }}
+      </div>
     </div>
     <div class="quote-selector-line-container">
       <div id="quote-selector-arrow-left-{{include.contentId}}" class="quote-selector-arrow left"></div>
@@ -17,6 +19,11 @@
         <a id="quote-selector-tab-{{include.contentId}}-{{quote_index}}" class="quote-selector-tab {{include.contentId}} {{include.sectionId}}{% if quote_index == 0 %} selected{% endif %}" href="javascript:selectQuote('{{include.contentId}}', {{quote_index}});">{{item.byline}}</a>
         {% assign quote_index = quote_index | plus:1 %}
       {% endfor %}
+    </div>
+    <div class="quote-selector-line-container mobile">
+      <div id="quote-selector-arrow-left-{{include.contentId}}" class="quote-selector-arrow left"></div>
+      <div class="quote-selector-line"></div>
+      <div id="quote-selector-arrow-right-{{include.contentId}}"  class="quote-selector-arrow right"></div>
     </div>
   </div>
 </div>

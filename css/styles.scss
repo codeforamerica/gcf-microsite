@@ -1,0 +1,15 @@
+---
+---
+$outer-content-width: 1024px;
+$inner-content-width: 760px;
+
+$tablet-content-width: 768px;
+$mobile-large-content-width: 425px;
+$mobile-medium-content-width: 375px;
+$mobile-small-content-width: 320px;
+
+$text-color: #32322F;
+
+@import "fonts";
+@import "main";
+@import "responsive";

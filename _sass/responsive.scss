@@ -1,0 +1,199 @@
+
+nav a.menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  /* Font */
+  p, div.intro-header-inner p, div.content p, div.quote-content, .ui-tooltip-content {
+    font-size: 16px;
+    line-height: normal;
+  }
+
+  /* Nav */
+  nav {
+    justify-content: space-between;
+  }
+
+  nav a.nav-item {
+    display: none;
+  }
+
+  nav a.menu-icon {
+    display: block;
+    margin-right: 20px;
+  }
+
+  /* Headers */
+  h1 {
+    font-size: 40px;
+    line-height: normal;
+  }
+
+  h2 {
+    font-size: 32px;
+    line-height: normal;
+  }
+
+  /* Section layout */
+  div.section-header-outer, div.intro-header-outer, div.stats-outer,
+  div.hero-header-outer, div.content-outer, div.quotes-outer, div.map-container {
+    padding: 0 10px;
+  }
+
+  section#explore {
+    padding-top: 20px;
+  }
+
+  /* Stats boxes */
+  div.stats-inner h3, div.stats-boxes-outer {
+    margin: 0
+  }
+
+  div.stats-box {
+    width: calc(50% - 30px);
+    height: 180px;
+  }
+
+  div.stats-source {
+    margin: 5px;
+  }
+
+  /* Quote explorer */
+  div.quote-image {
+    width: 56px;
+    height: 45px;
+    margin: -25px auto 0 15px;
+  }
+
+  div.quotes-inner {
+    margin-top: 30px;
+  }
+
+  div.quote-selector-line, a.quote-selector-tab {
+    display: none;
+  }
+
+  div.quote-selector-line-container {
+    display: none;
+  }
+
+  div.quote-selector-line-container.mobile {
+    display: flex;
+    margin-top: 40px;
+    padding: 0 25px 40px 25px;
+  }
+
+  div.quote-selector {
+    padding: 0 25px;
+  }
+
+  a.quote-selector-tab.selected {
+    display: block;
+    flex-basis: 50%;
+    flex-grow: 0;
+  }
+
+  /* Intro section */
+  div.intro-header, div.intro-header-outer {
+    min-height: 0;
+  }
+
+  div.intro-header-outer div.share-menu {
+    bottom: 0;
+  }
+
+  div.intro-header-inner h1 {
+    padding-top: 0;
+  }
+
+  div.intro-header-inner h2, div.intro-header-inner p {
+    margin-top: 20px;
+  }
+
+  div.intro-content {
+    margin-top: 0;
+  }
+
+  /* Hero headers */
+  div.hero-header-inner h1 {
+    padding-top: 220px;
+  }
+
+  div.hero-header-outer {
+    min-height: 0;
+  }
+
+  div.hero-header-outer.instability {
+  background:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0) 40%, white 92%),
+    url(../images/student-color.png);
+  background-size: contain;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  }
+
+  div.hero-header-outer.shocks {
+    margin-top: 60px;
+    background:
+      linear-gradient(to bottom, rgba(255, 255, 255, 0) 40%, white 92%),
+      url(../images/seniors-color.png);
+    background-size: contain;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+
+  div.hero-header-outer.calfresh {
+    background:
+      linear-gradient(to bottom, rgba(255, 255, 255, 0) 40%, white 92%),
+      url(../images/potrero-color.png);
+    background-size: contain;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+
+  /* Map section */
+  div.map-inner {
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: stretch;
+    align-items: stretch;
+    margin-left: 0;
+  }
+
+  div.map-info, div.map {
+    float: none;
+    width: auto;
+    height: auto;
+    flex-grow: 1;
+    align-self: stretch;
+  }
+
+  div.map, div#california-map {
+    height: 300px;
+  }
+
+  div.map-info {
+    margin-top: 20px;
+  }
+
+  /* Share menu */
+  div.share-menu {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* Footer */
+  div#footer-share-content, div#footer-go-content, div#footer-license-content {
+    max-width: 90%;
+  }
+
+  div#footer-share-heading {
+    flex-direction: column;
+  }
+
+  div#footer-share-heading h2 {
+    text-align: center;
+  }
+
+}
