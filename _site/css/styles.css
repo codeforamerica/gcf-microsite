@@ -172,6 +172,7 @@ div.section-header {
 div.section-header-outer {
   position: relative;
   margin: 0 auto;
+  padding-left: 40px;
   max-width: 1024px; }
 
 div.section-header-inner {
@@ -617,7 +618,8 @@ div.quote-selector-tab.selected:hover {
 /* Map */
 div.map-container {
   margin: 60px auto 0;
-  max-width: 1024px; }
+  max-width: 1024px;
+  padding-left: 40px; }
 
 div.map-inner {
   margin: 0; }

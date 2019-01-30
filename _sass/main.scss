@@ -116,6 +116,7 @@ div.section-header {
 div.section-header-outer {
   position: relative;
   margin: 0 auto;
+  padding-left: 40px;
   max-width: $outer-content-width;
 }
 div.section-header-inner {
@@ -657,6 +658,7 @@ div.quote-selector-tab.selected:hover {
 div.map-container {
   margin: 60px auto 0;
   max-width: $outer-content-width;
+  padding-left: 40px;
 }
 
 div.map-inner {
