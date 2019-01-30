@@ -323,6 +323,9 @@ div.myth-row {
 div.myth-summary {
   display: flex; }
 
+div.myth-summary.hovered {
+  background-color: #FDF4E9; }
+
 div.myth-summary-left {
   flex-basis: 85%; }
 
