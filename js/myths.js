@@ -5,37 +5,37 @@ class Myths {
   constructor() {
 
     var outerThis = this;
-    $('div.myth-expander').click(function() {
+    $('div.myth-summary').click(function() {
       var mythId = this.id.split('-')[2];
-      outerThis.toggleMythDetail(mythId);
+      outerThis.expandMythDetail(mythId);
     });
-
-    $('div.myth-expander').hover(
-      function() {
-        var mythId = this.id.split('-')[2];
-        outerThis.highlightMyth(mythId);
-      },
-      function() {
-        var mythId = this.id.split('-')[2];
-        outerThis.dehighlightMyth(mythId);
-      });
-    }
-
-  highlightMyth(mythId) {
-      $('#myth-summary-'+mythId).addClass('hovered');
   }
 
-  dehighlightMyth(mythId) {
-      $('#myth-summary-'+mythId).removeClass('hovered');
-  }
-
-  toggleMythDetail(mythId) {
-    $('#myth-expander-'+mythId).toggleClass('expanded');
-    if($('#myth-detail-'+mythId).is(":hidden")) {
-      $('#myth-detail-'+mythId).slideDown();
-    } else {
+  expandMythDetail(mythId) {
+    if(!$('#myth-detail-'+mythId).is(":hidden")) {
+      $('#myth-expander-'+mythId).toggleClass('expanded');
       $('#myth-detail-'+mythId).slideUp();
+    } else {
+      $('.myth-expander').removeClass('expanded');
+      $('#myth-expander-'+mythId).addClass('expanded');
+      $('.myth-detail').each(function() {
+        if(!$(this).is(":hidden")) {
+          $(this).slideUp();
+        }
+      });
+      $('#myth-detail-'+mythId).slideDown();
     }
+  };
+
+  nert(mythId) {
+    $('.myth-expander').removeClass('expanded');
+    $('#myth-expander-'+mythId).addClass('expanded');
+    $('.myth-detail').each(function() {
+      if(!$(this).is(":hidden")) {
+        $('#myth-detail-'+mythId).slideUp();
+      }
+    });
+    $('#myth-detail-'+mythId).slideDown();
   };
 
 }

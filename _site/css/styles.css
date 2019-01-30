@@ -327,9 +327,10 @@ div.myth-row {
   border: 1px solid #EFA44C; }
 
 div.myth-summary {
-  display: flex; }
+  display: flex;
+  cursor: pointer; }
 
-div.myth-summary.hovered {
+div.myth-summary:hover {
   background-color: #FDF4E9; }
 
 div.myth-summary-left {
@@ -349,7 +350,6 @@ div.myth-expander {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  cursor: pointer;
   transform: rotate(-90deg);
   transition: transform 100ms ease-out; }
 
@@ -387,7 +387,7 @@ div.myth-summary-bottom-content {
 
 div.myth-detail {
   background-color: #FDF4E9;
-  padding: 16px 96px;
+  padding: 16px;
   font-family: SourceSansPro;
   font-size: 19px;
   line-height: 26px;
