@@ -109,8 +109,7 @@ div.section-header-outer {
   max-width: $outer-content-width;
 }
 div.section-header-inner {
-  margin: 0 auto;
-  max-width: $inner-content-width;
+  margin: 0;
 }
 
 div.section-header-inner h1 {
@@ -274,6 +273,108 @@ p {
   line-height: 26px;
 }
 
+/* Myths & Facts */
+div.myths {
+  margin-bottom: 80px;
+}
+
+div.myths-outer {
+  margin: 0 auto;
+  max-width: $outer-content-width;
+}
+
+div.myths-inner {
+  margin: 0 auto;
+  max-width: $inner-content-width;
+}
+
+div.myth-table {
+  border: 1px solid #EFA44C;
+  border-radius: 4px;
+  width: 100%;
+}
+
+div.myth-row {
+  border: 1px solid #EFA44C;
+}
+
+div.myth-summary {
+  display: flex;
+}
+
+div.myth-summary-left {
+  flex-basis: 85%;
+}
+
+div.myth-summary-right {
+  display: flex;
+  align-items: center;
+  flex-basis: 15%;
+  overflow: hidden;
+}
+
+div.myth-expander {
+  width: 29px;
+  height: 29px;
+  margin: auto;
+  background-image: url(../images/expand_arrow.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  cursor: pointer;
+  transform: rotate(-90deg);
+  transition: transform 100ms ease-out;
+}
+
+div.myth-expander.expanded {
+  transform: rotate(0deg);
+}
+
+div.myth-summary-top, div.myth-summary-bottom {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 16px;
+}
+
+div.myth-summary-bottom {
+  padding-top: 0;
+}
+
+div.myth-summary-top-label, div.myth-summary-bottom-label {
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  min-width: 80px;
+}
+
+div.myth-summary-top-label {
+  color: #9B9B9B;
+}
+
+div.myth-summary-bottom-label {
+  color: #EFA44C;
+}
+
+div.myth-summary-top-content, div.myth-summary-bottom-content {
+  font-family: IBMPlexSans;
+  font-size: 18px;
+}
+
+div.myth-summary-bottom-content {
+  font-weight: bold;
+}
+
+div.myth-detail {
+  background-color: #FDF4E9;
+  padding: 16px 96px;
+  font-family: SourceSansPro;
+  font-size: 19px;
+  line-height: 26px;
+  display: none;
+}
+
 /* Stats Box divs */
 div.stats {
   position: relative;
@@ -322,10 +423,6 @@ div.stats-boxes-inner {
   display: flex;
   flex-flow: row wrap;
   margin: 0 auto;
-  // justify-content: space-between;
-  // align-items:flex-start;
-  // align-content:stretch;
-
 }
 
 div.stats-box {
@@ -547,7 +644,7 @@ div.map-container {
 }
 
 div.map-inner {
-  margin-left: 132px;
+  margin: 0;
 }
 
 div.map-container h3 {
@@ -916,6 +1013,7 @@ div.hero-header div.share-menu {
 
 section#explore div.share-menu {
   bottom: 68px;
+  right: 0;
 }
 
 div.section-header div.share-menu {

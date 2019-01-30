@@ -167,8 +167,7 @@ div.section-header-outer {
   max-width: 1024px; }
 
 div.section-header-inner {
-  margin: 0 auto;
-  max-width: 760px; }
+  margin: 0; }
 
 div.section-header-inner h1 {
   color: #EFA44C;
@@ -300,6 +299,90 @@ p {
   font-family: SourceSansPro;
   font-size: 19px;
   line-height: 26px; }
+
+/* Myths & Facts */
+div.myths {
+  margin-bottom: 80px; }
+
+div.myths-outer {
+  margin: 0 auto;
+  max-width: 1024px; }
+
+div.myths-inner {
+  margin: 0 auto;
+  max-width: 760px; }
+
+div.myth-table {
+  border: 1px solid #EFA44C;
+  border-radius: 4px;
+  width: 100%; }
+
+div.myth-row {
+  border: 1px solid #EFA44C; }
+
+div.myth-summary {
+  display: flex; }
+
+div.myth-summary-left {
+  flex-basis: 85%; }
+
+div.myth-summary-right {
+  display: flex;
+  align-items: center;
+  flex-basis: 15%;
+  overflow: hidden; }
+
+div.myth-expander {
+  width: 29px;
+  height: 29px;
+  margin: auto;
+  background-image: url(../images/expand_arrow.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  cursor: pointer;
+  transform: rotate(-90deg);
+  transition: transform 100ms ease-out; }
+
+div.myth-expander.expanded {
+  transform: rotate(0deg); }
+
+div.myth-summary-top, div.myth-summary-bottom {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 16px; }
+
+div.myth-summary-bottom {
+  padding-top: 0; }
+
+div.myth-summary-top-label, div.myth-summary-bottom-label {
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  min-width: 80px; }
+
+div.myth-summary-top-label {
+  color: #9B9B9B; }
+
+div.myth-summary-bottom-label {
+  color: #EFA44C; }
+
+div.myth-summary-top-content, div.myth-summary-bottom-content {
+  font-family: IBMPlexSans;
+  font-size: 18px; }
+
+div.myth-summary-bottom-content {
+  font-weight: bold; }
+
+div.myth-detail {
+  background-color: #FDF4E9;
+  padding: 16px 96px;
+  font-family: SourceSansPro;
+  font-size: 19px;
+  line-height: 26px;
+  display: none; }
 
 /* Stats Box divs */
 div.stats {
@@ -524,7 +607,7 @@ div.map-container {
   max-width: 1024px; }
 
 div.map-inner {
-  margin-left: 132px; }
+  margin: 0; }
 
 div.map-container h3 {
   margin-top: 0;
@@ -836,7 +919,8 @@ div.hero-header div.share-menu {
   bottom: 102px; }
 
 section#explore div.share-menu {
-  bottom: 68px; }
+  bottom: 68px;
+  right: 0; }
 
 div.section-header div.share-menu {
   bottom: 56px; }
