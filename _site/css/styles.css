@@ -312,7 +312,7 @@ p {
 
 /* Myths & Facts */
 div.myths {
-  margin-bottom: 80px; }
+  margin: 0 10px 80px 10px; }
 
 div.myths-outer {
   margin: 0 auto;
