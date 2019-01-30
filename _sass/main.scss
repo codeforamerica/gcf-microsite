@@ -64,11 +64,16 @@ header {
 }
 
 nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   height: 100%;
   background-color: #FDF7F0;
+}
+
+div.nav-outer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: $outer-content-width;
+  margin: 0 auto;
 }
 
 nav.scrolled {
