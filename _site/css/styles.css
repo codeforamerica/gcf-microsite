@@ -193,11 +193,13 @@ div.intro-header-outer {
   min-height: 660px;
   margin: 0 auto;
   position: relative;
-  max-width: 1024px; }
+  max-width: 1024px;
+  display: none; }
 
 div.intro-header-inner {
   margin: 0 auto;
-  max-width: 760px; }
+  max-width: 760px;
+  display: none; }
 
 div.intro-header-inner h1 {
   margin-top: 0;

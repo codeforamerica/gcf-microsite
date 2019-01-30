@@ -2,13 +2,13 @@
 
 <div class="quotes {{include.sectionId}}">
   <div class="quotes-outer">
-    <div class="quote-image {{include.sectionId}}"></div>
+    <div class="quote-image {{include.sectionId}} wow zoomIn"></div>
     <div class="quotes-inner">
-      <div id="quote-content-{{include.contentId}}" class="quote-content">
+      <div id="quote-content-{{include.contentId}}" class="quote-content wow fadeIn slow">
         {{ quoteData[0].quote }}
       </div>
     </div>
-    <div class="quote-selector-line-container">
+    <div class="quote-selector-line-container wow fadeIn slow">
       <div id="quote-selector-arrow-left-{{include.contentId}}" class="quote-selector-arrow left"></div>
       <div class="quote-selector-line"></div>
       <div id="quote-selector-arrow-right-{{include.contentId}}"  class="quote-selector-arrow right"></div>
@@ -16,11 +16,11 @@
     <div class="quote-selector">
       {% assign quote_index = 0 %}
       {% for item in quoteData %}
-        <div id="quote-selector-tab-{{include.contentId}}-{{quote_index}}" class="quote-selector-tab {{include.contentId}} {{include.sectionId}}{% if quote_index == 0 %} selected{% endif %}">{{item.byline}}</div>
+        <div id="quote-selector-tab-{{include.contentId}}-{{quote_index}}" class="quote-selector-tab {{include.contentId}} {{include.sectionId}} wow fadeIn {% if quote_index == 0 %} slow selected{%else%} delay-2s{% endif %}">{{item.byline}}</div>
         {% assign quote_index = quote_index | plus:1 %}
       {% endfor %}
     </div>
-    <div class="quote-selector-line-container mobile">
+    <div class="quote-selector-line-container mobile wow fadeIn slow">
       <div id="quote-selector-arrow-left-{{include.contentId}}" class="quote-selector-arrow left"></div>
       <div class="quote-selector-line"></div>
       <div id="quote-selector-arrow-right-{{include.contentId}}"  class="quote-selector-arrow right"></div>

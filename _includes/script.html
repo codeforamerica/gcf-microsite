@@ -38,18 +38,26 @@
       $("html, body").stop().animate({ scrollTop: goTo }, 1500);
     });
 
-    // Change nav bar color on scroll
-    $(window).on("scroll", function() {
-      colorNav();
-    });
-
     // Sticky nav
     $('.stickynav').smint({
       'mySelector': 'section',
       'scrollSpeed' : 1500
     });
+  });
 
+  // Change nav bar color on scroll
+  $(window).on("scroll", function() {
     colorNav();
   });
+
+  $(window).on("load", function() {
+    colorNav();
+    new WOW().init();
+    $('div.intro-header-outer').fadeIn( 1200, function() {
+      $('div.intro-header-inner').fadeIn(1000, function() {
+        $('div.scroll-tip').addClass("animated heartBeat long");
+      });
+    });
+  })
 
 </script>
