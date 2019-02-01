@@ -196,11 +196,7 @@ nav a.menu-icon {
     text-align: center;
   }
 
-  /* Tooltip -- hidden since it won't fit */
-  span.callout {
-    color: $text-color;
-    border-bottom: none;
-    padding: 0;
-    cursor: text;
+  .ui-tooltip {
+    margin: 0 15px;
   }
 }

@@ -150,7 +150,11 @@
         </div>
       </div>
       
-        <div class="stats-source">https://www.cbpp.org/research/policy-basics-the-supplemental-nutrition-assistance-program-snap</div>
+        <div class="stats-source">
+          
+            <a target="_blank" href="https://www.cbpp.org/research/policy-basics-the-supplemental-nutrition-assistance-program-snap">https://www.cbpp.org/research/policy-basics-the-supplemental-nutrition-assistance-program-snap</a>
+          
+        </div>
       
     </div>
   </div>
@@ -161,10 +165,10 @@
         <div class="content-inner">
           <p>
             Most GetCalFresh users were barely making ends meet when they were
-            tipped into crisis by an unexpected expense or job loss.<a href="https://fns-prod.azureedge.net/sites/default/files/SNAPFoodSec.pdf"><sup>[1]</sup></a>
+            tipped into crisis by an unexpected expense or job loss.<sup><span class="footnote" title="Throughout this site, the conceptual framework we apply to understanding SNAP usage is heavily indebted to <a href='https://fns-prod.azureedge.net/sites/default/files/SNAPFoodSec.pdf'>Edin et al (2013)</a>.<br/><br/>See <a href='https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1741-3737.2010.00713.x'>Edin and Kissane (2010)</a> for a helpful review of the literature.">[1]</span></sup>
             The first set of stories on this site exemplify the precarious financial
             lives of many Californians. Once cost of living is taken into account,
-            California is the state with the highest poverty rate.<a href="https://www.census.gov/content/dam/Census/library/publications/2016/demo/p60-258.pdf"><sup>[2]</sup></a>
+            California is the state with the highest poverty rate.<sup><span class="footnote" title="<a href='https://www.census.gov/content/dam/Census/library/publications/2016/demo/p60-258.pdf'>The Supplemental Poverty Measure: 2015, Renwick and Fox (2016)</a>">[2]</span></sup>
           </p>
           <p>
             The second set of stories describes common shocks or adverse events
@@ -255,8 +259,8 @@ solution until I get on my feet, start a business, and rebuild my life.
             </div>
           </div>
           <div class="myth-detail" id="myth-detail-0">
-            Many Americans think that people on food stamps don’t want to work. In
-fact, most households on food assistance have at least one person with a
+            Many Americans think that people on food stamps don’t want to work.<sup><span class="footnote" title="<a href='https://www.nytimes.com/2018/09/11/magazine/americans-jobs-poverty-homeless.html'>https://www.nytimes.com/2018/09/11/magazine/americans-jobs-poverty-homeless.html</a>">[3]</span></sup>
+In fact, most households on food assistance have at least one person with a
 job, but their pay is very low or their hours are unpredictable.
 <ul><li>
 Two-thirds of people who receive SNAP are children, seniors, or people with
@@ -531,9 +535,17 @@ confirm their identity by submitting verification documents.
         </div>
       </div>
       
-        <div class="stats-source">http://www.ppic.org/publication/poverty-in-california/</div>
+        <div class="stats-source">
+          
+            <a target="_blank" href="http://www.ppic.org/publication/poverty-in-california/">http://www.ppic.org/publication/poverty-in-california/</a>
+          
+        </div>
       
-        <div class="stats-source">https://www.cbpp.org/sites/default/files/atoms/files/snap_factsheet_california.pdf</div>
+        <div class="stats-source">
+          
+            <a target="_blank" href="https://www.cbpp.org/sites/default/files/atoms/files/snap_factsheet_california.pdf">https://www.cbpp.org/sites/default/files/atoms/files/snap_factsheet_california.pdf</a>
+          
+        </div>
       
     </div>
   </div>
@@ -891,7 +903,11 @@ California.
         </div>
       </div>
       
-        <div class="stats-source">Figures based on GetCalFresh application data from August 1 through October 31 of 2018. The data exclude students, people with disabilities, and people experiencing homelessness.</div>
+        <div class="stats-source">
+          
+            Figures based on GetCalFresh application data from August 1 through October 31 of 2018. The data exclude students, people with disabilities, and people experiencing homelessness.
+          
+        </div>
       
     </div>
   </div>
@@ -1422,9 +1438,44 @@ better place to look at.
     const social = new Social();
     const quoteExplorer = new QuoteExplorer();
 
+    $(document).tooltip({
+     content: function () {
+         return $(this).prop('title');
+     },
+     show: null,
+     close: function (event, ui) {
+         ui.tooltip.hover(
+         function () {
+             $(this).stop(true).fadeTo(400, 1);
+         },
+         function () {
+             $(this).fadeOut("400", function () {
+                 $(this).remove();
+             })
+         });
+       }
+     });
+
     // Food assistance tooltip/callout
     $('.callout').tooltip({
-      position: { my: "left top-20%", at: "right center", collision: "flipfit" },
+      position: {
+        my: "left top+30", at: "center-65 bottom", collision: "flipfit",
+        using: function( position, feedback ) {
+          $(this).addClass(feedback.vertical).css( position);
+        }
+      },
+      close: function (event, ui) {
+        ui.tooltip.hover(
+          function () {
+            $(this).stop(true).fadeTo(400, 1);
+          },
+          function () {
+            $(this).fadeOut("400", function () {
+              $(this).remove();
+            })
+          }
+        );
+      },
       content: "<strong>Food Assistance in California (CalFresh/SNAP)</strong>\
       <div style='margin-top: 10px;'>SNAP is the Supplemental Nutrition Assistance Program, which\
       is funded by the federal government and administered by the states.\
@@ -1437,6 +1488,32 @@ better place to look at.
       Electronic Benefit Transfer (EBT) cards that look and function like a\
       debit card.</div>",
     });
+
+    $('.footnote').tooltip({
+      content: function () {
+        return $(this).prop('title');
+      },
+      position: {
+        my: "left-58 top+30", at: "center bottom", collision: "flipfit",
+        using: function( position, feedback ) {
+          console.log((feedback.element.left + 60 >= feedback.target.left ? 'left' : 'right'));
+          $(this).addClass(feedback.vertical).addClass((feedback.element.left + 60 >= feedback.target.left ? 'left' : 'right')).css( position);
+        }
+      },
+      close: function (event, ui) {
+        ui.tooltip.hover(
+          function () {
+            $(this).stop(true).fadeTo(400, 1);
+          },
+          function () {
+            $(this).fadeOut("400", function () {
+              $(this).remove();
+            })
+          }
+        );
+      }
+    });
+
 
     // Scroll-top in top section
     $('.scroll-tip').click(function() {

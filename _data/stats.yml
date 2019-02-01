@@ -18,7 +18,8 @@ intro:
       body: "working age, non-disabled SNAP recipients has a job."
 
   citations:
-    - citation: "https://www.cbpp.org/research/policy-basics-the-supplemental-nutrition-assistance-program-snap"
+    - text: "https://www.cbpp.org/research/policy-basics-the-supplemental-nutrition-assistance-program-snap"
+      link: "https://www.cbpp.org/research/policy-basics-the-supplemental-nutrition-assistance-program-snap"
 
 instability:
   title: "In California:"
@@ -44,8 +45,10 @@ instability:
     #   body: "Californians receive CalFresh."
 
   citations:
-    - citation: "http://www.ppic.org/publication/poverty-in-california/"
-    - citation: "https://www.cbpp.org/sites/default/files/atoms/files/snap_factsheet_california.pdf"
+    - text: "http://www.ppic.org/publication/poverty-in-california/"
+      link: "http://www.ppic.org/publication/poverty-in-california/"
+    - text: "https://www.cbpp.org/sites/default/files/atoms/files/snap_factsheet_california.pdf"
+      link: "https://www.cbpp.org/sites/default/files/atoms/files/snap_factsheet_california.pdf"
 
 shocks:
   title:
@@ -67,4 +70,5 @@ shocks:
       body: "have a job that gives them 40+ hours a week."
 
   citations:
-    - citation: "Figures based on GetCalFresh application data from August 1 through October 31 of 2018. The data exclude students, people with disabilities, and people experiencing homelessness."
+    - text: "Figures based on GetCalFresh application data from August 1 through October 31 of 2018. The data exclude students, people with disabilities, and people experiencing homelessness."
+      link: ""

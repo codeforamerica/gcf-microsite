@@ -15,9 +15,44 @@
     const social = new Social();
     const quoteExplorer = new QuoteExplorer();
 
+    $(document).tooltip({
+     content: function () {
+         return $(this).prop('title');
+     },
+     show: null,
+     close: function (event, ui) {
+         ui.tooltip.hover(
+         function () {
+             $(this).stop(true).fadeTo(400, 1);
+         },
+         function () {
+             $(this).fadeOut("400", function () {
+                 $(this).remove();
+             })
+         });
+       }
+     });
+
     // Food assistance tooltip/callout
     $('.callout').tooltip({
-      position: { my: "left top-20%", at: "right center", collision: "flipfit" },
+      position: {
+        my: "left top+30", at: "center-65 bottom", collision: "flipfit",
+        using: function( position, feedback ) {
+          $(this).addClass(feedback.vertical).css( position);
+        }
+      },
+      close: function (event, ui) {
+        ui.tooltip.hover(
+          function () {
+            $(this).stop(true).fadeTo(400, 1);
+          },
+          function () {
+            $(this).fadeOut("400", function () {
+              $(this).remove();
+            })
+          }
+        );
+      },
       content: "<strong>Food Assistance in California (CalFresh/SNAP)</strong>\
       <div style='margin-top: 10px;'>SNAP is the Supplemental Nutrition Assistance Program, which\
       is funded by the federal government and administered by the states.\
@@ -30,6 +65,32 @@
       Electronic Benefit Transfer (EBT) cards that look and function like a\
       debit card.</div>",
     });
+
+    $('.footnote').tooltip({
+      content: function () {
+        return $(this).prop('title');
+      },
+      position: {
+        my: "left-58 top+30", at: "center bottom", collision: "flipfit",
+        using: function( position, feedback ) {
+          console.log((feedback.element.left + 60 >= feedback.target.left ? 'left' : 'right'));
+          $(this).addClass(feedback.vertical).addClass((feedback.element.left + 60 >= feedback.target.left ? 'left' : 'right')).css( position);
+        }
+      },
+      close: function (event, ui) {
+        ui.tooltip.hover(
+          function () {
+            $(this).stop(true).fadeTo(400, 1);
+          },
+          function () {
+            $(this).fadeOut("400", function () {
+              $(this).remove();
+            })
+          }
+        );
+      }
+    });
+
 
     // Scroll-top in top section
     $('.scroll-tip').click(function() {
