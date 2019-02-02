@@ -1026,7 +1026,8 @@ span.footnote {
   border: 2px solid #EFA44C;
   max-width: 560px;
   box-shadow: 10px 10px 0 0 #EFA44C;
-  position: absolute; }
+  position: absolute;
+  cursor: pointer; }
 
 .ui-tooltip.bottom {
   box-shadow: 10px -10px 0 0 #EFA44C; }
