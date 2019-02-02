@@ -130,7 +130,7 @@ header {
 
 nav {
   height: 100%;
-  background-color: #FDF7F0; }
+  background-color: #F7F7F7; }
 
 div.nav-outer {
   display: flex;
@@ -190,12 +190,12 @@ div.section-header-inner h1 {
 
 /* Intro Section */
 div.intro-header {
-  background: linear-gradient(to bottom, #FDF7F0 90%, white 100%);
+  background: linear-gradient(to bottom, #F7F7F7 90%, white 100%);
   min-height: 698px;
   width: 100%; }
 
 div.intro-header-outer {
-  background: linear-gradient(to bottom, rgba(253, 247, 240, 0) 36%, #FDF7F0 95%), linear-gradient(to left, rgba(253, 247, 240, 0) 48%, #FDF7F0 92%), url(../images/farmers-market-color.png);
+  background: linear-gradient(to bottom, rgba(253, 247, 240, 0) 36%, #F7F7F7 95%), linear-gradient(to left, rgba(253, 247, 240, 0) 48%, #F7F7F7 92%), url(../images/farmers-market-color.png);
   background-position: 125px -35px;
   background-repeat: no-repeat;
   background-size: contain;
@@ -634,11 +634,6 @@ div.map-info {
   height: 100%;
   margin-bottom: 20px; }
 
-select#county-select {
-  border: solid 1px #222222;
-  font-family: IBMPlexSans;
-  font-weight: bold; }
-
 div.county-details-note {
   font-family: SourceSansPro;
   font-size: 13px;
@@ -1021,7 +1016,7 @@ span.footnote {
 
 .ui-tooltip.top:after {
   border-color: rgba(255, 255, 255, 0);
-  border-bottom-color: #ffffff;
+  border-bottom-color: white;
   border-width: 25px;
   margin-left: -25px; }
 
@@ -1043,7 +1038,7 @@ span.footnote {
 
 .ui-tooltip.bottom:after {
   border-color: rgba(255, 255, 255, 0);
-  border-top-color: #ffffff;
+  border-top-color: white;
   border-width: 25px;
   margin-left: -25px; }
 
@@ -1077,7 +1072,7 @@ span.footnote {
   border-radius: 3px;
   border: none;
   overflow: hidden;
-  background: #fff;
+  background: white;
   box-shadow: none; }
 
 .mapboxgl-ctrl-zoom-in {
@@ -1094,6 +1089,63 @@ span.footnote {
 .mapboxgl-ctrl-icon.mapboxgl-ctrl-zoom-in:hover, .mapboxgl-ctrl-icon.mapboxgl-ctrl-zoom-out:hover {
   background-color: #EFA44C;
   opacity: 0.6; }
+
+/* Select */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 2px solid #EBEBEB !important;
+  border-radius: 0;
+  background: white;
+  background-image: none;
+  font-family: IBMPlexSans;
+  font-weight: bold; }
+
+/* Custom Select */
+.select {
+  position: relative;
+  display: block;
+  width: 15em;
+  height: 3em;
+  line-height: 3;
+  background: #EBEBEB;
+  overflow: hidden;
+  border-radius: .25em; }
+
+select {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0 0 0 .5em;
+  color: #32322F;
+  cursor: pointer; }
+
+select::-ms-expand {
+  display: none; }
+
+/* Arrow */
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 1em;
+  background: #EBEBEB;
+  pointer-events: none; }
+
+/* Transition */
+.select:hover::after {
+  color: #EFA44C; }
+
+.select::after {
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease; }
 
 nav a.menu-icon {
   display: none; }

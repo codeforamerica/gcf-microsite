@@ -184,15 +184,16 @@ class MapboxMap {
     	var hasGetCalFreshData = countyData.hasOwnProperty("number-apps");
     	var hasQuotes = countyData['quotes'].length > 0;
       var countyNames = Object.keys(this.countyGcfData).sort();
-      // countyNames.sort();
 
       // Setup the select box for Counties
-      var countySelect = $("<select id='county-select'></select");
+      var countySelect = $("<select id='county-select'></select>");
       console.log(this.countyGcfData);
       $.each(countyNames, function(val, text) {
         countySelect.append($('<option></option>').attr("selected", countyName === text).val(text).html(text));
       });
-      $('div.map-info').html(countySelect);
+      var countySelectContainer = $("<div class='select'></div>");
+      countySelectContainer.append(countySelect);
+      $('div.map-info').html(countySelectContainer);
 
       // Setup the tab and content containers with the details tab that will
     	// always be present.
