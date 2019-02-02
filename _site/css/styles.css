@@ -130,7 +130,7 @@ header {
 
 nav {
   height: 100%;
-  background-color: #F7F7F7; }
+  background-color: #FDF4E9; }
 
 div.nav-outer {
   display: flex;
@@ -190,12 +190,12 @@ div.section-header-inner h1 {
 
 /* Intro Section */
 div.intro-header {
-  background: linear-gradient(to bottom, #F7F7F7 90%, white 100%);
+  background: linear-gradient(to bottom, #FDF4E9 90%, white 100%);
   min-height: 698px;
   width: 100%; }
 
 div.intro-header-outer {
-  background: linear-gradient(to bottom, rgba(253, 247, 240, 0) 36%, #F7F7F7 95%), linear-gradient(to left, rgba(253, 247, 240, 0) 48%, #F7F7F7 92%), url(../images/farmers-market-color.png);
+  background: linear-gradient(to bottom, rgba(253, 247, 240, 0) 36%, #FDF4E9 95%), linear-gradient(to left, rgba(253, 247, 240, 0) 48%, #FDF4E9 92%), url(../images/farmers-market-color.png);
   background-position: 125px -35px;
   background-repeat: no-repeat;
   background-size: contain;
