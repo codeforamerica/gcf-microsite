@@ -561,8 +561,53 @@ div.quote-content {
   font-family: Lora;
   font-size: 18px;
   line-height: 28px;
-  min-height: 200px;
+  height: 200px;
   padding: 0 25px;
+  position: relative;
+}
+
+div.quote-content::after {
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  width: 100%;
+  height: 80px;
+  pointer-events: none;
+}
+
+div.quotes.calfresh div.quote-content::after {
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.001),
+    $calfresh-light-color
+  );
+}
+
+div.quotes.shocks div.quote-content::after {
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.001),
+    $shocks-light-color
+  );
+}
+
+div.quotes.intro div.quote-content::after {
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.001),
+    $orange-light-color
+  );
+}
+
+div.quotes.instability div.quote-content::after {
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.001),
+    $instability-light-color
+  );
+}
+
+div.quote-content__scroller {
+  overflow-y: scroll;
+  width: 100%;
+  height: 190px;
+  padding-bottom: 30px;
 }
 
 div.quote-selector-line-container {
@@ -1230,7 +1275,7 @@ select {
   font-family: IBMPlexSans;
   font-weight: bold;
 }
-/* Custom Select */
+
 .select {
   position: relative;
   display: block;
@@ -1250,10 +1295,11 @@ select {
   color: $text-color;
   cursor: pointer;
 }
+
 select::-ms-expand {
   display: none;
 }
-/* Arrow */
+
 .select::after {
   content: '\25BC';
   position: absolute;
@@ -1264,7 +1310,7 @@ select::-ms-expand {
   background: $gray-dark-color;
   pointer-events: none;
 }
-/* Transition */
+
 .select:hover::after {
   color: $orange-dark-color;
 }

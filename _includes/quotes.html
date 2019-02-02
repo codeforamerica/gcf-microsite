@@ -4,8 +4,10 @@
   <div class="quotes-outer">
     <div class="quote-image {{include.sectionId}} wow zoomIn"></div>
     <div class="quotes-inner">
-      <div id="quote-content-{{include.contentId}}" class="quote-content wow fadeIn slow">
-        {{ quoteData[0].quote }}
+      <div class="quote-content wow fadeIn slow">
+        <div id="quote-content-{{include.contentId}}" class="quote-content__scroller">
+          {{ quoteData[0].quote }}
+        </div>
       </div>
     </div>
     <div class="quote-selector-line-container wow fadeIn slow">
