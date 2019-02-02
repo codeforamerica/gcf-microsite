@@ -146,10 +146,9 @@ class MapboxMap {
       var feature = this.countyGeoData.features[i];
       if (feature.properties.name === countyName) {
         var countyData = this.countyGcfData[countyName];
-        console.log(countyData.center);
-        this.map.flyTo({center:countyData.center,  zoom: 6,
-  speed: 0.5,
-  curve: 1});
+        this.map.flyTo({
+          center:countyData.center,  zoom: 6, speed: 0.5, curve: 1
+        });
         this.selectCounty({'features':[feature]});
       }
     }
@@ -187,7 +186,6 @@ class MapboxMap {
 
       // Setup the select box for Counties
       var countySelect = $("<select id='county-select'></select>");
-      console.log(this.countyGcfData);
       $.each(countyNames, function(val, text) {
         countySelect.append($('<option></option>').attr("selected", countyName === text).val(text).html(text));
       });
@@ -287,7 +285,7 @@ class MapboxMap {
     			"<div class='county-details-stories'>" +
     			"<div class='map-quote'>" +
     			"<div class='map-quote-image'></div>" +
-    			"<p class='map-quote-text'>" + quote + "</p>" +
+          "<div class='map-quote__scroller'>" + quote + "</div>" +
     			"</div>" +
     			"<div class='map-quote-selector'>" +
     			"<div class='map-quote-selector-arrow left'></div>" +
@@ -313,7 +311,7 @@ class MapboxMap {
   			var dotIndex = this.id.split('-')[2];
   			outerThis.activeQuoteIndex = dotIndex;
 
-  			$('p.map-quote-text').html(countyData['quotes'][dotIndex]);
+  			$('div.map-quote__scroller').html(countyData['quotes'][dotIndex]);
 
   			$('div.map-quote-selector-dot').removeClass('selected');
   			$('#'+this.id).addClass('selected');
@@ -325,7 +323,7 @@ class MapboxMap {
     		} else {
     			outerThis.activeQuoteIndex -= 1;
     		}
-    		$('p.map-quote-text').html(countyData['quotes'][outerThis.activeQuoteIndex]);
+    		$('div.map-quote__scroller').html(countyData['quotes'][outerThis.activeQuoteIndex]);
 
     		$('div.map-quote-selector-dot').removeClass('selected');
     		$('div#map-dot-' + outerThis.activeQuoteIndex).addClass('selected');
@@ -337,11 +335,19 @@ class MapboxMap {
     		} else {
     			outerThis.activeQuoteIndex += 1;
     		}
-    		$('p.map-quote-text').html(countyData['quotes'][outerThis.activeQuoteIndex]);
+    		$('div.map-quote__scroller').html(countyData['quotes'][outerThis.activeQuoteIndex]);
 
     		$('div.map-quote-selector-dot').removeClass('selected');
     		$('div#map-dot-' + outerThis.activeQuoteIndex).addClass('selected');
     	});
+
+      $('.map-quote__scroller').scroll(function() {
+          if($(this).scrollTop() + $(this).innerHeight() >= $(this)[0].scrollHeight) {
+            $(this).parent().addClass('scrolled');
+          } else {
+            $(this).parent().removeClass('scrolled');
+          }
+      });
 
     	$('#stats-tab').click(function() {
     		outerThis.activeTab = "stats";

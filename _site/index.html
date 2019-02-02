@@ -1514,6 +1514,13 @@ better place to look at.
       }
     });
 
+    $('.quote-content__scroller').scroll(function() {
+        if($(this).scrollTop() + $(this).innerHeight() >= $(this)[0].scrollHeight) {
+          $(this).parent().addClass('scrolled');
+        } else {
+          $(this).parent().removeClass('scrolled');
+        }
+    });
 
     // Scroll-top in top section
     $('.scroll-tip').click(function() {
