@@ -634,6 +634,11 @@ div.map-info {
   height: 100%;
   margin-bottom: 20px; }
 
+select#county-select {
+  border: solid 1px #222222;
+  font-family: IBMPlexSans;
+  font-weight: bold; }
+
 div.county-details-note {
   font-family: SourceSansPro;
   font-size: 13px;

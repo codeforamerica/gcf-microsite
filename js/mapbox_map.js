@@ -48,34 +48,32 @@ class MapboxMap {
   // See https://www.mapbox.com/mapbox-gl-js/example/hover-styles/ for an example
   drawCounties() {
 
+    var layers = this.map.getStyle().layers;
+    // Find the index of the first symbol layer in the map style
+    var firstSymbolId;
+    for (var i = 0; i < layers.length; i++) {
+      if (layers[i].type === 'symbol') {
+        firstSymbolId = layers[i].id;
+        break;
+      }
+    }
+
     //Defining the map source
     this.map.addSource("counties", {type: "geojson", data: this.countyGeoData});
 
-    // Map fill: highligh GCF Counties
-    this.map.addLayer({id: "is-gcf-fill",
-                       type: "fill",
-                       source: "counties",
-                       layout: {},
-                       paint: {"fill-color": "#FFFFFF",
-                               "fill-opacity": ["case",
-                                                ["boolean", ["get", "is_gcf"], false],
-                                                1, 0]
-                              }
-                      })
-
-    // Map fill (hovered county)
+    // Map outline, below the map
     this.map.addLayer({
-      id: "county-hover-fills",
-      type: "fill",
+      id: "county-borders",
+      type: "line",
       source: "counties",
       layout: {},
       paint: {
-        "fill-color": "#F5D0A5",
-        "fill-opacity": ["case",
-                         ["boolean", ["feature-state", "hover"], false],
-                         1, 0]
+        "line-color": ["case",
+                         ["boolean", ["get", "is_gcf"], false],
+                         "#000000", "#000000"],
+        "line-width": 0.5
       }
-    })
+    }, firstSymbolId)
 
     // Map fill (selected county)
     this.map.addLayer({
@@ -89,21 +87,33 @@ class MapboxMap {
                          ["boolean", ["feature-state", "selected"], false],
                          1, 0]
       }
-    })
+    }, "county-borders")
 
-    // Map outline
+    // Map fill (hovered county)
     this.map.addLayer({
-      id: "county-borders",
-      type: "line",
+      id: "county-hover-fills",
+      type: "fill",
       source: "counties",
       layout: {},
       paint: {
-        "line-color": ["case",
-                         ["boolean", ["get", "is_gcf"], false],
-                         "#000000", "#000000"],
-        "line-width": 0.5
+        "fill-color": "#F5D0A5",
+        "fill-opacity": ["case",
+                         ["boolean", ["feature-state", "hover"], false],
+                         1, 0]
       }
-    })
+    }, "county-selection-fills")
+
+    // Map fill: highlight GCF Counties
+    this.map.addLayer({id: "is-gcf-fill",
+                       type: "fill",
+                       source: "counties",
+                       layout: {},
+                       paint: {"fill-color": "#FFFFFF",
+                               "fill-opacity": ["case",
+                                                ["boolean", ["get", "is_gcf"], false],
+                                                1, 0]
+                              }
+                      }, "county-hover-fills");
 
     // When the user moves their mouse over the state-fill layer, we'll update the
     // feature state for the feature under the mouse.
@@ -130,10 +140,19 @@ class MapboxMap {
     // Click handler
     this.map.on("click", "county-selection-fills", this.selectCounty.bind(this))
 
-    // Select San Francisco to start. Kinda lame way to do it :/
+    this.selectCountyInMap('San Francisco');
+  }
+
+  // Trigger a selection on the map - used to initialize and by dropdown
+  selectCountyInMap(countyName) {
     for(var i = 0; i < this.countyGeoData.features.length; i++) {
       var feature = this.countyGeoData.features[i];
-      if (feature.properties.name === 'San Francisco') {
+      if (feature.properties.name === countyName) {
+        var countyData = this.countyGcfData[countyName];
+        console.log(countyData.center);
+        this.map.flyTo({center:countyData.center,  zoom: 6,
+  speed: 0.5,
+  curve: 1});
         this.selectCounty({'features':[feature]});
       }
     }
@@ -164,18 +183,23 @@ class MapboxMap {
 
   // Updates the info box with the right stats and quotes for a selected county
   updateMapInfo(countyName) {
-    //TODO: no clicking if not a GCF county
-    	// if (!data.enable) {
-    	// 	return;
-    	// }
     	var countyData = this.countyGcfData[countyName];
     	var hasGetCalFreshData = countyData.hasOwnProperty("number-apps");
     	var hasQuotes = countyData['quotes'].length > 0;
+      var countyNames = Object.keys(this.countyGcfData).sort();
+      // countyNames.sort();
 
-    	// Setup the tab and content containers with the details tab that will
+      // Setup the select box for Counties
+      var countySelect = $("<select id='county-select'></select");
+      console.log(this.countyGcfData);
+      $.each(countyNames, function(val, text) {
+        countySelect.append($('<option></option>').attr("selected", countyName === text).val(text).html(text));
+      });
+      $('div.map-info').html(countySelect);
+
+      // Setup the tab and content containers with the details tab that will
     	// always be present.
-    	$('div.map-info').html(
-    		"<h3>" + countyName + "</h3>" +
+    	$('div.map-info').append(
     		"<div class='county-details-note'>Data from 2017</div>" +
     		"<div class='county-details'>" +
     		"<div class='county-details-tabs'>" +
@@ -330,5 +354,9 @@ class MapboxMap {
         outerThis.activeTab = "stories";
         outerThis.updateMapInfo(countyName);
     	});
+
+      $('#county-select').change(function() {
+        outerThis.selectCountyInMap($(this).val());
+      });
   }
 }
