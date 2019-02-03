@@ -161,13 +161,13 @@ div.intro-header-outer {
   margin: 0 auto;
   position: relative;
   max-width: $outer-content-width;
-  display:none;
+  opacity: 0;
 }
 
 div.intro-header-inner {
   margin: 0 auto;
   max-width:$inner-content-width;
-  display:none;
+  opacity: 0;
 }
 
 div.intro-header-inner h1 {

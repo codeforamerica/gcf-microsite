@@ -1544,8 +1544,8 @@ better place to look at.
   $(window).on("load", function() {
     colorNav();
     new WOW().init();
-    $('div.intro-header-outer').fadeIn( 1200, function() {
-      $('div.intro-header-inner').fadeIn(1000, function() {
+    $('div.intro-header-outer').animate({opacity: 1}, 1200, function() {
+      $('div.intro-header-inner').animate({opacity: 1}, 1000, function() {
         $('div.scroll-tip').addClass("animated heartBeat long");
       });
     });
