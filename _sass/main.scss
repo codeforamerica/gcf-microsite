@@ -13,6 +13,14 @@ body {
   font-size: 19px;
 }
 
+/* Fix tooltip */
+@supports (-webkit-overflow-scrolling: touch) {
+  /* CSS specific to iOS devices */
+  body {
+    cursor: pointer;
+  }
+}
+
 #main {
   flex-grow:1;
 }
