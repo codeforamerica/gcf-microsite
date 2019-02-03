@@ -143,8 +143,8 @@ div.intro-header {
 
 div.intro-header-outer {
   background:
-    linear-gradient(to bottom, rgba(253, 247, 240, 0) 36%, $orange-lighter-color 95%),
-    linear-gradient(to left, rgba(253, 247, 240, 0) 48%, $orange-lighter-color 92%),
+    linear-gradient(to bottom, $orange-lighter-transparent-rgba 36%, $orange-lighter-color 95%),
+    linear-gradient(to left, $orange-lighter-transparent-rgba 48%, $orange-lighter-color 92%),
     url(../images/farmers-market-color.png);
   background-position: 125px -35px;
   background-repeat: no-repeat;
@@ -577,28 +577,28 @@ div.quote-content::after {
 
 div.quotes.calfresh div.quote-content::after {
   background: linear-gradient(
-    rgba(255, 255, 255, 0.001),
+    $calfresh-light-transparent-rgba,
     $calfresh-light-color
   );
 }
 
 div.quotes.shocks div.quote-content::after {
   background: linear-gradient(
-    rgba(255, 255, 255, 0.001),
+    $shocks-light-transparent-rgba,
     $shocks-light-color
   );
 }
 
 div.quotes.intro div.quote-content::after {
   background: linear-gradient(
-    rgba(255, 255, 255, 0.001),
+    $orange-light-transparent-rgba,
     $orange-light-color
   );
 }
 
 div.quotes.instability div.quote-content::after {
   background: linear-gradient(
-    rgba(255, 255, 255, 0.001),
+    $instability-light-transparent-rgba,
     $instability-light-color
   );
 }
@@ -882,7 +882,7 @@ div.map-quote::after {
   height: 50px;
   pointer-events: none;
   background: linear-gradient(
-    rgba(255, 255, 255, 0.001),
+    $orange-lighter-transparent-rgba,
     $orange-lighter-color
   );
 }
@@ -1206,7 +1206,7 @@ span.footnote {
 }
 
 .ui-tooltip.top:before {
-	border-color: rgba(239, 164, 76, 0);
+	border-color: $orange-dark-transparent-rgba;
 	border-bottom-color: $orange-dark-color;
 	border-width: 28px;
 	margin-left: -28px;

@@ -11,9 +11,13 @@ $mobile-small-content-width: 320px;
 $text-color: #32322F;
 
 $orange-dark-color: #EFA44C;
+$orange-dark-transparent-rgba: (239, 164, 76, 0);
 $orange-medium-color: #F5D0A5;
+$orange-medium-transparent-rgba: rgba(245, 208, 165, 0);
 $orange-light-color: #FBE9D4;
+$orange-light-transparent-rgba: rgba(251, 233, 212, 0);
 $orange-lighter-color: #FDF4E9;
+$orange-lighter-transparent-rgba: rgba(253, 247, 240, 0);
 
 $gray-dark-color: #EBEBEB;
 $gray-medium-color: #F1F1F1;
@@ -22,14 +26,17 @@ $gray-light-color: #F7F7F7;
 $instability-dark-color: #515C88;
 $instability-medium-color: #838AA9;
 $instability-light-color: #E1E3EA;
+$instability-light-transparent-rgba: rgba(225, 227, 234, 0);
 
 $shocks-dark-color: #EF6D4C;
 $shocks-medium-color: #F5B6A5;
 $shocks-light-color: #FBE6E1;
+$shocks-light-transparent-rgba: rgba(251, 230, 225, 0);
 
 $calfresh-dark-color: #019C86;
 $calfresh-medium-color: #79CABF;
 $calfresh-light-color: #D4EEEB;
+$calfresh-light-transparent-rgba: rgba(212, 238, 235, 0);
 
 @import "fonts";
 @import "main";
