@@ -86,7 +86,7 @@ body {
   font-family: SourceSansPro;
   font-size: 19px; }
 
-/* Fix tooltip */
+/* Fix for closing tooltips on mobile safari */
 @supports (-webkit-overflow-scrolling: touch) {
   /* CSS specific to iOS devices */
   body {
