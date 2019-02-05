@@ -18,9 +18,6 @@
     <meta property="og:image" content="https://gcf-microsite.herokuapp.com/images/seniors-color.png" />
     <meta property="og:url" content="http://gcf-microsite.herokuapp.com/">
 
-    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-          integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-          crossorigin="anonymous"/> -->
     <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.48.0/mapbox-gl.css' rel='stylesheet' />
@@ -45,17 +42,28 @@
 
   <body>
     <header class="stickynav">
-      <nav>
-        <div class="nav-outer">
-          <a href="#intro"><div id="logo"></div></a>
-          <a class="nav-item" href="#instability">Instability</a>
-          <a class="nav-item" href="#shocks">Common Shocks</a>
-          <a class="nav-item" href="#calfresh">How CalFresh Helps</a>
-          <a class="nav-item" href="#explore">Explore Counties</a>
-          <!-- <a class="menu-icon" href="#menu"><i class="fa fa-bars"></i></a> -->
-        </div>
-      </nav>
-    </header>
+  <nav>
+    <div class="nav-outer">
+      <a class="smint-nav-item nav-logo" href="#intro"><div id="logo"></div></a>
+      <a class="smint-nav-item nav-item" href="#instability">Instability</a>
+      <a class="smint-nav-item nav-item" href="#shocks">Common Shocks</a>
+      <a class="smint-nav-item nav-item" href="#calfresh">How CalFresh Helps</a>
+      <a class="smint-nav-item nav-item" href="#explore">Explore Counties</a>
+      <a href="#cd-navigation" class="nav-trigger">
+        <span>
+          <em aria-hidden="true"></em>
+        </span>
+      </a>
+    </div>
+    <div class="nav-dropdown">
+      <a class="nav-dropdown-item" href="#instability">Instability</a>
+      <a class="nav-dropdown-item" href="#shocks">Common Shocks</a>
+      <a class="nav-dropdown-item" href="#calfresh">How CalFresh Helps</a>
+      <a class="nav-dropdown-item" href="#explore">Explore Counties</a>
+    </div>
+  </nav>
+</header>
+
 
     <div id="main" role="main">
           <section id="intro">
@@ -1441,20 +1449,20 @@ better place to look at.
 
     <script type="text/javascript">
 
-  var colorNav = function() {
-    if($(document).scrollTop() > $('section#instability').offset().top-140) {
-      $("nav").addClass("scrolled");
-    } else {
-      //remove the background property so it comes transparent again (defined in your css)
-      $("nav").removeClass("scrolled");
-    }
-  };
-
   $(document).ready( function() {
+    var scrolling = false,
+        header = $('.stickynav'),
+        headerHeight = header.height(),
+    		previousTop = 0,
+    		currentTop = 0,
+    		scrollDelta = 10,
+    		scrollOffset = 150;
+
     const countyMap = new MapboxMap();
     const myths = new Myths();
     const social = new Social();
     const quoteExplorer = new QuoteExplorer();
+    const wow = new WOW().init();
 
     // Food assistance tooltip/callout
     $('.callout').tooltip({
@@ -1524,32 +1532,106 @@ better place to look at.
 
     // Scroll-top in top section
     $('.scroll-tip').click(function() {
-      var navOffset = $('.smint').height();
+      var navOffset = header.height();
       var goTo =  $('div#intro-content').position().top-navOffset;
       $("html, body").stop().animate({ scrollTop: goTo }, 1500);
     });
 
-    // Sticky nav
-    $('.stickynav').smint({
-      'mySelector': 'section',
-      'scrollSpeed' : 1500
+    // Navigation
+    header.on('click', '.nav-trigger', function(event){
+      // open primary navigation on mobile
+      event.preventDefault();
+      $('nav').toggleClass('nav-open');
     });
-  });
 
-  // Change nav bar color on scroll
-  $(window).on("scroll", function() {
-    colorNav();
-  });
+    $(window).on('DOMContentLoaded load resize', function () {
+      if ($(window).innerWidth() <= 768) {
+        // Remove the smint plugin in favor of a responsive nav
+        $('.stickynav').removeClass('smint');
+        $('.stickynav').removeClass('fxd');
+        $('.stickynav').removeAttr("style");
 
-  $(window).on("load", function() {
-    colorNav();
-    new WOW().init();
-    $('div.intro-header-outer').animate({opacity: 1}, 1200, function() {
-      $('div.intro-header-inner').animate({opacity: 1}, 1000, function() {
-        $('div.scroll-tip').addClass("animated heartBeat long");
+        // Click handler for the responsive nav items
+        $('.nav-dropdown-item').on('click', function(e){
+          e.preventDefault();
+          var hash = $(this).attr('href').split('#')[1];
+          var goTo =  $('section#'+ hash).offset().top;
+          $("html, body").stop().animate({ scrollTop: goTo }, 1500, function() {
+            $('.stickynav').addClass('is-hidden');
+            $('nav').removeClass('nav-open');
+          });
+        });
+
+        // Click handler for the logo, which needs an extra offset since the
+        // header will be visible at the top
+        $('.nav-logo').on('click', function(e){
+          e.preventDefault();
+          var hash = $(this).attr('href').split('#')[1];
+          var goTo =  $('section#'+ hash).offset().top - header.height();
+          $("html, body").stop().animate({ scrollTop: goTo }, 1500, function() {
+            $('nav').removeClass('nav-open');
+          });
+        });
+      } else if(!$('.stickynav').hasClass('smint')) {
+        // The smint plugin takes care of single-page scrolling and tracking
+        // the active section when we are using the full size nav
+        console.log("SMINTING");
+        $('.stickynav').smint({
+          'mySelector': 'section',
+          'scrollSpeed' : 1500
+        });
+      }
+    });
+
+    $(window).on('resize', function(){
+  		headerHeight = header.height();
+  	});
+
+    // Change nav bar color and hide mobile nav on scroll
+    $(window).on('scroll', function(){
+      if( !scrolling && $(window).innerWidth() <= 768) {
+         scrolling = true;
+         (!window.requestAnimationFrame)
+            ? setTimeout(autoHideHeader, 250)
+            : requestAnimationFrame(autoHideHeader);
+      }
+      colorNav();
+    });
+
+    // Animate the intro background in and pulse the scroll button on load
+    $(window).on("load", function() {
+      colorNav();
+      $('div.intro-header-outer').animate({opacity: 1}, 1200, function() {
+        $('div.intro-header-inner').animate({opacity: 1}, 1000, function() {
+          $('div.scroll-tip').addClass("animated heartBeat long");
+        });
       });
     });
-  })
+
+    // Methods for adjusting the header
+    function colorNav() {
+      if($(window).scrollTop() > $('section#instability').offset().top-140) {
+        $('nav').addClass("scrolled");
+      } else {
+        $('nav').removeClass("scrolled");
+      }
+    };
+
+  	function autoHideHeader() {
+  		var currentTop = $(window).scrollTop();
+
+      if (previousTop - currentTop > scrollDelta) {
+        //if scrolling up...
+        $('.stickynav').removeClass('is-hidden');
+      } else if( currentTop - previousTop > scrollDelta && currentTop > scrollOffset) {
+        //if scrolling down...
+        $('.stickynav').addClass('is-hidden');
+        $('nav').removeClass('nav-open');
+      }
+      previousTop = currentTop;
+  		scrolling = false;
+  	};
+  });
 
 </script>
 

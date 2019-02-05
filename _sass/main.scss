@@ -25,6 +25,10 @@ body {
   flex-grow:1;
 }
 
+a {
+  color: $orange-dark-color;
+}
+
 h1, h2, h3, h4, h5, h6 {
   color: $text-color;
   font-weight: bold;
@@ -52,64 +56,6 @@ h4 {
   font-family: IBMPlexSans;
   font-size: 24px;
   font-weight: 600;
-}
-
-/* Header & Navigation */
-header {
-  font-family: Rubik;
-  height:76px;
-  width: 100%;
-  z-index: 10;
-}
-
-#logo {
-  background-image: url(../images/gcf-logo.png);
-  background-size: 36px 36px;
-  background-position: center;
-  background-repeat: no-repeat;
-  width:64px;
-  height:76px;
-}
-
-nav {
-  height: 100%;
-  background-color: $orange-lighter-color;
-}
-
-div.nav-outer {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  max-width: $outer-content-width;
-  margin: 0 auto;
-}
-
-nav.scrolled {
-  background-color: $gray-light-color;
-}
-
-a {
-  color: $orange-dark-color;
-}
-
-a.nav-item {
-  color: $text-color;
-  font-size: 18px;
-  line-height: 23px;
-  opacity: 0.6;
-  margin-top: 3px;
-  padding: 4px;
-  text-decoration: none;
-  border-bottom: 6px solid transparent;
-}
-
-a.nav-item:hover, a.nav-item.selected {
-  border-bottom: 6px solid $orange-dark-color;
-  opacity: 1;
-}
-
-a.nav-item.selected:hover {
-  opacity: 1;
 }
 
 /* Sections and Standard Section Header */

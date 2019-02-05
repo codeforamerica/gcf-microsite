@@ -26,30 +26,20 @@ If you like Smint, or have suggestions on how it could be improved, send me a tw
 		// adding a class to users div
 		$(this).addClass('smint');
 
-
-
-
 		//Set the variables needed
 		var optionLocs = new Array(),
-			lastScrollTop = 0,
-			menuHeight = $(".smint").height(),
-			smint = $('.smint'),
-        	smintA = $('.smint a'),
-        	myOffset = smint.height();
-
-
-
-
+				lastScrollTop = 0,
+				menuHeight = $(".smint").height(),
+				smint = $('.smint'),
+      	smintA = $('.smint a.smint-nav-item'),
+      	myOffset = smint.height();
 
 		if ( settings.scrollSpeed ) {
 				var scrollSpeed = settings.scrollSpeed
 			}
-
 		if ( settings.mySelector ) {
 				var mySelector = settings.mySelector
 		};
-
-
 
 		return smintA.each( function(index) {
 
@@ -58,7 +48,6 @@ If you like Smint, or have suggestions on how it could be improved, send me a tw
 			if (!$(this).hasClass("extLink")) {
 				$(this).attr('id', id+'-nav');
 			}
-
 
 			//Fill the menu
 			optionLocs.push(Array(
@@ -69,6 +58,7 @@ If you like Smint, or have suggestions on how it could be improved, send me a tw
 			///////////////////////////////////
 
 			// get initial top offset for the menu
+			console.log(smint);
 			var stickyTop = smint.offset().top;
 
 			// check position and make sticky if needed
@@ -76,19 +66,6 @@ If you like Smint, or have suggestions on how it could be improved, send me a tw
 
 				// current distance top
 				var scrollTop = $(window).scrollTop()+myOffset;
-
-				// if we scroll more than the navigation, change its position to fixed and add class 'fxd', otherwise change it back to absolute and remove the class
-				if (scrollTop > stickyTop+myOffset) {
-					smint.css({ 'position': 'fixed', 'top':0,'left':0 }).addClass('fxd');
-
-					// add padding to the body to make up for the loss in heigt when the menu goes to a fixed position.
-					// When an item is fixed, its removed from the flow so its height doesnt impact the other items on the page
-					$('body').css('padding-top', menuHeight );
-				} else {
-					smint.css( 'position', 'relative').removeClass('fxd');
-					//remove the padding we added.
-					$('body').css('padding-top', '0' );
-				}
 
 				// Check if the position is inside then change the menu
 				// Courtesy of Ryan Clarke (@clarkieryan)
@@ -137,56 +114,17 @@ If you like Smint, or have suggestions on how it could be improved, send me a tw
 			});
 
 			///////////////////////////////////////
-
-        	$(this).on('click', function(e){
+    	$(this).on('click', function(e){
 				// gets the height of the users div. This is used for off-setting the scroll so the menu doesnt overlap any content in the div they jst scrolled to
 				var myOffset = smint.height();
-
-        		// stops hrefs making the page jump when clicked
+    		// stops hrefs making the page jump when clicked
 				e.preventDefault();
-
 				// get the hash of the button you just clicked
 				var hash = $(this).attr('href').split('#')[1];
-
-
-
 				var goTo =  $(mySelector+'#'+ hash).offset().top-myOffset;
 
 				// Scroll the page to the desired position!
 				$("html, body").stop().animate({ scrollTop: goTo }, scrollSpeed);
-
-				// if the link has the '.extLink' class it will be ignored
-		 		// Courtesy of mcpacosy ‏(@mcpacosy)
-				if ($(this).hasClass("extLink"))
-                {
-                    return false;
-                }
-
-			});
-
-
-			//This lets yo use links in body text to scroll. Just add the class 'intLink' to your button and it will scroll
-
-			$('.intLink').on('click', function(e){
-				var myOffset = smint.height();
-
-				e.preventDefault();
-
-				var hash = $(this).attr('href').split('#')[1];
-
-				if (smint.hasClass('fxd')) {
-					var goTo =  $(mySelector+'#'+ hash).position().top-myOffset;
-				} else {
-					var goTo =  $(mySelector+'#'+ hash).position().top-myOffset*2;
-				}
-
-				$("html, body").stop().animate({ scrollTop: goTo }, scrollSpeed);
-
-				if ($(this).hasClass("extLink"))
-                {
-                    return false;
-                }
-
 			});
 		});
 

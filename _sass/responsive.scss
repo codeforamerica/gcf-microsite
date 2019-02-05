@@ -3,25 +3,11 @@ nav a.menu-icon {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $tablet-content-width) {
   /* Font */
   p, div.intro-header-inner p, div.content p, div.quote-content, .ui-tooltip-content {
     font-size: 16px;
     line-height: normal;
-  }
-
-  /* Nav */
-  nav {
-    justify-content: space-between;
-  }
-
-  nav a.nav-item {
-    display: none;
-  }
-
-  nav a.menu-icon {
-    display: block;
-    margin-right: 20px;
   }
 
   /* Headers */
@@ -36,6 +22,10 @@ nav a.menu-icon {
   }
 
   /* Section layout */
+  div#main {
+    padding-top: 64px;
+  }
+
   div.section-header-outer, div.intro-header-outer, div.stats-outer,
   div.hero-header-outer, div.content-outer, div.quotes-outer, div.map-container {
     padding: 0 15px;
