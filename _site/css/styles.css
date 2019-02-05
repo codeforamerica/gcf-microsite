@@ -1148,6 +1148,151 @@ select::-ms-expand {
   -o-transition: .25s all ease;
   transition: .25s all ease; }
 
+@media screen and (max-width: 768px) {
+  /* Font */
+  p, div.intro-header-inner p, div.content p, div.quote-content, .ui-tooltip-content {
+    font-size: 16px;
+    line-height: normal; }
+
+  /* Headers */
+  h1 {
+    font-size: 40px;
+    line-height: normal; }
+
+  h2 {
+    font-size: 32px;
+    line-height: normal; }
+
+  /* Section layout */
+  div#main {
+    padding-top: 64px; }
+
+  div.section-header-outer, div.intro-header-outer, div.stats-outer,
+  div.hero-header-outer, div.content-outer, div.quotes-outer, div.map-container {
+    padding: 0 15px; }
+
+  section#explore {
+    padding-top: 20px; }
+
+  /* Stats boxes */
+  div.stats-inner h3, div.stats-boxes-outer {
+    margin: 0; }
+
+  div.stats-box {
+    width: calc(50% - 30px);
+    height: 180px; }
+
+  div.stats-source {
+    margin: 5px; }
+
+  /* Quote explorer */
+  div.quote-image {
+    width: 56px;
+    height: 45px;
+    margin: -25px auto 0 15px; }
+
+  div.quotes-inner {
+    margin-top: 30px; }
+
+  div.quote-selector-line, div.quote-selector-tab {
+    display: none; }
+
+  div.quote-selector-line-container {
+    display: none; }
+
+  div.quote-selector-line-container.mobile {
+    display: flex;
+    margin-top: 40px;
+    padding: 0 25px 40px 25px; }
+
+  div.quote-selector {
+    padding: 0 25px; }
+
+  div.quote-selector-tab.selected {
+    display: block;
+    flex-basis: 50%;
+    flex-grow: 0; }
+
+  /* Intro section */
+  div.intro-header, div.intro-header-outer {
+    min-height: 0; }
+
+  div.intro-header-outer div.share-menu {
+    bottom: 0; }
+
+  div.intro-header-inner h1 {
+    padding-top: 0; }
+
+  div.intro-header-inner h2, div.intro-header-inner p {
+    margin-top: 20px; }
+
+  div.intro-content {
+    margin-top: 0; }
+
+  /* Hero headers */
+  div.hero-header-inner h1 {
+    padding-top: 220px; }
+
+  div.hero-header-outer {
+    min-height: 0; }
+
+  div.hero-header-outer.instability {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 40%, white 92%), url(../images/student-color.png);
+    background-size: contain;
+    background-position: 0 0;
+    background-repeat: no-repeat; }
+
+  div.hero-header-outer.shocks {
+    margin-top: 60px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 40%, white 92%), url(../images/seniors-color.png);
+    background-size: contain;
+    background-position: 0 0;
+    background-repeat: no-repeat; }
+
+  div.hero-header-outer.calfresh {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 40%, white 92%), url(../images/potrero-color.png);
+    background-size: contain;
+    background-position: 0 0;
+    background-repeat: no-repeat; }
+
+  /* Map section */
+  div.map-inner {
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: stretch;
+    align-items: stretch;
+    margin-left: 0; }
+
+  div.map-info, div.map {
+    float: none;
+    width: auto;
+    height: auto;
+    flex-grow: 1;
+    align-self: stretch; }
+
+  div.map, div#california-map {
+    height: 300px; }
+
+  div.map-info {
+    margin-top: 20px; }
+
+  /* Share menu */
+  div.share-menu {
+    right: 0;
+    border-radius: 3px 0 0 3px; }
+
+  /* Footer */
+  div#footer-share-content, div#footer-go-content, div#footer-license-content {
+    max-width: 90%; }
+
+  div#footer-share-heading {
+    flex-direction: column; }
+
+  div#footer-share-heading h2 {
+    text-align: center; }
+
+  .ui-tooltip {
+    margin: 0 15px; } }
 header {
   font-family: Rubik;
   height: 76px;
@@ -1334,97 +1479,6 @@ div.nav-dropdown {
 
   nav.scrolled div.nav-dropdown a.nav-dropdown-item {
     border-color: #EBEBEB; } }
-.cd-primary-nav {
-  display: flex;
-  justify-content: space-evenly;
-  height: 100%; }
-
-.cd-primary-nav > ul {
-  position: absolute;
-  z-index: 2;
-  top: 80px;
-  left: 0;
-  width: 100%;
-  background-color: #FDF4E9;
-  display: none;
-  box-shadow: 0 14px 20px rgba(0, 0, 0, 0.2); }
-
-.cd-primary-nav > ul a {
-  /* target primary-nav links */
-  display: block;
-  height: 50px;
-  line-height: 50px;
-  padding-left: 5%;
-  color: #25283D;
-  font-size: 1.8rem;
-  border-top: 1px solid #EFA44C; }
-
-.cd-primary-nav > ul a:hover, .cd-primary-nav > ul a.selected {
-  color: #8F3985; }
-
-@media only screen and (min-width: 769px) {
-  .cd-primary-nav {
-    /* vertically align its content */
-    display: table; }
-
-  .cd-primary-nav > ul {
-    /* vertically align inside parent element */
-    display: table-cell;
-    vertical-align: middle;
-    /* reset mobile style */
-    position: relative;
-    width: auto;
-    top: 0;
-    padding: 0;
-    background-color: transparent;
-    box-shadow: none; }
-
-  .cd-primary-nav > ul::after {
-    clear: both;
-    content: "";
-    display: block; }
-
-  .cd-primary-nav > ul li {
-    display: inline-block;
-    margin: 0 2em; }
-
-  .cd-primary-nav > ul li:last-of-type {
-    margin-right: 0; }
-
-  .cd-primary-nav > ul a {
-    /* reset mobile style */
-    height: auto;
-    line-height: normal;
-    padding: 0;
-    border: none;
-    color: #32322F;
-    font-size: 18px;
-    line-height: 23px;
-    opacity: 0.6;
-    margin-top: 3px;
-    padding: 4px;
-    text-decoration: none;
-    border-bottom: 6px solid transparent; }
-
-  .cd-primary-nav > ul a:hover, .cd-primary-nav > ul a.selected {
-    border-bottom: 6px solid #EFA44C;
-    opacity: 1;
-    color: #32322F; }
-
-  .cd-primary-nav > ul a.selected:hover {
-    opacity: 1; } }
-.nav-open .cd-primary-nav ul,
-.cd-primary-nav ul:target {
-  /*
-  	show primary nav - mobile only
-  	:target is used to show navigation on no-js devices
-  */
-  display: block; }
-
-@media only screen and (min-width: 769px) {
-  .nav-open .cd-primary-nav ul,
-  .cd-primary-nav ul:target {
-    display: table-cell; } }
 /* Padding on main content */
 div#main {
   padding-top: 76px; }
@@ -1433,151 +1487,3 @@ div#main {
   div#main {
     padding-top: 64px;
     overflow: hidden; } }
-nav a.menu-icon {
-  display: none; }
-
-@media screen and (max-width: 768px) {
-  /* Font */
-  p, div.intro-header-inner p, div.content p, div.quote-content, .ui-tooltip-content {
-    font-size: 16px;
-    line-height: normal; }
-
-  /* Headers */
-  h1 {
-    font-size: 40px;
-    line-height: normal; }
-
-  h2 {
-    font-size: 32px;
-    line-height: normal; }
-
-  /* Section layout */
-  div#main {
-    padding-top: 64px; }
-
-  div.section-header-outer, div.intro-header-outer, div.stats-outer,
-  div.hero-header-outer, div.content-outer, div.quotes-outer, div.map-container {
-    padding: 0 15px; }
-
-  section#explore {
-    padding-top: 20px; }
-
-  /* Stats boxes */
-  div.stats-inner h3, div.stats-boxes-outer {
-    margin: 0; }
-
-  div.stats-box {
-    width: calc(50% - 30px);
-    height: 180px; }
-
-  div.stats-source {
-    margin: 5px; }
-
-  /* Quote explorer */
-  div.quote-image {
-    width: 56px;
-    height: 45px;
-    margin: -25px auto 0 15px; }
-
-  div.quotes-inner {
-    margin-top: 30px; }
-
-  div.quote-selector-line, div.quote-selector-tab {
-    display: none; }
-
-  div.quote-selector-line-container {
-    display: none; }
-
-  div.quote-selector-line-container.mobile {
-    display: flex;
-    margin-top: 40px;
-    padding: 0 25px 40px 25px; }
-
-  div.quote-selector {
-    padding: 0 25px; }
-
-  div.quote-selector-tab.selected {
-    display: block;
-    flex-basis: 50%;
-    flex-grow: 0; }
-
-  /* Intro section */
-  div.intro-header, div.intro-header-outer {
-    min-height: 0; }
-
-  div.intro-header-outer div.share-menu {
-    bottom: 0; }
-
-  div.intro-header-inner h1 {
-    padding-top: 0; }
-
-  div.intro-header-inner h2, div.intro-header-inner p {
-    margin-top: 20px; }
-
-  div.intro-content {
-    margin-top: 0; }
-
-  /* Hero headers */
-  div.hero-header-inner h1 {
-    padding-top: 220px; }
-
-  div.hero-header-outer {
-    min-height: 0; }
-
-  div.hero-header-outer.instability {
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 40%, white 92%), url(../images/student-color.png);
-    background-size: contain;
-    background-position: 0 0;
-    background-repeat: no-repeat; }
-
-  div.hero-header-outer.shocks {
-    margin-top: 60px;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 40%, white 92%), url(../images/seniors-color.png);
-    background-size: contain;
-    background-position: 0 0;
-    background-repeat: no-repeat; }
-
-  div.hero-header-outer.calfresh {
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 40%, white 92%), url(../images/potrero-color.png);
-    background-size: contain;
-    background-position: 0 0;
-    background-repeat: no-repeat; }
-
-  /* Map section */
-  div.map-inner {
-    display: flex;
-    flex-direction: column-reverse;
-    align-content: stretch;
-    align-items: stretch;
-    margin-left: 0; }
-
-  div.map-info, div.map {
-    float: none;
-    width: auto;
-    height: auto;
-    flex-grow: 1;
-    align-self: stretch; }
-
-  div.map, div#california-map {
-    height: 300px; }
-
-  div.map-info {
-    margin-top: 20px; }
-
-  /* Share menu */
-  div.share-menu {
-    right: 0;
-    border-radius: 3px 0 0 3px; }
-
-  /* Footer */
-  div#footer-share-content, div#footer-go-content, div#footer-license-content {
-    max-width: 90%; }
-
-  div#footer-share-heading {
-    flex-direction: column; }
-
-  div#footer-share-heading h2 {
-    text-align: center; }
-
-  .ui-tooltip {
-    margin: 0 15px; } }
