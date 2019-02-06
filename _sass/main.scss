@@ -7,11 +7,22 @@ html, body {
 }
 
 body {
-  background-color: $orange-lighter-color;
   display:flex;
   flex-direction:column;
   font-family: SourceSansPro;
   font-size: 19px;
+}
+
+body:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $orange-lighter-color;
+  height: 200px;
 }
 
 /* Fix for closing tooltips on mobile safari */
@@ -23,7 +34,6 @@ body {
 }
 
 #main {
-  background-color: white;
   flex-grow:1;
 }
 
@@ -61,10 +71,6 @@ h4 {
 }
 
 /* Sections and Standard Section Header */
-section#explore {
-  background-color: $gray-light-color;
-}
-
 div.section-header {
   width: 100%;
 }
