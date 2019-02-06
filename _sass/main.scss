@@ -6,22 +6,15 @@ html, body {
   overflow-x: hidden;
 }
 
+html {
+  overscroll-behavior-y: none;
+}
+
 body {
   display:flex;
   flex-direction:column;
   font-family: SourceSansPro;
   font-size: 19px;
-}
-
-body::after {
-    content: ""; // ::before and ::after both require content
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 200px;
-    background-color: $orange-lighter-color;
-    z-index: -1;
 }
 
 /* Fix for closing tooltips on mobile safari */
