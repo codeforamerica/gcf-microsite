@@ -13,16 +13,15 @@ body {
   font-size: 19px;
 }
 
-body:before {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: $orange-lighter-color;
-  height: 200px;
+body::after {
+    content: ""; // ::before and ::after both require content
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background-color: $orange-lighter-color;
+    z-index: -1;
 }
 
 /* Fix for closing tooltips on mobile safari */

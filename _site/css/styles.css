@@ -86,16 +86,15 @@ body {
   font-family: SourceSansPro;
   font-size: 19px; }
 
-body:before {
-  content: '';
+body::after {
+  content: "";
   position: absolute;
-  z-index: -1;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
+  width: 100%;
+  height: 200px;
   background-color: #FDF4E9;
-  height: 200px; }
+  z-index: -1; }
 
 /* Fix for closing tooltips on mobile safari */
 @supports (-webkit-overflow-scrolling: touch) {
