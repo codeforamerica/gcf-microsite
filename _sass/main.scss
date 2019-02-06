@@ -11,24 +11,23 @@ body {
   flex-direction:column;
   font-family: SourceSansPro;
   font-size: 19px;
+  padding-top: 0;
 }
 
+body.scrolled {
+  padding-top: 76px;
+}
+@media screen and (max-width: $tablet-content-width) {
+  body.scrolled {
+    padding-top: 64px;
+  }
+}
 /* Fix for closing tooltips on mobile safari */
 @supports (-webkit-overflow-scrolling: touch) {
   /* CSS specific to iOS devices */
   body {
     cursor: pointer;
   }
-}
-
-#scroll-bounce-background {
-  background-color: $orange-lighter-color;
-  height: 200px;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
 }
 
 #main {

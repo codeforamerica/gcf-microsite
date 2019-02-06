@@ -84,22 +84,20 @@ body {
   display: flex;
   flex-direction: column;
   font-family: SourceSansPro;
-  font-size: 19px; }
+  font-size: 19px;
+  padding-top: 0; }
 
+body.scrolled {
+  padding-top: 76px; }
+
+@media screen and (max-width: 768px) {
+  body.scrolled {
+    padding-top: 64px; } }
 /* Fix for closing tooltips on mobile safari */
 @supports (-webkit-overflow-scrolling: touch) {
   /* CSS specific to iOS devices */
   body {
     cursor: pointer; } }
-#scroll-bounce-background {
-  background-color: #FDF4E9;
-  height: 200px;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1; }
-
 #main {
   flex-grow: 1; }
 
@@ -1170,9 +1168,6 @@ select::-ms-expand {
     line-height: normal; }
 
   /* Section layout */
-  div#main {
-    padding-top: 64px; }
-
   div.section-header-outer, div.intro-header-outer, div.stats-outer,
   div.hero-header-outer, div.content-outer, div.quotes-outer, div.map-container {
     padding: 0 15px; }
@@ -1304,7 +1299,7 @@ header {
   height: 76px;
   width: 100%;
   z-index: 10;
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   /* Force Hardware Acceleration */
@@ -1315,6 +1310,9 @@ header {
   transition: -webkit-transform .5s;
   transition: transform .5s;
   transition: transform .5s, -webkit-transform .5s; }
+
+header.scrolled {
+  position: fixed; }
 
 #logo {
   background-image: url(../images/gcf-logo.png);
@@ -1486,10 +1484,3 @@ div.nav-dropdown {
   nav.scrolled div.nav-dropdown a.nav-dropdown-item {
     border-color: #EBEBEB; } }
 /* Padding on main content */
-div#main {
-  padding-top: 76px; }
-
-@media only screen and (max-width: 768px) {
-  div#main {
-    padding-top: 64px;
-    overflow: hidden; } }

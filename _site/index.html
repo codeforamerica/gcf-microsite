@@ -1505,7 +1505,6 @@ better place to look at.
       position: {
         my: "left-58 top+30", at: "center bottom", collision: "flipfit",
         using: function( position, feedback ) {
-          console.log((feedback.element.left + 60 >= feedback.target.left ? 'left' : 'right'));
           $(this).addClass(feedback.vertical).addClass((feedback.element.left + 60 >= feedback.target.left ? 'left' : 'right')).css( position);
         }
       },
@@ -1533,8 +1532,7 @@ better place to look at.
 
     // Scroll-top in top section
     $('.scroll-tip').click(function() {
-      var navOffset = header.height();
-      var goTo =  $('div#intro-content').position().top-navOffset;
+      var goTo =  $('div#intro-content').position().top - headerHeight;
       $("html, body").stop().animate({ scrollTop: goTo }, 1500);
     });
 
@@ -1556,10 +1554,11 @@ better place to look at.
         $('.nav-dropdown-item').on('click', function(e){
           e.preventDefault();
           var hash = $(this).attr('href').split('#')[1];
-          var goTo =  $('section#'+ hash).offset().top;
+          var goTo =  $('section#'+ hash).offset().top - headerHeight;
+          scrolling = true;
           $("html, body").stop().animate({ scrollTop: goTo }, 1500, function() {
-            $('.stickynav').addClass('is-hidden');
             $('nav').removeClass('nav-open');
+            scrolling = false;
           });
         });
 
@@ -1568,7 +1567,7 @@ better place to look at.
         $('.nav-logo').on('click', function(e){
           e.preventDefault();
           var hash = $(this).attr('href').split('#')[1];
-          var goTo =  $('section#'+ hash).offset().top - header.height();
+          var goTo =  $('section#'+ hash).offset().top - headerHeight;
           $("html, body").stop().animate({ scrollTop: goTo }, 1500, function() {
             $('nav').removeClass('nav-open');
           });
@@ -1576,7 +1575,6 @@ better place to look at.
       } else if(!$('.stickynav').hasClass('smint')) {
         // The smint plugin takes care of single-page scrolling and tracking
         // the active section when we are using the full size nav
-        console.log("SMINTING");
         $('.stickynav').smint({
           'mySelector': 'section',
           'scrollSpeed' : 1500
@@ -1590,31 +1588,42 @@ better place to look at.
 
     // Change nav bar color and hide mobile nav on scroll
     $(window).on('scroll', function(){
-      if( !scrolling && $(window).innerWidth() <= 768) {
-         scrolling = true;
-         (!window.requestAnimationFrame)
-            ? setTimeout(autoHideHeader, 250)
-            : requestAnimationFrame(autoHideHeader);
+      if( !scrolling) {
+        scrolling = true;
+        (!window.requestAnimationFrame)
+          ? setTimeout(adjustHeader, 250)
+          : requestAnimationFrame(adjustHeader);
       }
-      colorNav();
     });
 
     // Animate the intro background in and pulse the scroll button on load
     $(window).on("load", function() {
-      colorNav();
       $('div.intro-header-outer').animate({opacity: 1}, 1200, function() {
         $('div.intro-header-inner').animate({opacity: 1}, 1000, function() {
           $('div.scroll-tip').addClass("animated heartBeat long");
         });
       });
+      adjustHeader();
     });
 
     // Methods for adjusting the header
-    function colorNav() {
+    function adjustHeader() {
+      if($(window).innerWidth() <= 768) {
+        autoHideHeader();
+      }
+
       if($(window).scrollTop() > $('section#instability').offset().top-140) {
         $('nav').addClass("scrolled");
       } else {
         $('nav').removeClass("scrolled");
+      }
+
+      if($(window).scrollTop() > 0) {
+        $('header').addClass('scrolled');
+        $('body').addClass('scrolled');
+      } else {
+        $('header').removeClass('scrolled');
+        $('body').removeClass('scrolled');
       }
     };
 
