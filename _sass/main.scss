@@ -11,13 +11,13 @@ body {
   flex-direction:column;
   font-family: SourceSansPro;
   font-size: 19px;
-  padding-top: 0;
-}
-
-body.scrolled {
   padding-top: 76px;
 }
+
 @media screen and (max-width: $tablet-content-width) {
+  body {
+    padding-top: 0;
+  }
   body.scrolled {
     padding-top: 64px;
   }

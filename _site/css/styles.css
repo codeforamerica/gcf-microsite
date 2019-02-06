@@ -85,12 +85,12 @@ body {
   flex-direction: column;
   font-family: SourceSansPro;
   font-size: 19px;
-  padding-top: 0; }
-
-body.scrolled {
   padding-top: 76px; }
 
 @media screen and (max-width: 768px) {
+  body {
+    padding-top: 0; }
+
   body.scrolled {
     padding-top: 64px; } }
 /* Fix for closing tooltips on mobile safari */
@@ -1167,7 +1167,6 @@ select::-ms-expand {
     font-size: 32px;
     line-height: normal; }
 
-  /* Section layout */
   div.section-header-outer, div.intro-header-outer, div.stats-outer,
   div.hero-header-outer, div.content-outer, div.quotes-outer, div.map-container {
     padding: 0 15px; }
@@ -1299,7 +1298,7 @@ header {
   height: 76px;
   width: 100%;
   z-index: 10;
-  position: relative;
+  position: fixed;
   top: 0;
   left: 0;
   /* Force Hardware Acceleration */
@@ -1310,9 +1309,6 @@ header {
   transition: -webkit-transform .5s;
   transition: transform .5s;
   transition: transform .5s, -webkit-transform .5s; }
-
-header.scrolled {
-  position: fixed; }
 
 #logo {
   background-image: url(../images/gcf-logo.png);
@@ -1370,13 +1366,17 @@ div.nav-dropdown {
 
 /* Small screens */
 @media only screen and (max-width: 768px) {
-  .stickynav {
-    height: 64px; }
+  header {
+    height: 64px;
+    position: relative; }
 
-  .stickynav.is-hidden {
+  header.is-hidden {
     -webkit-transform: translateY(-100%);
     -ms-transform: translateY(-100%);
     transform: translateY(-100%); }
+
+  header.scrolled {
+    position: fixed; }
 
   #logo {
     height: 64px; }
@@ -1483,4 +1483,3 @@ div.nav-dropdown {
 
   nav.scrolled div.nav-dropdown a.nav-dropdown-item {
     border-color: #EBEBEB; } }
-/* Padding on main content */

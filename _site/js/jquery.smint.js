@@ -58,7 +58,6 @@ If you like Smint, or have suggestions on how it could be improved, send me a tw
 			///////////////////////////////////
 
 			// get initial top offset for the menu
-			console.log(smint);
 			var stickyTop = smint.offset().top;
 
 			// check position and make sticky if needed
