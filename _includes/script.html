@@ -6,8 +6,7 @@
         headerHeight = header.height(),
     		previousTop = 0,
     		currentTop = 0,
-    		scrollDelta = 10,
-    		scrollOffset = 150;
+    		scrollDelta = 10;
 
     const countyMap = new MapboxMap();
     const myths = new Myths();
@@ -179,11 +178,12 @@
 
   	function autoHideHeader() {
   		var currentTop = $(window).scrollTop();
+      console.log(currentTop);
 
       if (previousTop - currentTop > scrollDelta) {
         //if scrolling up...
         $('.stickynav').removeClass('is-hidden');
-      } else if( currentTop - previousTop > scrollDelta && currentTop > scrollOffset) {
+      } else if( currentTop - previousTop > scrollDelta && currentTop > headerHeight) {
         //if scrolling down...
         $('.stickynav').addClass('is-hidden');
         $('nav').removeClass('nav-open');
