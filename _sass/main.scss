@@ -6,10 +6,6 @@ html, body {
   overflow-x: hidden;
 }
 
-html {
-  overscroll-behavior-y: none;
-}
-
 body {
   display:flex;
   flex-direction:column;
@@ -23,6 +19,16 @@ body {
   body {
     cursor: pointer;
   }
+}
+
+#scroll-bounce-background {
+  background-color: $orange-lighter-color;
+  height: 200px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 #main {

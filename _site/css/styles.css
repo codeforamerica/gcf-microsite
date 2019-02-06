@@ -80,9 +80,6 @@ html, body {
   width: 100%;
   overflow-x: hidden; }
 
-html {
-  overscroll-behavior-y: none; }
-
 body {
   display: flex;
   flex-direction: column;
@@ -94,6 +91,15 @@ body {
   /* CSS specific to iOS devices */
   body {
     cursor: pointer; } }
+#scroll-bounce-background {
+  background-color: #FDF4E9;
+  height: 200px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; }
+
 #main {
   flex-grow: 1; }
 
