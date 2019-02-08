@@ -125,7 +125,7 @@ div.intro-header-inner h1 {
   margin-top: 0;
   margin-bottom: 0;
   padding-top:65px;
-  max-width: 515px;
+  // max-width: 515px;
 }
 
 div.intro-header-inner h2 {
@@ -906,12 +906,13 @@ div.map-quote-selector-dots {
 }
 
 div.map-quote-selector-dot {
-  width: 15px;
-  height: 15px;
-  margin: 0 5px;
-  border-radius: 15px;
-  border: 3px solid black;
+  width: 8px;
+  height: 8px;
+  margin: 0 3px;
+  border-radius: 8px;
+  border: 1px solid black;
   cursor: pointer;
+  display: none;
 }
 
 div.map-quote-selector-dot.selected {
@@ -1050,7 +1051,7 @@ div.share-menu {
   width: 58px;
   position: absolute;
   right: 50px;
-  bottom: 48px;
+  bottom: 70px;
   overflow: hidden;
   border-radius: 3px;
 }
@@ -1059,13 +1060,9 @@ div.hero-header div.share-menu {
   bottom: 102px;
 }
 
-section#explore div.share-menu {
-  bottom: 68px;
-  right: 0;
-}
-
 div.section-header div.share-menu {
-  bottom: 56px;
+  bottom: 40px;
+  right: 0;
 }
 
 div.share-menu.closed {

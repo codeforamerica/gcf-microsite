@@ -1,24 +1,24 @@
 intro:
-  title: "Nationwide:"
+  title: "Facts about food assistance"
   stats:
     - tagline: ""
       title: "7 in 10"
-      body: "SNAP beneficiaries are part of a household with children."
+      body: "SNAP beneficiaries are part of a household with children"
 
     - tagline: ""
       title: "1 in 3"
-      body: "are part of households with seniors or people with disabilities."
+      body: "are part of households with seniors or people with disabilities"
 
     - tagline: ""
       title: "$134"
-      body: "is the average benefit per person, per month."
+      body: "is the average benefit per person, per month"
 
     - tagline: "More than"
       title: "1 in 2"
-      body: "working age, non-disabled SNAP recipients has a job."
+      body: "working age, non-disabled SNAP recipients has a job"
 
   citations:
-    - text: "https://www.cbpp.org/research/policy-basics-the-supplemental-nutrition-assistance-program-snap"
+    - text: "CBPP SNAP Policy Basics"
       link: "https://www.cbpp.org/research/policy-basics-the-supplemental-nutrition-assistance-program-snap"
 
 instability:

@@ -11,7 +11,6 @@ class MapboxMap {
     this.hoveredCounty =  null;
     this.selectedCounty = null;
     this.style = 'mapbox://styles/codeforamerica/cjrhm3dtk7kla2spjq690i1sk';
-    // this.style = 'mapbox://styles/mapbox/light-v9';
 
     this.countyGeoData = {{site.data.county_geo | jsonify}};
     this.countyGcfData = {{site.data.county_info | jsonify}};
@@ -298,27 +297,29 @@ class MapboxMap {
     			"</div>"
     		);
 
+        $('div.map-quote-selector-dots').html("1 of " + countyData['quotes'].length);
+
     		// Append quote selector
-    		for (var i = 0; i < countyData['quotes'].length; i++) {
-    			var quote = countyData['quotes'][i];
-    			var quoteDotHtml = "<div id='map-dot-" + i + "' class='map-quote-selector-dot'></div>";
-    			if (i == 0) {
-    				quoteDotHtml = "<div id='map-dot-" + i + "' class='map-quote-selector-dot selected'></div>"
-    			}
-    			$('div.map-quote-selector-dots').append(quoteDotHtml);
-    		}
+    		// for (var i = 0; i < countyData['quotes'].length; i++) {
+    		// 	var quote = countyData['quotes'][i];
+    		// 	var quoteDotHtml = "<div id='map-dot-" + i + "' class='map-quote-selector-dot'></div>";
+    		// 	if (i == 0) {
+    		// 		quoteDotHtml = "<div id='map-dot-" + i + "' class='map-quote-selector-dot selected'></div>"
+    		// 	}
+    		// 	$('div.map-quote-selector-dots').append(quoteDotHtml);
+    		// }
     	}
 
       var outerThis = this;
-  		$('div.map-quote-selector-dot').click(function() {
-  			var dotIndex = this.id.split('-')[2];
-  			outerThis.activeQuoteIndex = dotIndex;
-
-  			$('div.map-quote__scroller').html(countyData['quotes'][dotIndex]);
-
-  			$('div.map-quote-selector-dot').removeClass('selected');
-  			$('#'+this.id).addClass('selected');
-  		});
+  		// $('div.map-quote-selector-dot').click(function() {
+  		// 	var dotIndex = this.id.split('-')[2];
+  		// 	outerThis.activeQuoteIndex = dotIndex;
+      //
+  		// 	$('div.map-quote__scroller').html(countyData['quotes'][dotIndex]);
+      //
+  		// 	$('div.map-quote-selector-dot').removeClass('selected');
+  		// 	$('#'+this.id).addClass('selected');
+  		// });
 
     	$('div.map-quote-selector-arrow.left').click(function() {
     		if(outerThis.activeQuoteIndex == 0) {
@@ -327,9 +328,10 @@ class MapboxMap {
     			outerThis.activeQuoteIndex -= 1;
     		}
     		$('div.map-quote__scroller').html(countyData['quotes'][outerThis.activeQuoteIndex]);
+        $('div.map-quote-selector-dots').html(outerThis.activeQuoteIndex+1 + " of " + countyData['quotes'].length);
 
-    		$('div.map-quote-selector-dot').removeClass('selected');
-    		$('div#map-dot-' + outerThis.activeQuoteIndex).addClass('selected');
+    		// $('div.map-quote-selector-dot').removeClass('selected');
+    		// $('div#map-dot-' + outerThis.activeQuoteIndex).addClass('selected');
     	});
 
     	$('div.map-quote-selector-arrow.right').click(function() {
@@ -339,9 +341,10 @@ class MapboxMap {
     			outerThis.activeQuoteIndex += 1;
     		}
     		$('div.map-quote__scroller').html(countyData['quotes'][outerThis.activeQuoteIndex]);
+        $('div.map-quote-selector-dots').html(outerThis.activeQuoteIndex+1 + " of " + countyData['quotes'].length);
 
-    		$('div.map-quote-selector-dot').removeClass('selected');
-    		$('div#map-dot-' + outerThis.activeQuoteIndex).addClass('selected');
+    		// $('div.map-quote-selector-dot').removeClass('selected');
+    		// $('div#map-dot-' + outerThis.activeQuoteIndex).addClass('selected');
     	});
 
       $('.map-quote__scroller').scroll(function() {
