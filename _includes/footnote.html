@@ -1,3 +1,3 @@
 {% assign footnoteIndex = include.number | minus:1 %}
 {% assign footnote = site.data.footnotes[footnoteIndex] %}
-<sup><span class="footnote" title='{{footnote.author}}. {{footnote.year}}. <a href="{{footnote.link}}">{{footnote.title}}</a>. {{footnote.publication}}'>[{{include.number}}]</span></sup>
+<sup><span class="footnote" title='{{footnote.author}}. {{footnote.year}}. <a target="_blank" href="{{footnote.link}}">{{footnote.title}}</a>. {{footnote.publication}}'>[{{include.number}}]</span></sup>
