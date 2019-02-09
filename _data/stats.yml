@@ -28,26 +28,22 @@ instability:
       title: "1 in 5"
       body: "children live in poverty."
 
-    - tagline: "Nearly"
-      title: "1 in 5"
-      body: "people age 65 or older live in poverty."
-
     - tagline: ""
       title: "4 in 5"
       body: "people in poverty live with at least one working adult."
 
-    - tagline: "Nearly"
-      title: "12%"
-      body: "struggle to put healthy food on the table."
+    - tagline: ""
+      title: "1 in 10"
+      body: "Californians receive CalFresh."
 
-    # - tagline: ""
-    #   title: "1 in 10"
-    #   body: "Californians receive CalFresh."
+    - tagline: ""
+      title: "73%"
+      body: "of CalFresh recipients are members of households with children."
 
   citations:
-    - text: "http://www.ppic.org/publication/poverty-in-california/"
+    - text: "PPIC Poverty in California"
       link: "http://www.ppic.org/publication/poverty-in-california/"
-    - text: "https://www.cbpp.org/sites/default/files/atoms/files/snap_factsheet_california.pdf"
+    - text: "CBPP SNAP Factsheet for California"
       link: "https://www.cbpp.org/sites/default/files/atoms/files/snap_factsheet_california.pdf"
 
 shocks:

@@ -1,32 +1,79 @@
-- author: "Edin et al"
+1:
+  author: "USDA"
+  year: "2018"
+  title: "Supplemental Nutrition Assistance Program Fiscal Year 2019 Income Eligibility Standards"
+  link: "https://fns-prod.azureedge.net/sites/default/files/snap/FY19-Income-Eligibility-Standards.pdf"
+
+2:
+  author: "US FNS"
+  year: "2017"
+  title: "What Can SNAP Buy?"
+  link: "https://www.fns.usda.gov/snap/eligible-food-items"
+
+3:
+  author: "CBPP"
+  year: "2018"
+  title: "A Quick Guide to SNAP Eligibility and Benefits"
+  link: "https://www.cbpp.org/research/food-assistance/a-quick-guide-to-snap-eligibility-and-benefits"
+
+4:
+  author: "Edin et al"
   year: "2013"
   title: "SNAP Food Security In-Depth Interview Study"
   link: "https://fns-prod.azureedge.net/sites/default/files/SNAPFoodSec.pdf"
   publication: "USDA"
 
-- author: "Edin and Kissane"
+5:
+  author: "Edin and Kissane"
   year: "2010"
   title: "Poverty and the American Family: A Decade in Review"
   link: "https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1741-3737.2010.00713.x"
   publication: "Journal of Marriage and Family"
 
-- author: "Renwick and Fox"
+6:
+  author: "Renwick and Fox"
   year: "2016"
   title: "The Supplemental Poverty Measure: 2015"
   link: "https://www.census.gov/content/dam/Census/library/publications/2016/demo/p60-258.pdf"
   publication: "US Census Bureau"
 
-- author: "USDA"
+30:
+  author: "US Bureau of Economic Analysis"
   year: "2018"
-  title: "Supplemental Nutrition Assistance Program Fiscal Year 2019 Income Eligibility Standards"
-  link: "https://fns-prod.azureedge.net/sites/default/files/snap/FY19-Income-Eligibility-Standards.pdf"
+  title: "Regional Price Parities by State and Metro Area"
+  link: "https://www.bea.gov/data/prices-inflation/regional-price-parities-state-and-metro-area"
 
-- author: "US FNS"
-  year: "2017"
-  title: "What Can SNAP Buy?"
-  link: "https://www.fns.usda.gov/snap/eligible-food-items"
-
-- author: "CBPP"
+31:
+  author: "Butcher and Schanzenbach"
   year: "2018"
-  title: "A Quick Guide to SNAP Eligibility and Benefits"
-  link: "https://www.cbpp.org/research/food-assistance/a-quick-guide-to-snap-eligibility-and-benefits"
+  title: "Most Workers in Low-Wage Labor Market Work Substantial Hours, in Volatile Jobs."
+  link: "https://www.cbpp.org/research/poverty-and-inequality/most-workers-in-low-wage-labor-market-work-substantial-hours-in"
+  publication: "CBPP"
+
+32:
+  author: "Keith-Jennings and Chaudhry"
+  year: "2018"
+  title: "Most Working-Age SNAP Participants Work, But Often in Unstable Jobs."
+  link: "https://www.cbpp.org/research/food-assistance/most-working-age-snap-participants-work-but-often-in-unstable-jobs"
+  publication: "CBPP"
+
+33:
+  author: "Edin et al"
+  year: "2013"
+  title: "SNAP Food Security In-Depth Interview Study."
+  link: "https://fns-prod.azureedge.net/sites/default/files/SNAPFoodSec.pdf"
+  publication: "USDA"
+
+34:
+  author: "USDA"
+  year: "2018"
+  title: "Food Security Interactive Charts and Highlights."
+  link: "https://www.ers.usda.gov/topics/food-nutrition-assistance/food-security-in-the-us/interactive-charts-and-highlights/"
+  publication: "USDA"
+
+35:
+  author: "Coleman-Jensen et al"
+  year: "2018"
+  title: "Statistical Supplement to Household Food Security in the United States in 2017."
+  link: "https://www.ers.usda.gov/webdocs/publications/90029/ap-079.pdf?v=0"
+  publication: "USDA"

@@ -15,15 +15,22 @@
         {% endfor %}
         </div>
       </div>
-      {% for citation in statsData.citations %}
+      {% if statsData.citations.size > 0 %}
         <div class="stats-source">
-          {% if citation.link.size > 0 %}
-            <a target="_blank" href="{{citation.link}}">{{citation.text}}</a>
+          {% if statsData.citations.size == 1 %}
+            Source:
           {% else %}
-            {{citation.text}}
+            Sources:
           {% endif %}
+          {% for citation in statsData.citations %}
+            {% if citation.link.size > 0 %}
+              &nbsp;<a target="_blank" href="{{citation.link}}">{{citation.text}}</a>
+            {% else %}
+              {{citation.text}}
+            {% endif %}
+          {% endfor %}
         </div>
-      {% endfor %}
+      {% endif %}
     </div>
   </div>
 </div>
