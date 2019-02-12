@@ -1183,7 +1183,7 @@ section#references {
   div.hero-header-outer, div.content-outer, div.quotes-outer, div.map-container {
     padding: 0 15px; }
 
-  section#explore {
+  div.section-header-inner h2 {
     padding-top: 20px; }
 
   /* Stats boxes */
