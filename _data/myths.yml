@@ -73,6 +73,7 @@
 - myth: People are taking advantage of the program.
   fact: Entitlement programs like SNAP have extremely low fraud.
   detail: |
+    <p>
     Entitlement programs like SNAP have an extremely low rate of cheating or
     fraud.
     <sup><span class="footnote" title="Rude. 2017. <a target='_blank' href='http://time.com/4711668/history-food-stamp-fraud/'>&quot;The Very Short History of Food Stamp Fraud in America.&quot;</a> TIME.">[24]</span></sup>
@@ -82,16 +83,21 @@
     for, they are required to pay the government back. In federal audits, 97% of
     SNAP benefits cases accurately reflect the recipients' circumstances.
     <sup><span class="footnote" title="USDA. 2017. <a target='_blank' href='https://fns-prod.azureedge.net/sites/default/files/snap/SNAPQCAnnualReportFY2014.pdf'>&quot;SNAP Quality Control Annual Report: FY 2014.&quot;</a>">[27]</span></sup>
+    </p>
 
 - myth: The program is inefficient.
   fact: SNAP dollars are spent effectively.
   detail: |
+    <p>
     93% of Federal SNAP dollars go to food that SNAP beneficiaries buy.
     <sup><span class="footnote" title="CBPP. 2018. <a target='_blank' href='https://www.cbpp.org/research/policy-basics-the-supplemental-nutrition-assistance-program-snap'>&quot;Policy Basics: SNAP.&quot;</a>">[28]</span></sup>
+    </p>
 
 - myth: Undocumented immigrants use food assistance.
   fact: People who are undocumented immigrants are not and have never been eligible for SNAP.
   detail: |
+    <p>
     Applicants are linked to their social security number and are required to
     confirm their identity by submitting verification documents.
     <sup><span class="footnote" title="FNS. 2018. <a target='_blank' href='https://www.fns.usda.gov/snap/eligibility#Are%20non-citizens%20eligible%20for%20SNAP?'>&quot;SNAP: Frequently Asked Questions.&quot;</a>">[29]</span></sup>
+    </p>
