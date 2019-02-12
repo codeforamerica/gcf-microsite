@@ -1186,6 +1186,9 @@ section#references {
   div.section-header-inner h2 {
     padding-top: 20px; }
 
+  div.section-header div.share-menu {
+    display: none; }
+
   /* Stats boxes */
   div.stats-inner h3, div.stats-boxes-outer {
     margin: 0; }
