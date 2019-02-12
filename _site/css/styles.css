@@ -1014,59 +1014,63 @@ span.footnote {
 .ui-tooltip.bottom {
   box-shadow: 10px -10px 0 0 #EFA44C; }
 
-.ui-tooltip.top:after, .ui-tooltip.top:before {
-  bottom: 100%;
-  left: 10%;
-  border: solid transparent;
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none; }
+/* Tooltip arrows only on larger screens. On mobile they don't usually line up */
+@media screen and (min-width: 769px) {
+  .ui-tooltip.top:after, .ui-tooltip.top:before {
+    bottom: 100%;
+    left: 10%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none; }
 
-.ui-tooltip.top:after {
-  border-color: rgba(255, 255, 255, 0);
-  border-bottom-color: white;
-  border-width: 25px;
-  margin-left: -25px; }
+  .ui-tooltip.top:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: white;
+    border-width: 25px;
+    margin-left: -25px; }
 
-.ui-tooltip.top:before {
-  border-color: 239, 164, 76, 0;
-  border-bottom-color: #EFA44C;
-  border-width: 28px;
-  margin-left: -28px; }
+  .ui-tooltip.top:before {
+    border-color: 239, 164, 76, 0;
+    border-bottom-color: #EFA44C;
+    border-width: 28px;
+    margin-left: -28px; }
 
-.ui-tooltip.bottom:after, .ui-tooltip.bottom:before {
-  top: 100%;
-  left: 10%;
-  border: solid transparent;
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none; }
+  .ui-tooltip.bottom:after, .ui-tooltip.bottom:before {
+    top: 100%;
+    left: 10%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none; }
 
-.ui-tooltip.bottom:after {
-  border-color: rgba(255, 255, 255, 0);
-  border-top-color: white;
-  border-width: 25px;
-  margin-left: -25px; }
+  .ui-tooltip.bottom:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-top-color: white;
+    border-width: 25px;
+    margin-left: -25px; }
 
-.ui-tooltip.bottom:before {
-  border-color: rgba(239, 164, 76, 0);
-  border-top-color: #EFA44C;
-  border-width: 28px;
-  margin-left: -28px; }
+  .ui-tooltip.bottom:before {
+    border-color: rgba(239, 164, 76, 0);
+    border-top-color: #EFA44C;
+    border-width: 28px;
+    margin-left: -28px; }
 
-.ui-tooltip.right:after, .ui-tooltip.right:before {
-  left: 90% !important; }
-
+  .ui-tooltip.right:after, .ui-tooltip.right:before {
+    left: 90% !important; } }
 .ui-tooltip-content {
   padding: 20px;
   font-family: SourceSansPro;
   font-size: 16px;
   line-height: 20px; }
 
+@media screen and (max-width: 768px) {
+  .ui-tooltip-content {
+    padding: 10px; } }
 .ui-helper-hidden-accessible {
   border: 0;
   clip: rect(0 0 0 0);

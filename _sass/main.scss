@@ -1150,58 +1150,61 @@ span.footnote {
   box-shadow: 10px -10px 0 0 $orange-dark-color;
 }
 
-.ui-tooltip.top:after, .ui-tooltip.top:before {
-  bottom: 100%;
-	left: 10%;
-	border: solid transparent;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-}
+/* Tooltip arrows only on larger screens. On mobile they don't usually line up */
+@media screen and (min-width: $tablet-content-width+1) {
+  .ui-tooltip.top:after, .ui-tooltip.top:before {
+    bottom: 100%;
+  	left: 10%;
+  	border: solid transparent;
+  	content: " ";
+  	height: 0;
+  	width: 0;
+  	position: absolute;
+  	pointer-events: none;
+  }
 
-.ui-tooltip.top:after {
-	border-color: rgba(255, 255, 255, 0);
-	border-bottom-color: white;
-	border-width: 25px;
-	margin-left: -25px;
-}
+  .ui-tooltip.top:after {
+  	border-color: rgba(255, 255, 255, 0);
+  	border-bottom-color: white;
+  	border-width: 25px;
+  	margin-left: -25px;
+  }
 
-.ui-tooltip.top:before {
-	border-color: $orange-dark-transparent-rgba;
-	border-bottom-color: $orange-dark-color;
-	border-width: 28px;
-	margin-left: -28px;
-}
+  .ui-tooltip.top:before {
+  	border-color: $orange-dark-transparent-rgba;
+  	border-bottom-color: $orange-dark-color;
+  	border-width: 28px;
+  	margin-left: -28px;
+  }
 
-.ui-tooltip.bottom:after, .ui-tooltip.bottom:before {
-  top: 100%;
-	left: 10%;
-	border: solid transparent;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-}
+  .ui-tooltip.bottom:after, .ui-tooltip.bottom:before {
+    top: 100%;
+  	left: 10%;
+  	border: solid transparent;
+  	content: " ";
+  	height: 0;
+  	width: 0;
+  	position: absolute;
+  	pointer-events: none;
+  }
 
-.ui-tooltip.bottom:after {
-	border-color: rgba(255, 255, 255, 0);
-	border-top-color: white;
-	border-width: 25px;
-	margin-left: -25px;
-}
+  .ui-tooltip.bottom:after {
+  	border-color: rgba(255, 255, 255, 0);
+  	border-top-color: white;
+  	border-width: 25px;
+  	margin-left: -25px;
+  }
 
-.ui-tooltip.bottom:before {
-	border-color: rgba(239, 164, 76, 0);
-	border-top-color: $orange-dark-color;
-	border-width: 28px;
-	margin-left: -28px;
-}
+  .ui-tooltip.bottom:before {
+  	border-color: rgba(239, 164, 76, 0);
+  	border-top-color: $orange-dark-color;
+  	border-width: 28px;
+  	margin-left: -28px;
+  }
 
-.ui-tooltip.right:after, .ui-tooltip.right:before {
-  left: 90% !important;
+  .ui-tooltip.right:after, .ui-tooltip.right:before {
+    left: 90% !important;
+  }
 }
 
 .ui-tooltip-content {
@@ -1209,6 +1212,12 @@ span.footnote {
   font-family: SourceSansPro;
   font-size: 16px;
   line-height: 20px;
+}
+
+@media screen and (max-width: $tablet-content-width) {
+  .ui-tooltip-content {
+    padding: 10px;
+  }
 }
 
 .ui-helper-hidden-accessible {
