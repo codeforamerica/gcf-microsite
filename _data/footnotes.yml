@@ -37,6 +37,161 @@
   link: "https://www.census.gov/content/dam/Census/library/publications/2016/demo/p60-258.pdf"
   publication: "US Census Bureau."
 
+7:
+  author: "Desmond."
+  year: "2018."
+  text: "Americans Want to Believe Jobs Are the Solution to Poverty. They’re Not."
+  link: "https://www.nytimes.com/2018/09/11/magazine/americans-jobs-poverty-homeless.html"
+  publication: "New York Times Magazine."
+
+8:
+  author: "Suh Lauder and Lauter."
+  year: "2016."
+  text: "Views on poverty: 1985 and today."
+  link: "https://www.latimes.com/projects/la-na-pol-poverty-poll-interactive/"
+  publication: "Los Angeles Times."
+
+9:
+  author: "Butcher and Schanzenbach."
+  year: "2018."
+  text: "Most Workers in Low-Wage Labor Market Work Substantial Hours, in Volatile Jobs."
+  link: "https://www.cbpp.org/research/poverty-and-inequality/most-workers-in-low-wage-labor-market-work-substantial-hours-in"
+  publication: "CBPP."
+
+10:
+  author: "USDA."
+  year: "2016."
+  text: "Characteristics Of Supplemental Nutrition Assistance Program Households: Fiscal Year 2015."
+  link: "https://fns-prod.azureedge.net/sites/default/files/ops/Characteristics2015-Summary.pdf"
+
+11:
+  author: "Keith-Jennings and Chaudhry."
+  year: "2018."
+  text: "Most Working-Age SNAP Participants Work, But Often in Unstable Jobs."
+  link: "https://www.cbpp.org/research/food-assistance/most-working-age-snap-participants-work-but-often-in-unstable-jobs"
+  publication: "CBPP."
+
+12:
+  author: "Bauer and Schanzenbach."
+  year: "2018."
+  text: "Who Loses SNAP Benefits If Additional Work Requirements Are Imposed? Workers."
+  link: "http://www.hamiltonproject.org/blog/who_loses_snap_benefits_if_additional_work_requirements_are_imposed_workers"
+  publication: "The Hamilton Project."
+
+13:
+  author: "Keith-Jennings and Chaudhry."
+  year: "2018."
+  text: "Most Working-Age SNAP Participants Work, But Often in Unstable Jobs."
+  link: "https://www.cbpp.org/research/food-assistance/most-working-age-snap-participants-work-but-often-in-unstable-jobs"
+  publication: "CBPP."
+
+14:
+  author: "Carlson et al."
+  year: "2017."
+  text: "SNAP Provides Needed Food Assistance to Millions of People with Disabilities."
+  link: "https://www.cbpp.org/research/food-assistance/snap-provides-needed-food-assistance-to-millions-of-people-with"
+  publication: "CBPP."
+
+15:
+  author: "Hanson."
+  year: "2010."
+  text: "The Food Assistance National Input-Output Multiplier Model and Stimulus Effects of SNAP."
+  link: "https://www.ers.usda.gov/webdocs/publications/44748/7996_err103_1_.pdf"
+  publication: "USDA."
+
+16:
+  author: "Call and Shimada."
+  year: "2016."
+  text: "Lost Dollars, Empty Plates: The Impact of CalFresh on State and Local Economies."
+  link: "https://cfpa.net/CalFresh/CFPAPublications/LDEP-FullReport-2016.pdf"
+  publication: "CFPA."
+
+17:
+  author: "Bohn et al."
+  year: "2018."
+  text: "Poverty in California."
+  link: "https://www.ppic.org/publication/poverty-in-california/"
+  publication: "PPIC."
+
+18:
+  author: "Wheaton and Tran."
+  year: "2018."
+  text: "The Antipoverty Effects of the Supplemental Nutrition Assistance Program."
+  link: "https://www.urban.org/research/publication/antipoverty-effects-supplemental-nutrition-assistance-program"
+  publication: "Urban Institute."
+
+19:
+  author: "Hoynes and Schanzenbach."
+  year: "2015."
+  text: "U.S. Food and Nutrition Programs."
+  link: "https://www.nber.org/papers/w21057.pdf"
+  publication: "NBER Working Paper."
+
+20:
+  author: "Gundersen and Ziliak."
+  year: "2015."
+  text: "Food Insecurity And Health Outcomes."
+  link: "https://www.healthaffairs.org/doi/full/10.1377/hlthaff.2015.0645"
+  publication: "Health Affairs."
+
+21:
+  author: "Bartfeld et al."
+  year: "2015."
+  text: "SNAP, Food Security, and Health."
+  link: "https://www.irp.wisc.edu/wp/wp-content/uploads/2018/05/PB8-SNAPFoodSecurityHealth.pdf"
+  publication: "Institute for Research on Poverty at the University of Wisconsin - Madison."
+
+22:
+  author: "US Council of Economic Advisors."
+  year: "2015."
+  text: "Long-Term Benefits of SNAP."
+  link: "https://obamawhitehouse.archives.gov/sites/whitehouse.gov/files/documents/SNAP_report_final_nonembargo.pdf"
+  publication: "Obama Whitehouse Archives."
+
+23:
+  author: "Legal Services of Northern California."
+  year: "2019."
+  text: "Guide to CalFresh Benefits."
+  link: "http://calfresh.guide/using-calfresh-ebt-benefits/#cannot-buy"
+
+24:
+  author: "Rude."
+  year: "2017."
+  text: "The Very Short History of Food Stamp Fraud in America."
+  link: "http://time.com/4711668/history-food-stamp-fraud/"
+  publication: "TIME."
+
+25:
+  author: "Office of the Inspector General."
+  year: "2017."
+  text: "Detecting Potential SNAP Trafficking."
+  link: "https://www.usda.gov/oig/webdocs/27901-0002-13.pdf"
+  publication: "USDA."
+
+26:
+  author: "FNS."
+  year: "2017."
+  text: "SNAP State Activity Report: FY 2016."
+  link: "https://fns-prod.azureedge.net/sites/default/files/snap/FY16-State-Activity-Report.pdf"
+
+27:
+  author: "USDA."
+  year: "2017."
+  text: "SNAP Quality Control Annual Report: FY 2014."
+  link: "https://fns-prod.azureedge.net/sites/default/files/snap/SNAPQCAnnualReportFY2014.pdf"
+
+28:
+  author: "CBPP."
+  year: "2018."
+  text: "Policy Basics: SNAP."
+  link: "https://www.cbpp.org/research/policy-basics-the-supplemental-nutrition-assistance-program-snap"
+
+29:
+  author: "FNS."
+  year: "2018."
+  text: "SNAP: Frequently Asked Questions."
+  link: "https://www.fns.usda.gov/snap/eligibility#Are%20non-citizens%20eligible%20for%20SNAP?"
+
 30:
   author: "US Bureau of Economic Analysis."
   year: "2018."
@@ -125,20 +280,174 @@
   publication: "Mathematica Policy Research."
 
 44:
-  author:
-  link:
+  author: "Edin et al."
+  year: "2013."
+  text: "SNAP Food Security In-Depth Interview Study."
+  link: "https://fns-prod.azureedge.net/sites/default/files/SNAPFoodSec.pdf"
+  publication: "USDA."
+
 45:
-  author:
-  link:
+  author: "Edin and Kissane."
+  year: "2010."
+  text: "Poverty and the American Family: A Decade in Review."
+  link: "https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1741-3737.2010.00713.x"
+  publication: "Journal of Marriage and Family."
+
 46:
-  author:
-  link:
+  author: "See pages 38-40 of Cellini et al."
+  year: "2008."
+  text: "The Dynamics of Poverty in the United States: A Review of Data, Methods, and Findings."
+  link: "https://www.urban.org/sites/default/files/publication/30656/411960-The-Dynamics-of-Poverty-in-the-United-States-A-Review-of-Data-Methods-and-Findings.PDF"
+  publication: "Pre-print of article in Journal of Policy Analysis and Management."
+
 47:
-  author:
-  link:
+  author: "Social Security Administration."
+  year: "2018."
+  text: "Annual Statistical Report on the Social Security Disability Insurance Program, 2017."
+  link: "https://www.ssa.gov/policy/docs/statcomps/di_asr/2017/charts-text.html#chart11"
+
 48:
-  author:
-  link:
+  author: "GAO."
+  year: "2018."
+  text: "SSA Disability Programs: Better Metrics and Evaluation Needed to Inform Decision-Making."
+  link: "https://www.gao.gov/assets/700/693402.pdf"
+  publication: "Congressional Testimony of Elizabeth Curda, GAO Director of Education, Workforce, and Income Security."
+
 49:
-  author:
-  link:
+  author: "Carlson et al."
+  year: "2017."
+  text: "SNAP Provides Needed Food Assistance to Millions of People with Disabilities."
+  link: "https://www.cbpp.org/research/food-assistance/snap-provides-needed-food-assistance-to-millions-of-people-with"
+  publication: "CBPP."
+
+50:
+  author: "Coleman-Jensen and Nord."
+  text: "Food Insecurity Among Households With Working-Age Adults With Disabilities."
+  link: "https://www.ers.usda.gov/webdocs/publications/45038/34589_err_144.pdf?v=0"
+  publication: "USDA."
+
+51:
+  author: "Fox."
+  year: "2017."
+  text: "The Supplemental Poverty Measure: 2016."
+  link: "https://www.census.gov/library/publications/2017/demo/p60-261.html"
+  publication: "US Census Bureau."
+
+52:
+  author: "Brady et al."
+  year: "2017."
+  text: "Rethinking the Risks of Poverty: A Framework for Analyzing Prevalences and Penalties."
+  link: "https://www.journals.uchicago.edu/doi/abs/10.1086/693678"
+  publication: "American Journal of Sociology."
+
+53:
+  author: "Edin and Kissane."
+  year: "2010."
+  text: "Poverty and the American Family: A Decade in Review."
+  link: "https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1741-3737.2010.00713.x"
+  publication: "Journal of Marriage and Family."
+
+54:
+  author: "Cellini et al."
+  year: "2008."
+  text: "The Dynamics of Poverty in the United States: A Review of Data, Methods, and Findings."
+  link: "https://www.urban.org/sites/default/files/publication/30656/411960-The-Dynamics-of-Poverty-in-the-United-States-A-Review-of-Data-Methods-and-Findings.PDF"
+  publication: "Pre-print of article in Journal of Policy Analysis and Management."
+
+55:
+  author: "Rosenbaum."
+  year: "2013."
+  text: "The Relationship Between SNAP and Work Among Low-Income Households."
+  link: "https://www.cbpp.org/sites/default/files/atoms/files/1-29-13fa.pdf"
+  publication: "CBPP."
+
+56:
+  author: "Butcher and Schanzenbach."
+  year: "2018."
+  text: "Most Workers in Low-Wage Labor Market Work Substantial Hours, in Volatile Jobs."
+  link: "https://www.cbpp.org/research/poverty-and-inequality/most-workers-in-low-wage-labor-market-work-substantial-hours-in"
+  publication: "CBPP."
+
+57:
+  author: "Fischer."
+  year: "2010."
+  text: "Made in America: A Social History of American Culture and Character."
+  link: "https://books.google.com/books?id=BbPhk4Hoy3UC&lpg=PP1&pg=PP1#v=onepage&q&f=false"
+  publication: "University of Chicago Press."
+
+58:
+  author: "Bohn et al."
+  year: "2018."
+  text: "Poverty in California."
+  link: "https://www.ppic.org/publication/poverty-in-california/"
+  publication: "PPIC."
+
+59:
+  author: "Bartfeld et al."
+  year: "2016."
+  text: "SNAP Matters: How Food Stamps Affect Health and Well-Being."
+  link: "https://books.google.com/books?id=4oGfCgAAQBAJ&printsec=frontcover&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false"
+  publication: "Stanford University Press."
+
+60:
+  author: "Hunger Report."
+  year: "2015."
+  text: "The Cost of Hunger in the United States."
+  link: "http://www.hungerreport.org/costofhunger/index.html"
+  publication: "Bread for the World Institute."
+
+61:
+  author: "Gundersen and Ziliak."
+  year: "2015."
+  text: "Food Insecurity And Health Outcomes."
+  link: "https://www.healthaffairs.org/doi/full/10.1377/hlthaff.2015.0645"
+  publication: "Health Affairs."
+
+62:
+  author: "Bartfeld et al."
+  year: "2015."
+  text: "SNAP, Food Security, and Health."
+  link: "https://www.irp.wisc.edu/wp/wp-content/uploads/2018/05/PB8-SNAPFoodSecurityHealth.pdf"
+  publication: "Institute for Research on Poverty at the University of Wisconsin - Madison."
+
+63:
+  author: "US Council of Economic Advisors."
+  year: "2015."
+  text: "Long-Term Benefits of the Supplemental Nutrition Assistance Program."
+  link: "https://obamawhitehouse.archives.gov/sites/whitehouse.gov/files/documents/SNAP_report_final_nonembargo.pdf"
+  publication: "Obama Whitehouse Archives."
+
+64:
+  author: "Carlson and Keith-Jennings."
+  year: "2018."
+  text: "SNAP Is Linked with Improved Nutritional Outcomes and Lower Health Care Costs."
+  link: "https://www.cbpp.org/research/food-assistance/snap-is-linked-with-improved-nutritional-outcomes-and-lower-health-care"
+  publication: "CBPP."
+
+65:
+  author: "Hoynes and Schanzenbach."
+  year: "2015."
+  text: "U.S. Food and Nutrition Programs."
+  link: "https://www.nber.org/papers/w21057.pdf"
+  publication: "NBER Working Paper."
+
+66:
+  author: "Almond et al."
+  year: "2011."
+  text: "Inside the War on Poverty: The Impact of Food Stamps on Birth Outcomes."
+  link: "https://www.mitpressjournals.org/doi/pdfplus/10.1162/REST_a_00089"
+  publication: "Review of Economics and Statistics."
+
+67:
+  author: "Hastings and Shapiro."
+  year: "2018."
+  text: "How Are SNAP Benefits Spent? Evidence from a Retail Panel."
+  link: "http://www.brown.edu/Research/Shapiro/pdfs/mental_coupons.pdf"
+  publication: "American Economic Review."
+
+68:
+  author: "Blinder and Zandi."
+  year: "2015."
+  text: "The Financial Crisis: Lessons for the Next One."
+  link: "https://www.cbpp.org/research/economy/the-financial-crisis-lessons-for-the-next-one"
+  publication: "CBPP."

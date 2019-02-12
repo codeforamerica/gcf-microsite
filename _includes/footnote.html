@@ -11,6 +11,10 @@
   {%- capture footnoteContent -%}
   {{footnote.author}} {{footnote.year}} {{linkTag}}
   {%- endcapture -%}
+{%- elsif footnote.author and footnote.text and footnote.link and footnote.publication -%}
+  {%- capture footnoteContent -%}
+  {{footnote.author}} {{linkTag}} {{footnote.publication}}
+  {%- endcapture -%}
 {%- elsif footnote.author and footnote.text and footnote.link -%}
   {%- capture footnoteContent -%}
   {{footnote.author}} {{linkTag}}
@@ -18,5 +22,4 @@
 {%- elsif footnote.text -%}
   {%- assign footnoteContent = footnote.text -%}
 {%- endif -%}
-
 <sup><span class="footnote" title="{{footnoteContent}}">[{{footnoteIndex}}]</span></sup>

@@ -93,6 +93,10 @@ div.section-header-inner h1 {
   max-width: 515px;
 }
 
+div.section-header-inner h2 {
+  padding-top: 40px;
+}
+
 /* Intro Section */
 div.intro-header {
   background: linear-gradient(to bottom, $orange-lighter-color 90%, white 100%);
@@ -168,7 +172,7 @@ div.hero-header {
 }
 
 div.hero-header-outer {
-  min-height: 570px;
+  min-height: 520px;
   margin: 0 auto;
   position: relative;
   max-width: $outer-content-width;
@@ -193,7 +197,7 @@ div.hero-header-inner h1 {
 }
 
 div.hero-header-inner h2 {
-  margin-top: 24px;
+  padding-top: 460px;
 }
 
 div.hero-header-outer.instability {
@@ -477,7 +481,6 @@ div.quotes.calfresh {
   background-color: $calfresh-light-color;
   border-top: 1px solid $calfresh-light-color;
   border-bottom: 1px solid $calfresh-light-color;
-  margin-bottom: 0;
 }
 
 div.quote-image {
@@ -662,6 +665,10 @@ div.quote-selector-tab.selected:hover {
 
 
 /* Map */
+section#explore {
+  background-color: $gray-light-color;
+}
+
 div.map-container {
   margin: 60px auto 0;
   max-width: $outer-content-width;
@@ -988,7 +995,7 @@ div#footer-go-content {
   align-items: center;
   justify-content: space-between;
   min-height: 243px;
-  width: 270px;
+  width: 300px;
   margin: 0 auto;
   padding: 52px 0;
   text-align: center;
@@ -1057,11 +1064,11 @@ div.share-menu {
 }
 
 div.hero-header div.share-menu {
-  bottom: 102px;
+  bottom: 0;
 }
 
 div.section-header div.share-menu {
-  bottom: 40px;
+  top: 50px;
   right: 0;
 }
 
@@ -1301,4 +1308,16 @@ select::-ms-expand {
   -webkit-transition: .25s all ease;
   -o-transition: .25s all ease;
   transition: .25s all ease;
+}
+
+/* Resources & References */
+section#resources, section#references {
+  height: 100%;
+  padding-bottom: 40px;
+  font-size: .8em;
+  line-height: 1.4;
+}
+
+section#references {
+  background-color: $gray-light-color;
 }

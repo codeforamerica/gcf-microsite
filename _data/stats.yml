@@ -22,7 +22,7 @@ intro:
       link: "https://www.cbpp.org/research/policy-basics-the-supplemental-nutrition-assistance-program-snap"
 
 instability:
-  title: "In California:"
+  title: "In California"
   stats:
     - tagline: "More than"
       title: "1 in 5"
@@ -47,24 +47,24 @@ instability:
       link: "https://www.cbpp.org/sites/default/files/atoms/files/snap_factsheet_california.pdf"
 
 shocks:
-  title:
+  title: "Among GetCalFresh users under age 60 who live alone"
   stats:
     - tagline: ""
       title: "27.3%"
       body: "lost a job in the last 30 days."
 
-    - tagline: "Of the rest"
+    - tagline: ""
       title: "65%"
-      body: "have a job."
+      body: "of other users have a job."
 
     - tagline: ""
       title: "80.9%"
       body: "who have a job work at least 20 hours a week."
 
-    - tagline: "Only"
+    - tagline: "Yet, only"
       title: "17.2%"
       body: "have a job that gives them 40+ hours a week."
 
   citations:
-    - text: "Figures based on GetCalFresh application data from August 1 through October 31 of 2018. The data exclude students, people with disabilities, and people experiencing homelessness."
+    - text: "GetCalFresh application data"
       link: ""
