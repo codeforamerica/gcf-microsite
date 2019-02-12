@@ -125,14 +125,6 @@ If you like Smint, or have suggestions on how it could be improved, send me a tw
 				// Scroll the page to the desired position!
 				$("html, body").stop().animate({ scrollTop: goTo }, scrollSpeed);
 			});
-
-			$('.intLink').on('click', function(e){
-				var myOffset = smint.height();
-				e.preventDefault();
-				var hash = $(this).attr('href').split('#')[1];
-				var goTo =  $(mySelector+'#'+ hash).position().top-myOffset;
-				$("html, body").stop().animate({ scrollTop: goTo }, scrollSpeed);
-			});
 		});
 	};
 

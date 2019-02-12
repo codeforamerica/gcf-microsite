@@ -92,6 +92,14 @@
       $("html, body").stop().animate({ scrollTop: goTo }, 1500);
     });
 
+    $('.scroll-link').click(function(e){
+      e.preventDefault();
+      var hash = $(this).attr('href').split('#')[1];
+      var goTo =  $('section#'+ hash).position().top - headerHeight;
+      $("html, body").stop().animate({ scrollTop: goTo }, 1500);
+    });
+
+
     // Navigation
     header.on('click', '.nav-trigger', function(event){
       // open primary navigation on mobile
