@@ -1,79 +1,144 @@
 1:
-  author: "USDA"
-  year: "2018"
-  title: "Supplemental Nutrition Assistance Program Fiscal Year 2019 Income Eligibility Standards"
+  author: "USDA."
+  year: "2018."
+  text: "Supplemental Nutrition Assistance Program Fiscal Year 2019 Income Eligibility Standards."
   link: "https://fns-prod.azureedge.net/sites/default/files/snap/FY19-Income-Eligibility-Standards.pdf"
 
 2:
-  author: "US FNS"
-  year: "2017"
-  title: "What Can SNAP Buy?"
+  author: "US FNS."
+  year: "2017."
+  text: "What Can SNAP Buy?"
   link: "https://www.fns.usda.gov/snap/eligible-food-items"
 
 3:
-  author: "CBPP"
-  year: "2018"
-  title: "A Quick Guide to SNAP Eligibility and Benefits"
+  author: "CBPP."
+  year: "2018."
+  text: "A Quick Guide to SNAP Eligibility and Benefits."
   link: "https://www.cbpp.org/research/food-assistance/a-quick-guide-to-snap-eligibility-and-benefits"
 
 4:
-  author: "Edin et al"
-  year: "2013"
-  title: "SNAP Food Security In-Depth Interview Study"
+  author: "Edin et al."
+  year: "2013."
+  text: "SNAP Food Security In-Depth Interview Study."
   link: "https://fns-prod.azureedge.net/sites/default/files/SNAPFoodSec.pdf"
-  publication: "USDA"
+  publication: "USDA."
 
 5:
-  author: "Edin and Kissane"
-  year: "2010"
-  title: "Poverty and the American Family: A Decade in Review"
+  author: "Edin and Kissane."
+  year: "2010."
+  text: "Poverty and the American Family: A Decade in Review."
   link: "https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1741-3737.2010.00713.x"
-  publication: "Journal of Marriage and Family"
+  publication: "Journal of Marriage and Family."
 
 6:
-  author: "Renwick and Fox"
-  year: "2016"
-  title: "The Supplemental Poverty Measure: 2015"
+  author: "Renwick and Fox."
+  year: "2016."
+  text: "The Supplemental Poverty Measure: 2015."
   link: "https://www.census.gov/content/dam/Census/library/publications/2016/demo/p60-258.pdf"
-  publication: "US Census Bureau"
+  publication: "US Census Bureau."
 
 30:
-  author: "US Bureau of Economic Analysis"
-  year: "2018"
-  title: "Regional Price Parities by State and Metro Area"
+  author: "US Bureau of Economic Analysis."
+  year: "2018."
+  text: "Regional Price Parities by State and Metro Area."
   link: "https://www.bea.gov/data/prices-inflation/regional-price-parities-state-and-metro-area"
 
 31:
-  author: "Butcher and Schanzenbach"
-  year: "2018"
-  title: "Most Workers in Low-Wage Labor Market Work Substantial Hours, in Volatile Jobs."
+  author: "Butcher and Schanzenbach."
+  year: "2018."
+  text: "Most Workers in Low-Wage Labor Market Work Substantial Hours, in Volatile Jobs."
   link: "https://www.cbpp.org/research/poverty-and-inequality/most-workers-in-low-wage-labor-market-work-substantial-hours-in"
-  publication: "CBPP"
+  publication: "CBPP."
 
 32:
-  author: "Keith-Jennings and Chaudhry"
-  year: "2018"
-  title: "Most Working-Age SNAP Participants Work, But Often in Unstable Jobs."
+  author: "Keith-Jennings and Chaudhry."
+  year: "2018."
+  text: "Most Working-Age SNAP Participants Work, But Often in Unstable Jobs."
   link: "https://www.cbpp.org/research/food-assistance/most-working-age-snap-participants-work-but-often-in-unstable-jobs"
-  publication: "CBPP"
+  publication: "CBPP."
 
 33:
-  author: "Edin et al"
-  year: "2013"
-  title: "SNAP Food Security In-Depth Interview Study."
+  author: "Edin et al."
+  year: "2013."
+  text: "SNAP Food Security In-Depth Interview Study."
   link: "https://fns-prod.azureedge.net/sites/default/files/SNAPFoodSec.pdf"
-  publication: "USDA"
+  publication: "USDA."
 
 34:
-  author: "USDA"
-  year: "2018"
-  title: "Food Security Interactive Charts and Highlights."
+  author: "USDA."
+  year: "2018."
+  text: "Food Security Interactive Charts and Highlights."
   link: "https://www.ers.usda.gov/topics/food-nutrition-assistance/food-security-in-the-us/interactive-charts-and-highlights/"
-  publication: "USDA"
+  publication: "USDA."
 
 35:
-  author: "Coleman-Jensen et al"
-  year: "2018"
-  title: "Statistical Supplement to Household Food Security in the United States in 2017."
+  author: "Coleman-Jensen et al."
+  year: "2018."
+  text: "Statistical Supplement to Household Food Security in the United States in 2017."
   link: "https://www.ers.usda.gov/webdocs/publications/90029/ap-079.pdf?v=0"
-  publication: "USDA"
+  publication: "USDA."
+
+36:
+  text: "Figures based on GetCalFresh application data from April through October of 2018. Reported hours worked and hourly wages are median values. The data exclude students, people with disabilities, and people experiencing homelessness."
+
+37:
+  author: "CA Dept of Social Services."
+  year: "2016."
+  text: "Senior Healthy Food Access and Nutrition Education Webinar."
+  link: "http://www.cdss.ca.gov/calfreshoutreach/res/pdf/FANOut_12_2016.pdf"
+
+38:
+  author: "Pinard et al."
+  year: "2016."
+  text: "What Factors Influence SNAP Participation?"
+  link: "https://www.tandfonline.com/doi/abs/10.1080/19320248.2016.1146194"
+  publication: "Journal of Hunger & Environmental Nutrition."
+
+39:
+  author: "Food Research & Action Center."
+  text: "Closing the Senior SNAP Gaps."
+  link: "http://frac.org/blog/closing-senior-snap-gaps"
+
+40:
+  author: "AARP Foundation."
+  year: "2013."
+  text: "Hunger Among Older New Yorkers: Breaking Down the Barriers."
+  link: "https://states.aarp.org/wp-content/uploads/2013/09/AARP-NY-2013-Hunger-White-Paper.pdf"
+
+41:
+  author: "AARP Foundation."
+  year: "2013."
+  text: "SNAP Access Barriers Faced By Low Income 50-59 Year olds."
+  link: "https://www.aarp.org/content/dam/aarp/aarp_foundation/2013-pdfs/SNAP_White_Paper_Mar_2013.pdf"
+
+42:
+  author: "USDA."
+  year: "2018."
+  text: "Trends in SNAP Participation Rates: 2010 to 2016."
+  link: "https://fns-prod.azureedge.net/sites/default/files/snap/Trends2010-2016.pdf"
+
+43:
+  author: "Eslami."
+  year: "2015."
+  text: "State Trends in SNAP Eligibility and Participation among Elderly Individuals: 2008 - 2013."
+  link: "https://www.mathematica-mpr.com/our-publications-and-findings/publications/state-trends-in-supplemental-nutrition-assistance-program-eligibility-and-participation-among"
+  publication: "Mathematica Policy Research."
+
+44:
+  author:
+  link:
+45:
+  author:
+  link:
+46:
+  author:
+  link:
+47:
+  author:
+  link:
+48:
+  author:
+  link:
+49:
+  author:
+  link:
