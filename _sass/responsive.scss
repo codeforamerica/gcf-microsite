@@ -84,6 +84,18 @@
     bottom: 0;
   }
 
+  div.intro-header {
+    background: linear-gradient(to bottom, #FDF4E9 95%, white 100%);
+  }
+
+  div.intro-header-outer {
+    background:
+      linear-gradient(to right, $orange-lighter-color 0%, $orange-lighter-transparent-rgba 60%),
+      url(../images/farmers-market-color.png);
+    background-position: 0 -25px;
+    background-repeat: no-repeat;
+    background-size:contain;
+  }
   div.intro-header-inner h1 {
     padding-top: 0;
   }

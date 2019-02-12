@@ -1232,6 +1232,15 @@ section#references {
   div.intro-header-outer div.share-menu {
     bottom: 0; }
 
+  div.intro-header {
+    background: linear-gradient(to bottom, #FDF4E9 95%, white 100%); }
+
+  div.intro-header-outer {
+    background: linear-gradient(to right, #FDF4E9 0%, rgba(253, 247, 240, 0) 60%), url(../images/farmers-market-color.png);
+    background-position: 0 -25px;
+    background-repeat: no-repeat;
+    background-size: contain; }
+
   div.intro-header-inner h1 {
     padding-top: 0; }
 
