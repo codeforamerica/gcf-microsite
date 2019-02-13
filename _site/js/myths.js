@@ -23,16 +23,4 @@ class Myths {
       $('#myth-detail-'+mythId).slideDown();
     }
   };
-
-  nert(mythId) {
-    $('.myth-expander').removeClass('expanded');
-    $('#myth-expander-'+mythId).addClass('expanded');
-    $('.myth-detail').each(function() {
-      if(!$(this).is(":hidden")) {
-        $('#myth-detail-'+mythId).slideUp();
-      }
-    });
-    $('#myth-detail-'+mythId).slideDown();
-  };
-
 }

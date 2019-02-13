@@ -1,0 +1,68 @@
+section#references {
+  height: 100%;
+  padding-bottom: 40px;
+  font-size: .8em;
+  line-height: 1.4;
+}
+
+section#references {
+  background-color: $gray-light-color;
+}
+
+div.resources {
+  margin: 80px 0;
+}
+
+div.resources-outer {
+  margin: 0 auto;
+  max-width: $outer-content-width;
+}
+
+div.resources-inner {
+  width: 100%;
+}
+
+div.resources-table {
+  border: 1px solid $gray-dark-color;
+  border-radius: 4px;
+  width: 100%;
+}
+
+div.resources-row {
+  border: 1px solid $gray-dark-color;
+  padding: 0 40px;
+  cursor: pointer;
+}
+
+div.resources-row:hover {
+  background-color: $gray-dark-color;
+}
+
+div.resources-row-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+div.resources-title {
+  flex-grow: 1;
+}
+
+div.resources-expander {
+  width: 29px;
+  height: 29px;
+  margin: auto;
+  background-image: url(../images/expand_arrow_black.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transform: rotate(-90deg);
+  transition: transform 100ms ease-out;
+}
+
+div.resources-expander.expanded {
+  transform: rotate(0deg);
+}
+
+div.resources-content {
+  display: none;
+}

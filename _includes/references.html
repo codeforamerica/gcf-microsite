@@ -3,24 +3,7 @@
     <div class="section-header-outer">
       <div class="section-header-inner">
         <h2>References</h2>
-        <ul>
-          {% assign footnoteIndex = 1 %}
-          {% for footnoteDictionary in site.data.footnotes %}
-            {% assign footnote = footnoteDictionary[1] %}
-            {%- if footnote.author and footnote.year and footnote.text and footnote.link and footnote.publication -%}
-              <li><sup>[{{footnoteIndex}}]</sup> {{footnote.author}} {{footnote.year}} <a target='_blank' href='{{footnote.link}}'>{{footnote.text}}</a> {{footnote.publication}}</li>
-            {%- elsif footnote.author and footnote.year and footnote.text and footnote.link -%}
-              <li><sup>[{{footnoteIndex}}]</sup> {{footnote.author}} {{footnote.year}} <a target='_blank' href='{{footnote.link}}'>{{footnote.text}}</a></li>
-            {%- elsif footnote.author and footnote.text and footnote.link and footnote.publication -%}
-              <li><sup>[{{footnoteIndex}}]</sup> {{footnote.author}} <a target='_blank' href='{{footnote.link}}'>{{footnote.text}}</a> {{footnote.publication}}</li>
-            {%- elsif footnote.author and footnote.text and footnote.link -%}
-              <li><sup>[{{footnoteIndex}}]</sup> {{footnote.author}} <a target='_blank' href='{{footnote.link}}'>{{footnote.text}}</a></li>
-            {%- elsif footnote.text -%}
-              <li><sup>[{{footnoteIndex}}]</sup> footnote.text</li>
-            {%- endif -%}
-            {% assign footnoteIndex = footnoteIndex | plus:1 %}
-          {% endfor %}
-        </ul>
+
     </div>
   </div>
 </section>
