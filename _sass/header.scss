@@ -16,15 +16,6 @@ header {
   transition: transform .5s, -webkit-transform .5s;
 }
 
-#logo {
-  background-image: url(../images/gcf-logo.png);
-  background-size: 36px 36px;
-  background-position: center;
-  background-repeat: no-repeat;
-  width:64px;
-  height:76px;
-}
-
 nav {
   height: 100%;
   background-color: $orange-lighter-color;
@@ -36,6 +27,7 @@ div.nav-outer {
   align-items: center;
   max-width: $outer-content-width;
   margin: 0 auto;
+  height: 100%;
 }
 
 nav.scrolled {

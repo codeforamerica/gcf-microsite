@@ -45,8 +45,8 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-family: Lora;
-  font-size: 69px;
-  line-height: 74px;
+  font-size: 55px;
+  line-height: 67px;
 }
 
 h2 {
@@ -100,19 +100,19 @@ div.section-header-inner h2 {
 /* Intro Section */
 div.intro-header {
   background: linear-gradient(to bottom, $orange-lighter-color 90%, white 100%);
-  min-height: 698px;
+  min-height: 610px;
   width: 100%;
 }
 
 div.intro-header-outer {
   background:
-    linear-gradient(to bottom, $orange-lighter-transparent-rgba 36%, $orange-lighter-color 95%),
-    linear-gradient(to left, $orange-lighter-transparent-rgba 48%, $orange-lighter-color 92%),
-    url(../images/farmers-market-color.png);
-  background-position: 125px -35px;
+      linear-gradient(to bottom, $orange-lighter-transparent-rgba 36%, $orange-lighter-color 90%, white 100%),
+      linear-gradient(to left, $orange-lighter-transparent-rgba 24%, $orange-lighter-color 62%),
+      url(../images/farmers-market-color.png);
+  background-position: 0 -7px;
   background-repeat: no-repeat;
-  background-size:contain;
-  min-height: 660px;
+  background-size:cover;
+  min-height: 684px;
   margin: 0 auto;
   position: relative;
   max-width: $outer-content-width;
@@ -121,15 +121,15 @@ div.intro-header-outer {
 
 div.intro-header-inner {
   margin: 0 auto;
-  max-width:$inner-content-width;
+  max-width: 880px;
   opacity: 0;
 }
 
 div.intro-header-inner h1 {
   margin-top: 0;
   margin-bottom: 0;
-  padding-top:65px;
-  // max-width: 515px;
+  padding-top:122px;
+  max-width: 550px;
 }
 
 div.intro-header-inner h2 {
@@ -137,7 +137,7 @@ div.intro-header-inner h2 {
   font-size: 24px;
   font-weight: 600;
   line-height: 32px;
-  margin-top: 44px;
+  margin-top: 56px;
   margin-bottom: 0;
   max-width: 515px;
 }
@@ -145,15 +145,15 @@ div.intro-header-inner h2 {
 div.intro-header-inner p {
   font-family: Lora;
   font-size: 18px;
-  line-height: 23px;
-  margin-top: 50px;
+  line-height: 26px;
+  margin-top: 60px;
   margin-bottom: 0;
-  max-width: 622px;
+  max-width: 585px;
 }
 
 div.scroll-tip {
   cursor: pointer;
-  margin: 34px 0 0 90px;
+  margin: 48px auto 0 auto;
   width: 56px;
   height: 56px;
   background-image: url(../images/scroll-tip.png);
@@ -1038,7 +1038,7 @@ div.share-menu {
   width: 58px;
   position: absolute;
   right: 50px;
-  bottom: 70px;
+  top: 410px;
   overflow: hidden;
   border-radius: 3px;
 }
