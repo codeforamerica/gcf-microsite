@@ -139,7 +139,9 @@ div.section-header-outer {
   max-width: 1024px; }
 
 div.section-header-inner {
-  margin: 0; }
+  margin: 0 auto;
+  max-width: 880px;
+  position: relative; }
 
 div.section-header-inner h1 {
   color: #EFA44C;
@@ -617,7 +619,7 @@ section#explore {
 
 div.map-container {
   margin: 60px auto 0;
-  max-width: 1024px;
+  max-width: 880px;
   padding-left: 5px; }
 
 div.map-inner {
@@ -932,7 +934,7 @@ div.hero-header div.share-menu {
   top: unset; }
 
 div.section-header div.share-menu {
-  top: 50px;
+  top: 45px;
   right: 0; }
 
 div.share-menu.closed {
@@ -1220,10 +1222,7 @@ select::-ms-expand {
     background: linear-gradient(to bottom, #FDF4E9 95%, white 100%); }
 
   div.intro-header-outer {
-    background: linear-gradient(to right, #FDF7F0 0%, rgba(253, 247, 240, 0) 60%), url(../images/farmers-market-color.png);
-    background-position: 0 -25px;
-    background-repeat: no-repeat;
-    background-size: contain; }
+    background-position: center top; }
 
   div.intro-header-inner h1 {
     padding-top: 0; }

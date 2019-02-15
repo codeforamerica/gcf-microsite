@@ -79,7 +79,9 @@ div.section-header-outer {
   max-width: $outer-content-width;
 }
 div.section-header-inner {
-  margin: 0;
+  margin: 0 auto;
+  max-width: $wide-inner-content-width;
+  position: relative;
 }
 
 div.section-header-inner h1 {
@@ -121,7 +123,7 @@ div.intro-header-outer {
 
 div.intro-header-inner {
   margin: 0 auto;
-  max-width: 880px;
+  max-width: $wide-inner-content-width;
   opacity: 0;
 }
 
@@ -673,7 +675,7 @@ section#explore {
 
 div.map-container {
   margin: 60px auto 0;
-  max-width: $outer-content-width;
+  max-width: $wide-inner-content-width;
   padding-left: 5px;
 }
 
@@ -1050,7 +1052,7 @@ div.hero-header div.share-menu {
 }
 
 div.section-header div.share-menu {
-  top: 50px;
+  top: 45px;
   right: 0;
 }
 
