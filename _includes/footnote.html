@@ -23,3 +23,7 @@
   {%- assign footnoteContent = footnote.text -%}
 {%- endif -%}
 <sup><span class="footnote" title="{{footnoteContent}}">[{{footnoteIndex}}]</span></sup>
+{%- comment -%}
+  This comment lets me put a whitespace-eating command at the end here which
+  prevents extra spaces between multiple footnotes!
+{%- endcomment -%}
