@@ -23,9 +23,10 @@ nav {
 
 div.nav-outer {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  max-width: $outer-content-width;
+  max-width: $wide-inner-content-width;
+  padding: 0 10px;
   margin: 0 auto;
   height: 100%;
 }
@@ -72,6 +73,48 @@ div.nav-dropdown {
   transition: max-height .25s ease-out;
 }
 
+header.scrolled div.brand-bar {
+  max-height: 0;
+  overflow: hidden;
+}
+
+div.brand-bar {
+  transition: max-height .25s ease-out;
+  background-color: #434343;
+  color: white;
+  height: 60px;
+  max-height: 60px;
+}
+
+div.brand-bar-outer {
+  margin: 0 auto;
+  max-width: $wide-inner-content-width;
+  padding: 0 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+div.cfa-logo {
+  background-image: url(../images/cfa-logo-white.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 36px;
+  margin-top: 12px;
+  width: 80px;
+}
+
+div.cfa-attribution {
+  font-family: SourceSansPro;
+  font-size: 17px;
+  margin-top: 12px;
+  margin-left: 28px;
+}
+
+a.mobile-logo {
+  display: none;
+}
+
 /* Small screens */
 @media only screen and (max-width: $tablet-content-width) {
   header {
@@ -89,9 +132,22 @@ div.nav-dropdown {
     position: fixed;
   }
 
+div.brand-bar {
+  display: none;
+}
+
+a.mobile-logo {
+  display: block;
+  margin-left: 6px;
+}
 
   #logo {
-    height: 64px;
+    background-image: url(../images/cfa-logo-black.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+    width: 79px;
+    height: 38px;
   }
 
   a.nav-item {

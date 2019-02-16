@@ -140,7 +140,8 @@ div.section-header-outer {
 
 div.section-header-inner {
   margin: 0 auto;
-  max-width: 880px;
+  max-width: 900px;
+  padding: 0 10px;
   position: relative; }
 
 div.section-header-inner h2 {
@@ -165,7 +166,8 @@ div.intro-header-outer {
 
 div.intro-header-inner {
   margin: 0 auto;
-  max-width: 880px;
+  max-width: 900px;
+  padding: 0 10px;
   opacity: 0; }
 
 div.intro-header-inner h1 {
@@ -599,8 +601,8 @@ section#explore {
 
 div.map-container {
   margin: 60px auto 0;
-  max-width: 880px;
-  padding-left: 5px; }
+  max-width: 900px;
+  padding: 0 10px; }
 
 div.map-inner {
   margin: 0; }
@@ -1151,6 +1153,9 @@ select::-ms-expand {
   div.section-header div.share-menu {
     display: none; }
 
+  div.intro-header-inner {
+    padding: 0; }
+
   /* Stats boxes */
   div.stats-inner h3, div.stats-boxes-outer {
     margin: 0; }
@@ -1287,9 +1292,10 @@ nav {
 
 div.nav-outer {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  max-width: 1024px;
+  max-width: 900px;
+  padding: 0 10px;
   margin: 0 auto;
   height: 100%; }
 
@@ -1328,6 +1334,42 @@ div.nav-dropdown {
   background-color: #FDF7F0;
   transition: max-height .25s ease-out; }
 
+header.scrolled div.brand-bar {
+  max-height: 0;
+  overflow: hidden; }
+
+div.brand-bar {
+  transition: max-height .25s ease-out;
+  background-color: #434343;
+  color: white;
+  height: 60px;
+  max-height: 60px; }
+
+div.brand-bar-outer {
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 0 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+
+div.cfa-logo {
+  background-image: url(../images/cfa-logo-white.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 36px;
+  margin-top: 12px;
+  width: 80px; }
+
+div.cfa-attribution {
+  font-family: SourceSansPro;
+  font-size: 17px;
+  margin-top: 12px;
+  margin-left: 28px; }
+
+a.mobile-logo {
+  display: none; }
+
 /* Small screens */
 @media only screen and (max-width: 768px) {
   header {
@@ -1342,8 +1384,20 @@ div.nav-dropdown {
   header.scrolled {
     position: fixed; }
 
+  div.brand-bar {
+    display: none; }
+
+  a.mobile-logo {
+    display: block;
+    margin-left: 6px; }
+
   #logo {
-    height: 64px; }
+    background-image: url(../images/cfa-logo-black.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+    width: 79px;
+    height: 38px; }
 
   a.nav-item {
     display: none; }
@@ -1456,7 +1510,7 @@ div.resources-outer {
 
 div.resources-inner {
   margin: 0 auto;
-  max-width: 880px; }
+  max-width: 900px; }
 
 div.resources-table {
   border: 1px solid #EBEBEB;

@@ -81,6 +81,7 @@ div.section-header-outer {
 div.section-header-inner {
   margin: 0 auto;
   max-width: $wide-inner-content-width;
+  padding: 0 10px;
   position: relative;
 }
 
@@ -113,6 +114,7 @@ div.intro-header-outer {
 div.intro-header-inner {
   margin: 0 auto;
   max-width: $wide-inner-content-width;
+  padding: 0 10px;
   opacity: 0;
 }
 
@@ -654,7 +656,7 @@ section#explore {
 div.map-container {
   margin: 60px auto 0;
   max-width: $wide-inner-content-width;
-  padding-left: 5px;
+  padding: 0 10px;
 }
 
 div.map-inner {
