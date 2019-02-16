@@ -1494,4 +1494,7 @@ div.resources-expander.expanded {
 
 div.resources-content {
   display: none;
-  padding: 0 40px; }
+  padding: 0 40px;
+  max-height: 300px;
+  overflow: scroll;
+  line-height: 1.4; }

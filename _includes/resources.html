@@ -58,21 +58,15 @@
         </div>
         <div class="resources-content" id="resources-content-references">
           <ul>
-            {% assign footnoteIndex = 1 %}
-            {% for footnoteDictionary in site.data.footnotes %}
-              {% assign footnote = footnoteDictionary[1] %}
-              {%- if footnote.author and footnote.year and footnote.text and footnote.link and footnote.publication -%}
-                <li><sup>[{{footnoteIndex}}]</sup> {{footnote.author}} {{footnote.year}} <a target='_blank' href='{{footnote.link}}'>{{footnote.text}}</a> {{footnote.publication}}</li>
-              {%- elsif footnote.author and footnote.year and footnote.text and footnote.link -%}
-                <li><sup>[{{footnoteIndex}}]</sup> {{footnote.author}} {{footnote.year}} <a target='_blank' href='{{footnote.link}}'>{{footnote.text}}</a></li>
-              {%- elsif footnote.author and footnote.text and footnote.link and footnote.publication -%}
-                <li><sup>[{{footnoteIndex}}]</sup> {{footnote.author}} <a target='_blank' href='{{footnote.link}}'>{{footnote.text}}</a> {{footnote.publication}}</li>
-              {%- elsif footnote.author and footnote.text and footnote.link -%}
-                <li><sup>[{{footnoteIndex}}]</sup> {{footnote.author}} <a target='_blank' href='{{footnote.link}}'>{{footnote.text}}</a></li>
-              {%- elsif footnote.text -%}
-                <li><sup>[{{footnoteIndex}}]</sup> footnote.text</li>
-              {%- endif -%}
-              {% assign footnoteIndex = footnoteIndex | plus:1 %}
+            {% capture footnoteTempList %}
+              {%- for footnoteDictionary in site.data.footnotes -%}{%-if footnoteDictionary[1]['author']}-%}{{footnoteDictionary[1]['author']}},{{footnoteDictionary[1]['year']}},{{footnoteDictionary[1]['link']}},{{footnoteDictionary[1]['text']}},{{footnoteDictionary[1]['publication']}};{%-endif-%}{%-endfor-%}
+            {% endcapture %}
+            {% assign footnoteList = footnoteTempList | split:";" | uniq | sort_natural %}
+            {% for footnoteString in footnoteList %}
+              {% assign footnote = footnoteString | remove: ";" | split:"," %}
+              <li>
+                <a target='_blank' href='{{footnote[2]}}'>{{footnote[0]}} {{footnote[1]}} "{{footnote[3]}}" {{footnote[4]}}</a>
+              </li>
             {% endfor %}
           </ul>
         </div>
