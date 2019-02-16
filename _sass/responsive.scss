@@ -126,34 +126,6 @@
     top: 0;
   }
 
-  div.hero-header-outer.instability {
-  background:
-    linear-gradient(to bottom, rgba(255, 255, 255, 0) 40%, white 92%),
-    url(../images/student-color.png);
-  background-size: contain;
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  }
-
-  div.hero-header-outer.shocks {
-    margin-top: 60px;
-    background:
-      linear-gradient(to bottom, rgba(255, 255, 255, 0) 40%, white 92%),
-      url(../images/seniors-color.png);
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
-  }
-
-  div.hero-header-outer.calfresh {
-    background:
-      linear-gradient(to bottom, rgba(255, 255, 255, 0) 40%, white 92%),
-      url(../images/potrero-color.png);
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
-  }
-
   /* Map section */
   div.map-inner {
     display: flex;
