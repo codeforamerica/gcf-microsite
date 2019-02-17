@@ -206,32 +206,32 @@
   publication: "CBPP."
 
 32:
-  author: "Keith-Jennings and Chaudhry."
-  year: "2018."
-  text: "Most Working-Age SNAP Participants Work, But Often in Unstable Jobs."
-  link: "https://www.cbpp.org/research/food-assistance/most-working-age-snap-participants-work-but-often-in-unstable-jobs"
-  publication: "CBPP."
-
-33:
   author: "Edin et al."
   year: "2013."
   text: "SNAP Food Security In-Depth Interview Study."
   link: "https://fns-prod.azureedge.net/sites/default/files/SNAPFoodSec.pdf"
   publication: "USDA."
 
-34:
+33:
   author: "USDA."
   year: "2018."
   text: "Food Security Interactive Charts and Highlights."
   link: "https://www.ers.usda.gov/topics/food-nutrition-assistance/food-security-in-the-us/interactive-charts-and-highlights/"
   publication: "USDA."
 
-35:
+34:
   author: "Coleman-Jensen et al."
   year: "2018."
   text: "Statistical Supplement to Household Food Security in the United States in 2017."
   link: "https://www.ers.usda.gov/webdocs/publications/90029/ap-079.pdf?v=0"
   publication: "USDA."
+
+35:
+  author: "Keith-Jennings and Chaudhry."
+  year: "2018."
+  text: "Most Working-Age SNAP Participants Work, But Often in Unstable Jobs."
+  link: "https://www.cbpp.org/research/food-assistance/most-working-age-snap-participants-work-but-often-in-unstable-jobs"
+  publication: "CBPP."
 
 36:
   text: "Figures based on GetCalFresh application data from April through October of 2018. Reported hours worked and hourly wages are median values. The data exclude students, people with disabilities, and people experiencing homelessness."
