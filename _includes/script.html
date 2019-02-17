@@ -8,7 +8,7 @@
     		currentTop = 0,
     		scrollDelta = 10,
         navColorOffset = $('section#instability').offset().top-140,
-        navStickyOffset = $('div#intro-content').offset().top-headerHeight;
+        navStickyOffset = $('div#intro-content').offset().top-headerHeight-70;
 
     const countyMap = new MapboxMap();
     const myths = new Myths();
@@ -89,7 +89,7 @@
 
     // Scroll-top in top section
     $('.scroll-tip').click(function() {
-      var goTo =  $('div#intro-content').position().top - headerHeight + 5;
+      var goTo =  $('div#intro-content').position().top - headerHeight;
       $("html, body").stop().animate({ scrollTop: goTo }, 1500);
     });
 
@@ -147,7 +147,7 @@
 
     $(window).on('resize', function(){
   		headerHeight = header.height();
-      navStickyOffset = $('div#intro-content').offset().top-headerHeight;
+      navStickyOffset = $('div#intro-content').offset().top-headerHeight-70;
   	});
 
     // Change nav bar color and hide mobile nav on scroll
@@ -192,7 +192,7 @@
       }
       scrolling = false;
       headerHeight = header.height();
-      navStickyOffset = $('div#intro-content').offset().top-headerHeight;
+      navStickyOffset = $('div#intro-content').offset().top-headerHeight-70;
     };
 
   	function autoHideHeader() {
@@ -208,7 +208,7 @@
       }
       previousTop = currentTop;
       headerHeight = header.height();
-      navStickyOffset = $('div#intro-content').offset().top-headerHeight;
+      navStickyOffset = $('div#intro-content').offset().top-headerHeight-70;
   	};
   });
 

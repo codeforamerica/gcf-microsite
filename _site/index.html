@@ -1898,7 +1898,7 @@ every night and am now back in college.</strong>
     		currentTop = 0,
     		scrollDelta = 10,
         navColorOffset = $('section#instability').offset().top-140,
-        navStickyOffset = $('div#intro-content').offset().top-headerHeight;
+        navStickyOffset = $('div#intro-content').offset().top-headerHeight-70;
 
     const countyMap = new MapboxMap();
     const myths = new Myths();
@@ -1979,7 +1979,7 @@ every night and am now back in college.</strong>
 
     // Scroll-top in top section
     $('.scroll-tip').click(function() {
-      var goTo =  $('div#intro-content').position().top - headerHeight + 5;
+      var goTo =  $('div#intro-content').position().top - headerHeight;
       $("html, body").stop().animate({ scrollTop: goTo }, 1500);
     });
 
@@ -2037,7 +2037,7 @@ every night and am now back in college.</strong>
 
     $(window).on('resize', function(){
   		headerHeight = header.height();
-      navStickyOffset = $('div#intro-content').offset().top-headerHeight;
+      navStickyOffset = $('div#intro-content').offset().top-headerHeight-70;
   	});
 
     // Change nav bar color and hide mobile nav on scroll
@@ -2082,7 +2082,7 @@ every night and am now back in college.</strong>
       }
       scrolling = false;
       headerHeight = header.height();
-      navStickyOffset = $('div#intro-content').offset().top-headerHeight;
+      navStickyOffset = $('div#intro-content').offset().top-headerHeight-70;
     };
 
   	function autoHideHeader() {
@@ -2098,7 +2098,7 @@ every night and am now back in college.</strong>
       }
       previousTop = currentTop;
       headerHeight = header.height();
-      navStickyOffset = $('div#intro-content').offset().top-headerHeight;
+      navStickyOffset = $('div#intro-content').offset().top-headerHeight-70;
   	};
   });
 
