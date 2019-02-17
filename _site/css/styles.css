@@ -193,6 +193,9 @@ div.intro-header-inner p {
   margin-bottom: 0;
   max-width: 585px; }
 
+div.intro-header-inner p a {
+  font-weight: bold; }
+
 div.scroll-tip {
   cursor: pointer;
   margin: 48px auto 0 auto;
