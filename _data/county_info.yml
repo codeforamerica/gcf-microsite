@@ -3,9 +3,9 @@
 Alameda:
   poverty-rate: 16.70%
   percent-student: 0.3593697
-  minimum-cost-living-family: 73524
+  minimum-cost-living-family: 90255
   percent-unstable-housing: 0.2813516
-  number-apps: 14787
+  number-apps: 2897
   percent-with-children: 0.2305403
   percent-earned-income: 0.5454819
   percent-with-seniors: 0.083322
@@ -24,35 +24,35 @@ Alameda:
   - I do not receive any financial support from my father, and my mother works tirelessly in two jobs to feed my younger brother and to help me with college. I help my mom pay the water, light and gas bills for our apartment back in southern California, and I also pay the water, gas, and light bills for my apartment here in Berkeley. Our financial situation is not the best, and a CalFresh card would be a huge blessing and support.
   - I work twice a week, which is the most that I can work with my school schedule. Last semester was very hard. I would either have class all day, or have class and get off and work, or on weekends I would work. I did not have a single day off for 4 months straight to skim by. I would have to choose between eating or school supplies. This is affecting my mental and physical health. I hope that I can make this year better, and be excited for school, not dread it...
   - I'm in medical school and am taking out ~$33,000 in loans every four months. I'm spending more than half of my loan money on rent and utilities. Since I'm in medical school, I have to do volunteer work to gain more knowledge and skills in order to be the best doctor I can become. I have no time outside of this to work for money, or else I'd be jeopardizing my education. Because of the high cost of living in the Bay Area, I'm struggling to pay for groceries, basic living expenses, and car insurance so that I can get to and from the clinic I'm volunteering in at Martinez. I do not buy as much food as I need because of the expenses of living and the books/technology/transportation costs required for me to learn medicine.
-  population: '1,510,271'
-  median-income: 73775
+  population: 1663190
+  median-income: 103600
   poverty-rate-increase: '1.2'
 Alpine:
-  population: '1,175'
+  population: 1120
   center:
   - -119.798999
   - 38.61761
   quotes: []
-  median-income: 61343
-  minimum-cost-living-family: 57600
+  median-income: 72857
+  minimum-cost-living-family: 71262
   poverty-rate: 13.40%
   poverty-rate-increase: '2.4'
 Amador:
-  population: '38,091'
+  population: 38626
   center:
   - -120.653856
   - 38.44355
   quotes: []
-  median-income: 52964
-  minimum-cost-living-family: 59592
+  median-income: 74151
+  minimum-cost-living-family: 72834
   poverty-rate: 13.40%
   poverty-rate-increase: '2.4'
 Butte:
   poverty-rate: 20.60%
   percent-student: 0.5170165
-  minimum-cost-living-family: 58524
+  minimum-cost-living-family: 71973
   percent-unstable-housing: 0.2333546
-  number-apps: 6288
+  number-apps: 1160
   percent-with-children: 0.1676209
   percent-earned-income: 0.5540865
   percent-with-seniors: 0.0618425
@@ -68,41 +68,41 @@ Butte:
   - I am enrolled in online college classes. I just lost my job and am trying to look for another one right now. I only have $200 left in my account. That will only get me so much food and everything adds up. Getting CalFresh would be a huge help since I am on my own. My parents don't have money to help me.
   - After taxes, insurance, union dues, and retirement contributions, I only take home $1020 every two weeks. My rent is $1,200. I have worked all my life, never been unemployed, and never requested assistance before. I have been with Sheriff's Department and Probation for almost 25 years, and I still make the same amount I did when I started all those years ago. The price of everything continues to go up but my pay continues to go down. We struggle every month just to make it. I hate to ask for assistance, but I don't know what else to do.
   - I know I qualify for CalFresh and Medi-Cal, but with the fire I am running late collecting all the documents. I also am having a hard time reaching my county due to the emergency with fire. Need help with food asap. Thankfully, I've already gotten temporary Medi-Cal...
-  population: '220,000'
-  median-income: 43165
+  population: 229294
+  median-income: 61054
   poverty-rate-increase: '2.4'
 Calaveras:
-  population: '45,578'
+  population: 45670
   center:
   - -120.555115
   - 38.18784
   quotes: []
-  median-income: 54936
-  minimum-cost-living-family: 57852
+  median-income: 75710
+  minimum-cost-living-family: 70742
   poverty-rate: 13.40%
   poverty-rate-increase: '2.4'
 Colusa:
-  population: '21,419'
+  population: 21805
   center:
   - -122.237563
   - 39.17773
   quotes: []
-  median-income: 50503
-  minimum-cost-living-family: 57312
+  median-income: 62493
+  minimum-cost-living-family: 70113
   poverty-rate: 17.20%
   poverty-rate-increase: '2.7'
   percent-student: 0.079646
   percent-unstable-housing: 0.2654867
-  number-apps: 113
+  number-apps: 29
   percent-with-children: 0.5309735
   percent-earned-income: 0.5306122
   percent-with-seniors: 0.0973451
 Contra Costa:
   poverty-rate: 14.80%
   percent-student: 0.1238626
-  minimum-cost-living-family: 73524
+  minimum-cost-living-family: 90255
   percent-unstable-housing: 0.3505214
-  number-apps: 12199
+  number-apps: 2190
   percent-with-children: 0.352242
   percent-earned-income: 0.5469679
   percent-with-seniors: 0.1617937
@@ -119,15 +119,15 @@ Contra Costa:
   - I am earning my medical coding and billing certificate in order to work in a profession that I should be able to handle with my medical condition. My spouse is also working towards a new career in appliance repair and handyman services. We were both were living in Fairfield in October of 2017 when the fire hit and we were evacuated.
   - I'm hungry and am trying my best to hang in there. It's hard to work with no gas in my car, no food in my belly.
   - I was recently let go from my job, I have bipolar disorder and it was affecting my performance. I see a doctor now and I am trying to get the right medication and treatment. I have applied for SDI but haven't received anything yet.
-  population: '1,049,025'
-  median-income: 79799
+  population: 1147439
+  median-income: 103598
   poverty-rate-increase: '1.4'
 Del Norte:
   poverty-rate: 15.50%
   percent-student: 0.0882353
-  minimum-cost-living-family: 58128
+  minimum-cost-living-family: 70619
   percent-unstable-housing: 0.4058824
-  number-apps: 170
+  number-apps: 31
   percent-with-children: 0.3352941
   percent-earned-income: 0.6122449
   percent-with-seniors: 0.0764706
@@ -135,15 +135,15 @@ Del Norte:
   - -123.980998
   - 41.7499
   quotes: []
-  population: '28,610'
-  median-income: 39302
+  population: 27470
+  median-income: 54061
   poverty-rate-increase: '3.3'
 El Dorado:
   poverty-rate: 11.80%
   percent-student: 0.1164295
-  minimum-cost-living-family: 59880
+  minimum-cost-living-family: 73258
   percent-unstable-housing: 0.3138781
-  number-apps: 773
+  number-apps: 184
   percent-with-children: 0.2988357
   percent-earned-income: 0.5411765
   percent-with-seniors: 0.1038961
@@ -156,15 +156,15 @@ El Dorado:
   - My boyfriend and I have been homeless for months. In January we were in a car accident that totaled $48,000. Following that I got extremely sick and couldn’t work so I was forced to quit. I was kicked out of my house at 17 in February and moved into my boyfriend's house after spending a week in a shelter. He has a fulltime job which barely makes ends meet. We often go to bed so hungry it's hard to sleep.
   - I started a long term substitute teacher position, but do not get paid until September 10th. I anticipate this amount to be $1,500 for the amount of time I worked in August. The hours for my sub job are irregular. I was not able to work June & July because school was closed. I am looking for a fulltime teaching job.
   - I'm 18, just started college, and living away from home for the first time. I only need help for a little while as I'm getting on my feet.
-  population: '181,058'
-  median-income: 68507
+  population: 188987
+  median-income: 93154
   poverty-rate-increase: '1.2'
 Fresno:
   poverty-rate: 19.60%
   percent-student: 0.1171501
-  minimum-cost-living-family: 58092
+  minimum-cost-living-family: 71508
   percent-unstable-housing: 0.3620126
-  number-apps: 12548
+  number-apps: 1418
   percent-with-children: 0.2972585
   percent-earned-income: 0.5230491
   percent-with-seniors: 0.0638366
@@ -178,15 +178,15 @@ Fresno:
   - Just lost my job, already lined up a new job but it won't start for four months.
   - I will not be able to walk for five months due to a car accident. Need food badly.
   - I currently live with 3 other women from craigslist in a house. I am a student at Fresno State I did not receive financial aid this year. I have not had money for grocery shopping since last year. I have been living on fast food. I do get paid 12 dollars an hour but since I am going to school part-time am not able to work enough hours to get by.
-  population: '930,450'
-  median-income: 45201
+  population: 989255
+  median-income: 53907
   poverty-rate-increase: '5'
 Glenn:
   poverty-rate: 17.20%
   percent-student: 0.1925466
-  minimum-cost-living-family: 56748
+  minimum-cost-living-family: 69525
   percent-unstable-housing: 0.2795031
-  number-apps: 161
+  number-apps: 30
   percent-with-children: 0.378882
   percent-earned-income: 0.5901639
   percent-with-seniors: 0.1304348
@@ -194,15 +194,15 @@ Glenn:
   - -122.4017
   - 39.60254
   quotes: []
-  population: '28,122'
-  median-income: 40106
+  population: 28094
+  median-income: 53364
   poverty-rate-increase: '2.7'
 Humboldt:
   poverty-rate: 19.60%
   percent-student: 0.2720524
-  minimum-cost-living-family: 59760
+  minimum-cost-living-family: 71481
   percent-unstable-housing: 0.2871503
-  number-apps: 2290
+  number-apps: 364
   percent-with-children: 0.2131004
   percent-earned-income: 0.5836237
   percent-with-seniors: 0.0485352
@@ -215,108 +215,108 @@ Humboldt:
   - I was a full time federal government employee until over a month ago. I am disabled with anxiety and bi-polar. I'm applying for disability. I expect us to have trouble with food expenses for the next few months.
   - I am currently employed, but will be out of work by the end of the week (9/14). I will be looking for new work, and will just need CalFresh to help with groceries until I am making enough to reasonably afford them again.
   - We were displaced from Paradise by the Camp Fire. We lost everything except for our vehicles and our pets. We lost our rental and all its contents, plus our workplaces burned down. We’re temporarily staying with family. We will be looking for work and a place to live… we just need some help for a little bit to get back on our feet.
-  population: '134,623'
-  median-income: 42153
+  population: 136754
+  median-income: 56696
   poverty-rate-increase: '3.1'
 Imperial:
-  population: '174,528'
+  population: 182830
   center:
   - -115.355395
   - 33.04081
   quotes: []
-  median-income: 41772
-  minimum-cost-living-family: 57312
+  median-income: 51447
+  minimum-cost-living-family: 70729
   poverty-rate: 20.30%
   poverty-rate-increase: '5.4'
 Inyo:
-  population: '18,546'
+  population: 18026
   center:
   - -117.403927
   - 36.56197
   quotes: []
-  median-income: 45625
-  minimum-cost-living-family: 57984
+  median-income: 70767
+  minimum-cost-living-family: 70947
   poverty-rate: 13.40%
   poverty-rate-increase: '2.4'
 Kern:
-  population: '839,631'
+  population: 893119
   center:
   - -118.729506
   - 35.34662
   quotes: []
-  median-income: 48574
-  minimum-cost-living-family: 57576
+  median-income: 55176
+  minimum-cost-living-family: 70770
   poverty-rate: 18.90%
   poverty-rate-increase: '3.9'
 Kings:
-  population: '152,982'
+  population: 150101
   center:
   - -119.81553
   - 36.07247
   quotes: []
-  median-income: 47341
-  minimum-cost-living-family: 57084
+  median-income: 52533
+  minimum-cost-living-family: 71112
   poverty-rate: 16.80%
   poverty-rate-increase: '2.6'
 Lake:
-  population: '64,665'
+  population: 64246
   center:
   - -122.746757
   - 39.0948
   quotes: []
-  median-income: 35997
-  minimum-cost-living-family: 58428
+  median-income: 52182
+  minimum-cost-living-family: 70906
   poverty-rate: 21.60%
   poverty-rate-increase: '2.9'
 Lassen:
-  population: '34,895'
+  population: 31163
   center:
   - -120.629931
   - 40.72108
   quotes: []
-  median-income: 53351
-  minimum-cost-living-family: 58452
+  median-income: 66290
+  minimum-cost-living-family: 70277
   poverty-rate: 15.50%
   poverty-rate-increase: '3.3'
   percent-student: 0.1721311
   percent-unstable-housing: 0.3852459
-  number-apps: 122
+  number-apps: 21
   percent-with-children: 0.2868852
   percent-earned-income: 0.6363636
   percent-with-seniors: 0.0737705
 Los Angeles:
-  population: '9,818,605'
+  population: 10163507
   center:
   - -118.261862
   - 34.19639
   quotes:
   - I’m separated, going through divorce, not yet finalized. The ex-husband lost his job and I am looking for part-time work. I have two sons, both with ADHD, one with autism, and I spend a good amount of time parenting. Currently I just want to be able to feed them without building up debt on a credit card or depleting my savings account. My situation is embarrassing and humbling, but serious. If approved, I hope this will only be a temporary solution until I get on my feet, start a business, and rebuild my life.
-  median-income: 55870
-  minimum-cost-living-family: 65988
+  median-income: 68272
+  minimum-cost-living-family: 81148
   poverty-rate: 24.30%
   poverty-rate-increase: '2.3'
   percent-student: 0.1961802
   percent-unstable-housing: 0.3494921
-  number-apps: 20420
+  number-apps: 16363
   percent-with-children: 0.3078355
   percent-earned-income: 0.6318557
   percent-with-seniors: 0.0976127
 Madera:
-  population: '150,865'
+  population: 156890
   center:
   - -119.749852
   - 37.21003
   quotes: []
-  median-income: 45490
-  minimum-cost-living-family: 58164
+  median-income: 53712
+  minimum-cost-living-family: 71563
   poverty-rate: 16.60%
   poverty-rate-increase: '3.6'
 Marin:
   poverty-rate: 17.00%
   percent-student: 0.1379606
-  minimum-cost-living-family: 83664
+  minimum-cost-living-family: 101085
   percent-unstable-housing: 0.2815451
-  number-apps: 1167
+  number-apps: 219
   percent-with-children: 0.2862039
   percent-earned-income: 0.6137725
   percent-with-seniors: 0.2120172
@@ -326,71 +326,71 @@ Marin:
   quotes:
   - My husband walked out on me and my two kids a couple months ago and filed for divorce a month ago. He is still paying the mortgage and utilities but barely any for food and has otherwise cut me off financially. I started college two years ago to become a nurse and am still in school. I have used up what little money I had to enroll in school and get my kids started back to school. I am trying to sort out my situation and have some family help but have urgent need for food assistance and expect that to be the case for some time as my husband says he's not helping any further and I have a few years before I will be able to become a nurse, and school prohibits me from working full time. I am not eligible for unemployment as I have been home raising kids all these years.
   - I spend the majority of my money on food in Marin. This is because my hourly wage is so low in comparison to the cost of living. On top of it all, I am a wilderness first responder, and I work with youth outdoors as an environmental science educator. My job is to inspire hope, action, connection, and responsibility within our youth - however, my value is not reflected in pay, unfortunately - as teachers across America well know!
-  population: '252,409'
-  median-income: 91529
+  population: 260955
+  median-income: 136857
   poverty-rate-increase: '0.4'
 Mariposa:
-  population: '18,251'
+  population: 17569
   center:
   - -119.91286
   - 37.57003
   quotes: []
-  median-income: 50560
-  minimum-cost-living-family: 57816
+  median-income: 62966
+  minimum-cost-living-family: 70879
   poverty-rate: 13.40%
   poverty-rate-increase: '2.4'
 Mendocino:
-  population: '87,841'
+  population: 88018
   center:
   - -123.442881
   - 39.43238
   quotes: []
-  median-income: 43290
-  minimum-cost-living-family: 59820
+  median-income: 59127
+  minimum-cost-living-family: 72534
   poverty-rate: 21.60%
   poverty-rate-increase: '2.9'
 Merced:
-  population: '255,793'
+  population: 272673
   center:
   - -120.722802
   - 37.1948
   quotes: []
-  median-income: 43066
-  minimum-cost-living-family: 56760
+  median-income: 49971
+  minimum-cost-living-family: 69211
   poverty-rate: 18.40%
   poverty-rate-increase: '4.4'
 Modoc:
-  population: '9,686'
+  population: 8859
   center:
   - -120.71837
   - 41.59291
   quotes: []
-  median-income: 38560
-  minimum-cost-living-family: 55620
+  median-income: 51000
+  minimum-cost-living-family: 67939
   poverty-rate: 15.50%
   poverty-rate-increase: '3.3'
   percent-student: 0.0909091
   percent-unstable-housing: 0.3333333
-  number-apps: 33
+  number-apps: 19
   percent-with-children: 0.3939394
   percent-earned-income: 0.5
   percent-with-seniors: 0.0
 Mono:
-  population: '14,202'
+  population: 14168
   center:
   - -118.875167
   - 37.91583
   quotes: []
-  median-income: 61814
-  minimum-cost-living-family: 61728
+  median-income: 76196
+  minimum-cost-living-family: 75214
   poverty-rate: 13.40%
   poverty-rate-increase: '2.4'
 Monterey:
   poverty-rate: 19.30%
   percent-student: 0.2564501
-  minimum-cost-living-family: 64452
+  minimum-cost-living-family: 78003
   percent-unstable-housing: 0.2775358
-  number-apps: 3217
+  number-apps: 632
   percent-with-children: 0.3888716
   percent-earned-income: 0.5957697
   percent-with-seniors: 0.0684505
@@ -403,25 +403,25 @@ Monterey:
   - I was working full time at a large hotel in Monterey. I had good pay, but was offered a job at a local business for higher pay and Monday to Friday (since hotels are open 24/7, a Monday to Friday schedule seemed like a luxury). The hiring job asked me to put in my two weeks’ notice for my past job. I was already training for my new job when they called me and said the position wouldn't work out since they didn't have it in the budget. Now I'm unemployed and applying for jobs.
   - Our income is around $3,000 per month, but it gets expensive with credit card bills, auto insurance, gas, clothes, diapers, utility bills, repairing the old car, etc. At times we cannot keep up with affording food. So we spend $8 for four people on McDonalds or boiling potatoes with salt is what we have to do to survive.
   - I have a car payment that's $336 every month and a weekly daycare bill of $175. After rent, the phone bill, and gas, I have nearly nothing to spend on food. I often don't eat so that my child can eat. I feel terrible feeding him cheap unhealthy food, especially because I enjoy cooking, but I can't afford the ingredients to cook anything. It's embarrassing, but I often eat leftover food at work or the school cafeteria so I have the energy to function. I would absolutely appreciate any help I can get.
-  population: '415,057'
-  median-income: 58582
+  population: 437907
+  median-income: 69222
   poverty-rate-increase: '2.9'
 Napa:
-  population: '136,484'
+  population: 140973
   center:
   - -122.325995
   - 38.50735
   quotes: []
-  median-income: 70925
-  minimum-cost-living-family: 66624
+  median-income: 93082
+  minimum-cost-living-family: 79945
   poverty-rate: 16.70%
   poverty-rate-increase: '1.5'
 Nevada:
   poverty-rate: 17.20%
   percent-student: 0.1098901
-  minimum-cost-living-family: 63156
+  minimum-cost-living-family: 74626
   percent-unstable-housing: 0.3356259
-  number-apps: 728
+  number-apps: 97
   percent-with-children: 0.3159341
   percent-earned-income: 0.5972851
   percent-with-seniors: 0.1088154
@@ -431,15 +431,15 @@ Nevada:
   quotes:
   - When I applied for Meals on Wheels, they told me I qualified for CalFresh. I cannot work due to my health and age. The cost of living is high here and I have been struggling. I do not want to burden my family.
   - I escaped a domestic violence situation. I'm safe now but I need assistance. It's getting desperate.
-  population: '98,764'
-  median-income: 56949
+  population: 99814
+  median-income: 75931
   poverty-rate-increase: '1.6'
 Orange:
   poverty-rate: 20.90%
   percent-student: 0.2458434
-  minimum-cost-living-family: 69204
+  minimum-cost-living-family: 84061
   percent-unstable-housing: 0.2928035
-  number-apps: 20269
+  number-apps: 4618
   percent-with-children: 0.3064779
   percent-earned-income: 0.5870896
   percent-with-seniors: 0.1007269
@@ -460,15 +460,15 @@ Orange:
   - I never thought I would ever apply for this help, but things started to quickly go downhill when I got a DUI two years ago. I had a great job working as a tank driver delivering fuel to gasoline stations. I paid big time for my bad decision. I lost everything. I lost my job and then my girlfriend left with our kids because I didn't have any income. I fell into a big depression... I just need a little help for a couple months as I'm already working on getting my Class A license again.
   - I am a sophomore in college paying for my own rent, tuition, food, books, and all other expenses. I receive no financial assistance from either of my parents because they are not capable of doing so while also maintaining financially stability themselves. I have to budget my spending on food especially. I have often skipped meals in fear that if I spend too much money on food I may not have enough funds to pay for rent.
   - I am currently in difficult financial bind- never been in a position such as now. Even help for one month would help my son and I immensely. I just started working my regular, consistent hours at the school. I was off during the summer and working our summer daycare for just about 3 hours a day except field trip days (1-2 times per week). I barely got by. I am almost embarrassed to be here, but hey, it happens, and I know I am not alone. First and foremost, my son needs to know that food will always be available.
-  population: '3,010,232'
-  median-income: 75998
+  population: 3190400
+  median-income: 92236
   poverty-rate-increase: '1.4'
 Placer:
   poverty-rate: 12.90%
   percent-student: 0.1643033
-  minimum-cost-living-family: 59880
+  minimum-cost-living-family: 73258
   percent-unstable-housing: 0.2742981
-  number-apps: 3244
+  number-apps: 708
   percent-with-children: 0.4007398
   percent-earned-income: 0.5777351
   percent-with-seniors: 0.1128633
@@ -480,47 +480,47 @@ Placer:
   - I'm homeless and I make 525 per month working 16 hours a week. Fortunately, I get to work when others call in sick.
   - I am looking for a new job and place to live with my kid. We had to move out of our house because my father-in-law got cancer. They can’t have a 5-year-old who gets sick all the time living in the house, and I don't know what we’re going to do.
   - I was living at a house owned by a church in Paradise. I haven’t had income in years, but had minimal financial assistance from family members. Now that the church is gone, I really have nothing. The house and all of my belongings are gone. The church didn’t have fire insurance either. I'm just trying to do whatever I can to stay afloat.
-  population: '348,432'
-  median-income: 73747
+  population: 386166
+  median-income: 98552
   poverty-rate-increase: '0.9'
 Plumas:
-  population: '20,007'
+  population: 18742
   center:
   - -120.829516
   - 39.99517
   quotes: []
-  median-income: 48032
-  minimum-cost-living-family: 57420
+  median-income: 67950
+  minimum-cost-living-family: 70195
   poverty-rate: 15.50%
   poverty-rate-increase: '3.3'
   percent-student: 0.2173913
   percent-unstable-housing: 0.2280702
-  number-apps: 115
+  number-apps: 33
   percent-with-children: 0.426087
   percent-earned-income: 0.5405405
   percent-with-seniors: 0.0526316
 Riverside:
-  population: '2,189,641'
+  population: 2423266
   center:
   - -116.002239
   - 33.72982
   quotes: []
-  median-income: 56592
-  minimum-cost-living-family: 61812
+  median-income: 68846
+  minimum-cost-living-family: 74216
   poverty-rate: 18.30%
   poverty-rate-increase: '2.2'
   percent-student: 0.2493639
   percent-unstable-housing: 0.3316327
-  number-apps: 393
+  number-apps: 2404
   percent-with-children: 0.3638677
   percent-earned-income: 0.6666667
   percent-with-seniors: 0.0664962
 Sacramento:
   poverty-rate: 17.30%
   percent-student: 0.1711462
-  minimum-cost-living-family: 59880
+  minimum-cost-living-family: 73258
   percent-unstable-housing: 0.3732837
-  number-apps: 19124
+  number-apps: 3355
   percent-with-children: 0.2747856
   percent-earned-income: 0.5492525
   percent-with-seniors: 0.0832284
@@ -536,47 +536,47 @@ Sacramento:
   - I pay for wifi also and I take care of my emotional support dog Charlotte who is about 35 lbs. So any extra funds I have left goes to feeding and keeping her groomed. I can't walk to food pantries and such as they are too far. I get help from friends or neighbors with a hot meal here and there. I am starving almost after the first week after payday and I am becoming more unhealthy. I do not know what else to do. I am hungry now as I am typing this.
   - As I mentioned before, my father abandoned my family and I about 3 some-odd years ago. Not only was he a major financial help to the family, but he was a great emotional support as well. Since then, we have tried our best to cope with the losses, both emotionally and financially. My sister and I work retail jobs and are the main sources of income, but even our pooled finances do NOT cover bills, rent, and food. (My mother is disabled and cannot work.) Even with SSI, most of the money goes towards rent and bills. Often, we have to go without food for several days at a time or ask to borrow, lots of times without success. I know that you get a lot of sob stories on these types of platforms, but for whomever is reading, I ask that you go over my case and help my family and I as best as you can. It has not been easy, but we are doing our part.
   - Originally I couch surfed and at one point lived in my car. I am a high school student working full time just to get by. I make about $900 a month, but $500 goes to rent, $120 goes to phone bills and the other is gas and groceries. Most the time I under pay the rent by up to $200. I was lucky enough to be taken in by my girlfriend and her parents but they expect me to still contribute to household.
-  population: '1,418,788'
-  median-income: 55615
+  population: 1530615
+  median-income: 70821
   poverty-rate-increase: '2.9'
 San Benito:
-  population: '55,269'
+  population: 60310
   center:
   - -121.085296
   - 36.6107
   quotes: []
-  median-income: 67874
-  minimum-cost-living-family: 65328
+  median-income: 84489
+  minimum-cost-living-family: 81640
   poverty-rate: 19.30%
   poverty-rate-increase: '2.9'
   percent-student: 0.2328767
   percent-unstable-housing: 0.3013699
-  number-apps: 73
+  number-apps: 84
   percent-with-children: 0.3561644
   percent-earned-income: 0.5416667
   percent-with-seniors: 0.0958904
 San Bernardino:
-  population: '2,035,210'
+  population: 2157404
   center:
   - -116.181197
   - 34.85722
   quotes: []
-  median-income: 54100
-  minimum-cost-living-family: 61812
+  median-income: 63170
+  minimum-cost-living-family: 74216
   poverty-rate: 18.20%
   poverty-rate-increase: '3.8'
   percent-student: 0.3529412
   percent-unstable-housing: 0.4411765
-  number-apps: 34
+  number-apps: 31
   percent-with-children: 0.2058824
   percent-earned-income: 0.6666667
   percent-with-seniors: 0.0882353
 San Diego:
   poverty-rate: 20.10%
   percent-student: 0.206044
-  minimum-cost-living-family: 68340
+  minimum-cost-living-family: 83240
   percent-unstable-housing: 0.3389562
-  number-apps: 39841
+  number-apps: 8114
   percent-with-children: 0.3134208
   percent-earned-income: 0.5942725
   percent-with-seniors: 0.0933521
@@ -591,15 +591,15 @@ San Diego:
   - My school referred me to CalFresh. I am a senior in college and live on my own. As rewarding as that feels, at the end of the day, I do struggle a lot with paying bills and still having money left over to buy food. No one else supports me, so with the little money I have left over I am normally only able to afford unhealthy meals. If I were to have the opportunity to receive some type of financial assistance, I feel that I would be able to be a heathier person and feel better throughout the day while studying.
   - I spend about $200 on groceries and another $200 on car insurance. My commute to work is 40 miles every day, and it takes about $50 to fill my tank every week ($100 every pay period). I work & I work hard, but I can't do this on my own. I'm tired of just surviving, I'm ready to start thriving. I'm making progress to where I want to be in life, but right now I need some help. Sometimes my roommates eat my food while I'm away at work, so what was supposed to last me a couple of days only lasted a night. I can't afford to keep buying groceries, so I'm just about living off of multi-vitamins & protein shakes. Even if you can't help me, thank you for taking the time to look at my case, & I hope you're having a great day when you read this.
   - As my children are getting older, they are consuming more. Their father, who lives in Colorado, will not increase his monthly child support payments to help cover costs as our children get older. I am a self-employed single mother and in addition have now taken on the caregiver role for my elderly folks, one with dementia and the other who recently had a brain injury. I am not able to make ends meet. Receiving CalFresh benefits would greatly help my situation.
-  population: '3,095,313'
-  median-income: 63996
+  population: 3337685
+  median-income: 81823
   poverty-rate-increase: '1.3'
 San Francisco:
   poverty-rate: 18.90%
   percent-student: 0.3373634
-  minimum-cost-living-family: 83664
+  minimum-cost-living-family: 101085
   percent-unstable-housing: 0.2552167
-  number-apps: 6865
+  number-apps: 1289
   percent-with-children: 0.1643117
   percent-earned-income: 0.4646772
   percent-with-seniors: 0.0803624
@@ -621,25 +621,25 @@ San Francisco:
   - I am a low-income student and the most expensive thing besides transportation is affording food so I hope I will be relieved of these financial barriers. I have skipped meals waiting for my financial aid to arrive as well as trying to budget my food expenses.
   - I'm a recent graduate and I'm currently unemployed, but actively applying for jobs. Once I secure employment, I will pay a small amount for rent to my parents as well as make sure I pay my fines ($2200) to the County Court. Obtaining food stamps will greatly alleviate my financial burden.
   - I'm in a challenging situation right now so I was hoping to get assistance for a few months until I get a job.
-  population: '805,235'
-  median-income: 78378
+  population: 884363
+  median-income: 114049
   poverty-rate-increase: '0.6'
 San Joaquin:
-  population: '685,306'
+  population: 745424
   center:
   - -121.272237
   - 37.93503
   quotes: []
-  median-income: 53253
-  minimum-cost-living-family: 59052
+  median-income: 65375
+  minimum-cost-living-family: 71946
   poverty-rate: 15.80%
   poverty-rate-increase: '3'
 San Luis Obispo:
   poverty-rate: 18.50%
   percent-student: 0.3494186
-  minimum-cost-living-family: 63156
+  minimum-cost-living-family: 77921
   percent-unstable-housing: 0.2440303
-  number-apps: 1720
+  number-apps: 282
   percent-with-children: 0.2587209
   percent-earned-income: 0.6412214
   percent-with-seniors: 0.0775058
@@ -652,15 +652,15 @@ San Luis Obispo:
   - I am 64 years old. I receive SSI SSA. I am also on section 8 housing. I am having a great deal of problems making ends meet.
   - We are currently insured with assistance from Covered California through our old worker. We have a very tight budget and often cannot afford to eat after paying bills. Please assist us asap.
   - I am a full-time, first-generation college student who just moved to San Luis Obispo to pursue an education at Cal Poly SLO. I have just enough money to pay for my rent this month with the money I have in my savings account. Even though I get some government aid to pay for my classes that doesn't include my books and other resources I need for school. I just found a job here and all the money I earn will go towards paying my rent.
-  population: '269,637'
-  median-income: 59454
+  population: 283405
+  median-income: 83084
   poverty-rate-increase: '0.7'
 San Mateo:
   poverty-rate: 16.60%
   percent-student: 0.2113575
-  minimum-cost-living-family: 83664
+  minimum-cost-living-family: 101085
   percent-unstable-housing: 0.2457912
-  number-apps: 2976
+  number-apps: 694
   percent-with-children: 0.3773522
   percent-earned-income: 0.6382253
   percent-with-seniors: 0.1451667
@@ -673,15 +673,15 @@ San Mateo:
   - I am changing jobs and looking for an apartment in Roseville. I don't think I'll have enough money to eat soon.
   - I had an injury, lost my job, and then lost my car. I am living on the streets and my bank account is closed. I am trying to stay at a friend's, but sometimes I have nowhere to go. I tried to get into a shelter but I have not gotten in yet. I go to the public library to search for jobs.
   - I am 18 years old. I got kicked out of my father’s household at 16 after many years of abuse throughout my life. My boyfriend and I work full time but struggle to make ends meet at times due to bills and overall the cost of living. We live downstairs in a friend's house. If I could receive help with monthly groceries that would be a huge help. Maybe we can soon move into our own apartment and start saving up money.
-  population: '718,451'
-  median-income: 91421
+  population: 771410
+  median-income: 124485
   poverty-rate-increase: '0.5'
 Santa Barbara:
   poverty-rate: 23.00%
   percent-student: 0.666634
-  minimum-cost-living-family: 66108
+  minimum-cost-living-family: 84621
   percent-unstable-housing: 0.1354003
-  number-apps: 10202
+  number-apps: 1717
   percent-with-children: 0.1679083
   percent-earned-income: 0.6280926
   percent-with-seniors: 0.0353288
@@ -700,15 +700,15 @@ Santa Barbara:
   - I desperately need to eat healthier and be able to afford proper meals while I wait for a hearing with a disability judge. My boyfriend is sick with stress trying to help me for so long. I need security to know I can buy myself food.
   - I am away from my family and it is hard to buy & get healthy food while I am on a budget and I have to be paying a lot for my room and college materials.
   - I've been broke the last couple of months, I was getting maternity leave. I'm going back to work next month, but only part-time. I found a daycare that's perfect for my hours but it’s too expensive - a month of child care is more than my rent. With a new baby that is growing fast, I have to keep up with new clothes plus diapers. Since I'm breast feeding, I'm constantly hungry. I do have WIC.
-  population: '423,895'
-  median-income: 63409
+  population: 448150
+  median-income: 78481
   poverty-rate-increase: '2.3'
 Santa Clara:
   poverty-rate: 16.00%
   percent-student: 0.213153
-  minimum-cost-living-family: 74088
+  minimum-cost-living-family: 92894
   percent-unstable-housing: 0.3106675
-  number-apps: 6432
+  number-apps: 1569
   percent-with-children: 0.3585199
   percent-earned-income: 0.6040902
   percent-with-seniors: 0.1112498
@@ -726,15 +726,15 @@ Santa Clara:
   - Looking for work, but not having success. I was surviving off savings, but my resources are now exhausted. I am turning to any public assistance I can get just to bridge the gap.
   - I'm 62, my health isn't very good, and I go to dialysis three times a week. I'm trying to get a transplant at Stanford. I really could use a helping hand.
   - I haven’t really eaten in 3 days and I hope I can get this today or soon. I understand there are many people worse off than me... just mentally and physically I could really use this...
-  population: '1,781,642'
-  median-income: 93854
+  population: 1938153
+  median-income: 122700
   poverty-rate-increase: '0.8'
 Santa Cruz:
   poverty-rate: 23.80%
   percent-student: 0.6032028
-  minimum-cost-living-family: 69384
+  minimum-cost-living-family: 85278
   percent-unstable-housing: 0.1743519
-  number-apps: 5058
+  number-apps: 727
   percent-with-children: 0.1494662
   percent-earned-income: 0.5605381
   percent-with-seniors: 0.0370444
@@ -754,35 +754,35 @@ Santa Cruz:
   - My girlfriend and I are both college students and work to pay the bills. Neither of us gets help from family.
   - I just paid rent and apart from saving for next month's rent, I don't have other money. I need help buying food.
   - I'm a full time student. Before becoming a student, I had been supporting myself entirely since I was 19. I struggle with food security and am not hoping to use this resource forever, just enough to eat 3 meals a day while trying to get an education.
-  population: '262,382'
-  median-income: 66923
+  population: 275897
+  median-income: 90531
   poverty-rate-increase: '1.7'
 Shasta:
-  population: '177,223'
+  population: 179921
   center:
   - -122.04355
   - 40.76052
   quotes: []
-  median-income: 44556
-  minimum-cost-living-family: 58152
+  median-income: 59787
+  minimum-cost-living-family: 70920
   poverty-rate: 17.80%
   poverty-rate-increase: '2.7'
 Sierra:
-  population: '3,240'
+  population: 2999
   center:
   - -120.521993
   - 39.57692
   quotes: []
-  median-income: 43107
-  minimum-cost-living-family: 61260
+  median-income: 86205
+  minimum-cost-living-family: 74694
   poverty-rate: 17.20%
   poverty-rate-increase: '1.6'
 Siskiyou:
   poverty-rate: 15.50%
   percent-student: 0.1223242
-  minimum-cost-living-family: 57216
+  minimum-cost-living-family: 69635
   percent-unstable-housing: 0.4276923
-  number-apps: 327
+  number-apps: 72
   percent-with-children: 0.324159
   percent-earned-income: 0.5483871
   percent-with-seniors: 0.0676923
@@ -790,15 +790,15 @@ Siskiyou:
   - -122.533287
   - 41.58798
   quotes: []
-  population: '44,900'
-  median-income: 37495
+  population: 43853
+  median-income: 51227
   poverty-rate-increase: '3.3'
 Solano:
   poverty-rate: 15.60%
   percent-student: 0.108678
-  minimum-cost-living-family: 62976
+  minimum-cost-living-family: 76745
   percent-unstable-housing: 0.3695431
-  number-apps: 4932
+  number-apps: 667
   percent-with-children: 0.3491484
   percent-earned-income: 0.5533708
   percent-with-seniors: 0.1117205
@@ -813,15 +813,15 @@ Solano:
   - My husband started nursing school in August and can only manage 24 hours a week at work now. His main at-home care client was in the hospital this month and so we won't be getting a paycheck this week.
   - I recently lost my job. I applied for unemployment insurance and started the process of establishing my own business while taking interviews and submitting resumes. I'm applying for assistance for myself and my two sons while I'm having this tough time!
   - My spouse is completely unable to work. I can barely afford to keep the roof over our heads and there is no money left for food.
-  population: '413,344'
-  median-income: 67341
+  population: 445458
+  median-income: 83654
   poverty-rate-increase: '1.7'
 Sonoma:
   poverty-rate: 17.10%
   percent-student: 0.1775164
-  minimum-cost-living-family: 66312
+  minimum-cost-living-family: 83610
   percent-unstable-housing: 0.3067653
-  number-apps: 3656
+  number-apps: 639
   percent-with-children: 0.3353392
   percent-earned-income: 0.5482927
   percent-with-seniors: 0.104989
@@ -837,35 +837,35 @@ Sonoma:
   - I lost my job in early September. It looks like I am going to be turned down for unemployment so I am getting desperate.
   - I have been on Workman’s Comp for 10 months with no end in sight. I am eating with a very low budget and not very healthy. I'm struggling, I'm not even sure if I qualify but I have to try.
   - My husband got sick with endocarditis last Nov and had to have open heart surgery to fix his mitral valve last month. He suffered a stroke 3 weeks ago and we have been hurting financially because of all the health setbacks.
-  population: '483,878'
-  median-income: 63799
+  population: 504217
+  median-income: 86604
   poverty-rate-increase: '1.2'
 Stanislaus:
-  population: '514,453'
+  population: 547899
   center:
   - -121.002656
   - 37.56238
   quotes: []
-  median-income: 49573
-  minimum-cost-living-family: 58704
+  median-income: 60757
+  minimum-cost-living-family: 72561
   poverty-rate: 15.70%
   poverty-rate-increase: '3.1'
 Sutter:
-  population: '94,737'
+  population: 96648
   center:
   - -121.702758
   - 39.03525
   quotes: []
-  median-income: 51527
-  minimum-cost-living-family: 58080
+  median-income: 61590
+  minimum-cost-living-family: 70537
   poverty-rate: 16.40%
   poverty-rate-increase: '1.8'
 Tehama:
   poverty-rate: 17.20%
   percent-student: 0.1198257
-  minimum-cost-living-family: 57324
+  minimum-cost-living-family: 69621
   percent-unstable-housing: 0.3238512
-  number-apps: 459
+  number-apps: 72
   percent-with-children: 0.3572985
   percent-earned-income: 0.593985
   percent-with-seniors: 0.0919037
@@ -873,15 +873,31 @@ Tehama:
   - -122.232276
   - 40.12615
   quotes: []
-  population: '63,463'
-  median-income: 42369
+  population: 63926
+  median-income: 52583
   poverty-rate-increase: '2.7'
+Trinity:
+  population: 12709
+  center:
+  - -123.114404
+  - 40.64772
+  quotes: []
+  median-income: 48596
+  minimum-cost-living-family: 69990
+  poverty-rate: 17.20%
+  poverty-rate-increase: '2.7'
+  percent-student: 0.0957447
+  percent-unstable-housing: 0.4680851
+  number-apps: 22
+  percent-with-children: 0.3404255
+  percent-earned-income: 0.53125
+  percent-with-seniors: 0.0531915
 Tulare:
   poverty-rate: 20.30%
   percent-student: 0.2182491
-  minimum-cost-living-family: 57924
+  minimum-cost-living-family: 69922
   percent-unstable-housing: 0.3833747
-  number-apps: 811
+  number-apps: 455
   percent-with-children: 0.3612824
   percent-earned-income: 0.6339286
   percent-with-seniors: 0.0620347
@@ -893,41 +909,25 @@ Tulare:
   - I live with my family and sometimes we don't have enough to feed us all. So I sometimes skip lunch or don't eat anything that day in order to save some money to buy things I need for my education.
   - I stay with my boyfriend and our situation in the place we stay is temporary. I am pregnant about 6 months. I set an appointment up so I can provide proof. I don’t have a steady income. I help some people I know do basic things that may be difficult for them and they offer money sometimes to help me out. I don’t receive a set amount yet it all goes towards living expenses.
   - My husband recently lost his full time job. His other job is only per diem and averages $50-100 a month. We took money out of our savings to pay for at least 4 months’ rent. We only have $100 in our savings now and that's being used for gas. I am currently 5 months pregnant. My husband and I really need help with groceries, even if it's just until my husband gets a new job.
-  population: '442,179'
-  median-income: 42863
+  population: 464493
+  median-income: 47280
   poverty-rate-increase: '4.3'
 Tuolumne:
-  population: '55,365'
+  population: 54248
   center:
   - -119.964708
   - 38.02145
   quotes: []
-  median-income: 48493
-  minimum-cost-living-family: 59076
+  median-income: 67423
+  minimum-cost-living-family: 71494
   poverty-rate: 13.40%
   poverty-rate-increase: '2.4'
-Trinity:
-  population: '13,786'
-  center:
-  - -123.114404
-  - 40.64772
-  quotes: []
-  median-income: 36862
-  minimum-cost-living-family: 57204
-  poverty-rate: 17.20%
-  poverty-rate-increase: '2.7'
-  percent-student: 0.0957447
-  percent-unstable-housing: 0.4680851
-  number-apps: 94
-  percent-with-children: 0.3404255
-  percent-earned-income: 0.53125
-  percent-with-seniors: 0.0531915
 Ventura:
   poverty-rate: 18.30%
   percent-student: 0.1862442
-  minimum-cost-living-family: 68592
+  minimum-cost-living-family: 82187
   percent-unstable-housing: 0.3110724
-  number-apps: 5176
+  number-apps: 937
   percent-with-children: 0.3707496
   percent-earned-income: 0.6101808
   percent-with-seniors: 0.0947491
@@ -941,15 +941,15 @@ Ventura:
   - Both I and my son are disabled. We receive SSI disability benefits. My other kid are in college. He is doing internship on campus and he has a job at a smoothie place to help pay his college expenses. I am usually with my disabled son 24 hours a day as he suffers from epilepsy and can have an attack at any time. My husband lost his job and is now on a job where he is paid 1099 and its sale based. The commission he receives of $2000 is temporary. He will have to go straight commission in 3 months regardless of what he has sold.
   - My wife and I pay a lot for health insurance because we both have autoimmune diseases. We have been putting most extra money toward doctor care and don't have much left for food now.
   - We just moved down from Washington and I haven’t been able to get a job as of yet. With rent having to be paid we don't much left for other necessities. Something to get my family through this time would be deeply appreciated.
-  population: '823,318'
-  median-income: 77335
+  population: 854223
+  median-income: 91732
   poverty-rate-increase: '1.7'
 Yolo:
   poverty-rate: 20.20%
   percent-student: 0.6085508
-  minimum-cost-living-family: 61548
+  minimum-cost-living-family: 74858
   percent-unstable-housing: 0.1546793
-  number-apps: 3602
+  number-apps: 508
   percent-with-children: 0.1565797
   percent-earned-income: 0.6216216
   percent-with-seniors: 0.0305556
@@ -967,17 +967,17 @@ Yolo:
   - Recently separated from husband. My children and I are living with my parents, who helped us get a rental property so that I could get the kids into a public school. I'm trying to meet the requirements to get my license in CA for my profession and am almost done, so I can start looking for work. I move into my new place in/around the 10th-15th of Oct., where the rent will be $1995/mo. My parents are helping as much as they can and I receive unemployment until I find work, but I'm not bringing in much.
   - I said that I have a disability and I wanted to elaborate. I have a brain tumor that has left half of my throat and mouth paralyzed. Because of this, I must keep my immune system in top shape and I consider healthy food to be medicine. I am applying for food stamps because healthy foods are expensive and I can't afford them on my own.
   - I am a single mother and recently became unemployed due to my job being too far away... I stay with my parents but do pay rent... my daughter's father is not involved as much as he should be I am not sure where he is staying or whether or not he is employed...
-  population: '200,849'
-  median-income: 55508
+  population: 219116
+  median-income: 81149
   poverty-rate-increase: '1.6'
 Yuba:
-  population: '72,155'
+  population: 77031
   center:
   - -121.34428
   - 39.27002
   quotes: []
-  median-income: 45470
-  minimum-cost-living-family: 58080
+  median-income: 57391
+  minimum-cost-living-family: 70537
   poverty-rate: 16.40%
   poverty-rate-increase: '1.8'
   percent-student: 0.2142857

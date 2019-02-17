@@ -198,7 +198,6 @@ class MapboxMap {
       // Setup the tab and content containers with the details tab that will
     	// always be present.
     	$('div.map-info').append(
-    		"<div class='county-details-note'>Data from 2017</div>" +
     		"<div class='county-details'>" +
     		"<div class='county-details-tabs'>" +
     		"<div class='county-details-tab' id='stats-tab'>" +
@@ -226,18 +225,18 @@ class MapboxMap {
     			"<div class='county-details-stats'>" +
     			"<div class='county-details-stat'>" +
     			"<div class='county-details-stat-name'>Population</div>" +
-    			"<div class='county-details-stat-number'>" + countyData["population"] + "</div>" +
+    			"<div class='county-details-stat-number'>" + countyData["population"].toLocaleString("en", {style: "decimal"}) + "</div>" +
     			"</div>" +
     			"<div class='county-details-stat'>" +
     			"<div class='county-details-stat-name'>Poverty rate</div>" +
     			"<div class='county-details-stat-number'>" + countyData["poverty-rate"] + "</div>" +
     			"</div>" +
     			"<div class='county-details-stat'>" +
-    			"<div class='county-details-stat-name'>Median income<div class='county-details-stat-desc'>cost of living adjusted</div></div>" +
+    			"<div class='county-details-stat-name'>Median income</div>" +
     			"<div class='county-details-stat-number'>" + countyData["median-income"].toLocaleString("en", {style: "currency", currency: "USD", maximumFractionDigits: 0, minimumFractionDigits: 0}) + "</div>" +
     			"</div>" +
     			"<div class='county-details-stat'>" +
-    			"<div class='county-details-stat-name'>Min cost of living<div class='county-details-stat-desc'>2 working adults, 2 children</div></div>" +
+    			"<div class='county-details-stat-name'>Min cost of living<div class='county-details-stat-desc'>2 adults, 2 children</div></div>" +
     			"<div class='county-details-stat-number'>" + countyData["minimum-cost-living-family"].toLocaleString("en", {style: "currency", currency: "USD", maximumFractionDigits: 0, minimumFractionDigits: 0}) + "</div>" +
     			"</div>" +
     			"<div style='clear:both'></div>" +
@@ -251,7 +250,7 @@ class MapboxMap {
     				"<div class='county-details-gcf-stats'>" +
     				"<div class='county-details-gcf-stat'>" +
     				"<div class='county-details-gcf-stat-number'>"+ countyData["number-apps"].toLocaleString("en", {style: "decimal"}) + "</div>" +
-    				"<div class='county-details-gcf-stat-name'>GetCalFresh applicants</div>" +
+    				"<div class='county-details-gcf-stat-name'>Monthly applicants</div>" +
     				"</div>" +
     				"<div class='county-details-gcf-stat'>" +
     				"<div class='county-details-gcf-stat-number'>"+ countyData["percent-earned-income"].toLocaleString("en", {style: "percent"}) + "</div>" +

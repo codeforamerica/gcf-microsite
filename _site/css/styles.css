@@ -616,15 +616,10 @@ div.map-info {
   width: 48%;
   height: 100%; }
 
-div.county-details-note {
-  font-family: SourceSansPro;
-  font-size: 13px;
-  margin-top: 20px; }
-
 div.county-details {
   background-color: #FDF7F0;
   box-shadow: 0 0 4px 0 #DEDEDE;
-  margin: 15px 0 10px 0; }
+  margin: 50px 0 10px 0; }
 
 div.county-details-tabs {
   display: flex;
@@ -793,6 +788,15 @@ div.map-quote-selector-arrow.left {
 
 div.map-quote-selector-arrow.right {
   background: url(../images/quote-arrow-right.png) center center no-repeat; }
+
+div.map-sources {
+  font-family: SourceSansPro;
+  font-size: 13px;
+  line-height: 18px;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 40px;
+  text-align: center; }
 
 /* Footer */
 footer {
@@ -1503,7 +1507,7 @@ a.mobile-logo {
   nav.scrolled div.nav-dropdown a.nav-dropdown-item {
     border-color: #EBEBEB; } }
 div.resources {
-  margin: 80px 0; }
+  margin: 40px 0; }
 
 div.resources-outer {
   margin: 0 auto;
