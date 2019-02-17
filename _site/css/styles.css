@@ -1130,8 +1130,12 @@ select::-ms-expand {
 
 @media screen and (max-width: 768px) {
   /* Font */
-  p, div.intro-header-inner p, div.content p, div.quote-content, .ui-tooltip-content {
+  p, div.intro-header-inner p, div.content p, div.quote-content {
     font-size: 16px;
+    line-height: normal; }
+
+  .ui-tooltip-content {
+    font-size: 14px;
     line-height: normal; }
 
   /* Headers */
