@@ -89,7 +89,7 @@
 
     // Scroll-top in top section
     $('.scroll-tip').click(function() {
-      var goTo =  $('div#intro-content').position().top - headerHeight;
+      var goTo =  $('div#intro-content').position().top - headerHeight + 5;
       $("html, body").stop().animate({ scrollTop: goTo }, 1500);
     });
 
@@ -147,6 +147,7 @@
 
     $(window).on('resize', function(){
   		headerHeight = header.height();
+      navStickyOffset = $('div#intro-content').offset().top-headerHeight;
   	});
 
     // Change nav bar color and hide mobile nav on scroll
@@ -190,6 +191,8 @@
         $('body').removeClass('scrolled');
       }
       scrolling = false;
+      headerHeight = header.height();
+      navStickyOffset = $('div#intro-content').offset().top-headerHeight;
     };
 
   	function autoHideHeader() {
@@ -204,6 +207,8 @@
         $('nav').removeClass('nav-open');
       }
       previousTop = currentTop;
+      headerHeight = header.height();
+      navStickyOffset = $('div#intro-content').offset().top-headerHeight;
   	};
   });
 

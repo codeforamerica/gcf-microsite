@@ -119,7 +119,7 @@ a.mobile-logo {
 @media only screen and (max-width: $tablet-content-width) {
   header {
     height: 64px;
-    position: relative;
+    position: fixed;
   }
 
   header.is-hidden {
@@ -128,18 +128,14 @@ a.mobile-logo {
             transform: translateY(-100%);
   }
 
-  header.scrolled {
-    position: fixed;
+  div.brand-bar {
+    display: none;
   }
 
-div.brand-bar {
-  display: none;
-}
-
-a.mobile-logo {
-  display: block;
-  margin-left: 6px;
-}
+  a.mobile-logo {
+    display: block;
+    margin-left: 6px;
+  }
 
   #logo {
     background-image: url(../images/cfa-logo-black.png);

@@ -1979,7 +1979,7 @@ every night and am now back in college.</strong>
 
     // Scroll-top in top section
     $('.scroll-tip').click(function() {
-      var goTo =  $('div#intro-content').position().top - headerHeight;
+      var goTo =  $('div#intro-content').position().top - headerHeight + 5;
       $("html, body").stop().animate({ scrollTop: goTo }, 1500);
     });
 
@@ -2037,6 +2037,7 @@ every night and am now back in college.</strong>
 
     $(window).on('resize', function(){
   		headerHeight = header.height();
+      navStickyOffset = $('div#intro-content').offset().top-headerHeight;
   	});
 
     // Change nav bar color and hide mobile nav on scroll
@@ -2080,6 +2081,8 @@ every night and am now back in college.</strong>
         $('body').removeClass('scrolled');
       }
       scrolling = false;
+      headerHeight = header.height();
+      navStickyOffset = $('div#intro-content').offset().top-headerHeight;
     };
 
   	function autoHideHeader() {
@@ -2094,6 +2097,8 @@ every night and am now back in college.</strong>
         $('nav').removeClass('nav-open');
       }
       previousTop = currentTop;
+      headerHeight = header.height();
+      navStickyOffset = $('div#intro-content').offset().top-headerHeight;
   	};
   });
 

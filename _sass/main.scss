@@ -16,9 +16,6 @@ body {
 
 @media screen and (max-width: $tablet-content-width) {
   body {
-    padding-top: 0;
-  }
-  body.scrolled {
     padding-top: 64px;
   }
 }
