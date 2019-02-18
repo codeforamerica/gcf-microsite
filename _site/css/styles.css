@@ -89,6 +89,9 @@ body {
 
 @media screen and (max-width: 768px) {
   body {
+    padding-top: 0; }
+
+  body.scrolled {
     padding-top: 64px; } }
 /* Fix for closing tooltips on mobile safari */
 @supports (-webkit-overflow-scrolling: touch) {
@@ -1382,6 +1385,9 @@ a.mobile-logo {
 @media only screen and (max-width: 768px) {
   header {
     height: 64px;
+    position: relative; }
+
+  header.scrolled {
     position: fixed; }
 
   header.is-hidden {

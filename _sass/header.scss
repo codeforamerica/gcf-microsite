@@ -119,6 +119,10 @@ a.mobile-logo {
 @media only screen and (max-width: $tablet-content-width) {
   header {
     height: 64px;
+    position: relative;
+  }
+
+  header.scrolled {
     position: fixed;
   }
 

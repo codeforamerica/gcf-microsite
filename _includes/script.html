@@ -183,7 +183,7 @@
         $('nav').removeClass("scrolled");
       }
 
-      if($(window).scrollTop() > navStickyOffset) {
+      if($(window).scrollTop() > headerHeight) {
         $('header').addClass('scrolled');
         $('body').addClass('scrolled');
       } else if ($(window).scrollTop() < headerHeight){
