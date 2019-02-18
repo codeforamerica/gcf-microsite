@@ -793,13 +793,11 @@ div.map-quote-selector-arrow.right {
   background: url(../images/quote-arrow-right.png) center center no-repeat; }
 
 div.map-sources {
-  font-family: SourceSansPro;
-  font-size: 13px;
-  line-height: 18px;
-  max-width: 600px;
-  margin: 0 auto;
-  margin-top: 40px;
-  text-align: center; }
+  margin-top: 10px; }
+
+span#map-sources-callout {
+  font-size: .8em;
+  padding: 0 2px; }
 
 /* Footer */
 footer {
@@ -989,7 +987,7 @@ span.footnote {
   cursor: pointer; }
 
 .ui-tooltip.bottom {
-  box-shadow: 10px -10px 0 0 #EFA44C; }
+  box-shadow: 10px -10px 0 0 #FBE9D4; }
 
 /* Tooltip arrows only on larger screens. On mobile they don't usually line up */
 @media screen and (min-width: 769px) {
@@ -1261,6 +1259,12 @@ select::-ms-expand {
     height: 300px; }
 
   div.map-info {
+    margin-top: 20px; }
+
+  div.map-container {
+    margin-top: 20px; }
+
+  div.county-details {
     margin-top: 20px; }
 
   /* Share menu */

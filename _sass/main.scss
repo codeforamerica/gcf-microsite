@@ -889,13 +889,12 @@ div.map-quote-selector-arrow.right {
 }
 
 div.map-sources {
-  font-family: SourceSansPro;
-  font-size: 13px;
-  line-height: 18px;
-  max-width: 600px;
-  margin: 0 auto;
-  margin-top: 40px;
-  text-align: center;
+  margin-top: 10px;
+}
+
+span#map-sources-callout {
+  font-size: .8em;
+  padding: 0 2px;
 }
 
 /* Footer */
@@ -1120,7 +1119,7 @@ span.footnote {
 }
 
 .ui-tooltip.bottom {
-  box-shadow: 10px -10px 0 0 $orange-dark-color;
+  box-shadow: 10px -10px 0 0 $orange-light-color;
 }
 
 /* Tooltip arrows only on larger screens. On mobile they don't usually line up */

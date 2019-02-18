@@ -294,28 +294,9 @@ class MapboxMap {
     		);
 
         $('div.map-quote-selector-dots').html("1 of " + countyData['quotes'].length);
-
-    		// Append quote selector
-    		// for (var i = 0; i < countyData['quotes'].length; i++) {
-    		// 	var quote = countyData['quotes'][i];
-    		// 	var quoteDotHtml = "<div id='map-dot-" + i + "' class='map-quote-selector-dot'></div>";
-    		// 	if (i == 0) {
-    		// 		quoteDotHtml = "<div id='map-dot-" + i + "' class='map-quote-selector-dot selected'></div>"
-    		// 	}
-    		// 	$('div.map-quote-selector-dots').append(quoteDotHtml);
-    		// }
     	}
 
       var outerThis = this;
-  		// $('div.map-quote-selector-dot').click(function() {
-  		// 	var dotIndex = this.id.split('-')[2];
-  		// 	outerThis.activeQuoteIndex = dotIndex;
-      //
-  		// 	$('div.map-quote__scroller').html(countyData['quotes'][dotIndex]);
-      //
-  		// 	$('div.map-quote-selector-dot').removeClass('selected');
-  		// 	$('#'+this.id).addClass('selected');
-  		// });
 
     	$('div.map-quote-selector-arrow.left').click(function() {
     		if(outerThis.activeQuoteIndex == 0) {
@@ -325,9 +306,6 @@ class MapboxMap {
     		}
     		$('div.map-quote__scroller').html(countyData['quotes'][outerThis.activeQuoteIndex]);
         $('div.map-quote-selector-dots').html(outerThis.activeQuoteIndex+1 + " of " + countyData['quotes'].length);
-
-    		// $('div.map-quote-selector-dot').removeClass('selected');
-    		// $('div#map-dot-' + outerThis.activeQuoteIndex).addClass('selected');
     	});
 
     	$('div.map-quote-selector-arrow.right').click(function() {
@@ -338,9 +316,6 @@ class MapboxMap {
     		}
     		$('div.map-quote__scroller').html(countyData['quotes'][outerThis.activeQuoteIndex]);
         $('div.map-quote-selector-dots').html(outerThis.activeQuoteIndex+1 + " of " + countyData['quotes'].length);
-
-    		// $('div.map-quote-selector-dot').removeClass('selected');
-    		// $('div#map-dot-' + outerThis.activeQuoteIndex).addClass('selected');
     	});
 
       $('.map-quote__scroller').scroll(function() {
@@ -351,6 +326,39 @@ class MapboxMap {
           }
       });
 
+      $('div.map-info').append(
+        "<div class='map-sources'><span title='#' class='callout' id='map-sources-callout'>Sources</span></div>"
+      );
+
+      $('#map-sources-callout').tooltip({
+        position: {
+          my: "left top+30", at: "center-65 bottom", collision: "flipfit",
+          using: function( position, feedback ) {
+            $(this).addClass(feedback.vertical).css( position);
+          }
+        },
+        close: function (event, ui) {
+          ui.tooltip.hover(
+            function () {
+              $(this).stop(true).fadeTo(400, 1);
+            },
+            function () {
+              $(this).fadeOut("400", function () {
+                $(this).remove();
+              })
+            }
+          );
+        },
+        content: "<strong>Sources for county statistics</strong>\
+        <div style='margin: 10px 0;line-height: 1.3;'>\
+          Poverty rate from <a target='_blank' href='https://www.ppic.org/publication/poverty-in-california/'>California Poverty Measure</a>,\
+          population figures are from the July 2017 <a target='_blank' href='https://factfinder.census.gov'>American Community Survey</a> estimate,\
+          median family income estimate from 2013-2017 <a target='_blank' href='https://factfinder.census.gov'>American Community Survey</a> data (2017 dollars),\
+          cost of living estimates from <a target='_blank' href='http://livingwage.mit.edu/'>MIT Living Wage Calculator</a>.\
+          GetCalFresh monthly applicant counts are from January 2019 to account for newly added counties; percentages reflect averages of application data from 2018 and 2019.\
+        </div>",
+      });
+      
     	$('#stats-tab').click(function() {
     		outerThis.activeTab = "stats";
     		outerThis.updateMapInfo(countyName);
