@@ -299,6 +299,7 @@
   text: "The Dynamics of Poverty in the United States: A Review of Data, Methods, and Findings."
   link: "https://www.urban.org/sites/default/files/publication/30656/411960-The-Dynamics-of-Poverty-in-the-United-States-A-Review-of-Data-Methods-and-Findings.PDF"
   publication: "Pre-print of article in Journal of Policy Analysis and Management."
+  hide_from_bibliography: "true" # this needs to be a string, quick amd dirty way to filter it out
 
 47:
   author: "Social Security Administration."

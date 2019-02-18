@@ -59,7 +59,7 @@
         <div class="resources-content" id="resources-content-references">
           <ul>
             {% capture footnoteTempList %}
-              {%- for footnoteDictionary in site.data.footnotes -%}{%-if footnoteDictionary[1]['author']}-%}{{footnoteDictionary[1]['author']}},{{footnoteDictionary[1]['year']}},{{footnoteDictionary[1]['link']}},{{footnoteDictionary[1]['text']}},{{footnoteDictionary[1]['publication']}};{%-endif-%}{%-endfor-%}
+              {%- for footnoteDictionary in site.data.footnotes -%}{%-if footnoteDictionary[1]['author'] and footnoteDictionary[1]['hide_from_bibliography'] != 'true'}-%}{{footnoteDictionary[1]['author']}},{{footnoteDictionary[1]['year']}},{{footnoteDictionary[1]['link']}},{{footnoteDictionary[1]['text']}},{{footnoteDictionary[1]['publication']}};{%-endif-%}{%-endfor-%}
             {% endcapture %}
             {% assign footnoteList = footnoteTempList | split:";" | uniq | sort_natural %}
             {% for footnoteString in footnoteList %}
