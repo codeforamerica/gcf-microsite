@@ -1496,7 +1496,7 @@ a.mobile-logo {
   nav.nav-open div.nav-dropdown {
     border-bottom: 1px solid #F5D0A5;
     max-height: 500px;
-    transition: max-height .5s ease-in; }
+    transition: max-height .25s ease-in; }
 
   a.nav-dropdown-item {
     padding: 5px 10px;
