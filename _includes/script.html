@@ -6,7 +6,7 @@
         headerHeight = header.height(),
     		previousTop = 0,
     		currentTop = 0,
-    		scrollDelta = 10,
+    		scrollDelta = 20,
         navColorOffset = $('section#instability').offset().top-140,
         navStickyOffset = $('div#intro-content').offset().top-headerHeight-70;
 
@@ -90,14 +90,18 @@
     // Scroll-top in top section
     $('.scroll-tip').click(function() {
       var goTo =  $('div#intro-content').position().top - headerHeight;
-      $("html, body").stop().animate({ scrollTop: goTo }, 1500);
+      $("html, body").stop().animate({ scrollTop: goTo }, 1500, function() {
+        header.removeClass('is-hidden');
+      });
     });
 
     $('.scroll-link').click(function(e){
       e.preventDefault();
       var hash = $(this).attr('href').split('#')[1];
       var goTo =  $('section#'+ hash).position().top - headerHeight;
-      $("html, body").stop().animate({ scrollTop: goTo }, 1500);
+      $("html, body").stop().animate({ scrollTop: goTo }, 1500, function() {
+        header.removeClass('is-hidden');
+      });
     });
 
     // Navigation
