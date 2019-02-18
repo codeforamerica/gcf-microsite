@@ -37,6 +37,7 @@ class MapboxMap {
       container: this.container,
       logoPosition: 'top-right',
       maxBounds: bounds,
+      maxZoom: 10,
       style: this.style,
       zoom: 6,
     });
@@ -361,7 +362,7 @@ class MapboxMap {
           GetCalFresh monthly applicant counts are from January 2019 to account for newly added counties; percentages reflect averages of application data from 2018 and 2019.\
         </div>",
       });
-      
+
     	$('#stats-tab').click(function() {
     		outerThis.activeTab = "stats";
     		outerThis.updateMapInfo(countyName);
