@@ -1945,7 +1945,6 @@ every night and am now back in college.</strong>
       $("html, body").stop().animate({ scrollTop: goTo }, 1500);
     });
 
-
     // Navigation
     header.on('click', '.nav-trigger', function(event){
       // open primary navigation on mobile
@@ -1966,18 +1965,7 @@ every night and am now back in college.</strong>
           var hash = $(this).attr('href').split('#')[1];
           var goTo =  $('section#'+ hash).offset().top - headerHeight;
           $("html, body").stop().animate({ scrollTop: goTo }, 1500, function() {
-            $('nav').removeClass('nav-open');
-          });
-        });
-
-        // Click handler for the logo, which needs an extra offset since the
-        // header will be visible at the top
-        $('.nav-logo').on('click', function(e){
-          e.preventDefault();
-          var hash = $(this).attr('href').split('#')[1];
-          var goTo =  $('section#'+ hash).offset().top - headerHeight;
-          $("html, body").stop().animate({ scrollTop: goTo }, 1500, function() {
-            $('nav').removeClass('nav-open');
+            header.removeClass('is-hidden');
           });
         });
       } else if(!header.hasClass('smint')) {
@@ -2019,15 +2007,18 @@ every night and am now back in college.</strong>
     function adjustHeader() {
       if($(window).innerWidth() <= 768) {
         $('nav').removeClass('nav-open');
-        // autoHideHeader();
+        autoHideHeader();
       }
 
+      // This effects all screen sizes, it's just to color the nav differently
       if($(window).scrollTop() > navColorOffset) {
         $('nav').addClass("scrolled");
       } else {
         $('nav').removeClass("scrolled");
       }
 
+      // This only effects smaller screens, and it causes the nav to change
+      // from relative to fixed positioning
       if($(window).scrollTop() > headerHeight) {
         $('header').addClass('scrolled');
         $('body').addClass('scrolled');
