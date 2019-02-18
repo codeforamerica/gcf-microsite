@@ -175,8 +175,12 @@
   }
 
   /* Footer */
-  div#footer-share-content, div#footer-go-content, div#footer-license-content {
+  div#footer-share-content, div#footer-go-content, div#footer-credits-content, div#footer-license-content {
     max-width: 90%;
+  }
+
+  div#footer-credits-content {
+    flex-direction: column;
   }
 
   div#footer-share-heading {
