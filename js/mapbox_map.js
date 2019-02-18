@@ -232,11 +232,11 @@ class MapboxMap {
     			"<div class='county-details-stat-number'>" + countyData["poverty-rate"] + "</div>" +
     			"</div>" +
     			"<div class='county-details-stat'>" +
-    			"<div class='county-details-stat-name'>Median income</div>" +
+    			"<div class='county-details-stat-name'>Median family income</div>" +
     			"<div class='county-details-stat-number'>" + countyData["median-income"].toLocaleString("en", {style: "currency", currency: "USD", maximumFractionDigits: 0, minimumFractionDigits: 0}) + "</div>" +
     			"</div>" +
     			"<div class='county-details-stat'>" +
-    			"<div class='county-details-stat-name'>Min cost of living<div class='county-details-stat-desc'>2 adults, 2 children</div></div>" +
+    			"<div class='county-details-stat-name'>Min income for cost of living<div class='county-details-stat-desc'>2 adults, 2 children</div></div>" +
     			"<div class='county-details-stat-number'>" + countyData["minimum-cost-living-family"].toLocaleString("en", {style: "currency", currency: "USD", maximumFractionDigits: 0, minimumFractionDigits: 0}) + "</div>" +
     			"</div>" +
     			"<div style='clear:both'></div>" +
