@@ -11,4 +11,13 @@
     const navigation = new Navigation();
   });
 
+  $(window).on("load", function() {
+    // Animate the intro background in and pulse the scroll button on ready
+    $('div.intro-header-outer').animate({opacity: 1}, 1200, function() {
+      $('div.intro-header-inner').animate({opacity: 1}, 1000, function() {
+        $('div.scroll-tip').addClass("animated heartBeat long");
+      });
+    });      
+  });
+
 </script>

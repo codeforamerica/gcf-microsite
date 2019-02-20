@@ -469,6 +469,7 @@ class Navigation {
           'scrollSpeed' : 1500
         });
       }
+      outerThis.adjustHeader();
     });
 
     // Reset heights and offsets on resize
@@ -486,14 +487,6 @@ class Navigation {
           : requestAnimationFrame($.proxy(outerThis.adjustHeader, outerThis));
       }
     });
-
-    // Animate the intro background in and pulse the scroll button on ready
-    $('div.intro-header-outer').animate({opacity: 1}, 1200, function() {
-      $('div.intro-header-inner').animate({opacity: 1}, 1000, function() {
-        $('div.scroll-tip').addClass("animated heartBeat long");
-      });
-    });
-    outerThis.adjustHeader();
   }
 
   adjustHeader() {
