@@ -262,7 +262,7 @@ div.content-inner.heading {
 p {
   font-family: SourceSansPro;
   font-size: 19px;
-  line-height: 26px; }
+  line-height: 28px; }
 
 /* Myths & Facts */
 div.myths {
@@ -348,7 +348,7 @@ div.myth-detail {
   padding: 16px;
   font-family: SourceSansPro;
   font-size: 19px;
-  line-height: 26px;
+  line-height: 28px;
   display: none; }
 
 /* Stats Box divs */
@@ -491,8 +491,8 @@ div.quotes-inner {
 
 div.quote-content {
   font-family: Lora;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 24px;
+  line-height: 34px;
   height: 250px;
   padding: 0 25px;
   position: relative; }
@@ -1387,8 +1387,8 @@ header.scrolled div.brand-bar {
 
 div.brand-bar {
   transition: max-height .3s ease-out;
-  background-color: #434343;
-  color: white;
+  background-color: #474747;
+  color: #EBEBEB;
   height: 60px;
   max-height: 60px; }
 
@@ -1401,18 +1401,21 @@ div.brand-bar-outer {
   align-items: center; }
 
 div.cfa-logo {
-  background-image: url(../images/cfa-logo-white.png);
+  background-image: url(../images/cfa-logo-gray.png);
   background-repeat: no-repeat;
   background-size: contain;
-  height: 36px;
-  margin-top: 12px;
-  width: 80px; }
+  height: 34px;
+  margin-top: 15px;
+  width: 70px; }
 
 div.cfa-attribution {
   font-family: SourceSansPro;
-  font-size: 17px;
+  font-size: 13px;
   margin-top: 12px;
   margin-left: 28px; }
+
+div.cfa-attribution a {
+  color: #EBEBEB; }
 
 a.mobile-logo {
   display: none; }
