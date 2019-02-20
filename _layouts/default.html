@@ -19,12 +19,20 @@
     <meta name="twitter:title" content="{{page.title}}" />
     <meta name="twitter:description" content="CalFresh helps people through
     challenging times in their lives. This site shares their stories." />
-    <meta name="twitter:image" content="https://snapstories.codeforamerica.org/images/seniors-color.png" />
+    {% if jekyll.environment == "production" %}
+      <meta name="twitter:image" content="{{site.cdn}}images/seniors-color.png" />
+    {% else %}
+      <meta name="twitter:image" content="images/seniors-color.png" />
+    {% endif %}
     <meta property="og:type" content="website" />
     <meta property="og:title" content="{{page.title}}" />
     <meta property="og:description" content="CalFresh helps people through
     challenging times in their lives. This site shares their stories." />
-    <meta property="og:image" content="https://snapstories.codeforamerica.org/images/seniors-color.png" />
+    {% if jekyll.environment == "production" %}
+      <meta property="og:image" content="{{site.cdn}}images/seniors-color.png" />
+    {% else %}
+      <meta property="og:image" content="images/seniors-color.png" />
+    {% endif %}
     <meta property="og:url" content="http://snapstories.codeforamerica.org/">
 
     <link rel="preconnect" href="https://api.mapbox.com" />
