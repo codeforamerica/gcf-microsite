@@ -26,6 +26,9 @@
     <meta property="og:image" content="https://snapstories.codeforamerica.org/images/seniors-color.png" />
     <meta property="og:url" content="http://snapstories.codeforamerica.org/">
 
+    <link rel="preconnect" href="https://api.mapbox.com" />
+    <link rel="preconnect" href="https://www.google-analytics.com" />
+
     {% if jekyll.environment == "production" %}
       <link rel="stylesheet" type="text/css" href="{{site.cdn}}css/normalize.css?{{site.time | date: '%s'}}"/>
       <link rel="stylesheet" type="text/css" href="{{site.cdn}}css/styles.css?{{site.time | date: '%s'}}" />
