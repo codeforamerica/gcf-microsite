@@ -44,7 +44,7 @@ class Social {
   }
 
   shareTwitter() {
-    window.open("https://twitter.com/intent/tweet?text=Help @codeforamerica change the narrative. Read stories directly from #GetCalFresh users and see why Californians need food assistance&url=https://snapstories.codeforamerica.org/&hashtags=SNAPworks");
+    window.open("https://twitter.com/intent/tweet?text=Help @codeforamerica change the narrative. Read stories directly from %23GetCalFresh users and see why Californians need food assistance:&url=https://snapstories.codeforamerica.org/&hashtags=SNAPworks");
   }
 
 }
