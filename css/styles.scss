@@ -1,5 +1,12 @@
 ---
 ---
+
+{% if jekyll.environment == "production" %}
+  $image-prefix: "{{site.cdn}}";
+{% else %}
+  $image-prefix: "../";
+{% endif %}
+
 $outer-content-width: 1024px;
 $wide-inner-content-width: 900px;
 $inner-content-width: 760px;

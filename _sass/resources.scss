@@ -41,7 +41,7 @@ div.resources-expander {
   width: 29px;
   height: 29px;
   margin: auto;
-  background-image: url(../images/expand_arrow_black.png);
+  background-image: url(#{$image-prefix}images/expand_arrow_black.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;

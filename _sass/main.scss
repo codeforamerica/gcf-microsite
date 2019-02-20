@@ -7,8 +7,6 @@ html, body {
 }
 
 body {
-  display:flex;
-  flex-direction:column;
   font-family: SourceSansPro;
   font-size: 19px;
   padding-top: 126px;
@@ -45,10 +43,6 @@ body.scrolled {
   body {
     cursor: pointer;
   }
-}
-
-#main {
-  flex-grow:1;
 }
 
 a {
@@ -117,7 +111,7 @@ div.intro-header-outer {
   background:
       linear-gradient(to bottom, $orange-lighter-transparent-rgba 30%, $orange-lighter-color 90%, white 100%),
       linear-gradient(to left, $orange-lighter-transparent-rgba 24%, $orange-lighter-color 62%),
-      url(../images/farmers-market-color.png);
+      url(#{$image-prefix}images/farmers-market-color.png);
   background-position: 0 -7px;
   background-repeat: no-repeat;
   background-size:cover;
@@ -171,7 +165,7 @@ div.scroll-tip {
   margin: 48px auto 0 auto;
   width: 56px;
   height: 56px;
-  background-image: url(../images/scroll-tip.png);
+  background-image: url(#{$image-prefix}images/scroll-tip.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -207,7 +201,7 @@ div.hero-header-inner h2 {
 div.hero-header-outer.instability {
   background:
     linear-gradient(to bottom, rgba(255, 255, 255, 0) 54%, white 100%),
-    url(../images/student-color.png);
+    url(#{$image-prefix}images/student-color.png);
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -217,7 +211,7 @@ div.hero-header-outer.shocks {
   margin-top: 60px;
   background:
     linear-gradient(to bottom, rgba(255, 255, 255, 0) 54%, white 100%),
-    url(../images/seniors-color.png);
+    url(#{$image-prefix}images/seniors-color.png);
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -226,7 +220,7 @@ div.hero-header-outer.shocks {
 div.hero-header-outer.calfresh {
   background:
     linear-gradient(to bottom, rgba(255, 255, 255, 0) 54%, white 100%),
-    url(../images/potrero-color.png);
+    url(#{$image-prefix}images/potrero-color.png);
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -302,7 +296,7 @@ div.myth-expander {
   width: 29px;
   height: 29px;
   margin: auto;
-  background-image: url(../images/expand_arrow.png);
+  background-image: url(#{$image-prefix}images/expand_arrow.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -495,22 +489,22 @@ div.quote-image {
 }
 
 div.quote-image.intro {
-  background:url(../images/quotes-orange.png) no-repeat;
+  background:url(#{$image-prefix}images/quotes-orange.png) no-repeat;
   background-size: contain;
 }
 
 div.quote-image.instability {
-  background:url(../images/quotes-blue.png) no-repeat;
+  background:url(#{$image-prefix}images/quotes-blue.png) no-repeat;
   background-size: contain;
 }
 
 div.quote-image.shocks {
-  background:url(../images/quotes-red.png) no-repeat;
+  background:url(#{$image-prefix}images/quotes-red.png) no-repeat;
   background-size: contain;
 }
 
 div.quote-image.calfresh {
-  background:url(../images/quotes-green.png) no-repeat;
+  background:url(#{$image-prefix}images/quotes-green.png) no-repeat;
   background-size: contain;
 }
 
@@ -595,7 +589,7 @@ div.quote-selector-line-container.mobile {
 }
 
 div.quote-selector-line {
-  background: url(../images/quote-line.png) no-repeat;
+  background: url(#{$image-prefix}images/quote-line.png) no-repeat;
   height: 8px;
   width: 714px;
 }
@@ -611,11 +605,11 @@ div.quote-selector-arrow:hover {
 }
 
 div.quote-selector-arrow.left {
-  background: url(../images/quote-arrow-left.png) no-repeat;
+  background: url(#{$image-prefix}images/quote-arrow-left.png) no-repeat;
 }
 
 div.quote-selector-arrow.right {
-  background: url(../images/quote-arrow-right.png) no-repeat;
+  background: url(#{$image-prefix}images/quote-arrow-right.png) no-repeat;
 }
 
 div.quote-selector {
@@ -871,7 +865,7 @@ div.map-quote__scroller {
 div.map-quote-image {
   width:51px;
   height:34px;
-  background:url(../images/quotes-map.png) no-repeat;
+  background:url(#{$image-prefix}images/quotes-map.png) no-repeat;
   background-size:contain;
 }
 
@@ -898,11 +892,11 @@ div.map-quote-selector-arrow:hover {
 }
 
 div.map-quote-selector-arrow.left {
-  background: url(../images/quote-arrow-left.png) center center no-repeat;
+  background: url(#{$image-prefix}images/quote-arrow-left.png) center center no-repeat;
 }
 
 div.map-quote-selector-arrow.right {
-  background: url(../images/quote-arrow-right.png) center center no-repeat;
+  background: url(#{$image-prefix}images/quote-arrow-right.png) center center no-repeat;
 }
 
 div.map-sources {
@@ -1130,23 +1124,23 @@ div.share-menu-icon:hover {
 }
 
 div.share-menu-icon.toggle {
-  background: $orange-dark-color url(../images/share-icon.png) center no-repeat;
+  background: $orange-dark-color url(#{$image-prefix}images/share-icon.png) center no-repeat;
   background-size: 38px 38px;
   width: 58px;
 }
 
 div.share-menu-icon.facebook {
-  background: $orange-dark-color url(../images/share-facebook.png) center no-repeat;
+  background: $orange-dark-color url(#{$image-prefix}images/share-facebook.png) center no-repeat;
   background-size: 38px 38px;
 }
 
 div.share-menu-icon.twitter {
-  background: $orange-dark-color url(../images/share-twitter.png) center no-repeat;
+  background: $orange-dark-color url(#{$image-prefix}images/share-twitter.png) center no-repeat;
   background-size: 38px 38px;
 }
 
 div.share-menu-icon.email {
-  background: $orange-dark-color url(../images/share-email.png) center no-repeat;
+  background: $orange-dark-color url(#{$image-prefix}images/share-email.png) center no-repeat;
   background-size: 38px 38px;
 }
 
