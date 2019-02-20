@@ -39,15 +39,15 @@ class Social {
   }
 
   shareEmail() {
-    window.open("mailto:?subject={{page.title}}&body=A fresh look at the facts from Code for America: https://gcf-microsite.herokuapp.com/");
+    window.open("mailto:?subject={{page.title}}&body=Help Code for America change the narrative. Read stories directly from GetCalFresh users and see why Californians need food assistance: https://snapstories.codeforamerica.org/");
   };
 
   shareFacebook() {
-    window.open("https://www.facebook.com/sharer/sharer.php?u=https://gcf-microsite.herokuapp.com/");
+    window.open("https://www.facebook.com/sharer/sharer.php?u=https://snapstories.codeforamerica.org/");
   }
 
   shareTwitter() {
-    window.open("https://twitter.com/intent/tweet?text={{page.title}} A fresh look at the facts from @codeforamerica&url=https://gcf-microsite.herokuapp.com/&hashtags=feedthepeople,civictech");
+    window.open("https://twitter.com/intent/tweet?text=Help @codeforamerica change the narrative. Read stories directly from #GetCalFresh users and see why Californians need food assistance&url=https://snapstories.codeforamerica.org/&hashtags=SNAPworks");
   }
 
 }
