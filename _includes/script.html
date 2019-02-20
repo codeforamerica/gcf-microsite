@@ -1,14 +1,14 @@
 <script type="text/javascript">
 
   $(document).ready( function() {
-    const countyMap = new MapboxMap();
-    const myths = new Myths();
-    const resources = new Resources();
-    const social = new Social();
-    const quoteExplorer = new QuoteExplorer();
+    const countyMap = new gcf.MapboxMap();
+    const myths = new gcf.Myths();
+    const resources = new gcf.Resources();
+    const social = new gcf.Social();
+    const quoteExplorer = new gcf.QuoteExplorer();
     const wow = new WOW().init();
-    const tooltips = new Tooltips();
-    const navigation = new Navigation();
+    const tooltips = new gcf.Tooltips();
+    const navigation = new gcf.Navigation();
   });
 
   $(window).on("load", function() {
@@ -17,7 +17,7 @@
       $('div.intro-header-inner').animate({opacity: 1}, 1000, function() {
         $('div.scroll-tip').addClass("animated heartBeat long");
       });
-    });      
+    });
   });
 
 </script>
