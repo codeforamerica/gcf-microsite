@@ -7,3 +7,4 @@ jekyll-minifier:
 sass:
     sass_dir: _sass
     style: compressed
+cdn: "https://d2exodtkc8pqnq.cloudfront.net/"

@@ -8,19 +8,19 @@
     },
     "**.js": {
       "Cache-Control": "public, max-age=31536000",
-      "Access-Control-Allow-Origin": "d2exodtkc8pqnq.cloudfront.net"
+      "Access-Control-Allow-Origin": "*"
     },
     "**.css": {
       "Cache-Control": "public, max-age=31536000",
-      "Access-Control-Allow-Origin": "d2exodtkc8pqnq.cloudfront.net"
+      "Access-Control-Allow-Origin": "*"
     },
     "**.ttf": {
       "Cache-Control": "public, max-age=31536000",
-      "Access-Control-Allow-Origin": "d2exodtkc8pqnq.cloudfront.net"
+      "Access-Control-Allow-Origin": "*"
     },
     "**.png": {
       "Cache-Control": "public, max-age=31536000",
-      "Access-Control-Allow-Origin": "d2exodtkc8pqnq.cloudfront.net"
+      "Access-Control-Allow-Origin": "*"
     }
   }
 }
