@@ -1,11 +1,16 @@
 
 @media screen and (max-width: $tablet-content-width) {
   /* Font */
-  p, div.intro-header-inner p, div.content p, div.quote-content {
+  p, div.intro-header-inner p, div.content p {
     font-size: 16px;
     line-height: normal;
   }
 
+  div.quote-content {
+    font-size: 18px;
+    line-height: normal;
+  }
+  
   .ui-tooltip-content {
     font-size: 14px;
     line-height: normal;

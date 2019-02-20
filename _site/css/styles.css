@@ -85,6 +85,19 @@ body {
   flex-direction: column;
   font-family: SourceSansPro;
   font-size: 19px;
+  padding-top: 126px; }
+
+body::after {
+  content: "";
+  background-color: #FDF7F0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  z-index: -1; }
+
+body.scrolled {
   padding-top: 76px; }
 
 @media screen and (max-width: 768px) {
@@ -194,7 +207,8 @@ div.intro-header-inner p {
   max-width: 585px; }
 
 div.intro-header-inner p a {
-  font-weight: bold; }
+  font-weight: bold;
+  color: #32322F; }
 
 div.scroll-tip {
   cursor: pointer;
@@ -1164,8 +1178,12 @@ select::-ms-expand {
 
 @media screen and (max-width: 768px) {
   /* Font */
-  p, div.intro-header-inner p, div.content p, div.quote-content {
+  p, div.intro-header-inner p, div.content p {
     font-size: 16px;
+    line-height: normal; }
+
+  div.quote-content {
+    font-size: 18px;
     line-height: normal; }
 
   .ui-tooltip-content {
@@ -1318,7 +1336,7 @@ select::-ms-expand {
     margin: 0 15px; } }
 header {
   font-family: Rubik;
-  height: 76px;
+  height: 126px;
   width: 100%;
   z-index: 10;
   position: fixed;
@@ -1334,7 +1352,7 @@ header {
   transition: transform .5s, -webkit-transform .5s; }
 
 nav {
-  height: 100%;
+  height: 76px;
   background-color: #FDF7F0; }
 
 div.nav-outer {
@@ -1381,16 +1399,19 @@ div.nav-dropdown {
   background-color: #FDF7F0;
   transition: max-height .25s ease-out; }
 
+header.scrolled {
+  height: 76px; }
+
 header.scrolled div.brand-bar {
   max-height: 0;
   overflow: hidden; }
 
 div.brand-bar {
-  transition: max-height .3s ease-out;
+  transition: max-height 0.4s cubic-bezier(0, 1, 0.5, 1);
   background-color: #474747;
   color: #EBEBEB;
-  height: 60px;
-  max-height: 60px; }
+  height: 50px;
+  max-height: 50px; }
 
 div.brand-bar-outer {
   margin: 0 auto;
@@ -1405,13 +1426,13 @@ div.cfa-logo {
   background-repeat: no-repeat;
   background-size: contain;
   height: 34px;
-  margin-top: 15px;
+  margin-top: 10px;
   width: 70px; }
 
 div.cfa-attribution {
   font-family: SourceSansPro;
   font-size: 13px;
-  margin-top: 12px;
+  margin-top: 10px;
   margin-left: 28px; }
 
 div.cfa-attribution a {
@@ -1433,6 +1454,9 @@ a.mobile-logo {
     -webkit-transform: translateY(-100%);
     -ms-transform: translateY(-100%);
     transform: translateY(-100%); }
+
+  nav {
+    height: 64px; }
 
   div.brand-bar {
     display: none; }

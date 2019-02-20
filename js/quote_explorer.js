@@ -31,6 +31,13 @@ class QuoteExplorer {
       var tabId = this.id.split('-')[4];
       outerThis.selectQuote(contentId, tabId);
     });
+    $('.quote-content__scroller').scroll(function() {
+        if($(this).scrollTop() + $(this).innerHeight() >= $(this)[0].scrollHeight) {
+          $(this).parent().addClass('scrolled');
+        } else {
+          $(this).parent().removeClass('scrolled');
+        }
+    });
   }
 
   selectQuote(contentId, tabId) {
