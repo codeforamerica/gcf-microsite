@@ -1,3 +1,9 @@
+plugins:
+    - jekyll-minifier
+jekyll-minifier:
+    compress_css: false
+    uglifier_args:
+      harmony: true
 sass:
     sass_dir: _sass
     style: compressed

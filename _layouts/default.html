@@ -1,3 +1,6 @@
+---
+cdn: 'https://d2exodtkc8pqnq.cloudfront.net/'
+---
 <!doctype html>
 <html lang="en">
   <head>
@@ -26,29 +29,34 @@
     <meta property="og:image" content="https://snapstories.codeforamerica.org/images/seniors-color.png" />
     <meta property="og:url" content="http://snapstories.codeforamerica.org/">
 
-    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    {% if jekyll.environment == "production" %}
+      <link rel="stylesheet" type="text/css" href="{{layout.cdn}}css/normalize.css?{{site.time | date: '%s'}}"/>
+      <link rel="stylesheet" type="text/css" href="{{layout.cdn}}css/styles.css?{{site.time | date: '%s'}}" />
+    {% else %}
+      <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+      <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    {% endif %}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.48.0/mapbox-gl.css' rel='stylesheet' />
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous"></script>
-    <script
-      src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
-      integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
-      crossorigin="anonymous"></script>
+      <script
+        src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+        integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+        crossorigin="anonymous"></script>
+    {% if jekyll.environment == "production" %}
+      <script src="{{layout.cdn}}js/jquery.smint.js?{{site.time | date: '%s'}}" type="text/javascript"></script>
+      <script src="{{layout.cdn}}js/wow.min.js?{{site.time | date: '%s'}}" type="text/javascript"></script>
+      <script src="{{layout.cdn}}js/microsite.js?{{site.time | date: '%s'}}" type="text/javascript"></script>
+    {% else %}
+      <script src="js/jquery.smint.js" type="text/javascript"></script>
+      <script src="js/wow.min.js" type="text/javascript"></script>
+      <script src="js/microsite.js" type="text/javascript"></script>
+    {% endif %}
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.js'></script>
-    <script src="js/jquery.smint.js" type="text/javascript"></script>
-    <script src="js/wow.min.js" type="text/javascript"></script>
-    <script src="js/mapbox_map.js" type="text/javascript"></script>
-    <script src="js/myths.js" type="text/javascript"></script>
-    <script src="js/resources.js" type="text/javascript"></script>
-    <script src="js/quote_explorer.js" type="text/javascript"></script>
-    <script src="js/social.js" type="text/javascript"></script>
-    <script src="js/tooltips.js" type="text/javascript"></script>
-    <script src="js/navigation.js" type="text/javascript"></script>
   </head>
 
   <body>
