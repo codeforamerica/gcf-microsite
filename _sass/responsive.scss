@@ -10,7 +10,7 @@
     font-size: 18px;
     line-height: normal;
   }
-  
+
   .ui-tooltip-content {
     font-size: 14px;
     line-height: normal;
@@ -186,6 +186,10 @@
 
   div#footer-credits-content {
     flex-direction: column;
+  }
+
+  div#footer-credits-thanks {
+    margin-top: 20px;
   }
 
   div#footer-share-heading {
