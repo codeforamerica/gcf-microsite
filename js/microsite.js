@@ -18,8 +18,9 @@ gcf.MapboxMap = function () {
   this.map.addControl(new mapboxgl.NavigationControl({
     showCompass: false
   }));
-  this.map.on("load", () => {
-    this.drawCounties(this.map);
+  var outerThis = this;
+  this.map.on("load", function(){
+    outerThis.drawCounties(this.map);
   });
 };
 
