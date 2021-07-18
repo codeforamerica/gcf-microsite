@@ -100,7 +100,8 @@ div.brand-bar-outer {
 }
 
 div.cfa-logo {
-  background-image: url(#{$image-prefix}images/cfa-logo-gray.png);
+  background-image: url(#{$image-prefix}images/cfa-logo-white.png);
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
   height: 34px;
